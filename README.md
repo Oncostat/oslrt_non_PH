@@ -23,3 +23,6 @@ This file runs the simulations to study the impact of the variability on the exp
 Simulations_dsitribution_misspe.R
 
 This file runs the simulations to study the impact of the model misspecification of the survival distribution of the external control curve (section 6.2) and returns the relative difference in terms of type I error and power as shown in Figure 5 and Figure B13 in appendix with other censoring rates.
+
+
+For questions or remarks about the code, please contact C.Szurewsky (chloe.szurewsky@gustaveroussy.fr) or G. Le Teuff (gwenael.leteuff@gustaveroussy.fr).
