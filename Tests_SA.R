@@ -34,7 +34,7 @@ mOSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
   X <- data$t   # observed failure time 
   delta <- data$e # censoring indicate 1-event 0-censoring 
   if(distr=='Exponential'){
-    S <- function(u, rate){1-pexp(t, rate)}
+    S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
     M <- H(X, rate_exp)
   }
@@ -92,7 +92,7 @@ OSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
   X <- data$t   # observed failure time 
   delta <- data$e # censoring indicate 1-event 0-censoring 
   if(distr=='Exponential'){
-    S <- function(u, rate){1-pexp(t, rate)}
+    S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
     M <- H(X, rate_exp)
   }
@@ -147,7 +147,7 @@ Score_RC <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
   X <- data$t   # observed failure time 
   delta <- data$e # censoring indicate 1-event 0-censoring 
   if(distr=='Exponential'){
-    S <- function(u, rate){1-pexp(t, rate)}
+    S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
     M <- H(X, rate_exp)
   }
@@ -208,7 +208,7 @@ Score_EE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
   t_CP <- data2$t[which(data2$t<=CP)]  #times less than tau
   O_CP <- data2$e[which(data2$t<=CP)]  #obs associated with times less than tau
   if(distr=='Exponential'){
-    S <- function(u, rate){1-pexp(t, rate)}
+    S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
     H0 <- H(t_CP, rate_exp) #exp for times less than tau
     H0_CP <- H(CP, rate_exp)
@@ -273,7 +273,7 @@ Score_ME <- function(data, CP1, CP2, rate_exp, shape_weib, scale_weib,
   t_CP <- data2$t[which(data2$t>CP1 & data2$t<=CP2)]  #times between tau1 and tau2
   O_CP <- data2$e[which(data2$t>CP1 & data2$t<=CP2)]  #obs associated with times between tau1 and tau2
   if(distr=='Exponential'){
-    S <- function(u, rate){1-pexp(t, rate)}
+    S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
     H0_CPs <- H(t_CP, rate_exp) #exp associated with times between tau1 and tau2
     H0_CP1 <- H(CP1, rate_exp)
@@ -352,7 +352,7 @@ Score_DE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
   t_CP <- data2$t[which(data2$t>CP)]  #times better than tau
   O_CP <- data2$e[which(data2$t>CP)]  #obs associated with times better than tau
   if(distr=='Exponential'){
-    S <- function(u, rate){1-pexp(t, rate)}
+    S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
     H0 <- H(t_CP, rate_exp) #exp for times less than tau
     H0_CP <- H(CP, rate_exp) #H0(tau)
