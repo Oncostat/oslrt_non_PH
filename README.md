@@ -25,6 +25,7 @@ Simulations_dsitribution_misspe.R
 This file runs the simulations to study the impact of the model misspecification of the survival distribution of the external control curve (section 6.3) and returns the relative difference in terms of type I error and power as shown in Figure 6 and Figure 30 in appendix with other censoring rates.
 
 Simulations_sampling.R
+
 This file runs the simulations to study the impact of the inlcusion of the correction to take into account the sampling variability of the external control group (section 6.2) and returns the empirical type I error and power as shown in Figures 21, 23, 25 and 27 in appendix. 
 
 
