@@ -541,7 +541,7 @@ maxcombo1 <- function(data, CP1, CP2, CP3, CP4, rate_exp, shape_weib,
   n_indiv <- c(Z_moslrt[3], Z_EE1[3], Z_EE2[3], Z_DE1[3], Z_DE2[3])
   pval_hoch <- p.adjust(pval, method = 'hochberg')
   m <- length(Score)
-  Zmax <- max(na.omit(abs(Score)))
+  Zmax <- min(na.omit(abs(Score)))
   ind <- which(abs(Score)==Zmax)
   pval_max_hoch <- pval_hoch[ind]
   z_up <- Score[ind]
