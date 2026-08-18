@@ -27,14 +27,14 @@ library(lubridate)
 #Q_gengamma: Q parameter ('shape' parameter) of the generalized gamma distribution for the external control group
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logisitic', 
 #       'Log-normal', 'Gen Gamma'
-#pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by 
+#    default pi = 0 (sampling variability not taken into account)
 #return a list with the statistic Z, the p-value and the expected number of events E
 mOSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
                    scale_llogis, mean_lnorm, sd_lnorm, mu_gengamma,
                    sigma_gengamma, Q_gengamma, distr, pi = 0){
-  X <- data$t   # observed failure time 
-  delta <- data$e # censoring indicate 1-event 0-censoring 
+  X <- data$t
+  delta <- data$e
   if(distr=='Exponential'){
     S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
@@ -60,7 +60,7 @@ mOSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
     H <- function(u, mu, sigma, Q){-log(S(u, mu, sigma, Q))}
     M <-H(X, mu_gengamma, sigma_gengamma, Q_gengamma)
   }
-  O <- sum(delta)       # observed number of events 
+  O <- sum(delta) 
   E <- sum(M)
   V <- (O+E)/2
   Z <- (O-E)/sqrt(V)
@@ -89,13 +89,13 @@ mOSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logisitic', 
 #       'Log-normal', 'Gen Gamma'
 #pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#    default pi = 0 (sampling variability not taken into account)
 #return the p-value
 OSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
                   scale_llogis, mean_lnorm, sd_lnorm, mu_gengamma,
                   sigma_gengamma, Q_gengamma, distr, pi = 0){
-  X <- data$t   # observed failure time 
-  delta <- data$e # censoring indicate 1-event 0-censoring 
+  X <- data$t
+  delta <- data$e
   if(distr=='Exponential'){
     S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
@@ -121,7 +121,7 @@ OSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
     H <- function(u, mu, sigma, Q){-log(S(u, mu, sigma, Q))}
     M <-H(X, mu_gengamma, sigma_gengamma, Q_gengamma)
   }
-  O <- sum(delta)       # observed number of events 
+  O <- sum(delta)
   E <- sum(M)
   Z <- (O-E)/sqrt(E)
   R <- sqrt(1/(1+pi))
@@ -147,13 +147,13 @@ OSLRT <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logisitic', 
 #       'Log-normal', 'Gen Gamma'
 #pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#    default pi = 0 (sampling variability not taken into account)
 #return the p-value
 Score_RC <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
                      scale_llogis, mean_lnorm, sd_lnorm, mu_gengamma,
                      sigma_gengamma, Q_gengamma, distr, pi = 0){
-  X <- data$t   # observed failure time 
-  delta <- data$e # censoring indicate 1-event 0-censoring 
+  X <- data$t
+  delta <- data$e
   if(distr=='Exponential'){
     S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
@@ -210,18 +210,18 @@ Score_RC <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logistic', 
 #       'Log-normal', 'Gen Gamma'
 #pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#    default pi = 0 (sampling variability not taken into account)
 #return a list with the statistic Z, the p-value and the 'expected' number of events for early effect of treatment
 Score_EE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
                      scale_llogis, mean_lnorm, sd_lnorm, mu_gengamma,
                      sigma_gengamma, Q_gengamma, distr){
   data2 <- arrange(data, t)
-  t_CP <- data2$t[which(data2$t<=CP)]  #times less than tau
-  O_CP <- data2$e[which(data2$t<=CP)]  #obs associated with times less than tau
+  t_CP <- data2$t[which(data2$t<=CP)]
+  O_CP <- data2$e[which(data2$t<=CP)]
   if(distr=='Exponential'){
     S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
-    H0 <- H(t_CP, rate_exp) #exp for times less than tau
+    H0 <- H(t_CP, rate_exp)
     H0_CP <- H(CP, rate_exp)
   }
   if(distr=='Weibull'){
@@ -248,7 +248,7 @@ Score_EE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
     H0 <-H(t_CP, mu_gengamma, sigma_gengamma, Q_gengamma)
     H0_CP <- H(CP, mu_gengamma, sigma_gengamma, Q_gengamma)
   }
-  H_tau2 <- rep(H0_CP, length(data2$t[which(data2$t>=CP)]))  #H0(tau) for all times better than tau
+  H_tau2 <- rep(H0_CP, length(data2$t[which(data2$t>=CP)]))
   H_tau <- sum(H_tau2)
   Obs <- O_CP-H0
   Num <- sum(Obs)-H_tau
@@ -277,18 +277,18 @@ Score_EE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logisitic', 
 #       'Log-normal', 'Gen Gamma'
 #pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#    default pi = 0 (sampling variability not taken into account)
 #return the p-value
 Score_ME <- function(data, CP1, CP2, rate_exp, shape_weib, scale_weib, 
                      shape_llogis,scale_llogis, mean_lnorm, sd_lnorm, 
                      mu_gengamma, sigma_gengamma, Q_gengamma, distr, pi = 0){
   data2 <- arrange(data, t)
-  t_CP <- data2$t[which(data2$t>CP1 & data2$t<=CP2)]  #times between tau1 and tau2
-  O_CP <- data2$e[which(data2$t>CP1 & data2$t<=CP2)]  #obs associated with times between tau1 and tau2
+  t_CP <- data2$t[which(data2$t>CP1 & data2$t<=CP2)]
+  O_CP <- data2$e[which(data2$t>CP1 & data2$t<=CP2)]
   if(distr=='Exponential'){
     S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
-    H0_CPs <- H(t_CP, rate_exp) #exp associated with times between tau1 and tau2
+    H0_CPs <- H(t_CP, rate_exp)
     H0_CP1 <- H(CP1, rate_exp)
     H0_CP2 <- H(CP2, rate_exp)
     H0_CPs2 <- H(data2$t[which(data2$t>=CP1 & data2$t<=CP2)], rate_exp)
@@ -326,9 +326,9 @@ Score_ME <- function(data, CP1, CP2, rate_exp, shape_weib, scale_weib,
     H0_CPs2 <- H(data2$t[which(data2$t>=CP1 & data2$t<=CP2)], mu_gengamma, sigma_gengamma, Q_gengamma)
   }
   H_CP1 <- rep(H0_CP1, length(data2$t[which(data2$t>=CP1)]))
-  H_CP1 <- sum(H_CP1)   #sum_ti>=tau1(H0(tau1))
+  H_CP1 <- sum(H_CP1)
   H_CP2 <- rep(H0_CP2, length(data2$t[which(data2$t>=CP2)]))
-  H_CP2 <- sum(H_CP2)   #sum_ti>=tau2(H0(tau2))
+  H_CP2 <- sum(H_CP2)
   Obs <- O_CP-H0_CPs
   Num <- sum(Obs)+H_CP1-H_CP2
   Var <- sum(H0_CPs2)-H_CP1+H_CP2
@@ -359,19 +359,19 @@ Score_ME <- function(data, CP1, CP2, rate_exp, shape_weib, scale_weib,
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logistic', 
 #       'Log-normal', 'Gen Gamma'
 #pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#    default pi = 0 (sampling variability not taken into account)
 #return a list with the statistic Z, the p-value and the 'expected' number of events for delayed effect of treatment
 Score_DE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
                      scale_llogis, mean_lnorm, sd_lnorm, mu_gengamma,
                      sigma_gengamma, Q_gengamma, distr, pi = 0){
   data2 <- arrange(data, t)
-  t_CP <- data2$t[which(data2$t>CP)]  #times better than tau
-  O_CP <- data2$e[which(data2$t>CP)]  #obs associated with times better than tau
+  t_CP <- data2$t[which(data2$t>CP)]
+  O_CP <- data2$e[which(data2$t>CP)]
   if(distr=='Exponential'){
     S <- function(u, rate){1-pexp(u, rate)}
     H <- function(u, rate){-log(S(u, rate))}
-    H0 <- H(t_CP, rate_exp) #exp for times less than tau
-    H0_CP <- H(CP, rate_exp) #H0(tau)
+    H0 <- H(t_CP, rate_exp)
+    H0_CP <- H(CP, rate_exp)
   }
   if(distr=='Weibull'){
     S <- function(u, shape, scale){1-pweibull(u, shape, scale)}
@@ -501,7 +501,7 @@ test_SA <- function(rmst_exp, se_rmst_exp, tau, rate_exp, shape_weib,
 #distr: distribution that fits the data of the external control group, should be 'Exponential', 'Weibull', 'Log-logisitic', 
 #       'Log-normal', 'Gen Gamma'
 #pi: ratio between the number of patients in the experimental group and in the external control group (nexp/ncontrol), by
-default pi = 0 (sampling variability not taken into account)
+#    default pi = 0 (sampling variability not taken into account)
 #return the p-value
 maxcombo1 <- function(data, CP1, CP2, CP3, CP4, rate_exp, shape_weib, 
                       scale_weib, shape_llogis,  scale_llogis, mean_lnorm, 
@@ -541,8 +541,8 @@ maxcombo1 <- function(data, CP1, CP2, CP3, CP4, rate_exp, shape_weib,
   n_indiv <- c(Z_moslrt[3], Z_EE1[3], Z_EE2[3], Z_DE1[3], Z_DE2[3])
   pval_hoch <- p.adjust(pval, method = 'hochberg')
   m <- length(Score)
-  Zmax <- min(na.omit(abs(Score)))
-  ind <- which(abs(Score)==Zmax)
+  Zmax <- min(na.omit(Score))
+  ind <- which(Score==Zmax)
   pval_max_hoch <- pval_hoch[ind]
   z_up <- Score[ind]
   low <- rep(z_up, m)
