@@ -1,6 +1,6 @@
 # oslrt_non_ph
 
-## Article: One-sample survival tests for non-proportional hazards in oncology clinical trial
+## Article: One-sample survival tests in the presence of non-proportional hazards in oncology clinical trials
 Authors: Chloé Szurewsky, Guosheng Yin, Gwénaël Le Teuff  
 Pre-print avaible [here] (https://doi.org/10.48550/arXiv.2506.18608)  
 
@@ -14,19 +14,23 @@ This file contains the functions required to run the simulations :
 
 Simulations.R
 
-This file runs the simulation study and gives the type I error or power as shown in Figure 2, and in Figure 12 in appendix by changing the censoring rate, in Figure 13 and 14 in appendix with other hazard ratio. 
+This file runs the simulation study and gives the type I error or power as shown in Figure 2.  
+Figure 12 in Appendix can be obtained by changing the censoring rates, and Figures 13 and 14 by changing the hazard ratio.  
 
 Simulations_parameter_misspe.R
 
-This file runs the simulations to study the impact of the variability on the exponential parameter of the historical control group (section 6.1) and returns the relative difference in terms of type I error and power as shown in Figure 4 and Figure 20 in appendix with other censoring rates.
+This file runs the simulations to study the impact of the variability on the exponential parameter of the historical control group (section 6.1) and returns the relative difference in terms of type I error and power as  in Figure 4, and the crude performance (type I error and power) as in Figure 23.  
+Figure 24 in Appendix can be obtained by changing the censoring rates.  
 
-Simulations_dsitribution_misspe.R
+Simulations_distribution_misspe.R
 
-This file runs the simulations to study the impact of the model misspecification of the survival distribution of the external control curve (section 6.3) and returns the relative difference in terms of type I error and power as shown in Figure 6 and Figure 30 in appendix with other censoring rates.
+This file runs the simulations to study the impact of the model misspecification of the survival distribution of the external control curve (section 6.3) and returns the relative difference in terms of type I error and power as in Figure 6 and the crude performance (type I and power) as in Figure 29.  
+Figure 30 in Appendix can be obtained by changing the censoring rates.  
 
 Simulations_sampling.R
 
-This file runs the simulations to study the impact of the inlcusion of the correction to take into account the sampling variability of the external control group (section 6.2) and returns the empirical type I error and power as shown in Figures 21, 23, 25 and 27 in appendix. 
+This file runs the simulations to study the impact of the inclusion of the correction to take into account the sampling variability of the external control group (section 6.2) and returns the relative difference in terms of type I error and power as Figure 5 and the crude performance (type I error and power) as in Figures 25 and 27.  
+Figures 26 and 27 in Appendix can be obtained by changing the censoring rates.  
 
 
-For questions or remarks about the code, please contact C.Szurewsky (chloe.szurewsky@gustaveroussy.fr) or G. Le Teuff (gwenael.leteuff@gustaveroussy.fr).
+For questions or remarks about the code, please contact C.Szurewsky (chloe.szurewsky.pro@gmail.com).
