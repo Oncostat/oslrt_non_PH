@@ -17,15 +17,15 @@ Simulations.R
 This file runs the simulation study and gives the type I error or power as shown in Figure 2.  
 Figure 12 in Appendix can be obtained by changing the censoring rates, and Figures 13 and 14 by changing the hazard ratio.  
 
-Simulations_parameter_misspe.R
-
-This file runs the simulations to study the impact of the variability on the exponential parameter of the historical control group (section 6.1) and returns the relative difference in terms of type I error and power as  in Figure 4, and the crude performance (type I error and power) as in Figure 23.  
-Figure 24 in Appendix can be obtained by changing the censoring rates.  
-
 Simulations_distribution_misspe.R
 
 This file runs the simulations to study the impact of the model misspecification of the survival distribution of the external control curve (section 6.3) and returns the relative difference in terms of type I error and power as in Figure 6 and the crude performance (type I and power) as in Figure 29.  
 Figure 30 in Appendix can be obtained by changing the censoring rates.  
+
+Simulations_parameter_misspe.R
+
+This file runs the simulations to study the impact of the variability on the exponential parameter of the historical control group (section 6.1) and returns the relative difference in terms of type I error and power as  in Figure 4, and the crude performance (type I error and power) as in Figure 23.  
+Figure 24 in Appendix can be obtained by changing the censoring rates.  
 
 Simulations_sampling.R
 
