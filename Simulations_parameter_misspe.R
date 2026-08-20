@@ -5926,8 +5926,7 @@ Diff_CH
 
 ####Figure 4####
 fig4 <- Diff_Eff + Diff_PH + Diff_EE + Diff_ME + Diff_DE + Diff_CH + plot_layout(guides = 'collect', ncol = 3) & theme(legend.position='bottom')
-
-
+fig4
 
 
 
