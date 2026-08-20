@@ -395,21 +395,21 @@ for(i in 1:nit){
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
   data20 <- ten(S20)
-  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)[2]
-  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi1)[2]
-  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi1)[2]
-  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)[2]
+  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)[2]
-  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi3)[2]
-  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi3)[2]
-  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)[2]
+  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a20_init <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a202_init <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -422,21 +422,21 @@ for(i in 1:nit){
   
   
   data30 <- ten(S30)
-  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)[2]
-  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi1)[2]
-  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi1)[2]
-  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)[2]
+  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)[2]
-  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi3)[2]
-  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi3)[2]
-  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)[2]
+  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a30_init <- OSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a302_init <- mOSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -449,21 +449,21 @@ for(i in 1:nit){
   
   
   data50 <- ten(S50)
-  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)[2]
-  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi1)[2]
-  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi1)[2]
-  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)[2]
+  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)[2]
-  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi3)[2]
-  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi3)[2]
-  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)[2]
+  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a50_init <- OSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a502_init <- mOSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -476,21 +476,21 @@ for(i in 1:nit){
   
   
   data60 <- ten(S60)
-  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)[2]
-  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi1)[2]
-  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi1)[2]
-  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)[2]
+  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)[2]
-  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi3)[2]
-  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi3)[2]
-  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)[2]
+  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a60_init <- OSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a602_init <- mOSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -503,21 +503,21 @@ for(i in 1:nit){
   
   
   data80 <- ten(S80)
-  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)[2]
-  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi1)[2]
-  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi1)[2]
-  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)[2]
+  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)[2]
-  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi3)[2]
-  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi3)[2]
-  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)[2]
+  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a80_init <- OSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a802_init <- mOSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -530,21 +530,21 @@ for(i in 1:nit){
   
   
   data100 <- ten(S100)
-  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)[2]
-  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi1)[2]
-  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi1)[2]
-  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)[2]
+  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)[2]
-  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi3)[2]
-  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi3)[2]
-  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)[2]
+  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a100_init <- OSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a1002_init  <- mOSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -557,21 +557,21 @@ for(i in 1:nit){
   
   
   data150 <- ten(S150)
-  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)[2]
-  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi1)[2]
-  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi1)[2]
-  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)[2]
+  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)[2]
-  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi3)[2]
-  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi3)[2]
-  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)[2]
+  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a150_init <- OSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a1502_init <- mOSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -584,21 +584,21 @@ for(i in 1:nit){
   
   
   data200 <- ten(S200)
-  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)[2]
-  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi1)[2]
-  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi1)[2]
-  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)[2]
+  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)[2]
-  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi3)[2]
-  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi3)[2]
-  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)[2]
+  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
 
   a200_init <- OSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
   a2002_init <- mOSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
@@ -1263,24 +1263,62 @@ d1_1$Test <- factor(d1_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
+Neff_1 <- ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 1',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  #geom_hline(yintercept = 0.05, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+       title = 'Scenario 1: null effect',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0.05, size = 0.2)+
+  ylim(0, 0.1)+
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Neff_1
 
+d2_1 <- data.frame(Sample.size = n, Error = c(diff1_osl, diff1_mosl, diff1_ee, diff1_me, diff1_de, diff1_rc, diff1_hoch, diff1_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_1$Test <- as.factor(d2_1$Test)
+d2_1$Test <- factor(d2_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
+
+Diff_Neff_1 <- ggplot(d2_1, aes(x = Sample.size, y = Error, group = Test))+
+  geom_line(aes(color = Test), size = 1)+
+  geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_1$Sample.size[1:8], name = 'Sample size')+
+  scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
+  scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 1: null effect',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_Neff_1
 
 
 d1_3 <- data.frame(Sample.size = n, Error = c(osl_3, mosl_3, ee_3, me_3, de_3, rc_3, max1_hochberg_3, max1_pmult_3),
@@ -1292,25 +1330,56 @@ d1_3$Test <- factor(d1_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
+Neff_3 <- ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 0.6',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  #geom_hline(yintercept = 0.05, size = 0.2)+
-  ylim(0,1)+
+       title = 'Scenario 1: null effect',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0.05, size = 0.2)+
+  ylim(0,0.1)+
   theme(legend.position = 'right',
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12),
         plot.title = element_text(hjust = 0.5, size = 20),
         plot.subtitle = element_text(hjust = 0.5, size = 15))
+Neff_3
 
+d2_3 <- data.frame(Sample.size = n, Error = c(diff3_osl, diff3_mosl, diff3_ee, diff3_me, diff3_de, diff3_rc, diff3_hoch, diff3_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_3$Test <- as.factor(d2_3$Test)
+d2_3$Test <- factor(d2_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
+Diff_Neff_3 <- ggplot(d2_3, aes(x = Sample.size, y = Error, group = Test))+
+  geom_line(aes(color = Test), size = 1)+
+  geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_3$Sample.size[1:8], name = 'Sample size')+
+  scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
+  scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 1: null effect',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_Neff_3
 
 
 ##########################
@@ -1323,7 +1392,6 @@ scale0 <- m0/(-log(0.5))^(1/shape0)
 distr0 <- 'Weibull'
 #Parameters for the experimental group#
 shape1 <- 1
-#m1 <- 2   #Null effect HR = 1
 m1 <- 4   #HR = 0.5
 #m1 <- 2.84   #HR = 0.7
 #m1 <- 2.5   #HR = 0.8
@@ -1348,7 +1416,6 @@ set.seed(5)
 nit <- 10000
 
 #Censoring rate lambda_cens (0% 5% 15% 25% 35%)#
-#HR = 1 (0 0.02 0.07 0.12 0.2)
 #HR = 0.5 (0 0.01 0.03 0.06 0.1)
 #HR = 0.7 (0 0.015 0.04 0.08 0.13)
 #HR = 0.8 (0 0.015 0.05 0.099 0.15)
@@ -1366,9 +1433,7 @@ tf <- 4   #follow-up time - 4 years
 nit <- 10000
 
 pi1 <- 1
-pi2 <- 0.8
 pi3 <- 0.6
-pi4 <- 0.5
 
 err_oslrt20_1 <- rep(0, nit)
 err_moslrt20_1 <- rep(0, nit)
@@ -1379,15 +1444,6 @@ err_me20_1 <- rep(0, nit)
 err_max1_hoch20_1 <- rep(0, nit)
 err_max1_exact20_1 <- rep(0, nit)
 
-err_oslrt20_2 <- rep(0, nit)
-err_moslrt20_2 <- rep(0, nit)
-err_rc20_2 <- rep(0, nit)
-err_de20_2 <- rep(0, nit)
-err_ee20_2 <- rep(0, nit)
-err_me20_2 <- rep(0, nit)
-err_max1_hoch20_2 <- rep(0, nit)
-err_max1_exact20_2 <- rep(0, nit)
-
 err_oslrt20_3 <- rep(0, nit)
 err_moslrt20_3 <- rep(0, nit)
 err_rc20_3 <- rep(0, nit)
@@ -1396,18 +1452,6 @@ err_ee20_3 <- rep(0, nit)
 err_me20_3 <- rep(0, nit)
 err_max1_hoch20_3 <- rep(0, nit)
 err_max1_exact20_3 <- rep(0, nit)
-
-err_oslrt20_4 <- rep(0, nit)
-err_moslrt20_4 <- rep(0, nit)
-err_rc20_4 <- rep(0, nit)
-err_de20_4 <- rep(0, nit)
-err_ee20_4 <- rep(0, nit)
-err_me20_4 <- rep(0, nit)
-err_max1_hoch20_4 <- rep(0, nit)
-err_max1_exact20_4 <- rep(0, nit)
-
-tx_cens20 <- rep(0, nit)
-tx_censadm20 <- rep(0, nit)
 
 
 err_oslrt30_1 <- rep(0, nit)
@@ -1419,15 +1463,6 @@ err_me30_1 <- rep(0, nit)
 err_max1_hoch30_1 <- rep(0, nit)
 err_max1_exact30_1 <- rep(0, nit)
 
-err_oslrt30_2 <- rep(0, nit)
-err_moslrt30_2 <- rep(0, nit)
-err_rc30_2 <- rep(0, nit)
-err_de30_2 <- rep(0, nit)
-err_ee30_2 <- rep(0, nit)
-err_me30_2 <- rep(0, nit)
-err_max1_hoch30_2 <- rep(0, nit)
-err_max1_exact30_2 <- rep(0, nit)
-
 err_oslrt30_3 <- rep(0, nit)
 err_moslrt30_3 <- rep(0, nit)
 err_rc30_3 <- rep(0, nit)
@@ -1436,18 +1471,6 @@ err_ee30_3 <- rep(0, nit)
 err_me30_3 <- rep(0, nit)
 err_max1_hoch30_3 <- rep(0, nit)
 err_max1_exact30_3 <- rep(0, nit)
-
-err_oslrt30_4 <- rep(0, nit)
-err_moslrt30_4 <- rep(0, nit)
-err_rc30_4 <- rep(0, nit)
-err_de30_4 <- rep(0, nit)
-err_ee30_4 <- rep(0, nit)
-err_me30_4 <- rep(0, nit)
-err_max1_hoch30_4 <- rep(0, nit)
-err_max1_exact30_4 <- rep(0, nit)
-
-tx_cens30 <- rep(0, nit)
-tx_censadm30 <- rep(0, nit)
 
 
 err_oslrt50_1 <- rep(0, nit)
@@ -1459,15 +1482,6 @@ err_me50_1 <- rep(0, nit)
 err_max1_hoch50_1 <- rep(0, nit)
 err_max1_exact50_1 <- rep(0, nit)
 
-err_oslrt50_2 <- rep(0, nit)
-err_moslrt50_2 <- rep(0, nit)
-err_rc50_2 <- rep(0, nit)
-err_de50_2 <- rep(0, nit)
-err_ee50_2 <- rep(0, nit)
-err_me50_2 <- rep(0, nit)
-err_max1_hoch50_2 <- rep(0, nit)
-err_max1_exact50_2 <- rep(0, nit)
-
 err_oslrt50_3 <- rep(0, nit)
 err_moslrt50_3 <- rep(0, nit)
 err_rc50_3 <- rep(0, nit)
@@ -1476,18 +1490,6 @@ err_ee50_3 <- rep(0, nit)
 err_me50_3 <- rep(0, nit)
 err_max1_hoch50_3 <- rep(0, nit)
 err_max1_exact50_3 <- rep(0, nit)
-
-err_oslrt50_4 <- rep(0, nit)
-err_moslrt50_4 <- rep(0, nit)
-err_rc50_4 <- rep(0, nit)
-err_de50_4 <- rep(0, nit)
-err_ee50_4 <- rep(0, nit)
-err_me50_4 <- rep(0, nit)
-err_max1_hoch50_4 <- rep(0, nit)
-err_max1_exact50_4 <- rep(0, nit)
-
-tx_cens50 <- rep(0, nit)
-tx_censadm50 <- rep(0, nit)
 
 
 err_oslrt60_1 <- rep(0, nit)
@@ -1499,15 +1501,6 @@ err_me60_1 <- rep(0, nit)
 err_max1_hoch60_1 <- rep(0, nit)
 err_max1_exact60_1 <- rep(0, nit)
 
-err_oslrt60_2 <- rep(0, nit)
-err_moslrt60_2 <- rep(0, nit)
-err_rc60_2 <- rep(0, nit)
-err_de60_2 <- rep(0, nit)
-err_ee60_2 <- rep(0, nit)
-err_me60_2 <- rep(0, nit)
-err_max1_hoch60_2 <- rep(0, nit)
-err_max1_exact60_2 <- rep(0, nit)
-
 err_oslrt60_3 <- rep(0, nit)
 err_moslrt60_3 <- rep(0, nit)
 err_rc60_3 <- rep(0, nit)
@@ -1516,18 +1509,6 @@ err_ee60_3 <- rep(0, nit)
 err_me60_3 <- rep(0, nit)
 err_max1_hoch60_3 <- rep(0, nit)
 err_max1_exact60_3 <- rep(0, nit)
-
-err_oslrt60_4 <- rep(0, nit)
-err_moslrt60_4 <- rep(0, nit)
-err_rc60_4 <- rep(0, nit)
-err_de60_4 <- rep(0, nit)
-err_ee60_4 <- rep(0, nit)
-err_me60_4 <- rep(0, nit)
-err_max1_hoch60_4 <- rep(0, nit)
-err_max1_exact60_4 <- rep(0, nit)
-
-tx_cens60 <- rep(0, nit)
-tx_censadm60 <- rep(0, nit)
 
 
 err_oslrt80_1 <- rep(0, nit)
@@ -1539,15 +1520,6 @@ err_me80_1 <- rep(0, nit)
 err_max1_hoch80_1 <- rep(0, nit)
 err_max1_exact80_1 <- rep(0, nit)
 
-err_oslrt80_2 <- rep(0, nit)
-err_moslrt80_2 <- rep(0, nit)
-err_rc80_2 <- rep(0, nit)
-err_de80_2 <- rep(0, nit)
-err_ee80_2 <- rep(0, nit)
-err_me80_2 <- rep(0, nit)
-err_max1_hoch80_2 <- rep(0, nit)
-err_max1_exact80_2 <- rep(0, nit)
-
 err_oslrt80_3 <- rep(0, nit)
 err_moslrt80_3 <- rep(0, nit)
 err_rc80_3 <- rep(0, nit)
@@ -1556,18 +1528,6 @@ err_ee80_3 <- rep(0, nit)
 err_me80_3 <- rep(0, nit)
 err_max1_hoch80_3 <- rep(0, nit)
 err_max1_exact80_3 <- rep(0, nit)
-
-err_oslrt80_4 <- rep(0, nit)
-err_moslrt80_4 <- rep(0, nit)
-err_rc80_4 <- rep(0, nit)
-err_de80_4 <- rep(0, nit)
-err_ee80_4 <- rep(0, nit)
-err_me80_4 <- rep(0, nit)
-err_max1_hoch80_4 <- rep(0, nit)
-err_max1_exact80_4 <- rep(0, nit)
-
-tx_cens80 <- rep(0, nit)
-tx_censadm80 <- rep(0, nit)
 
 
 err_oslrt100_1 <- rep(0, nit)
@@ -1579,15 +1539,6 @@ err_me100_1 <- rep(0, nit)
 err_max1_hoch100_1 <- rep(0, nit)
 err_max1_exact100_1 <- rep(0, nit)
 
-err_oslrt100_2 <- rep(0, nit)
-err_moslrt100_2 <- rep(0, nit)
-err_rc100_2 <- rep(0, nit)
-err_de100_2 <- rep(0, nit)
-err_ee100_2 <- rep(0, nit)
-err_me100_2 <- rep(0, nit)
-err_max1_hoch100_2 <- rep(0, nit)
-err_max1_exact100_2 <- rep(0, nit)
-
 err_oslrt100_3 <- rep(0, nit)
 err_moslrt100_3 <- rep(0, nit)
 err_rc100_3 <- rep(0, nit)
@@ -1596,18 +1547,6 @@ err_ee100_3 <- rep(0, nit)
 err_me100_3 <- rep(0, nit)
 err_max1_hoch100_3 <- rep(0, nit)
 err_max1_exact100_3 <- rep(0, nit)
-
-err_oslrt100_4 <- rep(0, nit)
-err_moslrt100_4 <- rep(0, nit)
-err_rc100_4 <- rep(0, nit)
-err_de100_4 <- rep(0, nit)
-err_ee100_4 <- rep(0, nit)
-err_me100_4 <- rep(0, nit)
-err_max1_hoch100_4 <- rep(0, nit)
-err_max1_exact100_4 <- rep(0, nit)
-
-tx_cens100 <- rep(0, nit)
-tx_censadm100 <- rep(0, nit)
 
 
 err_oslrt150_1 <- rep(0, nit)
@@ -1619,15 +1558,6 @@ err_me150_1 <- rep(0, nit)
 err_max1_hoch150_1 <- rep(0, nit)
 err_max1_exact150_1 <- rep(0, nit)
 
-err_oslrt150_2 <- rep(0, nit)
-err_moslrt150_2 <- rep(0, nit)
-err_rc150_2 <- rep(0, nit)
-err_de150_2 <- rep(0, nit)
-err_ee150_2 <- rep(0, nit)
-err_me150_2 <- rep(0, nit)
-err_max1_hoch150_2 <- rep(0, nit)
-err_max1_exact150_2 <- rep(0, nit)
-
 err_oslrt150_3 <- rep(0, nit)
 err_moslrt150_3 <- rep(0, nit)
 err_rc150_3 <- rep(0, nit)
@@ -1636,18 +1566,6 @@ err_ee150_3 <- rep(0, nit)
 err_me150_3 <- rep(0, nit)
 err_max1_hoch150_3 <- rep(0, nit)
 err_max1_exact150_3 <- rep(0, nit)
-
-err_oslrt150_4 <- rep(0, nit)
-err_moslrt150_4 <- rep(0, nit)
-err_rc150_4 <- rep(0, nit)
-err_de150_4 <- rep(0, nit)
-err_ee150_4 <- rep(0, nit)
-err_me150_4 <- rep(0, nit)
-err_max1_hoch150_4 <- rep(0, nit)
-err_max1_exact150_4 <- rep(0, nit)
-
-tx_cens150 <- rep(0, nit)
-tx_censadm150 <- rep(0, nit)
 
 
 err_oslrt200_1 <- rep(0, nit)
@@ -1659,15 +1577,6 @@ err_me200_1 <- rep(0, nit)
 err_max1_hoch200_1 <- rep(0, nit)
 err_max1_exact200_1 <- rep(0, nit)
 
-err_oslrt200_2 <- rep(0, nit)
-err_moslrt200_2 <- rep(0, nit)
-err_rc200_2 <- rep(0, nit)
-err_de200_2 <- rep(0, nit)
-err_ee200_2 <- rep(0, nit)
-err_me200_2 <- rep(0, nit)
-err_max1_hoch200_2 <- rep(0, nit)
-err_max1_exact200_2 <- rep(0, nit)
-
 err_oslrt200_3 <- rep(0, nit)
 err_moslrt200_3 <- rep(0, nit)
 err_rc200_3 <- rep(0, nit)
@@ -1677,17 +1586,77 @@ err_me200_3 <- rep(0, nit)
 err_max1_hoch200_3 <- rep(0, nit)
 err_max1_exact200_3 <- rep(0, nit)
 
-err_oslrt200_4 <- rep(0, nit)
-err_moslrt200_4 <- rep(0, nit)
-err_rc200_4 <- rep(0, nit)
-err_de200_4 <- rep(0, nit)
-err_ee200_4 <- rep(0, nit)
-err_me200_4 <- rep(0, nit)
-err_max1_hoch200_4 <- rep(0, nit)
-err_max1_exact200_4 <- rep(0, nit)
+err_init_oslrt20 <- rep(0, nit)
+err_init_moslrt20 <- rep(0, nit)
+err_init_rc20 <- rep(0, nit)
+err_init_de20 <- rep(0, nit)
+err_init_ee20 <- rep(0, nit)
+err_init_me20 <- rep(0, nit)
+err_init_max_hoch_20 <- rep(0, nit)
+err_init_max_exact_20 <- rep(0, nit)
 
-tx_cens200 <- rep(0, nit)
-tx_censadm200 <- rep(0, nit)
+err_init_oslrt30 <- rep(0, nit)
+err_init_moslrt30 <- rep(0, nit)
+err_init_rc30 <- rep(0, nit)
+err_init_de30 <- rep(0, nit)
+err_init_ee30 <- rep(0, nit)
+err_init_me30 <- rep(0, nit)
+err_init_max_hoch_30 <- rep(0, nit)
+err_init_max_exact_30 <- rep(0, nit)
+
+err_init_oslrt50 <- rep(0, nit)
+err_init_moslrt50 <- rep(0, nit)
+err_init_rc50 <- rep(0, nit)
+err_init_de50 <- rep(0, nit)
+err_init_ee50 <- rep(0, nit)
+err_init_me50 <- rep(0, nit)
+err_init_max_hoch_50 <- rep(0, nit)
+err_init_max_exact_50 <- rep(0, nit)
+
+err_init_oslrt60 <- rep(0, nit)
+err_init_moslrt60 <- rep(0, nit)
+err_init_rc60 <- rep(0, nit)
+err_init_de60 <- rep(0, nit)
+err_init_ee60 <- rep(0, nit)
+err_init_me60 <- rep(0, nit)
+err_init_max_hoch_60 <- rep(0, nit)
+err_init_max_exact_60 <- rep(0, nit)
+
+err_init_oslrt80 <- rep(0, nit)
+err_init_moslrt80 <- rep(0, nit)
+err_init_rc80 <- rep(0, nit)
+err_init_de80 <- rep(0, nit)
+err_init_ee80 <- rep(0, nit)
+err_init_me80 <- rep(0, nit)
+err_init_max_hoch_80 <- rep(0, nit)
+err_init_max_exact_80 <- rep(0, nit)
+
+err_init_oslrt100 <- rep(0, nit)
+err_init_moslrt100 <- rep(0, nit)
+err_init_rc100 <- rep(0, nit)
+err_init_de100 <- rep(0, nit)
+err_init_ee100 <- rep(0, nit)
+err_init_me100 <- rep(0, nit)
+err_init_max_hoch_100 <- rep(0, nit)
+err_init_max_exact_100 <- rep(0, nit)
+
+err_init_oslrt150 <- rep(0, nit)
+err_init_moslrt150 <- rep(0, nit)
+err_init_rc150 <- rep(0, nit)
+err_init_de150 <- rep(0, nit)
+err_init_ee150 <- rep(0, nit)
+err_init_me150 <- rep(0, nit)
+err_init_max_hoch_150 <- rep(0, nit)
+err_init_max_exact_150 <- rep(0, nit)
+
+err_init_oslrt200 <- rep(0, nit)
+err_init_moslrt200 <- rep(0, nit)
+err_init_rc200 <- rep(0, nit)
+err_init_de200 <- rep(0, nit)
+err_init_ee200 <- rep(0, nit)
+err_init_me200 <- rep(0, nit)
+err_init_max_hoch_200 <- rep(0, nit)
+err_init_max_exact_200 <- rep(0, nit)
 
 for(i in 1:nit){
   time20 <- rweibull(20, shape1, scale1)
@@ -1812,296 +1781,220 @@ for(i in 1:nit){
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
   data20 <- ten(S20)
-  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)[2]
-  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi1)[2]
-  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi1)[2]
-  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)[2]
+  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a20_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  a202_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)[2]
-  b20_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  c20_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi2)[2]
-  d20_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi2)[2]
-  e20_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f20_2 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)[2]
-  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi3)[2]
-  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi3)[2]
-  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a20_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  a202_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)[2]
-  b20_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  c20_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi4)[2]
-  d20_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi4)[2]
-  e20_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f20_4 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)[2]
+  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a20_init <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a202_init <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b20_init <- Score_RC(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c20_init <- Score_DE(data = data20, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d20_init <- Score_EE(data = data20, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e20_init <- Score_ME(data = data20, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g20_hoch_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g20_exact_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data30 <- ten(S30)
-  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)[2]
-  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi1)[2]
-  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi1)[2]
-  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)[2]
+  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a30_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  a302_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)[2]
-  b30_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  c30_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi2)[2]
-  d30_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi2)[2]
-  e30_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f30_2 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)[2]
-  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi3)[2]
-  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi3)[2]
-  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a30_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  a302_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)[2]
-  b30_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  c30_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi4)[2]
-  d30_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi4)[2]
-  e30_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f30_4 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)[2]
+  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a30_init <- OSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a302_init <- mOSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b30_init <- Score_RC(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c30_init <- Score_DE(data = data30, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d30_init <- Score_EE(data = data30, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e30_init <- Score_ME(data = data30, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g30_hoch_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g30_exact_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data50 <- ten(S50)
-  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)[2]
-  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi1)[2]
-  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi1)[2]
-  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)[2]
+  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a50_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  a502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)[2]
-  b50_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  c50_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi2)[2]
-  d50_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi2)[2]
-  e50_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f50_2 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)[2]
-  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi3)[2]
-  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi3)[2]
-  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a50_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  a502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)[2]
-  b50_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  c50_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi4)[2]
-  d50_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi4)[2]
-  e50_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f50_4 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)[2]
+  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a50_init <- OSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a502_init <- mOSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b50_init <- Score_RC(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c50_init <- Score_DE(data = data50, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d50_init <- Score_EE(data = data50, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e50_init <- Score_ME(data = data50, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g50_hoch_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g50_exact_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data60 <- ten(S60)
-  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)[2]
-  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi1)[2]
-  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi1)[2]
-  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)[2]
+  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a60_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  a602_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)[2]
-  b60_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  c60_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi2)[2]
-  d60_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi2)[2]
-  e60_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f60_2 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)[2]
-  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi3)[2]
-  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi3)[2]
-  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a60_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  a602_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)[2]
-  b60_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  c60_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi4)[2]
-  d60_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi4)[2]
-  e60_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f60_4 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)[2]
+  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a60_init <- OSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a602_init <- mOSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b60_init <- Score_RC(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c60_init <- Score_DE(data = data60, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d60_init <- Score_EE(data = data60, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e60_init <- Score_ME(data = data60, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g60_hoch_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g60_exact_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data80 <- ten(S80)
-  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)[2]
-  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi1)[2]
-  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi1)[2]
-  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)[2]
+  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a80_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  a802_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)[2]
-  b80_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  c80_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi2)[2]
-  d80_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi2)[2]
-  e80_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f80_2 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)[2]
-  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi3)[2]
-  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi3)[2]
-  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a80_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  a802_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)[2]
-  b80_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  c80_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi4)[2]
-  d80_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi4)[2]
-  e80_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f80_4 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)[2]
+  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a80_init <- OSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a802_init <- mOSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b80_init <- Score_RC(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c80_init <- Score_DE(data = data80, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d80_init <- Score_EE(data = data80, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e80_init <- Score_ME(data = data80, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g80_hoch_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g80_exact_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data100 <- ten(S100)
-  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)[2]
-  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi1)[2]
-  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi1)[2]
-  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)[2]
+  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a100_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  a1002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)[2]
-  b100_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  c100_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi2)[2]
-  d100_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi2)[2]
-  e100_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f100_2 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)[2]
-  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi3)[2]
-  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi3)[2]
-  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a100_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  a1002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)[2]
-  b100_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  c100_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi4)[2]
-  d100_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi4)[2]
-  e100_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f100_4 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)[2]
+  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a100_init <- OSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1002_init  <- mOSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b100_init  <- Score_RC(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c100_init  <- Score_DE(data = data100, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d100_init  <- Score_EE(data = data100, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e100_init  <- Score_ME(data = data100, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g100_hoch_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g100_exact_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data150 <- ten(S150)
-  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)[2]
-  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi1)[2]
-  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi1)[2]
-  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)[2]
+  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a150_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  a1502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)[2]
-  b150_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  c150_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi2)[2]
-  d150_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi2)[2]
-  e150_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f150_2 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)[2]
-  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi3)[2]
-  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi3)[2]
-  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a150_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  a1502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)[2]
-  b150_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  c150_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi4)[2]
-  d150_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi4)[2]
-  e150_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f150_4 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)[2]
+  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a150_init <- OSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1502_init <- mOSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b150_init <- Score_RC(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c150_init <- Score_DE(data = data150, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d150_init <- Score_EE(data = data150, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e150_init <- Score_ME(data = data150, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g150_hoch_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g150_exact_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data200 <- ten(S200)
-  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)[2]
-  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi1)[2]
-  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi1)[2]
-  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)[2]
+  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a200_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  a2002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)[2]
-  b200_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  c200_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi2)[2]
-  d200_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi2)[2]
-  e200_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f200_2 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
+  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)[2]
+  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a200_init <- OSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a2002_init <- mOSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b200_init <- Score_RC(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c200_init <- Score_DE(data = data200, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d200_init <- Score_EE(data = data200, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e200_init <- Score_ME(data = data200, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g200_hoch_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g200_exact_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
-  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)[2]
-  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi3)[2]
-  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi3)[2]
-  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a200_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  a2002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)[2]
-  b200_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  c200_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi4)[2]
-  d200_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi4)[2]
-  e200_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f200_4 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
-  
-  
-  #censoring rate with adm censoring
-  tx_censadm20[i] <- 1-sum(delta20)/20
-  tx_censadm30[i] <- 1-sum(delta30)/30
-  tx_censadm50[i] <- 1-sum(delta50)/50
-  tx_censadm60[i] <- 1-sum(delta60)/60
-  tx_censadm80[i] <- 1-sum(delta80)/80
-  tx_censadm100[i] <- 1-sum(delta100)/100
-  tx_censadm150[i] <- 1-sum(delta150)/150
-  tx_censadm200[i] <- 1-sum(delta200)/200
-  
-  #censoring rate without adm censoring
-  tx_cens20[i] <- 1-sum(del20)/20
-  tx_cens30[i] <- 1-sum(del30)/30
-  tx_cens50[i] <- 1-sum(del50)/50
-  tx_cens60[i] <- 1-sum(del60)/60
-  tx_cens80[i] <- 1-sum(del80)/80
-  tx_cens100[i] <- 1-sum(del100)/100
-  tx_cens150[i] <- 1-sum(del150)/150
-  tx_cens200[i] <- 1-sum(del200)/200
   
   err_oslrt20_1[i] <- ifelse((a20_1<0.05), 1, 0)
   err_moslrt20_1[i] <- ifelse((a202_1<0.05), 1, 0)
@@ -2112,15 +2005,6 @@ for(i in 1:nit){
   err_max1_hoch20_1[i] <- ifelse((f20_1[2]<0.05), 1, 0)
   err_max1_exact20_1[i] <- ifelse((f20_1[3]<0.05), 1, 0)
   
-  err_oslrt20_2[i] <- ifelse((a20_2<0.05), 1, 0)
-  err_moslrt20_2[i] <- ifelse((a202_2<0.05), 1, 0)
-  err_rc20_2[i] <- ifelse((b20_2<0.05), 1, 0)
-  err_de20_2[i] <- ifelse((c20_2<0.05), 1, 0)
-  err_ee20_2[i] <- ifelse((d20_2<0.05), 1, 0)
-  err_me20_2[i] <- ifelse((e20_2<0.05), 1, 0)
-  err_max1_hoch20_2[i] <- ifelse((f20_2[2]<0.05), 1, 0)
-  err_max1_exact20_2[i] <- ifelse((f20_2[3]<0.05), 1, 0)
-  
   err_oslrt20_3[i] <- ifelse((a20_3<0.05), 1, 0)
   err_moslrt20_3[i] <- ifelse((a202_3<0.05), 1, 0)
   err_rc20_3[i] <- ifelse((b20_3<0.05), 1, 0)
@@ -2129,15 +2013,6 @@ for(i in 1:nit){
   err_me20_3[i] <- ifelse((e20_3<0.05), 1, 0)
   err_max1_hoch20_3[i] <- ifelse((f20_3[2]<0.05), 1, 0)
   err_max1_exact20_3[i] <- ifelse((f20_3[3]<0.05), 1, 0)
-  
-  err_oslrt20_4[i] <- ifelse((a20_4<0.05), 1, 0)
-  err_moslrt20_4[i] <- ifelse((a202_4<0.05), 1, 0)
-  err_rc20_4[i] <- ifelse((b20_4<0.05), 1, 0)
-  err_de20_4[i] <- ifelse((c20_4<0.05), 1, 0)
-  err_ee20_4[i] <- ifelse((d20_4<0.05), 1, 0)
-  err_me20_4[i] <- ifelse((e20_4<0.05), 1, 0)
-  err_max1_hoch20_4[i] <- ifelse((f20_4[2]<0.05), 1, 0)
-  err_max1_exact20_4[i] <- ifelse((f20_4[3]<0.05), 1, 0)
   
   
   err_oslrt30_1[i] <- ifelse((a30_1<0.05), 1, 0)
@@ -2149,15 +2024,6 @@ for(i in 1:nit){
   err_max1_hoch30_1[i] <- ifelse((f30_1[2]<0.05), 1, 0)
   err_max1_exact30_1[i] <- ifelse((f30_1[3]<0.05), 1, 0)
   
-  err_oslrt30_2[i] <- ifelse((a30_2<0.05), 1, 0)
-  err_moslrt30_2[i] <- ifelse((a302_2<0.05), 1, 0)
-  err_rc30_2[i] <- ifelse((b30_2<0.05), 1, 0)
-  err_de30_2[i] <- ifelse((c30_2<0.05), 1, 0)
-  err_ee30_2[i] <- ifelse((d30_2<0.05), 1, 0)
-  err_me30_2[i] <- ifelse((e30_2<0.05), 1, 0)
-  err_max1_hoch30_2[i] <- ifelse((f30_2[2]<0.05), 1, 0)
-  err_max1_exact30_2[i] <- ifelse((f30_2[3]<0.05), 1, 0)
-  
   err_oslrt30_3[i] <- ifelse((a30_3<0.05), 1, 0)
   err_moslrt30_3[i] <- ifelse((a302_3<0.05), 1, 0)
   err_rc30_3[i] <- ifelse((b30_3<0.05), 1, 0)
@@ -2166,15 +2032,6 @@ for(i in 1:nit){
   err_me30_3[i] <- ifelse((e30_3<0.05), 1, 0)
   err_max1_hoch30_3[i] <- ifelse((f30_3[2]<0.05), 1, 0)
   err_max1_exact30_3[i] <- ifelse((f30_3[3]<0.05), 1, 0)
-  
-  err_oslrt30_4[i] <- ifelse((a30_4<0.05), 1, 0)
-  err_moslrt30_4[i] <- ifelse((a302_4<0.05), 1, 0)
-  err_rc30_4[i] <- ifelse((b30_4<0.05), 1, 0)
-  err_de30_4[i] <- ifelse((c30_4<0.05), 1, 0)
-  err_ee30_4[i] <- ifelse((d30_4<0.05), 1, 0)
-  err_me30_4[i] <- ifelse((e30_4<0.05), 1, 0)
-  err_max1_hoch30_4[i] <- ifelse((f30_4[2]<0.05), 1, 0)
-  err_max1_exact30_4[i] <- ifelse((f30_4[3]<0.05), 1, 0)
   
   
   err_oslrt50_1[i] <- ifelse((a50_1<0.05), 1, 0)
@@ -2186,15 +2043,6 @@ for(i in 1:nit){
   err_max1_hoch50_1[i] <- ifelse((f50_1[2]<0.05), 1, 0)
   err_max1_exact50_1[i] <- ifelse((f50_1[3]<0.05), 1, 0)
   
-  err_oslrt50_2[i] <- ifelse((a50_2<0.05), 1, 0)
-  err_moslrt50_2[i] <- ifelse((a502_2<0.05), 1, 0)
-  err_rc50_2[i] <- ifelse((b50_2<0.05), 1, 0)
-  err_de50_2[i] <- ifelse((c50_2<0.05), 1, 0)
-  err_ee50_2[i] <- ifelse((d50_2<0.05), 1, 0)
-  err_me50_2[i] <- ifelse((e50_2<0.05), 1, 0)
-  err_max1_hoch50_2[i] <- ifelse((f50_2[2]<0.05), 1, 0)
-  err_max1_exact50_2[i] <- ifelse((f50_2[3]<0.05), 1, 0)
-  
   err_oslrt50_3[i] <- ifelse((a50_3<0.05), 1, 0)
   err_moslrt50_3[i] <- ifelse((a502_3<0.05), 1, 0)
   err_rc50_3[i] <- ifelse((b50_3<0.05), 1, 0)
@@ -2203,15 +2051,6 @@ for(i in 1:nit){
   err_me50_3[i] <- ifelse((e50_3<0.05), 1, 0)
   err_max1_hoch50_3[i] <- ifelse((f50_3[2]<0.05), 1, 0)
   err_max1_exact50_3[i] <- ifelse((f50_3[3]<0.05), 1, 0)
-  
-  err_oslrt50_4[i] <- ifelse((a50_4<0.05), 1, 0)
-  err_moslrt50_4[i] <- ifelse((a502_4<0.05), 1, 0)
-  err_rc50_4[i] <- ifelse((b50_4<0.05), 1, 0)
-  err_de50_4[i] <- ifelse((c50_4<0.05), 1, 0)
-  err_ee50_4[i] <- ifelse((d50_4<0.05), 1, 0)
-  err_me50_4[i] <- ifelse((e50_4<0.05), 1, 0)
-  err_max1_hoch50_4[i] <- ifelse((f50_4[2]<0.05), 1, 0)
-  err_max1_exact50_4[i] <- ifelse((f50_4[3]<0.05), 1, 0)
   
   
   err_oslrt60_1[i] <- ifelse((a60_1<0.05), 1, 0)
@@ -2223,15 +2062,6 @@ for(i in 1:nit){
   err_max1_hoch60_1[i] <- ifelse((f60_1[2]<0.05), 1, 0)
   err_max1_exact60_1[i] <- ifelse((f60_1[3]<0.05), 1, 0)
   
-  err_oslrt60_2[i] <- ifelse((a60_2<0.05), 1, 0)
-  err_moslrt60_2[i] <- ifelse((a602_2<0.05), 1, 0)
-  err_rc60_2[i] <- ifelse((b60_2<0.05), 1, 0)
-  err_de60_2[i] <- ifelse((c60_2<0.05), 1, 0)
-  err_ee60_2[i] <- ifelse((d60_2<0.05), 1, 0)
-  err_me60_2[i] <- ifelse((e60_2<0.05), 1, 0)
-  err_max1_hoch60_2[i] <- ifelse((f60_2[2]<0.05), 1, 0)
-  err_max1_exact60_2[i] <- ifelse((f60_2[3]<0.05), 1, 0)
-  
   err_oslrt60_3[i] <- ifelse((a60_3<0.05), 1, 0)
   err_moslrt60_3[i] <- ifelse((a602_3<0.05), 1, 0)
   err_rc60_3[i] <- ifelse((b60_3<0.05), 1, 0)
@@ -2240,15 +2070,6 @@ for(i in 1:nit){
   err_me60_3[i] <- ifelse((e60_3<0.05), 1, 0)
   err_max1_hoch60_3[i] <- ifelse((f60_3[2]<0.05), 1, 0)
   err_max1_exact60_3[i] <- ifelse((f60_3[3]<0.05), 1, 0)
-  
-  err_oslrt60_4[i] <- ifelse((a60_4<0.05), 1, 0)
-  err_moslrt60_4[i] <- ifelse((a602_4<0.05), 1, 0)
-  err_rc60_4[i] <- ifelse((b60_4<0.05), 1, 0)
-  err_de60_4[i] <- ifelse((c60_4<0.05), 1, 0)
-  err_ee60_4[i] <- ifelse((d60_4<0.05), 1, 0)
-  err_me60_4[i] <- ifelse((e60_4<0.05), 1, 0)
-  err_max1_hoch60_4[i] <- ifelse((f60_4[2]<0.05), 1, 0)
-  err_max1_exact60_4[i] <- ifelse((f60_4[3]<0.05), 1, 0)
   
   
   err_oslrt80_1[i] <- ifelse((a80_1<0.05), 1, 0)
@@ -2260,15 +2081,6 @@ for(i in 1:nit){
   err_max1_hoch80_1[i] <- ifelse((f80_1[2]<0.05), 1, 0)
   err_max1_exact80_1[i] <- ifelse((f80_1[3]<0.05), 1, 0)
   
-  err_oslrt80_2[i] <- ifelse((a80_2<0.05), 1, 0)
-  err_moslrt80_2[i] <- ifelse((a802_2<0.05), 1, 0)
-  err_rc80_2[i] <- ifelse((b80_2<0.05), 1, 0)
-  err_de80_2[i] <- ifelse((c80_2<0.05), 1, 0)
-  err_ee80_2[i] <- ifelse((d80_2<0.05), 1, 0)
-  err_me80_2[i] <- ifelse((e80_2<0.05), 1, 0)
-  err_max1_hoch80_2[i] <- ifelse((f80_2[2]<0.05), 1, 0)
-  err_max1_exact80_2[i] <- ifelse((f80_2[3]<0.05), 1, 0)
-  
   err_oslrt80_3[i] <- ifelse((a80_3<0.05), 1, 0)
   err_moslrt80_3[i] <- ifelse((a802_3<0.05), 1, 0)
   err_rc80_3[i] <- ifelse((b80_3<0.05), 1, 0)
@@ -2277,15 +2089,6 @@ for(i in 1:nit){
   err_me80_3[i] <- ifelse((e80_3<0.05), 1, 0)
   err_max1_hoch80_3[i] <- ifelse((f80_3[2]<0.05), 1, 0)
   err_max1_exact80_3[i] <- ifelse((f80_3[3]<0.05), 1, 0)
-  
-  err_oslrt80_4[i] <- ifelse((a80_4<0.05), 1, 0)
-  err_moslrt80_4[i] <- ifelse((a802_4<0.05), 1, 0)
-  err_rc80_4[i] <- ifelse((b80_4<0.05), 1, 0)
-  err_de80_4[i] <- ifelse((c80_4<0.05), 1, 0)
-  err_ee80_4[i] <- ifelse((d80_4<0.05), 1, 0)
-  err_me80_4[i] <- ifelse((e80_4<0.05), 1, 0)
-  err_max1_hoch80_4[i] <- ifelse((f80_4[2]<0.05), 1, 0)
-  err_max1_exact80_4[i] <- ifelse((f80_4[3]<0.05), 1, 0)
   
   
   err_oslrt100_1[i] <- ifelse((a100_1<0.05), 1, 0)
@@ -2297,15 +2100,6 @@ for(i in 1:nit){
   err_max1_hoch100_1[i] <- ifelse((f100_1[2]<0.05), 1, 0)
   err_max1_exact100_1[i] <- ifelse((f100_1[3]<0.05), 1, 0)
   
-  err_oslrt100_2[i] <- ifelse((a100_2<0.05), 1, 0)
-  err_moslrt100_2[i] <- ifelse((a1002_2<0.05), 1, 0)
-  err_rc100_2[i] <- ifelse((b100_2<0.05), 1, 0)
-  err_de100_2[i] <- ifelse((c100_2<0.05), 1, 0)
-  err_ee100_2[i] <- ifelse((d100_2<0.05), 1, 0)
-  err_me100_2[i] <- ifelse((e100_2<0.05), 1, 0)
-  err_max1_hoch100_2[i] <- ifelse((f100_2[2]<0.05), 1, 0)
-  err_max1_exact100_2[i] <- ifelse((f100_2[3]<0.05), 1, 0)
-  
   err_oslrt100_3[i] <- ifelse((a100_3<0.05), 1, 0)
   err_moslrt100_3[i] <- ifelse((a1002_3<0.05), 1, 0)
   err_rc100_3[i] <- ifelse((b100_3<0.05), 1, 0)
@@ -2314,15 +2108,6 @@ for(i in 1:nit){
   err_me100_3[i] <- ifelse((e100_3<0.05), 1, 0)
   err_max1_hoch100_3[i] <- ifelse((f100_3[2]<0.05), 1, 0)
   err_max1_exact100_3[i] <- ifelse((f100_3[3]<0.05), 1, 0)
-  
-  err_oslrt100_4[i] <- ifelse((a100_4<0.05), 1, 0)
-  err_moslrt100_4[i] <- ifelse((a1002_4<0.05), 1, 0)
-  err_rc100_4[i] <- ifelse((b100_4<0.05), 1, 0)
-  err_de100_4[i] <- ifelse((c100_4<0.05), 1, 0)
-  err_ee100_4[i] <- ifelse((d100_4<0.05), 1, 0)
-  err_me100_4[i] <- ifelse((e100_4<0.05), 1, 0)
-  err_max1_hoch100_4[i] <- ifelse((f100_4[2]<0.05), 1, 0)
-  err_max1_exact100_4[i] <- ifelse((f100_4[3]<0.05), 1, 0)
   
   
   err_oslrt150_1[i] <- ifelse((a150_1<0.05), 1, 0)
@@ -2334,15 +2119,6 @@ for(i in 1:nit){
   err_max1_hoch150_1[i] <- ifelse((f150_1[2]<0.05), 1, 0)
   err_max1_exact150_1[i] <- ifelse((f150_1[3]<0.05), 1, 0)
   
-  err_oslrt150_2[i] <- ifelse((a150_2<0.05), 1, 0)
-  err_moslrt150_2[i] <- ifelse((a1502_2<0.05), 1, 0)
-  err_rc150_2[i] <- ifelse((b150_2<0.05), 1, 0)
-  err_de150_2[i] <- ifelse((c150_2<0.05), 1, 0)
-  err_ee150_2[i] <- ifelse((d150_2<0.05), 1, 0)
-  err_me150_2[i] <- ifelse((e150_2<0.05), 1, 0)
-  err_max1_hoch150_2[i] <- ifelse((f150_2[2]<0.05), 1, 0)
-  err_max1_exact150_2[i] <- ifelse((f150_2[3]<0.05), 1, 0)
-  
   err_oslrt150_3[i] <- ifelse((a150_3<0.05), 1, 0)
   err_moslrt150_3[i] <- ifelse((a1502_3<0.05), 1, 0)
   err_rc150_3[i] <- ifelse((b150_3<0.05), 1, 0)
@@ -2351,15 +2127,6 @@ for(i in 1:nit){
   err_me150_3[i] <- ifelse((e150_3<0.05), 1, 0)
   err_max1_hoch150_3[i] <- ifelse((f150_3[2]<0.05), 1, 0)
   err_max1_exact150_3[i] <- ifelse((f150_3[3]<0.05), 1, 0)
-  
-  err_oslrt150_4[i] <- ifelse((a150_4<0.05), 1, 0)
-  err_moslrt150_4[i] <- ifelse((a1502_4<0.05), 1, 0)
-  err_rc150_4[i] <- ifelse((b150_4<0.05), 1, 0)
-  err_de150_4[i] <- ifelse((c150_4<0.05), 1, 0)
-  err_ee150_4[i] <- ifelse((d150_4<0.05), 1, 0)
-  err_me150_4[i] <- ifelse((e150_4<0.05), 1, 0)
-  err_max1_hoch150_4[i] <- ifelse((f150_4[2]<0.05), 1, 0)
-  err_max1_exact150_4[i] <- ifelse((f150_4[3]<0.05), 1, 0)
   
   
   err_oslrt200_1[i] <- ifelse((a200_1<0.05), 1, 0)
@@ -2371,15 +2138,6 @@ for(i in 1:nit){
   err_max1_hoch200_1[i] <- ifelse((f200_1[2]<0.05), 1, 0)
   err_max1_exact200_1[i] <- ifelse((f200_1[3]<0.05), 1, 0)
   
-  err_oslrt200_2[i] <- ifelse((a200_2<0.05), 1, 0)
-  err_moslrt200_2[i] <- ifelse((a2002_2<0.05), 1, 0)
-  err_rc200_2[i] <- ifelse((b200_2<0.05), 1, 0)
-  err_de200_2[i] <- ifelse((c200_2<0.05), 1, 0)
-  err_ee200_2[i] <- ifelse((d200_2<0.05), 1, 0)
-  err_me200_2[i] <- ifelse((e200_2<0.05), 1, 0)
-  err_max1_hoch200_2[i] <- ifelse((f200_2[2]<0.05), 1, 0)
-  err_max1_exact200_2[i] <- ifelse((f200_2[3]<0.05), 1, 0)
-  
   err_oslrt200_3[i] <- ifelse((a200_3<0.05), 1, 0)
   err_moslrt200_3[i] <- ifelse((a2002_3<0.05), 1, 0)
   err_rc200_3[i] <- ifelse((b200_3<0.05), 1, 0)
@@ -2388,15 +2146,79 @@ for(i in 1:nit){
   err_me200_3[i] <- ifelse((e200_3<0.05), 1, 0)
   err_max1_hoch200_3[i] <- ifelse((f200_3[2]<0.05), 1, 0)
   err_max1_exact200_3[i] <- ifelse((f200_3[3]<0.05), 1, 0)
-  
-  err_oslrt200_4[i] <- ifelse((a200_4<0.05), 1, 0)
-  err_moslrt200_4[i] <- ifelse((a2002_4<0.05), 1, 0)
-  err_rc200_4[i] <- ifelse((b200_4<0.05), 1, 0)
-  err_de200_4[i] <- ifelse((c200_4<0.05), 1, 0)
-  err_ee200_4[i] <- ifelse((d200_4<0.05), 1, 0)
-  err_me200_4[i] <- ifelse((e200_4<0.05), 1, 0)
-  err_max1_hoch200_4[i] <- ifelse((f200_4[2]<0.05), 1, 0)
-  err_max1_exact200_4[i] <- ifelse((f200_4[3]<0.05), 1, 0)
+
+  err_init_oslrt20[i] <- ifelse((a20_init<0.05), 1, 0)
+  err_init_moslrt20[i] <- ifelse((a202_init<0.05), 1, 0)
+  err_init_rc20[i] <- ifelse((b20_init<0.05), 1, 0)
+  err_init_de20[i] <- ifelse((c20_init<0.05), 1, 0)
+  err_init_ee20[i] <- ifelse((d20_init<0.05), 1, 0)
+  err_init_me20[i] <- ifelse((e20_init<0.05), 1, 0)
+  err_init_max_hoch_20[i] <- ifelse(g20_hoch_init<0.05, 1, 0)
+  err_init_max_exact_20[i] <- ifelse(g20_exact_init<0.05, 1, 0)
+
+  err_init_oslrt30[i] <- ifelse((a30_init<0.05), 1, 0)
+  err_init_moslrt30[i] <- ifelse((a302_init<0.05), 1, 0)
+  err_init_rc30[i] <- ifelse((b30_init<0.05), 1, 0)
+  err_init_de30[i] <- ifelse((c30_init<0.05), 1, 0)
+  err_init_ee30[i] <- ifelse((d30_init<0.05), 1, 0)
+  err_init_me30[i] <- ifelse((e30_init<0.05), 1, 0)
+  err_init_max_hoch_30[i] <- ifelse(g30_hoch_init<0.05, 1, 0)
+  err_init_max_exact_30[i] <- ifelse(g30_exact_init<0.05, 1, 0)
+
+  err_init_oslrt50[i] <- ifelse((a50_init<0.05), 1, 0)
+  err_init_moslrt50[i] <- ifelse((a502_init<0.05), 1, 0)
+  err_init_rc50[i] <- ifelse((b50_init<0.05), 1, 0)
+  err_init_de50[i] <- ifelse((c50_init<0.05), 1, 0)
+  err_init_ee50[i] <- ifelse((d50_init<0.05), 1, 0)
+  err_init_me50[i] <- ifelse((e50_init<0.05), 1, 0)
+  err_init_max_hoch_50[i] <- ifelse(g50_hoch_init<0.05, 1, 0)
+  err_init_max_exact_50[i] <- ifelse(g50_exact_init<0.05, 1, 0)
+
+  err_init_oslrt60[i] <- ifelse((a60_init<0.05), 1, 0)
+  err_init_moslrt60[i] <- ifelse((a602_init<0.05), 1, 0)
+  err_init_rc60[i] <- ifelse((b60_init<0.05), 1, 0)
+  err_init_de60[i] <- ifelse((c60_init<0.05), 1, 0)
+  err_init_ee60[i] <- ifelse((d60_init<0.05), 1, 0)
+  err_init_me60[i] <- ifelse((e60_init<0.05), 1, 0)
+  err_init_max_hoch_60[i] <- ifelse(g60_hoch_init<0.05, 1, 0)
+  err_init_max_exact_60[i] <- ifelse(g60_exact_init<0.05, 1, 0)  
+
+  err_init_oslrt80[i] <- ifelse((a80_init<0.05), 1, 0)
+  err_init_moslrt80[i] <- ifelse((a802_init<0.05), 1, 0)
+  err_init_rc80[i] <- ifelse((b80_init<0.05), 1, 0)
+  err_init_de80[i] <- ifelse((c80_init<0.05), 1, 0)
+  err_init_ee80[i] <- ifelse((d80_init<0.05), 1, 0)
+  err_init_me80[i] <- ifelse((e80_init<0.05), 1, 0)
+  err_init_rmst_80[i] <- ifelse((e_init<0.05), 1, 0)
+  err_init_max_hoch_80[i] <- ifelse(g80_hoch_init<0.05, 1, 0)
+  err_init_max_exact_80[i] <- ifelse(g80_exact_init<0.05, 1, 0)
+
+  err_init_oslrt100[i] <- ifelse((a100_init<0.05), 1, 0)
+  err_init_moslrt100[i] <- ifelse((a1002_init<0.05), 1, 0)
+  err_init_rc100[i] <- ifelse((b100_init<0.05), 1, 0)
+  err_init_de100[i] <- ifelse((c100_init<0.05), 1, 0)
+  err_init_ee100[i] <- ifelse((d100_init<0.05), 1, 0)
+  err_init_me100[i] <- ifelse((e100_init<0.05), 1, 0)
+  err_init_max_hoch_100[i] <- ifelse(g100_hoch_init<0.05, 1, 0)
+  err_init_max_exact_100[i] <- ifelse(g100_exact_init<0.05, 1, 0)
+
+  err_init_oslrt150[i] <- ifelse((a150_init<0.05), 1, 0)
+  err_init_moslrt150[i] <- ifelse((a1502_init<0.05), 1, 0)
+  err_init_rc150[i] <- ifelse((b150_init<0.05), 1, 0)
+  err_init_de150[i] <- ifelse((c150_init<0.05), 1, 0)
+  err_init_ee150[i] <- ifelse((d150_init<0.05), 1, 0)
+  err_init_me150[i] <- ifelse((e150_init<0.05), 1, 0)
+  err_init_max_hoch_150[i] <- ifelse(g150_hoch_init<0.05, 1, 0)
+  err_init_max_exact_150[i] <- ifelse(g150_exact_init<0.05, 1, 0)
+
+  err_init_oslrt200[i] <- ifelse((a200_init<0.05), 1, 0)
+  err_init_moslrt200[i] <- ifelse((a2002_init<0.05), 1, 0)
+  err_init_rc200[i] <- ifelse((b200_init<0.05), 1, 0)
+  err_init_de200[i] <- ifelse((c200_init<0.05), 1, 0)              
+  err_init_ee200[i] <- ifelse((d200_init<0.05), 1, 0)
+  err_init_me200[i] <- ifelse((e200_init<0.05), 1, 0)
+  err_init_max_hoch_200[i] <- ifelse(g200_hoch_init<0.05, 1, 0)
+  err_init_max_exact_200[i] <- ifelse(g200_exact_init<0.05, 1, 0)
 }
 
 os20_1 <- sum(err_oslrt20_1)/nit
@@ -2408,15 +2230,6 @@ me20_1 <- sum(err_me20_1)/nit
 max1_hoch20_1 <- sum(err_max1_hoch20_1)/nit
 max1_exact20_1 <- sum(na.omit(err_max1_exact20_1))/length(na.omit(err_max1_exact20_1))
 
-os20_2 <- sum(err_oslrt20_2)/nit
-mos20_2 <- sum(err_moslrt20_2)/nit
-rc20_2 <- sum(err_rc20_2)/nit
-de20_2 <- sum(na.omit(err_de20_2))/length(na.omit(err_de20_2))
-ee20_2 <- sum(err_ee20_2)/nit
-me20_2 <- sum(err_me20_2)/nit
-max1_hoch20_2 <- sum(err_max1_hoch20_2)/nit
-max1_exact20_2 <- sum(na.omit(err_max1_exact20_2))/length(na.omit(err_max1_exact20_2))
-
 os20_3 <- sum(err_oslrt20_3)/nit
 mos20_3 <- sum(err_moslrt20_3)/nit
 rc20_3 <- sum(err_rc20_3)/nit
@@ -2426,18 +2239,32 @@ me20_3 <- sum(err_me20_3)/nit
 max1_hoch20_3 <- sum(err_max1_hoch20_3)/nit
 max1_exact20_3 <- sum(na.omit(err_max1_exact20_3))/length(na.omit(err_max1_exact20_3))
 
-os20_4 <- sum(err_oslrt20_4)/nit
-mos20_4 <- sum(err_moslrt20_4)/nit
-rc20_4 <- sum(err_rc20_4)/nit
-de20_4 <- sum(na.omit(err_de20_4))/length(na.omit(err_de20_4))
-ee20_4 <- sum(err_ee20_4)/nit
-me20_4 <- sum(err_me20_4)/nit
-max1_hoch20_4 <- sum(err_max1_hoch20_4)/nit
-max1_exact20_4 <- sum(na.omit(err_max1_exact20_4))/length(na.omit(err_max1_exact20_4))
+os20_init <- sum(err_init_oslrt20)/nit
+mos20_init <- sum(err_init_moslrt20)/nit
+rc20_init <- sum(err_init_rc20)/nit
+de20_init <- sum(err_init_de20)/nit
+ee20_init <- sum(err_init_ee20)/nit
+me20_init <- sum(err_init_me20)/nit
+max_hoch20_init <- sum(err_init_max_hoch_20)/nit
+max_exact20_init <- sum(err_init_max_exact_20)/nit
 
-mean(tx_cens20)
-mean(tx_censadm20)
+diff1_os20 <- ((os20_1-os20_init)/os20_init)*100
+diff1_mos20 <- ((mos20_1-mos20_init)/mos20_init)*100
+diff1_ee20 <- ((ee20_1-ee20_init)/ee20_init)*100
+diff1_me20 <- ((me20_1-me20_init)/me20_init)*100
+diff1_de20 <- ((de20_1-de20_init)/de20_init)*100
+diff1_rc20 <- ((rc20_1-rc20_init)/rc20_init)*100
+diff1_hoch20 <- ((max_hoch20_1-max_hoch20_init)/max_hoch20_init)*100
+diff1_exact20 <- ((max_exact20_1-max_exact20_init)/max_exact20_init)*100
 
+diff3_os20 <- ((os20_3-os20_init)/os20_init)*100
+diff3_mos20 <- ((mos20_3-mos20_init)/mos20_init)*100
+diff3_ee20 <- ((ee20_3-ee20_init)/ee20_init)*100
+diff3_me20 <- ((me20_3-me20_init)/me20_init)*100
+diff3_de20 <- ((de20_3-de20_init)/de20_init)*100
+diff3_rc20 <- ((rc20_3-rc20_init)/rc20_init)*100
+diff3_hoch20 <- ((max_hoch20_3-max_hoch20_init)/max_hoch20_init)*100
+diff3_exact20 <- ((max_exact20_3-max_exact20_init)/max_exact20_init)*100
 
 os30_1 <- sum(err_oslrt30_1)/nit
 mos30_1 <- sum(err_moslrt30_1)/nit
@@ -2448,15 +2275,6 @@ me30_1 <- sum(err_me30_1)/nit
 max1_hoch30_1 <- sum(err_max1_hoch30_1)/nit
 max1_exact30_1 <- sum(na.omit(err_max1_exact30_1))/length(na.omit(err_max1_exact30_1))
 
-os30_2 <- sum(err_oslrt30_2)/nit
-mos30_2 <- sum(err_moslrt30_2)/nit
-rc30_2 <- sum(err_rc30_2)/nit
-de30_2 <- sum(na.omit(err_de30_2))/length(na.omit(err_de30_2))
-ee30_2 <- sum(err_ee30_2)/nit
-me30_2 <- sum(err_me30_2)/nit
-max1_hoch30_2 <- sum(err_max1_hoch30_2)/nit
-max1_exact30_2 <- sum(na.omit(err_max1_exact30_2))/length(na.omit(err_max1_exact30_2))
-
 os30_3 <- sum(err_oslrt30_3)/nit
 mos30_3 <- sum(err_moslrt30_3)/nit
 rc30_3 <- sum(err_rc30_3)/nit
@@ -2466,17 +2284,32 @@ me30_3 <- sum(err_me30_3)/nit
 max1_hoch30_3 <- sum(err_max1_hoch30_3)/nit
 max1_exact30_3 <- sum(na.omit(err_max1_exact30_3))/length(na.omit(err_max1_exact30_3))
 
-os30_4 <- sum(err_oslrt30_4)/nit
-mos30_4 <- sum(err_moslrt30_4)/nit
-rc30_4 <- sum(err_rc30_4)/nit
-de30_4 <- sum(na.omit(err_de30_4))/length(na.omit(err_de30_4))
-ee30_4 <- sum(err_ee30_4)/nit
-me30_4 <- sum(err_me30_4)/nit
-max1_hoch30_4 <- sum(err_max1_hoch30_4)/nit
-max1_exact30_4 <- sum(na.omit(err_max1_exact30_4))/length(na.omit(err_max1_exact30_4))
+os30_init <- sum(err_init_oslrt30)/nit
+mos30_init <- sum(err_init_moslrt30)/nit
+rc30_init <- sum(err_init_rc30)/nit
+de30_init <- sum(err_init_de30)/nit
+ee30_init <- sum(err_init_ee30)/nit
+me30_init <- sum(err_init_me30)/nit
+max_hoch30_init <- sum(err_init_max_hoch_30)/nit
+max_exact30_init <- sum(err_init_max_exact_30)/nit
 
-mean(tx_cens30)
-mean(tx_censadm30)
+diff1_os30 <- ((os30_1-os30_init)/os30_init)*100
+diff1_mos30 <- ((mos30_1-mos30_init)/mos30_init)*100
+diff1_ee30 <- ((ee30_1-ee30_init)/ee30_init)*100
+diff1_me30 <- ((me30_1-me30_init)/me30_init)*100
+diff1_de30 <- ((de30_1-de30_init)/de30_init)*100
+diff1_rc30 <- ((rc30_1-rc30_init)/rc30_init)*100
+diff1_hoch30 <- ((max_hoch30_1-max_hoch30_init)/max_hoch30_init)*100
+diff1_exact30 <- ((max_exact30_1-max_exact30_init)/max_exact30_init)*100
+
+diff3_os30 <- ((os30_3-os30_init)/os30_init)*100
+diff3_mos30 <- ((mos30_3-mos30_init)/mos30_init)*100
+diff3_ee30 <- ((ee30_3-ee30_init)/ee30_init)*100
+diff3_me30 <- ((me30_3-me30_init)/me30_init)*100
+diff3_de30 <- ((de30_3-de30_init)/de30_init)*100
+diff3_rc30 <- ((rc30_3-rc30_init)/rc30_init)*100
+diff3_hoch30 <- ((max_hoch30_3-max_hoch30_init)/max_hoch30_init)*100
+diff3_exact30 <- ((max_exact30_3-max_exact30_init)/max_exact30_init)*100
 
 
 os50_1 <- sum(err_oslrt50_1)/nit
@@ -2488,15 +2321,6 @@ me50_1 <- sum(err_me50_1)/nit
 max1_hoch50_1 <- sum(err_max1_hoch50_1)/nit
 max1_exact50_1 <- sum(na.omit(err_max1_exact50_1))/length(na.omit(err_max1_exact50_1))
 
-os50_2 <- sum(err_oslrt50_2)/nit
-mos50_2 <- sum(err_moslrt50_2)/nit
-rc50_2 <- sum(err_rc50_2)/nit
-de50_2 <- sum(err_de50_2)/nit
-ee50_2 <- sum(err_ee50_2)/nit
-me50_2 <- sum(err_me50_2)/nit
-max1_hoch50_2 <- sum(err_max1_hoch50_2)/nit
-max1_exact50_2 <- sum(na.omit(err_max1_exact50_2))/length(na.omit(err_max1_exact50_2))
-
 os50_3 <- sum(err_oslrt50_3)/nit
 mos50_3 <- sum(err_moslrt50_3)/nit
 rc50_3 <- sum(err_rc50_3)/nit
@@ -2506,17 +2330,32 @@ me50_3 <- sum(err_me50_3)/nit
 max1_hoch50_3 <- sum(err_max1_hoch50_3)/nit
 max1_exact50_3 <- sum(na.omit(err_max1_exact50_3))/length(na.omit(err_max1_exact50_3))
 
-os50_4 <- sum(err_oslrt50_4)/nit
-mos50_4 <- sum(err_moslrt50_4)/nit
-rc50_4 <- sum(err_rc50_4)/nit
-de50_4 <- sum(err_de50_4)/nit
-ee50_4 <- sum(err_ee50_4)/nit
-me50_4 <- sum(err_me50_4)/nit
-max1_hoch50_4 <- sum(err_max1_hoch50_4)/nit
-max1_exact50_4 <- sum(na.omit(err_max1_exact50_4))/length(na.omit(err_max1_exact50_4))
+os50_init <- sum(err_init_oslrt50)/nit
+mos50_init <- sum(err_init_moslrt50)/nit
+rc50_init <- sum(err_init_rc50)/nit
+de50_init <- sum(err_init_de50)/nit
+ee50_init <- sum(err_init_ee50)/nit
+me50_init <- sum(err_init_me50)/nit
+max_hoch50_init <- sum(err_init_max_hoch_50)/nit
+max_exact50_init <- sum(err_init_max_exact_50)/nit
 
-mean(tx_cens50)
-mean(tx_censadm50)
+diff1_os50 <- ((os50_1-os50_init)/os50_init)*100
+diff1_mos50 <- ((mos50_1-mos50_init)/mos50_init)*100
+diff1_ee50 <- ((ee50_1-ee50_init)/ee50_init)*100
+diff1_me50 <- ((me50_1-me50_init)/me50_init)*100
+diff1_de50 <- ((de50_1-de50_init)/de50_init)*100
+diff1_rc50 <- ((rc50_1-rc50_init)/rc50_init)*100
+diff1_hoch50 <- ((max_hoch50_1-max_hoch50_init)/max_hoch50_init)*100
+diff1_exact50 <- ((max_exact50_1-max_exact50_init)/max_exact50_init)*100
+
+diff3_os50 <- ((os50_3-os50_init)/os50_init)*100
+diff3_mos50 <- ((mos50_3-mos50_init)/mos50_init)*100
+diff3_ee50 <- ((ee50_3-ee50_init)/ee50_init)*100
+diff3_me50 <- ((me50_3-me50_init)/me50_init)*100
+diff3_de50 <- ((de50_3-de50_init)/de50_init)*100
+diff3_rc50 <- ((rc50_3-rc50_init)/rc50_init)*100
+diff3_hoch50 <- ((max_hoch50_3-max_hoch50_init)/max_hoch50_init)*100
+diff3_exact50 <- ((max_exact50_3-max_exact50_init)/max_exact50_init)*100
 
 
 os60_1 <- sum(err_oslrt60_1)/nit
@@ -2528,15 +2367,6 @@ me60_1 <- sum(err_me60_1)/nit
 max1_hoch60_1 <- sum(err_max1_hoch60_1)/nit
 max1_exact60_1 <- sum(na.omit(err_max1_exact60_1))/length(na.omit(err_max1_exact60_1))
 
-os60_2 <- sum(err_oslrt60_2)/nit
-mos60_2 <- sum(err_moslrt60_2)/nit
-rc60_2 <- sum(err_rc60_2)/nit
-de60_2 <- sum(err_de60_2)/nit
-ee60_2 <- sum(err_ee60_2)/nit
-me60_2 <- sum(err_me60_2)/nit
-max1_hoch60_2 <- sum(err_max1_hoch60_2)/nit
-max1_exact60_2 <- sum(na.omit(err_max1_exact60_2))/length(na.omit(err_max1_exact60_2))
-
 os60_3 <- sum(err_oslrt60_3)/nit
 mos60_3 <- sum(err_moslrt60_3)/nit
 rc60_3 <- sum(err_rc60_3)/nit
@@ -2546,17 +2376,32 @@ me60_3 <- sum(err_me60_3)/nit
 max1_hoch60_3 <- sum(err_max1_hoch60_3)/nit
 max1_exact60_3 <- sum(na.omit(err_max1_exact60_3))/length(na.omit(err_max1_exact60_3))
 
-os60_4 <- sum(err_oslrt60_4)/nit
-mos60_4 <- sum(err_moslrt60_4)/nit
-rc60_4 <- sum(err_rc60_4)/nit
-de60_4 <- sum(err_de60_4)/nit
-ee60_4 <- sum(err_ee60_4)/nit
-me60_4 <- sum(err_me60_4)/nit
-max1_hoch60_4 <- sum(err_max1_hoch60_4)/nit
-max1_exact60_4 <- sum(na.omit(err_max1_exact60_4))/length(na.omit(err_max1_exact60_4))
+os60_init <- sum(err_init_oslrt60)/nit
+mos60_init <- sum(err_init_moslrt60)/nit
+rc60_init <- sum(err_init_rc60)/nit
+de60_init <- sum(err_init_de60)/nit
+ee60_init <- sum(err_init_ee60)/nit
+me60_init <- sum(err_init_me60)/nit
+max_hoch60_init <- sum(err_init_max_hoch_60)/nit
+max_exact60_init <- sum(err_init_max_exact_60)/nit
 
-mean(tx_cens60)
-mean(tx_censadm60)
+diff1_os60 <- ((os60_1-os60_init)/os60_init)*100
+diff1_mos60 <- ((mos60_1-mos60_init)/mos60_init)*100
+diff1_ee60 <- ((ee60_1-ee60_init)/ee60_init)*100
+diff1_me60 <- ((me60_1-me60_init)/me60_init)*100
+diff1_de60 <- ((de60_1-de60_init)/de60_init)*100
+diff1_rc60 <- ((rc60_1-rc60_init)/rc60_init)*100
+diff1_hoch60 <- ((max_hoch60_1-max_hoch60_init)/max_hoch60_init)*100
+diff1_exact60 <- ((max_exact60_1-max_exact60_init)/max_exact60_init)*100
+
+diff3_os60 <- ((os60_3-os60_init)/os60_init)*100
+diff3_mos60 <- ((mos60_3-mos60_init)/mos60_init)*100
+diff3_ee60 <- ((ee60_3-ee60_init)/ee60_init)*100
+diff3_me60 <- ((me60_3-me60_init)/me60_init)*100
+diff3_de60 <- ((de60_3-de60_init)/de60_init)*100
+diff3_rc60 <- ((rc60_3-rc60_init)/rc60_init)*100
+diff3_hoch60 <- ((max_hoch60_3-max_hoch60_init)/max_hoch60_init)*100
+diff3_exact60 <- ((max_exact60_3-max_exact60_init)/max_exact60_init)*100
 
 
 os80_1 <- sum(err_oslrt80_1)/nit
@@ -2568,15 +2413,6 @@ me80_1 <- sum(err_me80_1)/nit
 max1_hoch80_1 <- sum(err_max1_hoch80_1)/nit
 max1_exact80_1 <- sum(na.omit(err_max1_exact80_1))/length(na.omit(err_max1_exact80_1))
 
-os80_2 <- sum(err_oslrt80_2)/nit
-mos80_2 <- sum(err_moslrt80_2)/nit
-rc80_2 <- sum(err_rc80_2)/nit
-de80_2 <- sum(err_de80_2)/nit
-ee80_2 <- sum(err_ee80_2)/nit
-me80_2 <- sum(err_me80_2)/nit
-max1_hoch80_2 <- sum(err_max1_hoch80_2)/nit
-max1_exact80_2 <- sum(na.omit(err_max1_exact80_2))/length(na.omit(err_max1_exact80_2))
-
 os80_3 <- sum(err_oslrt80_3)/nit
 mos80_3 <- sum(err_moslrt80_3)/nit
 rc80_3 <- sum(err_rc80_3)/nit
@@ -2586,17 +2422,32 @@ me80_3 <- sum(err_me80_3)/nit
 max1_hoch80_3 <- sum(err_max1_hoch80_3)/nit
 max1_exact80_3 <- sum(na.omit(err_max1_exact80_3))/length(na.omit(err_max1_exact80_3))
 
-os80_4 <- sum(err_oslrt80_4)/nit
-mos80_4 <- sum(err_moslrt80_4)/nit
-rc80_4 <- sum(err_rc80_4)/nit
-de80_4 <- sum(err_de80_4)/nit
-ee80_4 <- sum(err_ee80_4)/nit
-me80_4 <- sum(err_me80_4)/nit
-max1_hoch80_4 <- sum(err_max1_hoch80_4)/nit
-max1_exact80_4 <- sum(na.omit(err_max1_exact80_4))/length(na.omit(err_max1_exact80_4))
+os80_init <- sum(err_init_oslrt80)/nit
+mos80_init <- sum(err_init_moslrt80)/nit
+rc80_init <- sum(err_init_rc80)/nit
+de80_init <- sum(err_init_de80)/nit
+ee80_init <- sum(err_init_ee80)/nit
+me80_init <- sum(err_init_me80)/nit
+max_hoch80_init <- sum(err_init_max_hoch_80)/nit
+max_exact80_init <- sum(err_init_max_exact_80)/nit
 
-mean(tx_cens80)
-mean(tx_censadm80)
+diff1_os80 <- ((os80_1-os80_init)/os80_init)*100
+diff1_mos80 <- ((mos80_1-mos80_init)/mos80_init)*100
+diff1_ee80 <- ((ee80_1-ee80_init)/ee80_init)*100
+diff1_me80 <- ((me80_1-me80_init)/me80_init)*100
+diff1_de80 <- ((de80_1-de80_init)/de80_init)*100
+diff1_rc80 <- ((rc80_1-rc80_init)/rc80_init)*100
+diff1_hoch80 <- ((max_hoch80_1-max_hoch80_init)/max_hoch80_init)*100
+diff1_exact80 <- ((max_exact80_1-max_exact80_init)/max_exact80_init)*100
+
+diff3_os80 <- ((os80_3-os80_init)/os80_init)*100
+diff3_mos80 <- ((mos80_3-mos80_init)/mos80_init)*100
+diff3_ee80 <- ((ee80_3-ee80_init)/ee80_init)*100
+diff3_me80 <- ((me80_3-me80_init)/me80_init)*100
+diff3_de80 <- ((de80_3-de80_init)/de80_init)*100
+diff3_rc80 <- ((rc80_3-rc80_init)/rc80_init)*100
+diff3_hoch80 <- ((max_hoch80_3-max_hoch80_init)/max_hoch80_init)*100
+diff3_exact80 <- ((max_exact80_3-max_exact80_init)/max_exact80_init)*100
 
 
 os100_1 <- sum(err_oslrt100_1)/nit
@@ -2608,15 +2459,6 @@ me100_1 <- sum(err_me100_1)/nit
 max1_hoch100_1 <- sum(err_max1_hoch100_1)/nit
 max1_exact100_1 <- sum(na.omit(err_max1_exact100_1))/length(na.omit(err_max1_exact100_1))
 
-os100_2 <- sum(err_oslrt100_2)/nit
-mos100_2 <- sum(err_moslrt100_2)/nit
-rc100_2 <- sum(err_rc100_2)/nit
-de100_2 <- sum(err_de100_2)/nit
-ee100_2 <- sum(err_ee100_2)/nit
-me100_2 <- sum(err_me100_2)/nit
-max1_hoch100_2 <- sum(err_max1_hoch100_2)/nit
-max1_exact100_2 <- sum(na.omit(err_max1_exact100_2))/length(na.omit(err_max1_exact100_2))
-
 os100_3 <- sum(err_oslrt100_3)/nit
 mos100_3 <- sum(err_moslrt100_3)/nit
 rc100_3 <- sum(err_rc100_3)/nit
@@ -2626,17 +2468,32 @@ me100_3 <- sum(err_me100_3)/nit
 max1_hoch100_3 <- sum(err_max1_hoch100_3)/nit
 max1_exact100_3 <- sum(na.omit(err_max1_exact100_3))/length(na.omit(err_max1_exact100_3))
 
-os100_4 <- sum(err_oslrt100_4)/nit
-mos100_4 <- sum(err_moslrt100_4)/nit
-rc100_4 <- sum(err_rc100_4)/nit
-de100_4 <- sum(err_de100_4)/nit
-ee100_4 <- sum(err_ee100_4)/nit
-me100_4 <- sum(err_me100_4)/nit
-max1_hoch100_4 <- sum(err_max1_hoch100_4)/nit
-max1_exact100_4 <- sum(na.omit(err_max1_exact100_4))/length(na.omit(err_max1_exact100_4))
+os100_init <- sum(err_init_oslrt100)/nit
+mos100_init <- sum(err_init_moslrt100)/nit
+rc100_init <- sum(err_init_rc100)/nit
+de100_init <- sum(err_init_de100)/nit
+ee100_init <- sum(err_init_ee100)/nit
+me100_init <- sum(err_init_me100)/nit
+max_hoch100_init <- sum(err_init_max_hoch_100)/nit
+max_exact100_init <- sum(err_init_max_exact_100)/nit
 
-mean(tx_cens100)
-mean(tx_censadm100)
+diff1_os100 <- ((os100_1-os100_init)/os100_init)*100
+diff1_mos100 <- ((mos100_1-mos100_init)/mos100_init)*100
+diff1_ee100 <- ((ee100_1-ee100_init)/ee100_init)*100
+diff1_me100 <- ((me100_1-me100_init)/me100_init)*100
+diff1_de100 <- ((de100_1-de100_init)/de100_init)*100
+diff1_rc100 <- ((rc100_1-rc100_init)/rc100_init)*100
+diff1_hoch100 <- ((max_hoch100_1-max_hoch100_init)/max_hoch100_init)*100
+diff1_exact100 <- ((max_exact100_1-max_exact100_init)/max_exact100_init)*100
+
+diff3_os100 <- ((os100_3-os100_init)/os100_init)*100
+diff3_mos100 <- ((mos100_3-mos100_init)/mos100_init)*100
+diff3_ee100 <- ((ee100_3-ee100_init)/ee100_init)*100
+diff3_me100 <- ((me100_3-me100_init)/me100_init)*100
+diff3_de100 <- ((de100_3-de100_init)/de100_init)*100
+diff3_rc100 <- ((rc100_3-rc100_init)/rc100_init)*100
+diff3_hoch100 <- ((max_hoch100_3-max_hoch100_init)/max_hoch100_init)*100
+diff3_exact100 <- ((max_exact100_3-max_exact100_init)/max_exact100_init)*100
 
 
 os150_1 <- sum(err_oslrt150_1)/nit
@@ -2648,15 +2505,6 @@ me150_1 <- sum(na.omit(err_me150_1))/length(na.omit(err_me150_1))
 max1_hoch150_1 <- sum(err_max1_hoch150_1)/nit
 max1_exact150_1 <- sum(na.omit(err_max1_exact150_1))/length(na.omit(err_max1_exact150_1))
 
-os150_2 <- sum(err_oslrt150_2)/nit
-mos150_2 <- sum(err_moslrt150_2)/nit
-rc150_2 <- sum(err_rc150_2)/nit
-de150_2 <- sum(err_de150_2)/nit
-ee150_2 <- sum(err_ee150_2)/nit
-me150_2 <- sum(na.omit(err_me150_2))/length(na.omit(err_me150_2))
-max1_hoch150_2 <- sum(err_max1_hoch150_2)/nit
-max1_exact150_2 <- sum(na.omit(err_max1_exact150_2))/length(na.omit(err_max1_exact150_2))
-
 os150_3 <- sum(err_oslrt150_3)/nit
 mos150_3 <- sum(err_moslrt150_3)/nit
 rc150_3 <- sum(err_rc150_3)/nit
@@ -2666,17 +2514,33 @@ me150_3 <- sum(na.omit(err_me150_3))/length(na.omit(err_me150_3))
 max1_hoch150_3 <- sum(err_max1_hoch150_3)/nit
 max1_exact150_3 <- sum(na.omit(err_max1_exact150_3))/length(na.omit(err_max1_exact150_3))
 
-os150_4 <- sum(err_oslrt150_4)/nit
-mos150_4 <- sum(err_moslrt150_4)/nit
-rc150_4 <- sum(err_rc150_4)/nit
-de150_4 <- sum(err_de150_4)/nit
-ee150_4 <- sum(err_ee150_4)/nit
-me150_4 <- sum(na.omit(err_me150_4))/length(na.omit(err_me150_4))
-max1_hoch150_4 <- sum(err_max1_hoch150_4)/nit
-max1_exact150_4 <- sum(na.omit(err_max1_exact150_4))/length(na.omit(err_max1_exact150_4))
+os150_init <- sum(err_init_oslrt150)/nit
+mos150_init <- sum(err_init_moslrt150)/nit
+rc150_init <- sum(err_init_rc150)/nit
+de150_init <- sum(err_init_de150)/nit
+ee150_init <- sum(err_init_ee150)/nit
+me150_init <- sum(err_init_me150)/nit
+max_hoch150_init <- sum(err_init_max_hoch_150)/nit
+max_exact150_init <- sum(err_init_max_exact_150)/nit
 
-mean(tx_cens150)
-mean(tx_censadm150)
+diff1_os150 <- ((os150_1-os150_init)/os150_init)*100
+diff1_mos150 <- ((mos150_1-mos150_init)/mos150_init)*100
+diff1_ee150 <- ((ee150_1-ee150_init)/ee150_init)*100
+diff1_me150 <- ((me150_1-me150_init)/me150_init)*100
+diff1_de150 <- ((de150_1-de150_init)/de150_init)*100
+diff1_rc150 <- ((rc150_1-rc150_init)/rc150_init)*100
+diff1_hoch150 <- ((max_hoch150_1-max_hoch150_init)/max_hoch150_init)*100
+diff1_exact150 <- ((max_exact150_1-max_exact150_init)/max_exact150_init)*100
+
+diff3_os150 <- ((os150_3-os150_init)/os150_init)*100
+diff3_mos150 <- ((mos150_3-mos150_init)/mos150_init)*100
+diff3_ee150 <- ((ee150_3-ee150_init)/ee150_init)*100
+diff3_me150 <- ((me150_3-me150_init)/me150_init)*100
+diff3_de150 <- ((de150_3-de150_init)/de150_init)*100
+diff3_rc150 <- ((rc150_3-rc150_init)/rc150_init)*100
+diff3_hoch150 <- ((max_hoch150_3-max_hoch150_init)/max_hoch150_init)*100
+diff3_exact150 <- ((max_exact150_3-max_exact150_init)/max_exact150_init)*100
+
 
 os200_1 <- sum(err_oslrt200_1)/nit
 mos200_1 <- sum(err_moslrt200_1)/nit
@@ -2687,15 +2551,6 @@ me200_1 <- sum(err_me200_1)/nit
 max1_hoch200_1 <- sum(err_max1_hoch200_1)/nit
 max1_exact200_1 <- sum(na.omit(err_max1_exact200_1))/length(na.omit(err_max1_exact200_1))
 
-os200_2 <- sum(err_oslrt200_2)/nit
-mos200_2 <- sum(err_moslrt200_2)/nit
-rc200_2 <- sum(err_rc200_2)/nit
-de200_2 <- sum(err_de200_2)/nit
-ee200_2 <- sum(err_ee200_2)/nit
-me200_2 <- sum(err_me200_2)/nit
-max1_hoch200_2 <- sum(err_max1_hoch200_2)/nit
-max1_exact200_2 <- sum(na.omit(err_max1_exact200_2))/length(na.omit(err_max1_exact200_2))
-
 os200_3 <- sum(err_oslrt200_3)/nit
 mos200_3 <- sum(err_moslrt200_3)/nit
 rc200_3 <- sum(err_rc200_3)/nit
@@ -2705,17 +2560,33 @@ me200_3 <- sum(err_me200_3)/nit
 max1_hoch200_3 <- sum(err_max1_hoch200_3)/nit
 max1_exact200_3 <- sum(na.omit(err_max1_exact200_3))/length(na.omit(err_max1_exact200_3))
 
-os200_4 <- sum(err_oslrt200_4)/nit
-mos200_4 <- sum(err_moslrt200_4)/nit
-rc200_4 <- sum(err_rc200_4)/nit
-de200_4 <- sum(err_de200_4)/nit
-ee200_4 <- sum(err_ee200_4)/nit
-me200_4 <- sum(err_me200_4)/nit
-max1_hoch200_4 <- sum(err_max1_hoch200_4)/nit
-max1_exact200_4 <- sum(na.omit(err_max1_exact200_4))/length(na.omit(err_max1_exact200_4))
+os200_init <- sum(err_init_oslrt200)/nit
+mos200_init <- sum(err_init_moslrt200)/nit
+rc200_init <- sum(err_init_rc200)/nit
+de200_init <- sum(err_init_de200)/nit
+ee200_init <- sum(err_init_ee200)/nit
+me200_init <- sum(err_init_me200)/nit
+r_200_init <- sum(err_init_rmst_200)/nit
+max_hoch200_init <- sum(err_init_max_hoch_200)/nit
+max_exact200_init <- sum(err_init_max_exact_200)/nit
 
-mean(tx_cens200)
-mean(tx_censadm200)
+diff1_os200 <- ((os200_1-os200_init)/os200_init)*100
+diff1_mos200 <- ((mos200_1-mos200_init)/mos200_init)*100
+diff1_ee200 <- ((ee200_1-ee200_init)/ee200_init)*100
+diff1_me200 <- ((me200_1-me200_init)/me200_init)*100
+diff1_de200 <- ((de200_1-de200_init)/de200_init)*100
+diff1_rc200 <- ((rc200_1-rc200_init)/rc200_init)*100
+diff1_hoch200 <- ((max_hoch200_1-max_hoch200_init)/max_hoch200_init)*100
+diff1_exact200 <- ((max_exact200_1-max_exact200_init)/max_exact200_init)*100
+
+diff3_os200 <- ((os200_3-os200_init)/os200_init)*100
+diff3_mos200 <- ((mos200_3-mos200_init)/mos200_init)*100
+diff3_ee200 <- ((ee200_3-ee200_init)/ee200_init)*100
+diff3_me200 <- ((me200_3-me200_init)/me200_init)*100
+diff3_de200 <- ((de200_3-de200_init)/de200_init)*100
+diff3_rc200 <- ((rc200_3-rc200_init)/rc200_init)*100
+diff3_hoch200 <- ((max_hoch200_3-max_hoch200_init)/max_hoch200_init)*100
+diff3_exact200 <- ((max_exact200_3-max_exact200_init)/max_exact200_init)*100
 
 
 n <- c(20, 30, 50, 60, 80, 100, 150, 200)
@@ -2727,6 +2598,14 @@ ee_1 <- c(ee20_1, ee30_1, ee50_1, ee60_1, ee80_1, ee100_1, ee150_1, ee200_1)
 me_1 <- c(me20_1, me30_1, me50_1, me60_1, me80_1, me100_1, me150_1, me200_1)
 max1_hochberg_1 <- c(max1_hoch20_1, max1_hoch30_1, max1_hoch50_1, max1_hoch60_1, max1_hoch80_1, max1_hoch100_1, max1_hoch150_1, max1_hoch200_1)
 max1_pmult_1 <- c(max1_exact20_1, max1_exact30_1, max1_exact50_1, max1_exact60_1, max1_exact80_1, max1_exact100_1, max1_exact150_1, max1_exact200_1)
+diff1_osl <- c(diff1_os20, diff1_os30, diff1_os50, diff1_os60, diff1_os80, diff1_os100, diff1_os150, diff1_os200)
+diff1_mosl <- c(diff1_mos20, diff1_mos30, diff1_mos50, diff1_mos60, diff1_mos80, diff1_mos100, diff1_mos150, diff1_mos200)
+diff1_rc <- c(diff1_rc20, diff1_rc30, diff1_rc50, diff1_rc60, diff1_rc80, diff1_rc100, diff1_rc150, diff1_rc200)
+diff1_de <- c(diff1_de20, diff1_de30, diff1_de50, diff1_de60, diff1_de80, diff1_de100, diff1_de150, diff1_de200)
+diff1_ee <- c(diff1_ee20, diff1_ee30, diff1_ee50, diff1_ee60, diff1_ee80, diff1_ee100, diff1_ee150, diff1_ee200)
+diff1_me <- c(diff1_me20, diff1_me30, diff1_me50, diff1_me60, diff1_me80, diff1_me100, diff1_me150, diff1_me200)
+diff1_hoch <- c(diff1_hoch20, diff1_hoch30, diff1_hoch50, diff1_hoch60, diff1_hoch80, diff1_hoch100, diff1_hoch150, diff1_hoch200)
+diff1_exact <- c(diff1_exact20, diff1_exact30, diff1_exact50, diff1_exact60, diff1_exact80, diff1_exact100, diff1_exact150, diff1_exact200)
 osl_1
 mosl_1
 ee_1
@@ -2736,23 +2615,6 @@ rc_1
 max1_hochberg_1
 max1_pmult_1
 
-osl_2 <- c(os20_2, os30_2, os50_2, os60_2, os80_2, os100_2, os150_2, os200_2)
-mosl_2 <- c(mos20_2, mos30_2, mos50_2, mos60_2, mos80_2, mos100_2, mos150_2, mos200_2)
-rc_2 <- c(rc20_2, rc30_2, rc50_2, rc60_2, rc80_2, rc100_2, rc150_2, rc200_2)
-de_2 <- c(de20_2, de30_2, de50_2, de60_2, de80_2, de100_2, de150_2, de200_2)
-ee_2 <- c(ee20_2, ee30_2, ee50_2, ee60_2, ee80_2, ee100_2, ee150_2, ee200_2)
-me_2 <- c(me20_2, me30_2, me50_2, me60_2, me80_2, me100_2, me150_2, me200_2)
-max1_hochberg_2 <- c(max1_hoch20_2, max1_hoch30_2, max1_hoch50_2, max1_hoch60_2, max1_hoch80_2, max1_hoch100_2, max1_hoch150_2, max1_hoch200_2)
-max1_pmult_2 <- c(max1_exact20_2, max1_exact30_2, max1_exact50_2, max1_exact60_2, max1_exact80_2, max1_exact100_2, max1_exact150_2, max1_exact200_2)
-osl_2
-mosl_2
-ee_2
-me_2
-de_2
-rc_2
-max1_hochberg_2
-max1_pmult_2
-
 osl_3 <- c(os20_3, os30_3, os50_3, os60_3, os80_3, os100_3, os150_3, os200_3)
 mosl_3 <- c(mos20_3, mos30_3, mos50_3, mos60_3, mos80_3, mos100_3, mos150_3, mos200_3)
 rc_3 <- c(rc20_3, rc30_3, rc50_3, rc60_3, rc80_3, rc100_3, rc150_3, rc200_3)
@@ -2761,6 +2623,14 @@ ee_3 <- c(ee20_3, ee30_3, ee50_3, ee60_3, ee80_3, ee100_3, ee150_3, ee200_3)
 me_3 <- c(me20_3, me30_3, me50_3, me60_3, me80_3, me100_3, me150_3, me200_3)
 max1_hochberg_3 <- c(max1_hoch20_3, max1_hoch30_3, max1_hoch50_3, max1_hoch60_3, max1_hoch80_3, max1_hoch100_3, max1_hoch150_3, max1_hoch200_3)
 max1_pmult_3 <- c(max1_exact20_3, max1_exact30_3, max1_exact50_3, max1_exact60_3, max1_exact80_3, max1_exact100_3, max1_exact150_3, max1_exact200_3)
+diff3_osl <- c(diff3_os20, diff3_os30, diff3_os50, diff3_os60, diff3_os80, diff3_os100, diff3_os150, diff3_os200)
+diff3_mosl <- c(diff3_mos20, diff3_mos30, diff3_mos50, diff3_mos60, diff3_mos80, diff3_mos100, diff3_mos150, diff3_mos200)
+diff3_rc <- c(diff3_rc20, diff3_rc30, diff3_rc50, diff3_rc60, diff3_rc80, diff3_rc100, diff3_rc150, diff3_rc200)
+diff3_de <- c(diff3_de20, diff3_de30, diff3_de50, diff3_de60, diff3_de80, diff3_de100, diff3_de150, diff3_de200)
+diff3_ee <- c(diff3_ee20, diff3_ee30, diff3_ee50, diff3_ee60, diff3_ee80, diff3_ee100, diff3_ee150, diff3_ee200)
+diff3_me <- c(diff3_me20, diff3_me30, diff3_me50, diff3_me60, diff3_me80, diff3_me100, diff3_me150, diff3_me200)
+diff3_hoch <- c(diff3_hoch20, diff3_hoch30, diff3_hoch50, diff3_hoch60, diff3_hoch80, diff3_hoch100, diff3_hoch150, diff3_hoch200)
+diff3_exact <- c(diff3_exact20, diff3_exact30, diff3_exact50, diff3_exact60, diff3_exact80, diff3_exact100, diff3_exact150, diff3_exact200)
 osl_3
 mosl_3
 ee_3
@@ -2769,23 +2639,6 @@ de_3
 rc_3
 max1_hochberg_3
 max1_pmult_3
-
-osl_4 <- c(os20_4, os30_4, os50_4, os60_4, os80_4, os100_4, os150_4, os200_4)
-mosl_4 <- c(mos20_4, mos30_4, mos50_4, mos60_4, mos80_4, mos100_4, mos150_4, mos200_4)
-rc_4 <- c(rc20_4, rc30_4, rc50_4, rc60_4, rc80_4, rc100_4, rc150_4, rc200_4)
-de_4 <- c(de20_4, de30_4, de50_4, de60_4, de80_4, de100_4, de150_4, de200_4)
-ee_4 <- c(ee20_4, ee30_4, ee50_4, ee60_4, ee80_4, ee100_4, ee150_4, ee200_4)
-me_4 <- c(me20_4, me30_4, me50_4, me60_4, me80_4, me100_4, me150_4, me200_4)
-max1_hochberg_4 <- c(max1_hoch20_4, max1_hoch30_4, max1_hoch50_4, max1_hoch60_4, max1_hoch80_4, max1_hoch100_4, max1_hoch150_4, max1_hoch200_4)
-max1_pmult_4 <- c(max1_exact20_4, max1_exact30_4, max1_exact50_4, max1_exact60_4, max1_exact80_4, max1_exact100_4, max1_exact150_4, max1_exact200_4)
-osl_4
-mosl_4
-ee_4
-me_4
-de_4
-rc_4
-max1_hochberg_4
-max1_pmult_4
 
 d1_1 <- data.frame(Sample.size = n, Error = c(osl_1, mosl_1, ee_1, me_1, de_1, rc_1, max1_hochberg_1, max1_pmult_1),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -2796,51 +2649,63 @@ d1_1$Test <- factor(d1_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
+PH_1 <- ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 1',
-       subtitle = '')+
+       title = 'Scenario 2: proportional hazards',
+       subtitle = 'pi = 1')+
   geom_hline(yintercept = 0.8, size = 0.2)+
-  #geom_hline(yintercept = 0.05, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  ylim(0, 1)+
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+PH_1
 
+d2_1 <- data.frame(Sample.size = n, Error = c(diff1_osl, diff1_mosl, diff1_ee, diff1_me, diff1_de, diff1_rc, diff1_hoch, diff1_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_1$Test <- as.factor(d2_1$Test)
+d2_1$Test <- factor(d2_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_2 <- data.frame(Sample.size = n, Error = c(osl_2, mosl_2, ee_2, me_2, de_2, rc_2, max1_hochberg_2, max1_pmult_2),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_2$Test <- as.factor(d1_2$Test)
-d1_2$Test <- factor(d1_2$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_2, aes(x = Sample.size, y = Error, group = Test))+
+Diff_PH_1 <- ggplot(d2_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_1$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.8',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  #geom_hline(yintercept = 0.05, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 2: proportional hazards',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_PH_1
+
 
 d1_3 <- data.frame(Sample.size = n, Error = c(osl_3, mosl_3, ee_3, me_3, de_3, rc_3, max1_hochberg_3, max1_pmult_3),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -2851,51 +2716,58 @@ d1_3$Test <- factor(d1_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
+Neff_3 <- ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 0.6',
-       subtitle = '')+
+       title = 'Scenario 2: proportional hazards',
+       subtitle = 'pi = 0.6')+
   geom_hline(yintercept = 0.8, size = 0.2)+
-  #geom_hline(yintercept = 0.05, size = 0.2)+
   ylim(0,1)+
   theme(legend.position = 'right',
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12),
         plot.title = element_text(hjust = 0.5, size = 20),
         plot.subtitle = element_text(hjust = 0.5, size = 15))
+PH_3
 
+d2_3 <- data.frame(Sample.size = n, Error = c(diff3_osl, diff3_mosl, diff3_ee, diff3_me, diff3_de, diff3_rc, diff3_hoch, diff3_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_3$Test <- as.factor(d2_3$Test)
+d2_3$Test <- factor(d2_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_4 <- data.frame(Sample.size = n, Error = c(osl_4, mosl_4, ee_4, me_4, de_4, rc_4, max1_hochberg_4, max1_pmult_4),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_4$Test <- as.factor(d1_4$Test)
-d1_4$Test <- factor(d1_4$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_4, aes(x = Sample.size, y = Error, group = Test))+
+Diff_PH_3 <- ggplot(d2_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_3$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.5',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  #geom_hline(yintercept = 0.05, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 2: proportional hazards',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_PH_3
+
+
 
 
 
@@ -2945,9 +2817,7 @@ ta <- 3   #accrual time - 3 years
 tf <- 4   #follow-up time - 4 years
 
 pi1 <- 1
-pi2 <- 0.8
 pi3 <- 0.6
-pi4 <- 0.5
 
 err_oslrt20_1 <- rep(0, nit)
 err_moslrt20_1 <- rep(0, nit)
@@ -2958,15 +2828,6 @@ err_me20_1 <- rep(0, nit)
 err_max1_hoch20_1 <- rep(0, nit)
 err_max1_exact20_1 <- rep(0, nit)
 
-err_oslrt20_2 <- rep(0, nit)
-err_moslrt20_2 <- rep(0, nit)
-err_rc20_2 <- rep(0, nit)
-err_de20_2 <- rep(0, nit)
-err_ee20_2 <- rep(0, nit)
-err_me20_2 <- rep(0, nit)
-err_max1_hoch20_2 <- rep(0, nit)
-err_max1_exact20_2 <- rep(0, nit)
-
 err_oslrt20_3 <- rep(0, nit)
 err_moslrt20_3 <- rep(0, nit)
 err_rc20_3 <- rep(0, nit)
@@ -2975,18 +2836,6 @@ err_ee20_3 <- rep(0, nit)
 err_me20_3 <- rep(0, nit)
 err_max1_hoch20_3 <- rep(0, nit)
 err_max1_exact20_3 <- rep(0, nit)
-
-err_oslrt20_4 <- rep(0, nit)
-err_moslrt20_4 <- rep(0, nit)
-err_rc20_4 <- rep(0, nit)
-err_de20_4 <- rep(0, nit)
-err_ee20_4 <- rep(0, nit)
-err_me20_4 <- rep(0, nit)
-err_max1_hoch20_4 <- rep(0, nit)
-err_max1_exact20_4 <- rep(0, nit)
-
-tx_cens20 <- rep(0, nit)
-tx_censadm20 <- rep(0, nit)
 
 
 err_oslrt30_1 <- rep(0, nit)
@@ -2998,15 +2847,6 @@ err_me30_1 <- rep(0, nit)
 err_max1_hoch30_1 <- rep(0, nit)
 err_max1_exact30_1 <- rep(0, nit)
 
-err_oslrt30_2 <- rep(0, nit)
-err_moslrt30_2 <- rep(0, nit)
-err_rc30_2 <- rep(0, nit)
-err_de30_2 <- rep(0, nit)
-err_ee30_2 <- rep(0, nit)
-err_me30_2 <- rep(0, nit)
-err_max1_hoch30_2 <- rep(0, nit)
-err_max1_exact30_2 <- rep(0, nit)
-
 err_oslrt30_3 <- rep(0, nit)
 err_moslrt30_3 <- rep(0, nit)
 err_rc30_3 <- rep(0, nit)
@@ -3015,18 +2855,6 @@ err_ee30_3 <- rep(0, nit)
 err_me30_3 <- rep(0, nit)
 err_max1_hoch30_3 <- rep(0, nit)
 err_max1_exact30_3 <- rep(0, nit)
-
-err_oslrt30_4 <- rep(0, nit)
-err_moslrt30_4 <- rep(0, nit)
-err_rc30_4 <- rep(0, nit)
-err_de30_4 <- rep(0, nit)
-err_ee30_4 <- rep(0, nit)
-err_me30_4 <- rep(0, nit)
-err_max1_hoch30_4 <- rep(0, nit)
-err_max1_exact30_4 <- rep(0, nit)
-
-tx_cens30 <- rep(0, nit)
-tx_censadm30 <- rep(0, nit)
 
 
 err_oslrt50_1 <- rep(0, nit)
@@ -3038,15 +2866,6 @@ err_me50_1 <- rep(0, nit)
 err_max1_hoch50_1 <- rep(0, nit)
 err_max1_exact50_1 <- rep(0, nit)
 
-err_oslrt50_2 <- rep(0, nit)
-err_moslrt50_2 <- rep(0, nit)
-err_rc50_2 <- rep(0, nit)
-err_de50_2 <- rep(0, nit)
-err_ee50_2 <- rep(0, nit)
-err_me50_2 <- rep(0, nit)
-err_max1_hoch50_2 <- rep(0, nit)
-err_max1_exact50_2 <- rep(0, nit)
-
 err_oslrt50_3 <- rep(0, nit)
 err_moslrt50_3 <- rep(0, nit)
 err_rc50_3 <- rep(0, nit)
@@ -3055,18 +2874,6 @@ err_ee50_3 <- rep(0, nit)
 err_me50_3 <- rep(0, nit)
 err_max1_hoch50_3 <- rep(0, nit)
 err_max1_exact50_3 <- rep(0, nit)
-
-err_oslrt50_4 <- rep(0, nit)
-err_moslrt50_4 <- rep(0, nit)
-err_rc50_4 <- rep(0, nit)
-err_de50_4 <- rep(0, nit)
-err_ee50_4 <- rep(0, nit)
-err_me50_4 <- rep(0, nit)
-err_max1_hoch50_4 <- rep(0, nit)
-err_max1_exact50_4 <- rep(0, nit)
-
-tx_cens50 <- rep(0, nit)
-tx_censadm50 <- rep(0, nit)
 
 
 err_oslrt60_1 <- rep(0, nit)
@@ -3078,15 +2885,6 @@ err_me60_1 <- rep(0, nit)
 err_max1_hoch60_1 <- rep(0, nit)
 err_max1_exact60_1 <- rep(0, nit)
 
-err_oslrt60_2 <- rep(0, nit)
-err_moslrt60_2 <- rep(0, nit)
-err_rc60_2 <- rep(0, nit)
-err_de60_2 <- rep(0, nit)
-err_ee60_2 <- rep(0, nit)
-err_me60_2 <- rep(0, nit)
-err_max1_hoch60_2 <- rep(0, nit)
-err_max1_exact60_2 <- rep(0, nit)
-
 err_oslrt60_3 <- rep(0, nit)
 err_moslrt60_3 <- rep(0, nit)
 err_rc60_3 <- rep(0, nit)
@@ -3095,18 +2893,6 @@ err_ee60_3 <- rep(0, nit)
 err_me60_3 <- rep(0, nit)
 err_max1_hoch60_3 <- rep(0, nit)
 err_max1_exact60_3 <- rep(0, nit)
-
-err_oslrt60_4 <- rep(0, nit)
-err_moslrt60_4 <- rep(0, nit)
-err_rc60_4 <- rep(0, nit)
-err_de60_4 <- rep(0, nit)
-err_ee60_4 <- rep(0, nit)
-err_me60_4 <- rep(0, nit)
-err_max1_hoch60_4 <- rep(0, nit)
-err_max1_exact60_4 <- rep(0, nit)
-
-tx_cens60 <- rep(0, nit)
-tx_censadm60 <- rep(0, nit)
 
 
 err_oslrt80_1 <- rep(0, nit)
@@ -3118,15 +2904,6 @@ err_me80_1 <- rep(0, nit)
 err_max1_hoch80_1 <- rep(0, nit)
 err_max1_exact80_1 <- rep(0, nit)
 
-err_oslrt80_2 <- rep(0, nit)
-err_moslrt80_2 <- rep(0, nit)
-err_rc80_2 <- rep(0, nit)
-err_de80_2 <- rep(0, nit)
-err_ee80_2 <- rep(0, nit)
-err_me80_2 <- rep(0, nit)
-err_max1_hoch80_2 <- rep(0, nit)
-err_max1_exact80_2 <- rep(0, nit)
-
 err_oslrt80_3 <- rep(0, nit)
 err_moslrt80_3 <- rep(0, nit)
 err_rc80_3 <- rep(0, nit)
@@ -3135,18 +2912,6 @@ err_ee80_3 <- rep(0, nit)
 err_me80_3 <- rep(0, nit)
 err_max1_hoch80_3 <- rep(0, nit)
 err_max1_exact80_3 <- rep(0, nit)
-
-err_oslrt80_4 <- rep(0, nit)
-err_moslrt80_4 <- rep(0, nit)
-err_rc80_4 <- rep(0, nit)
-err_de80_4 <- rep(0, nit)
-err_ee80_4 <- rep(0, nit)
-err_me80_4 <- rep(0, nit)
-err_max1_hoch80_4 <- rep(0, nit)
-err_max1_exact80_4 <- rep(0, nit)
-
-tx_cens80 <- rep(0, nit)
-tx_censadm80 <- rep(0, nit)
 
 
 err_oslrt100_1 <- rep(0, nit)
@@ -3158,15 +2923,6 @@ err_me100_1 <- rep(0, nit)
 err_max1_hoch100_1 <- rep(0, nit)
 err_max1_exact100_1 <- rep(0, nit)
 
-err_oslrt100_2 <- rep(0, nit)
-err_moslrt100_2 <- rep(0, nit)
-err_rc100_2 <- rep(0, nit)
-err_de100_2 <- rep(0, nit)
-err_ee100_2 <- rep(0, nit)
-err_me100_2 <- rep(0, nit)
-err_max1_hoch100_2 <- rep(0, nit)
-err_max1_exact100_2 <- rep(0, nit)
-
 err_oslrt100_3 <- rep(0, nit)
 err_moslrt100_3 <- rep(0, nit)
 err_rc100_3 <- rep(0, nit)
@@ -3175,18 +2931,6 @@ err_ee100_3 <- rep(0, nit)
 err_me100_3 <- rep(0, nit)
 err_max1_hoch100_3 <- rep(0, nit)
 err_max1_exact100_3 <- rep(0, nit)
-
-err_oslrt100_4 <- rep(0, nit)
-err_moslrt100_4 <- rep(0, nit)
-err_rc100_4 <- rep(0, nit)
-err_de100_4 <- rep(0, nit)
-err_ee100_4 <- rep(0, nit)
-err_me100_4 <- rep(0, nit)
-err_max1_hoch100_4 <- rep(0, nit)
-err_max1_exact100_4 <- rep(0, nit)
-
-tx_cens100 <- rep(0, nit)
-tx_censadm100 <- rep(0, nit)
 
 
 err_oslrt150_1 <- rep(0, nit)
@@ -3198,15 +2942,6 @@ err_me150_1 <- rep(0, nit)
 err_max1_hoch150_1 <- rep(0, nit)
 err_max1_exact150_1 <- rep(0, nit)
 
-err_oslrt150_2 <- rep(0, nit)
-err_moslrt150_2 <- rep(0, nit)
-err_rc150_2 <- rep(0, nit)
-err_de150_2 <- rep(0, nit)
-err_ee150_2 <- rep(0, nit)
-err_me150_2 <- rep(0, nit)
-err_max1_hoch150_2 <- rep(0, nit)
-err_max1_exact150_2 <- rep(0, nit)
-
 err_oslrt150_3 <- rep(0, nit)
 err_moslrt150_3 <- rep(0, nit)
 err_rc150_3 <- rep(0, nit)
@@ -3215,18 +2950,6 @@ err_ee150_3 <- rep(0, nit)
 err_me150_3 <- rep(0, nit)
 err_max1_hoch150_3 <- rep(0, nit)
 err_max1_exact150_3 <- rep(0, nit)
-
-err_oslrt150_4 <- rep(0, nit)
-err_moslrt150_4 <- rep(0, nit)
-err_rc150_4 <- rep(0, nit)
-err_de150_4 <- rep(0, nit)
-err_ee150_4 <- rep(0, nit)
-err_me150_4 <- rep(0, nit)
-err_max1_hoch150_4 <- rep(0, nit)
-err_max1_exact150_4 <- rep(0, nit)
-
-tx_cens150 <- rep(0, nit)
-tx_censadm150 <- rep(0, nit)
 
 
 err_oslrt200_1 <- rep(0, nit)
@@ -3238,15 +2961,6 @@ err_me200_1 <- rep(0, nit)
 err_max1_hoch200_1 <- rep(0, nit)
 err_max1_exact200_1 <- rep(0, nit)
 
-err_oslrt200_2 <- rep(0, nit)
-err_moslrt200_2 <- rep(0, nit)
-err_rc200_2 <- rep(0, nit)
-err_de200_2 <- rep(0, nit)
-err_ee200_2 <- rep(0, nit)
-err_me200_2 <- rep(0, nit)
-err_max1_hoch200_2 <- rep(0, nit)
-err_max1_exact200_2 <- rep(0, nit)
-
 err_oslrt200_3 <- rep(0, nit)
 err_moslrt200_3 <- rep(0, nit)
 err_rc200_3 <- rep(0, nit)
@@ -3256,17 +2970,77 @@ err_me200_3 <- rep(0, nit)
 err_max1_hoch200_3 <- rep(0, nit)
 err_max1_exact200_3 <- rep(0, nit)
 
-err_oslrt200_4 <- rep(0, nit)
-err_moslrt200_4 <- rep(0, nit)
-err_rc200_4 <- rep(0, nit)
-err_de200_4 <- rep(0, nit)
-err_ee200_4 <- rep(0, nit)
-err_me200_4 <- rep(0, nit)
-err_max1_hoch200_4 <- rep(0, nit)
-err_max1_exact200_4 <- rep(0, nit)
+err_init_oslrt20 <- rep(0, nit)
+err_init_moslrt20 <- rep(0, nit)
+err_init_rc20 <- rep(0, nit)
+err_init_de20 <- rep(0, nit)
+err_init_ee20 <- rep(0, nit)
+err_init_me20 <- rep(0, nit)
+err_init_max_hoch_20 <- rep(0, nit)
+err_init_max_exact_20 <- rep(0, nit)
 
-tx_cens200 <- rep(0, nit)
-tx_censadm200 <- rep(0, nit)
+err_init_oslrt30 <- rep(0, nit)
+err_init_moslrt30 <- rep(0, nit)
+err_init_rc30 <- rep(0, nit)
+err_init_de30 <- rep(0, nit)
+err_init_ee30 <- rep(0, nit)
+err_init_me30 <- rep(0, nit)
+err_init_max_hoch_30 <- rep(0, nit)
+err_init_max_exact_30 <- rep(0, nit)
+
+err_init_oslrt50 <- rep(0, nit)
+err_init_moslrt50 <- rep(0, nit)
+err_init_rc50 <- rep(0, nit)
+err_init_de50 <- rep(0, nit)
+err_init_ee50 <- rep(0, nit)
+err_init_me50 <- rep(0, nit)
+err_init_max_hoch_50 <- rep(0, nit)
+err_init_max_exact_50 <- rep(0, nit)
+
+err_init_oslrt60 <- rep(0, nit)
+err_init_moslrt60 <- rep(0, nit)
+err_init_rc60 <- rep(0, nit)
+err_init_de60 <- rep(0, nit)
+err_init_ee60 <- rep(0, nit)
+err_init_me60 <- rep(0, nit)
+err_init_max_hoch_60 <- rep(0, nit)
+err_init_max_exact_60 <- rep(0, nit)
+
+err_init_oslrt80 <- rep(0, nit)
+err_init_moslrt80 <- rep(0, nit)
+err_init_rc80 <- rep(0, nit)
+err_init_de80 <- rep(0, nit)
+err_init_ee80 <- rep(0, nit)
+err_init_me80 <- rep(0, nit)
+err_init_max_hoch_80 <- rep(0, nit)
+err_init_max_exact_80 <- rep(0, nit)
+
+err_init_oslrt100 <- rep(0, nit)
+err_init_moslrt100 <- rep(0, nit)
+err_init_rc100 <- rep(0, nit)
+err_init_de100 <- rep(0, nit)
+err_init_ee100 <- rep(0, nit)
+err_init_me100 <- rep(0, nit)
+err_init_max_hoch_100 <- rep(0, nit)
+err_init_max_exact_100 <- rep(0, nit)
+
+err_init_oslrt150 <- rep(0, nit)
+err_init_moslrt150 <- rep(0, nit)
+err_init_rc150 <- rep(0, nit)
+err_init_de150 <- rep(0, nit)
+err_init_ee150 <- rep(0, nit)
+err_init_me150 <- rep(0, nit)
+err_init_max_hoch_150 <- rep(0, nit)
+err_init_max_exact_150 <- rep(0, nit)
+
+err_init_oslrt200 <- rep(0, nit)
+err_init_moslrt200 <- rep(0, nit)
+err_init_rc200 <- rep(0, nit)
+err_init_de200 <- rep(0, nit)
+err_init_ee200 <- rep(0, nit)
+err_init_me200 <- rep(0, nit)
+err_init_max_hoch_200 <- rep(0, nit)
+err_init_max_exact_200 <- rep(0, nit)
 
 for(i in 1:nit){
   time20 <- rpwexp(n = 20, rate = c(1/scale0*0.5, 1/scale0*1), intervals = CP, cumulative = FALSE)
@@ -3391,296 +3165,220 @@ for(i in 1:nit){
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
   data20 <- ten(S20)
-  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)[2]
-  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi1)[2]
-  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi1)[2]
-  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)[2]
+  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a20_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  a202_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)[2]
-  b20_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  c20_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi2)[2]
-  d20_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi2)[2]
-  e20_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f20_2 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)[2]
-  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi3)[2]
-  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi3)[2]
-  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a20_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  a202_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)[2]
-  b20_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  c20_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi4)[2]
-  d20_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi4)[2]
-  e20_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f20_4 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)[2]
+  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a20_init <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a202_init <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b20_init <- Score_RC(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c20_init <- Score_DE(data = data20, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d20_init <- Score_EE(data = data20, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e20_init <- Score_ME(data = data20, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g20_hoch_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g20_exact_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data30 <- ten(S30)
-  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)[2]
-  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi1)[2]
-  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi1)[2]
-  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)[2]
+  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a30_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  a302_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)[2]
-  b30_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  c30_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi2)[2]
-  d30_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi2)[2]
-  e30_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f30_2 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)[2]
-  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi3)[2]
-  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi3)[2]
-  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a30_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  a302_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)[2]
-  b30_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  c30_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi4)[2]
-  d30_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi4)[2]
-  e30_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f30_4 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)[2]
+  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a30_init <- OSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a302_init <- mOSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b30_init <- Score_RC(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c30_init <- Score_DE(data = data30, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d30_init <- Score_EE(data = data30, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e30_init <- Score_ME(data = data30, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g30_hoch_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g30_exact_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data50 <- ten(S50)
-  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)[2]
-  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi1)[2]
-  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi1)[2]
-  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)[2]
+  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a50_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  a502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)[2]
-  b50_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  c50_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi2)[2]
-  d50_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi2)[2]
-  e50_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f50_2 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)[2]
-  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi3)[2]
-  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi3)[2]
-  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a50_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  a502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)[2]
-  b50_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  c50_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi4)[2]
-  d50_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi4)[2]
-  e50_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f50_4 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)[2]
+  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a50_init <- OSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a502_init <- mOSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b50_init <- Score_RC(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c50_init <- Score_DE(data = data50, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d50_init <- Score_EE(data = data50, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e50_init <- Score_ME(data = data50, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g50_hoch_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g50_exact_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data60 <- ten(S60)
-  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)[2]
-  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi1)[2]
-  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi1)[2]
-  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)[2]
+  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a60_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  a602_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)[2]
-  b60_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  c60_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi2)[2]
-  d60_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi2)[2]
-  e60_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f60_2 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)[2]
-  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi3)[2]
-  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi3)[2]
-  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a60_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  a602_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)[2]
-  b60_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  c60_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi4)[2]
-  d60_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi4)[2]
-  e60_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f60_4 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)[2]
+  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a60_init <- OSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a602_init <- mOSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b60_init <- Score_RC(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c60_init <- Score_DE(data = data60, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d60_init <- Score_EE(data = data60, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e60_init <- Score_ME(data = data60, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g60_hoch_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g60_exact_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data80 <- ten(S80)
-  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)[2]
-  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi1)[2]
-  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi1)[2]
-  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)[2]
+  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a80_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  a802_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)[2]
-  b80_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  c80_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi2)[2]
-  d80_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi2)[2]
-  e80_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f80_2 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)[2]
-  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi3)[2]
-  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi3)[2]
-  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a80_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  a802_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)[2]
-  b80_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  c80_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi4)[2]
-  d80_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi4)[2]
-  e80_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f80_4 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)[2]
+  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a80_init <- OSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a802_init <- mOSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b80_init <- Score_RC(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c80_init <- Score_DE(data = data80, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d80_init <- Score_EE(data = data80, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e80_init <- Score_ME(data = data80, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g80_hoch_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g80_exact_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data100 <- ten(S100)
-  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)[2]
-  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi1)[2]
-  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi1)[2]
-  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)[2]
+  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a100_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  a1002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)[2]
-  b100_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  c100_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi2)[2]
-  d100_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi2)[2]
-  e100_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f100_2 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)[2]
-  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi3)[2]
-  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi3)[2]
-  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a100_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  a1002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)[2]
-  b100_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  c100_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi4)[2]
-  d100_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi4)[2]
-  e100_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f100_4 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)[2]
+  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a100_init <- OSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1002_init  <- mOSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b100_init  <- Score_RC(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c100_init  <- Score_DE(data = data100, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d100_init  <- Score_EE(data = data100, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e100_init  <- Score_ME(data = data100, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g100_hoch_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g100_exact_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data150 <- ten(S150)
-  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)[2]
-  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi1)[2]
-  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi1)[2]
-  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)[2]
+  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a150_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  a1502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)[2]
-  b150_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  c150_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi2)[2]
-  d150_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi2)[2]
-  e150_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f150_2 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)[2]
-  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi3)[2]
-  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi3)[2]
-  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a150_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  a1502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)[2]
-  b150_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  c150_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi4)[2]
-  d150_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi4)[2]
-  e150_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f150_4 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)[2]
+  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a150_init <- OSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1502_init <- mOSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b150_init <- Score_RC(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c150_init <- Score_DE(data = data150, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d150_init <- Score_EE(data = data150, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e150_init <- Score_ME(data = data150, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g150_hoch_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g150_exact_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data200 <- ten(S200)
-  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)[2]
-  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi1)[2]
-  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi1)[2]
-  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)[2]
+  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a200_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  a2002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)[2]
-  b200_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  c200_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi2)[2]
-  d200_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi2)[2]
-  e200_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f200_2 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
+  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)[2]
+  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a200_init <- OSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a2002_init <- mOSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b200_init <- Score_RC(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c200_init <- Score_DE(data = data200, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d200_init <- Score_EE(data = data200, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e200_init <- Score_ME(data = data200, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g200_hoch_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g200_exact_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
-  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)[2]
-  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi3)[2]
-  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi3)[2]
-  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a200_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  a2002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)[2]
-  b200_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  c200_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi4)[2]
-  d200_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi4)[2]
-  e200_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f200_4 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
-  
-  
-  #censoring rate with adm censoring
-  tx_censadm20[i] <- 1-sum(delta20)/20
-  tx_censadm30[i] <- 1-sum(delta30)/30
-  tx_censadm50[i] <- 1-sum(delta50)/50
-  tx_censadm60[i] <- 1-sum(delta60)/60
-  tx_censadm80[i] <- 1-sum(delta80)/80
-  tx_censadm100[i] <- 1-sum(delta100)/100
-  tx_censadm150[i] <- 1-sum(delta150)/150
-  tx_censadm200[i] <- 1-sum(delta200)/200
-  
-  #censoring rate without adm censoring
-  tx_cens20[i] <- 1-sum(del20)/20
-  tx_cens30[i] <- 1-sum(del30)/30
-  tx_cens50[i] <- 1-sum(del50)/50
-  tx_cens60[i] <- 1-sum(del60)/60
-  tx_cens80[i] <- 1-sum(del80)/80
-  tx_cens100[i] <- 1-sum(del100)/100
-  tx_cens150[i] <- 1-sum(del150)/150
-  tx_cens200[i] <- 1-sum(del200)/200
   
   err_oslrt20_1[i] <- ifelse((a20_1<0.05), 1, 0)
   err_moslrt20_1[i] <- ifelse((a202_1<0.05), 1, 0)
@@ -3691,15 +3389,6 @@ for(i in 1:nit){
   err_max1_hoch20_1[i] <- ifelse((f20_1[2]<0.05), 1, 0)
   err_max1_exact20_1[i] <- ifelse((f20_1[3]<0.05), 1, 0)
   
-  err_oslrt20_2[i] <- ifelse((a20_2<0.05), 1, 0)
-  err_moslrt20_2[i] <- ifelse((a202_2<0.05), 1, 0)
-  err_rc20_2[i] <- ifelse((b20_2<0.05), 1, 0)
-  err_de20_2[i] <- ifelse((c20_2<0.05), 1, 0)
-  err_ee20_2[i] <- ifelse((d20_2<0.05), 1, 0)
-  err_me20_2[i] <- ifelse((e20_2<0.05), 1, 0)
-  err_max1_hoch20_2[i] <- ifelse((f20_2[2]<0.05), 1, 0)
-  err_max1_exact20_2[i] <- ifelse((f20_2[3]<0.05), 1, 0)
-  
   err_oslrt20_3[i] <- ifelse((a20_3<0.05), 1, 0)
   err_moslrt20_3[i] <- ifelse((a202_3<0.05), 1, 0)
   err_rc20_3[i] <- ifelse((b20_3<0.05), 1, 0)
@@ -3708,15 +3397,6 @@ for(i in 1:nit){
   err_me20_3[i] <- ifelse((e20_3<0.05), 1, 0)
   err_max1_hoch20_3[i] <- ifelse((f20_3[2]<0.05), 1, 0)
   err_max1_exact20_3[i] <- ifelse((f20_3[3]<0.05), 1, 0)
-  
-  err_oslrt20_4[i] <- ifelse((a20_4<0.05), 1, 0)
-  err_moslrt20_4[i] <- ifelse((a202_4<0.05), 1, 0)
-  err_rc20_4[i] <- ifelse((b20_4<0.05), 1, 0)
-  err_de20_4[i] <- ifelse((c20_4<0.05), 1, 0)
-  err_ee20_4[i] <- ifelse((d20_4<0.05), 1, 0)
-  err_me20_4[i] <- ifelse((e20_4<0.05), 1, 0)
-  err_max1_hoch20_4[i] <- ifelse((f20_4[2]<0.05), 1, 0)
-  err_max1_exact20_4[i] <- ifelse((f20_4[3]<0.05), 1, 0)
   
   
   err_oslrt30_1[i] <- ifelse((a30_1<0.05), 1, 0)
@@ -3728,15 +3408,6 @@ for(i in 1:nit){
   err_max1_hoch30_1[i] <- ifelse((f30_1[2]<0.05), 1, 0)
   err_max1_exact30_1[i] <- ifelse((f30_1[3]<0.05), 1, 0)
   
-  err_oslrt30_2[i] <- ifelse((a30_2<0.05), 1, 0)
-  err_moslrt30_2[i] <- ifelse((a302_2<0.05), 1, 0)
-  err_rc30_2[i] <- ifelse((b30_2<0.05), 1, 0)
-  err_de30_2[i] <- ifelse((c30_2<0.05), 1, 0)
-  err_ee30_2[i] <- ifelse((d30_2<0.05), 1, 0)
-  err_me30_2[i] <- ifelse((e30_2<0.05), 1, 0)
-  err_max1_hoch30_2[i] <- ifelse((f30_2[2]<0.05), 1, 0)
-  err_max1_exact30_2[i] <- ifelse((f30_2[3]<0.05), 1, 0)
-  
   err_oslrt30_3[i] <- ifelse((a30_3<0.05), 1, 0)
   err_moslrt30_3[i] <- ifelse((a302_3<0.05), 1, 0)
   err_rc30_3[i] <- ifelse((b30_3<0.05), 1, 0)
@@ -3745,15 +3416,6 @@ for(i in 1:nit){
   err_me30_3[i] <- ifelse((e30_3<0.05), 1, 0)
   err_max1_hoch30_3[i] <- ifelse((f30_3[2]<0.05), 1, 0)
   err_max1_exact30_3[i] <- ifelse((f30_3[3]<0.05), 1, 0)
-  
-  err_oslrt30_4[i] <- ifelse((a30_4<0.05), 1, 0)
-  err_moslrt30_4[i] <- ifelse((a302_4<0.05), 1, 0)
-  err_rc30_4[i] <- ifelse((b30_4<0.05), 1, 0)
-  err_de30_4[i] <- ifelse((c30_4<0.05), 1, 0)
-  err_ee30_4[i] <- ifelse((d30_4<0.05), 1, 0)
-  err_me30_4[i] <- ifelse((e30_4<0.05), 1, 0)
-  err_max1_hoch30_4[i] <- ifelse((f30_4[2]<0.05), 1, 0)
-  err_max1_exact30_4[i] <- ifelse((f30_4[3]<0.05), 1, 0)
   
   
   err_oslrt50_1[i] <- ifelse((a50_1<0.05), 1, 0)
@@ -3765,15 +3427,6 @@ for(i in 1:nit){
   err_max1_hoch50_1[i] <- ifelse((f50_1[2]<0.05), 1, 0)
   err_max1_exact50_1[i] <- ifelse((f50_1[3]<0.05), 1, 0)
   
-  err_oslrt50_2[i] <- ifelse((a50_2<0.05), 1, 0)
-  err_moslrt50_2[i] <- ifelse((a502_2<0.05), 1, 0)
-  err_rc50_2[i] <- ifelse((b50_2<0.05), 1, 0)
-  err_de50_2[i] <- ifelse((c50_2<0.05), 1, 0)
-  err_ee50_2[i] <- ifelse((d50_2<0.05), 1, 0)
-  err_me50_2[i] <- ifelse((e50_2<0.05), 1, 0)
-  err_max1_hoch50_2[i] <- ifelse((f50_2[2]<0.05), 1, 0)
-  err_max1_exact50_2[i] <- ifelse((f50_2[3]<0.05), 1, 0)
-  
   err_oslrt50_3[i] <- ifelse((a50_3<0.05), 1, 0)
   err_moslrt50_3[i] <- ifelse((a502_3<0.05), 1, 0)
   err_rc50_3[i] <- ifelse((b50_3<0.05), 1, 0)
@@ -3782,15 +3435,6 @@ for(i in 1:nit){
   err_me50_3[i] <- ifelse((e50_3<0.05), 1, 0)
   err_max1_hoch50_3[i] <- ifelse((f50_3[2]<0.05), 1, 0)
   err_max1_exact50_3[i] <- ifelse((f50_3[3]<0.05), 1, 0)
-  
-  err_oslrt50_4[i] <- ifelse((a50_4<0.05), 1, 0)
-  err_moslrt50_4[i] <- ifelse((a502_4<0.05), 1, 0)
-  err_rc50_4[i] <- ifelse((b50_4<0.05), 1, 0)
-  err_de50_4[i] <- ifelse((c50_4<0.05), 1, 0)
-  err_ee50_4[i] <- ifelse((d50_4<0.05), 1, 0)
-  err_me50_4[i] <- ifelse((e50_4<0.05), 1, 0)
-  err_max1_hoch50_4[i] <- ifelse((f50_4[2]<0.05), 1, 0)
-  err_max1_exact50_4[i] <- ifelse((f50_4[3]<0.05), 1, 0)
   
   
   err_oslrt60_1[i] <- ifelse((a60_1<0.05), 1, 0)
@@ -3802,15 +3446,6 @@ for(i in 1:nit){
   err_max1_hoch60_1[i] <- ifelse((f60_1[2]<0.05), 1, 0)
   err_max1_exact60_1[i] <- ifelse((f60_1[3]<0.05), 1, 0)
   
-  err_oslrt60_2[i] <- ifelse((a60_2<0.05), 1, 0)
-  err_moslrt60_2[i] <- ifelse((a602_2<0.05), 1, 0)
-  err_rc60_2[i] <- ifelse((b60_2<0.05), 1, 0)
-  err_de60_2[i] <- ifelse((c60_2<0.05), 1, 0)
-  err_ee60_2[i] <- ifelse((d60_2<0.05), 1, 0)
-  err_me60_2[i] <- ifelse((e60_2<0.05), 1, 0)
-  err_max1_hoch60_2[i] <- ifelse((f60_2[2]<0.05), 1, 0)
-  err_max1_exact60_2[i] <- ifelse((f60_2[3]<0.05), 1, 0)
-  
   err_oslrt60_3[i] <- ifelse((a60_3<0.05), 1, 0)
   err_moslrt60_3[i] <- ifelse((a602_3<0.05), 1, 0)
   err_rc60_3[i] <- ifelse((b60_3<0.05), 1, 0)
@@ -3819,15 +3454,6 @@ for(i in 1:nit){
   err_me60_3[i] <- ifelse((e60_3<0.05), 1, 0)
   err_max1_hoch60_3[i] <- ifelse((f60_3[2]<0.05), 1, 0)
   err_max1_exact60_3[i] <- ifelse((f60_3[3]<0.05), 1, 0)
-  
-  err_oslrt60_4[i] <- ifelse((a60_4<0.05), 1, 0)
-  err_moslrt60_4[i] <- ifelse((a602_4<0.05), 1, 0)
-  err_rc60_4[i] <- ifelse((b60_4<0.05), 1, 0)
-  err_de60_4[i] <- ifelse((c60_4<0.05), 1, 0)
-  err_ee60_4[i] <- ifelse((d60_4<0.05), 1, 0)
-  err_me60_4[i] <- ifelse((e60_4<0.05), 1, 0)
-  err_max1_hoch60_4[i] <- ifelse((f60_4[2]<0.05), 1, 0)
-  err_max1_exact60_4[i] <- ifelse((f60_4[3]<0.05), 1, 0)
   
   
   err_oslrt80_1[i] <- ifelse((a80_1<0.05), 1, 0)
@@ -3839,15 +3465,6 @@ for(i in 1:nit){
   err_max1_hoch80_1[i] <- ifelse((f80_1[2]<0.05), 1, 0)
   err_max1_exact80_1[i] <- ifelse((f80_1[3]<0.05), 1, 0)
   
-  err_oslrt80_2[i] <- ifelse((a80_2<0.05), 1, 0)
-  err_moslrt80_2[i] <- ifelse((a802_2<0.05), 1, 0)
-  err_rc80_2[i] <- ifelse((b80_2<0.05), 1, 0)
-  err_de80_2[i] <- ifelse((c80_2<0.05), 1, 0)
-  err_ee80_2[i] <- ifelse((d80_2<0.05), 1, 0)
-  err_me80_2[i] <- ifelse((e80_2<0.05), 1, 0)
-  err_max1_hoch80_2[i] <- ifelse((f80_2[2]<0.05), 1, 0)
-  err_max1_exact80_2[i] <- ifelse((f80_2[3]<0.05), 1, 0)
-  
   err_oslrt80_3[i] <- ifelse((a80_3<0.05), 1, 0)
   err_moslrt80_3[i] <- ifelse((a802_3<0.05), 1, 0)
   err_rc80_3[i] <- ifelse((b80_3<0.05), 1, 0)
@@ -3856,15 +3473,6 @@ for(i in 1:nit){
   err_me80_3[i] <- ifelse((e80_3<0.05), 1, 0)
   err_max1_hoch80_3[i] <- ifelse((f80_3[2]<0.05), 1, 0)
   err_max1_exact80_3[i] <- ifelse((f80_3[3]<0.05), 1, 0)
-  
-  err_oslrt80_4[i] <- ifelse((a80_4<0.05), 1, 0)
-  err_moslrt80_4[i] <- ifelse((a802_4<0.05), 1, 0)
-  err_rc80_4[i] <- ifelse((b80_4<0.05), 1, 0)
-  err_de80_4[i] <- ifelse((c80_4<0.05), 1, 0)
-  err_ee80_4[i] <- ifelse((d80_4<0.05), 1, 0)
-  err_me80_4[i] <- ifelse((e80_4<0.05), 1, 0)
-  err_max1_hoch80_4[i] <- ifelse((f80_4[2]<0.05), 1, 0)
-  err_max1_exact80_4[i] <- ifelse((f80_4[3]<0.05), 1, 0)
   
   
   err_oslrt100_1[i] <- ifelse((a100_1<0.05), 1, 0)
@@ -3876,15 +3484,6 @@ for(i in 1:nit){
   err_max1_hoch100_1[i] <- ifelse((f100_1[2]<0.05), 1, 0)
   err_max1_exact100_1[i] <- ifelse((f100_1[3]<0.05), 1, 0)
   
-  err_oslrt100_2[i] <- ifelse((a100_2<0.05), 1, 0)
-  err_moslrt100_2[i] <- ifelse((a1002_2<0.05), 1, 0)
-  err_rc100_2[i] <- ifelse((b100_2<0.05), 1, 0)
-  err_de100_2[i] <- ifelse((c100_2<0.05), 1, 0)
-  err_ee100_2[i] <- ifelse((d100_2<0.05), 1, 0)
-  err_me100_2[i] <- ifelse((e100_2<0.05), 1, 0)
-  err_max1_hoch100_2[i] <- ifelse((f100_2[2]<0.05), 1, 0)
-  err_max1_exact100_2[i] <- ifelse((f100_2[3]<0.05), 1, 0)
-  
   err_oslrt100_3[i] <- ifelse((a100_3<0.05), 1, 0)
   err_moslrt100_3[i] <- ifelse((a1002_3<0.05), 1, 0)
   err_rc100_3[i] <- ifelse((b100_3<0.05), 1, 0)
@@ -3893,15 +3492,6 @@ for(i in 1:nit){
   err_me100_3[i] <- ifelse((e100_3<0.05), 1, 0)
   err_max1_hoch100_3[i] <- ifelse((f100_3[2]<0.05), 1, 0)
   err_max1_exact100_3[i] <- ifelse((f100_3[3]<0.05), 1, 0)
-  
-  err_oslrt100_4[i] <- ifelse((a100_4<0.05), 1, 0)
-  err_moslrt100_4[i] <- ifelse((a1002_4<0.05), 1, 0)
-  err_rc100_4[i] <- ifelse((b100_4<0.05), 1, 0)
-  err_de100_4[i] <- ifelse((c100_4<0.05), 1, 0)
-  err_ee100_4[i] <- ifelse((d100_4<0.05), 1, 0)
-  err_me100_4[i] <- ifelse((e100_4<0.05), 1, 0)
-  err_max1_hoch100_4[i] <- ifelse((f100_4[2]<0.05), 1, 0)
-  err_max1_exact100_4[i] <- ifelse((f100_4[3]<0.05), 1, 0)
   
   
   err_oslrt150_1[i] <- ifelse((a150_1<0.05), 1, 0)
@@ -3913,15 +3503,6 @@ for(i in 1:nit){
   err_max1_hoch150_1[i] <- ifelse((f150_1[2]<0.05), 1, 0)
   err_max1_exact150_1[i] <- ifelse((f150_1[3]<0.05), 1, 0)
   
-  err_oslrt150_2[i] <- ifelse((a150_2<0.05), 1, 0)
-  err_moslrt150_2[i] <- ifelse((a1502_2<0.05), 1, 0)
-  err_rc150_2[i] <- ifelse((b150_2<0.05), 1, 0)
-  err_de150_2[i] <- ifelse((c150_2<0.05), 1, 0)
-  err_ee150_2[i] <- ifelse((d150_2<0.05), 1, 0)
-  err_me150_2[i] <- ifelse((e150_2<0.05), 1, 0)
-  err_max1_hoch150_2[i] <- ifelse((f150_2[2]<0.05), 1, 0)
-  err_max1_exact150_2[i] <- ifelse((f150_2[3]<0.05), 1, 0)
-  
   err_oslrt150_3[i] <- ifelse((a150_3<0.05), 1, 0)
   err_moslrt150_3[i] <- ifelse((a1502_3<0.05), 1, 0)
   err_rc150_3[i] <- ifelse((b150_3<0.05), 1, 0)
@@ -3930,15 +3511,6 @@ for(i in 1:nit){
   err_me150_3[i] <- ifelse((e150_3<0.05), 1, 0)
   err_max1_hoch150_3[i] <- ifelse((f150_3[2]<0.05), 1, 0)
   err_max1_exact150_3[i] <- ifelse((f150_3[3]<0.05), 1, 0)
-  
-  err_oslrt150_4[i] <- ifelse((a150_4<0.05), 1, 0)
-  err_moslrt150_4[i] <- ifelse((a1502_4<0.05), 1, 0)
-  err_rc150_4[i] <- ifelse((b150_4<0.05), 1, 0)
-  err_de150_4[i] <- ifelse((c150_4<0.05), 1, 0)
-  err_ee150_4[i] <- ifelse((d150_4<0.05), 1, 0)
-  err_me150_4[i] <- ifelse((e150_4<0.05), 1, 0)
-  err_max1_hoch150_4[i] <- ifelse((f150_4[2]<0.05), 1, 0)
-  err_max1_exact150_4[i] <- ifelse((f150_4[3]<0.05), 1, 0)
   
   
   err_oslrt200_1[i] <- ifelse((a200_1<0.05), 1, 0)
@@ -3950,15 +3522,6 @@ for(i in 1:nit){
   err_max1_hoch200_1[i] <- ifelse((f200_1[2]<0.05), 1, 0)
   err_max1_exact200_1[i] <- ifelse((f200_1[3]<0.05), 1, 0)
   
-  err_oslrt200_2[i] <- ifelse((a200_2<0.05), 1, 0)
-  err_moslrt200_2[i] <- ifelse((a2002_2<0.05), 1, 0)
-  err_rc200_2[i] <- ifelse((b200_2<0.05), 1, 0)
-  err_de200_2[i] <- ifelse((c200_2<0.05), 1, 0)
-  err_ee200_2[i] <- ifelse((d200_2<0.05), 1, 0)
-  err_me200_2[i] <- ifelse((e200_2<0.05), 1, 0)
-  err_max1_hoch200_2[i] <- ifelse((f200_2[2]<0.05), 1, 0)
-  err_max1_exact200_2[i] <- ifelse((f200_2[3]<0.05), 1, 0)
-  
   err_oslrt200_3[i] <- ifelse((a200_3<0.05), 1, 0)
   err_moslrt200_3[i] <- ifelse((a2002_3<0.05), 1, 0)
   err_rc200_3[i] <- ifelse((b200_3<0.05), 1, 0)
@@ -3967,15 +3530,79 @@ for(i in 1:nit){
   err_me200_3[i] <- ifelse((e200_3<0.05), 1, 0)
   err_max1_hoch200_3[i] <- ifelse((f200_3[2]<0.05), 1, 0)
   err_max1_exact200_3[i] <- ifelse((f200_3[3]<0.05), 1, 0)
-  
-  err_oslrt200_4[i] <- ifelse((a200_4<0.05), 1, 0)
-  err_moslrt200_4[i] <- ifelse((a2002_4<0.05), 1, 0)
-  err_rc200_4[i] <- ifelse((b200_4<0.05), 1, 0)
-  err_de200_4[i] <- ifelse((c200_4<0.05), 1, 0)
-  err_ee200_4[i] <- ifelse((d200_4<0.05), 1, 0)
-  err_me200_4[i] <- ifelse((e200_4<0.05), 1, 0)
-  err_max1_hoch200_4[i] <- ifelse((f200_4[2]<0.05), 1, 0)
-  err_max1_exact200_4[i] <- ifelse((f200_4[3]<0.05), 1, 0)
+
+  err_init_oslrt20[i] <- ifelse((a20_init<0.05), 1, 0)
+  err_init_moslrt20[i] <- ifelse((a202_init<0.05), 1, 0)
+  err_init_rc20[i] <- ifelse((b20_init<0.05), 1, 0)
+  err_init_de20[i] <- ifelse((c20_init<0.05), 1, 0)
+  err_init_ee20[i] <- ifelse((d20_init<0.05), 1, 0)
+  err_init_me20[i] <- ifelse((e20_init<0.05), 1, 0)
+  err_init_max_hoch_20[i] <- ifelse(g20_hoch_init<0.05, 1, 0)
+  err_init_max_exact_20[i] <- ifelse(g20_exact_init<0.05, 1, 0)
+
+  err_init_oslrt30[i] <- ifelse((a30_init<0.05), 1, 0)
+  err_init_moslrt30[i] <- ifelse((a302_init<0.05), 1, 0)
+  err_init_rc30[i] <- ifelse((b30_init<0.05), 1, 0)
+  err_init_de30[i] <- ifelse((c30_init<0.05), 1, 0)
+  err_init_ee30[i] <- ifelse((d30_init<0.05), 1, 0)
+  err_init_me30[i] <- ifelse((e30_init<0.05), 1, 0)
+  err_init_max_hoch_30[i] <- ifelse(g30_hoch_init<0.05, 1, 0)
+  err_init_max_exact_30[i] <- ifelse(g30_exact_init<0.05, 1, 0)
+
+  err_init_oslrt50[i] <- ifelse((a50_init<0.05), 1, 0)
+  err_init_moslrt50[i] <- ifelse((a502_init<0.05), 1, 0)
+  err_init_rc50[i] <- ifelse((b50_init<0.05), 1, 0)
+  err_init_de50[i] <- ifelse((c50_init<0.05), 1, 0)
+  err_init_ee50[i] <- ifelse((d50_init<0.05), 1, 0)
+  err_init_me50[i] <- ifelse((e50_init<0.05), 1, 0)
+  err_init_max_hoch_50[i] <- ifelse(g50_hoch_init<0.05, 1, 0)
+  err_init_max_exact_50[i] <- ifelse(g50_exact_init<0.05, 1, 0)
+
+  err_init_oslrt60[i] <- ifelse((a60_init<0.05), 1, 0)
+  err_init_moslrt60[i] <- ifelse((a602_init<0.05), 1, 0)
+  err_init_rc60[i] <- ifelse((b60_init<0.05), 1, 0)
+  err_init_de60[i] <- ifelse((c60_init<0.05), 1, 0)
+  err_init_ee60[i] <- ifelse((d60_init<0.05), 1, 0)
+  err_init_me60[i] <- ifelse((e60_init<0.05), 1, 0)
+  err_init_max_hoch_60[i] <- ifelse(g60_hoch_init<0.05, 1, 0)
+  err_init_max_exact_60[i] <- ifelse(g60_exact_init<0.05, 1, 0)  
+
+  err_init_oslrt80[i] <- ifelse((a80_init<0.05), 1, 0)
+  err_init_moslrt80[i] <- ifelse((a802_init<0.05), 1, 0)
+  err_init_rc80[i] <- ifelse((b80_init<0.05), 1, 0)
+  err_init_de80[i] <- ifelse((c80_init<0.05), 1, 0)
+  err_init_ee80[i] <- ifelse((d80_init<0.05), 1, 0)
+  err_init_me80[i] <- ifelse((e80_init<0.05), 1, 0)
+  err_init_rmst_80[i] <- ifelse((e_init<0.05), 1, 0)
+  err_init_max_hoch_80[i] <- ifelse(g80_hoch_init<0.05, 1, 0)
+  err_init_max_exact_80[i] <- ifelse(g80_exact_init<0.05, 1, 0)
+
+  err_init_oslrt100[i] <- ifelse((a100_init<0.05), 1, 0)
+  err_init_moslrt100[i] <- ifelse((a1002_init<0.05), 1, 0)
+  err_init_rc100[i] <- ifelse((b100_init<0.05), 1, 0)
+  err_init_de100[i] <- ifelse((c100_init<0.05), 1, 0)
+  err_init_ee100[i] <- ifelse((d100_init<0.05), 1, 0)
+  err_init_me100[i] <- ifelse((e100_init<0.05), 1, 0)
+  err_init_max_hoch_100[i] <- ifelse(g100_hoch_init<0.05, 1, 0)
+  err_init_max_exact_100[i] <- ifelse(g100_exact_init<0.05, 1, 0)
+
+  err_init_oslrt150[i] <- ifelse((a150_init<0.05), 1, 0)
+  err_init_moslrt150[i] <- ifelse((a1502_init<0.05), 1, 0)
+  err_init_rc150[i] <- ifelse((b150_init<0.05), 1, 0)
+  err_init_de150[i] <- ifelse((c150_init<0.05), 1, 0)
+  err_init_ee150[i] <- ifelse((d150_init<0.05), 1, 0)
+  err_init_me150[i] <- ifelse((e150_init<0.05), 1, 0)
+  err_init_max_hoch_150[i] <- ifelse(g150_hoch_init<0.05, 1, 0)
+  err_init_max_exact_150[i] <- ifelse(g150_exact_init<0.05, 1, 0)
+
+  err_init_oslrt200[i] <- ifelse((a200_init<0.05), 1, 0)
+  err_init_moslrt200[i] <- ifelse((a2002_init<0.05), 1, 0)
+  err_init_rc200[i] <- ifelse((b200_init<0.05), 1, 0)
+  err_init_de200[i] <- ifelse((c200_init<0.05), 1, 0)              
+  err_init_ee200[i] <- ifelse((d200_init<0.05), 1, 0)
+  err_init_me200[i] <- ifelse((e200_init<0.05), 1, 0)
+  err_init_max_hoch_200[i] <- ifelse(g200_hoch_init<0.05, 1, 0)
+  err_init_max_exact_200[i] <- ifelse(g200_exact_init<0.05, 1, 0)
 }
 
 os20_1 <- sum(err_oslrt20_1)/nit
@@ -3987,15 +3614,6 @@ me20_1 <- sum(err_me20_1)/nit
 max1_hoch20_1 <- sum(err_max1_hoch20_1)/nit
 max1_exact20_1 <- sum(na.omit(err_max1_exact20_1))/length(na.omit(err_max1_exact20_1))
 
-os20_2 <- sum(err_oslrt20_2)/nit
-mos20_2 <- sum(err_moslrt20_2)/nit
-rc20_2 <- sum(err_rc20_2)/nit
-de20_2 <- sum(na.omit(err_de20_2))/length(na.omit(err_de20_2))
-ee20_2 <- sum(err_ee20_2)/nit
-me20_2 <- sum(err_me20_2)/nit
-max1_hoch20_2 <- sum(err_max1_hoch20_2)/nit
-max1_exact20_2 <- sum(na.omit(err_max1_exact20_2))/length(na.omit(err_max1_exact20_2))
-
 os20_3 <- sum(err_oslrt20_3)/nit
 mos20_3 <- sum(err_moslrt20_3)/nit
 rc20_3 <- sum(err_rc20_3)/nit
@@ -4005,18 +3623,32 @@ me20_3 <- sum(err_me20_3)/nit
 max1_hoch20_3 <- sum(err_max1_hoch20_3)/nit
 max1_exact20_3 <- sum(na.omit(err_max1_exact20_3))/length(na.omit(err_max1_exact20_3))
 
-os20_4 <- sum(err_oslrt20_4)/nit
-mos20_4 <- sum(err_moslrt20_4)/nit
-rc20_4 <- sum(err_rc20_4)/nit
-de20_4 <- sum(na.omit(err_de20_4))/length(na.omit(err_de20_4))
-ee20_4 <- sum(err_ee20_4)/nit
-me20_4 <- sum(err_me20_4)/nit
-max1_hoch20_4 <- sum(err_max1_hoch20_4)/nit
-max1_exact20_4 <- sum(na.omit(err_max1_exact20_4))/length(na.omit(err_max1_exact20_4))
+os20_init <- sum(err_init_oslrt20)/nit
+mos20_init <- sum(err_init_moslrt20)/nit
+rc20_init <- sum(err_init_rc20)/nit
+de20_init <- sum(err_init_de20)/nit
+ee20_init <- sum(err_init_ee20)/nit
+me20_init <- sum(err_init_me20)/nit
+max_hoch20_init <- sum(err_init_max_hoch_20)/nit
+max_exact20_init <- sum(err_init_max_exact_20)/nit
 
-mean(tx_cens20)
-mean(tx_censadm20)
+diff1_os20 <- ((os20_1-os20_init)/os20_init)*100
+diff1_mos20 <- ((mos20_1-mos20_init)/mos20_init)*100
+diff1_ee20 <- ((ee20_1-ee20_init)/ee20_init)*100
+diff1_me20 <- ((me20_1-me20_init)/me20_init)*100
+diff1_de20 <- ((de20_1-de20_init)/de20_init)*100
+diff1_rc20 <- ((rc20_1-rc20_init)/rc20_init)*100
+diff1_hoch20 <- ((max_hoch20_1-max_hoch20_init)/max_hoch20_init)*100
+diff1_exact20 <- ((max_exact20_1-max_exact20_init)/max_exact20_init)*100
 
+diff3_os20 <- ((os20_3-os20_init)/os20_init)*100
+diff3_mos20 <- ((mos20_3-mos20_init)/mos20_init)*100
+diff3_ee20 <- ((ee20_3-ee20_init)/ee20_init)*100
+diff3_me20 <- ((me20_3-me20_init)/me20_init)*100
+diff3_de20 <- ((de20_3-de20_init)/de20_init)*100
+diff3_rc20 <- ((rc20_3-rc20_init)/rc20_init)*100
+diff3_hoch20 <- ((max_hoch20_3-max_hoch20_init)/max_hoch20_init)*100
+diff3_exact20 <- ((max_exact20_3-max_exact20_init)/max_exact20_init)*100
 
 os30_1 <- sum(err_oslrt30_1)/nit
 mos30_1 <- sum(err_moslrt30_1)/nit
@@ -4027,15 +3659,6 @@ me30_1 <- sum(err_me30_1)/nit
 max1_hoch30_1 <- sum(err_max1_hoch30_1)/nit
 max1_exact30_1 <- sum(na.omit(err_max1_exact30_1))/length(na.omit(err_max1_exact30_1))
 
-os30_2 <- sum(err_oslrt30_2)/nit
-mos30_2 <- sum(err_moslrt30_2)/nit
-rc30_2 <- sum(err_rc30_2)/nit
-de30_2 <- sum(na.omit(err_de30_2))/length(na.omit(err_de30_2))
-ee30_2 <- sum(err_ee30_2)/nit
-me30_2 <- sum(err_me30_2)/nit
-max1_hoch30_2 <- sum(err_max1_hoch30_2)/nit
-max1_exact30_2 <- sum(na.omit(err_max1_exact30_2))/length(na.omit(err_max1_exact30_2))
-
 os30_3 <- sum(err_oslrt30_3)/nit
 mos30_3 <- sum(err_moslrt30_3)/nit
 rc30_3 <- sum(err_rc30_3)/nit
@@ -4045,17 +3668,32 @@ me30_3 <- sum(err_me30_3)/nit
 max1_hoch30_3 <- sum(err_max1_hoch30_3)/nit
 max1_exact30_3 <- sum(na.omit(err_max1_exact30_3))/length(na.omit(err_max1_exact30_3))
 
-os30_4 <- sum(err_oslrt30_4)/nit
-mos30_4 <- sum(err_moslrt30_4)/nit
-rc30_4 <- sum(err_rc30_4)/nit
-de30_4 <- sum(na.omit(err_de30_4))/length(na.omit(err_de30_4))
-ee30_4 <- sum(err_ee30_4)/nit
-me30_4 <- sum(err_me30_4)/nit
-max1_hoch30_4 <- sum(err_max1_hoch30_4)/nit
-max1_exact30_4 <- sum(na.omit(err_max1_exact30_4))/length(na.omit(err_max1_exact30_4))
+os30_init <- sum(err_init_oslrt30)/nit
+mos30_init <- sum(err_init_moslrt30)/nit
+rc30_init <- sum(err_init_rc30)/nit
+de30_init <- sum(err_init_de30)/nit
+ee30_init <- sum(err_init_ee30)/nit
+me30_init <- sum(err_init_me30)/nit
+max_hoch30_init <- sum(err_init_max_hoch_30)/nit
+max_exact30_init <- sum(err_init_max_exact_30)/nit
 
-mean(tx_cens30)
-mean(tx_censadm30)
+diff1_os30 <- ((os30_1-os30_init)/os30_init)*100
+diff1_mos30 <- ((mos30_1-mos30_init)/mos30_init)*100
+diff1_ee30 <- ((ee30_1-ee30_init)/ee30_init)*100
+diff1_me30 <- ((me30_1-me30_init)/me30_init)*100
+diff1_de30 <- ((de30_1-de30_init)/de30_init)*100
+diff1_rc30 <- ((rc30_1-rc30_init)/rc30_init)*100
+diff1_hoch30 <- ((max_hoch30_1-max_hoch30_init)/max_hoch30_init)*100
+diff1_exact30 <- ((max_exact30_1-max_exact30_init)/max_exact30_init)*100
+
+diff3_os30 <- ((os30_3-os30_init)/os30_init)*100
+diff3_mos30 <- ((mos30_3-mos30_init)/mos30_init)*100
+diff3_ee30 <- ((ee30_3-ee30_init)/ee30_init)*100
+diff3_me30 <- ((me30_3-me30_init)/me30_init)*100
+diff3_de30 <- ((de30_3-de30_init)/de30_init)*100
+diff3_rc30 <- ((rc30_3-rc30_init)/rc30_init)*100
+diff3_hoch30 <- ((max_hoch30_3-max_hoch30_init)/max_hoch30_init)*100
+diff3_exact30 <- ((max_exact30_3-max_exact30_init)/max_exact30_init)*100
 
 
 os50_1 <- sum(err_oslrt50_1)/nit
@@ -4067,15 +3705,6 @@ me50_1 <- sum(err_me50_1)/nit
 max1_hoch50_1 <- sum(err_max1_hoch50_1)/nit
 max1_exact50_1 <- sum(na.omit(err_max1_exact50_1))/length(na.omit(err_max1_exact50_1))
 
-os50_2 <- sum(err_oslrt50_2)/nit
-mos50_2 <- sum(err_moslrt50_2)/nit
-rc50_2 <- sum(err_rc50_2)/nit
-de50_2 <- sum(err_de50_2)/nit
-ee50_2 <- sum(err_ee50_2)/nit
-me50_2 <- sum(err_me50_2)/nit
-max1_hoch50_2 <- sum(err_max1_hoch50_2)/nit
-max1_exact50_2 <- sum(na.omit(err_max1_exact50_2))/length(na.omit(err_max1_exact50_2))
-
 os50_3 <- sum(err_oslrt50_3)/nit
 mos50_3 <- sum(err_moslrt50_3)/nit
 rc50_3 <- sum(err_rc50_3)/nit
@@ -4085,17 +3714,32 @@ me50_3 <- sum(err_me50_3)/nit
 max1_hoch50_3 <- sum(err_max1_hoch50_3)/nit
 max1_exact50_3 <- sum(na.omit(err_max1_exact50_3))/length(na.omit(err_max1_exact50_3))
 
-os50_4 <- sum(err_oslrt50_4)/nit
-mos50_4 <- sum(err_moslrt50_4)/nit
-rc50_4 <- sum(err_rc50_4)/nit
-de50_4 <- sum(err_de50_4)/nit
-ee50_4 <- sum(err_ee50_4)/nit
-me50_4 <- sum(err_me50_4)/nit
-max1_hoch50_4 <- sum(err_max1_hoch50_4)/nit
-max1_exact50_4 <- sum(na.omit(err_max1_exact50_4))/length(na.omit(err_max1_exact50_4))
+os50_init <- sum(err_init_oslrt50)/nit
+mos50_init <- sum(err_init_moslrt50)/nit
+rc50_init <- sum(err_init_rc50)/nit
+de50_init <- sum(err_init_de50)/nit
+ee50_init <- sum(err_init_ee50)/nit
+me50_init <- sum(err_init_me50)/nit
+max_hoch50_init <- sum(err_init_max_hoch_50)/nit
+max_exact50_init <- sum(err_init_max_exact_50)/nit
 
-mean(tx_cens50)
-mean(tx_censadm50)
+diff1_os50 <- ((os50_1-os50_init)/os50_init)*100
+diff1_mos50 <- ((mos50_1-mos50_init)/mos50_init)*100
+diff1_ee50 <- ((ee50_1-ee50_init)/ee50_init)*100
+diff1_me50 <- ((me50_1-me50_init)/me50_init)*100
+diff1_de50 <- ((de50_1-de50_init)/de50_init)*100
+diff1_rc50 <- ((rc50_1-rc50_init)/rc50_init)*100
+diff1_hoch50 <- ((max_hoch50_1-max_hoch50_init)/max_hoch50_init)*100
+diff1_exact50 <- ((max_exact50_1-max_exact50_init)/max_exact50_init)*100
+
+diff3_os50 <- ((os50_3-os50_init)/os50_init)*100
+diff3_mos50 <- ((mos50_3-mos50_init)/mos50_init)*100
+diff3_ee50 <- ((ee50_3-ee50_init)/ee50_init)*100
+diff3_me50 <- ((me50_3-me50_init)/me50_init)*100
+diff3_de50 <- ((de50_3-de50_init)/de50_init)*100
+diff3_rc50 <- ((rc50_3-rc50_init)/rc50_init)*100
+diff3_hoch50 <- ((max_hoch50_3-max_hoch50_init)/max_hoch50_init)*100
+diff3_exact50 <- ((max_exact50_3-max_exact50_init)/max_exact50_init)*100
 
 
 os60_1 <- sum(err_oslrt60_1)/nit
@@ -4107,15 +3751,6 @@ me60_1 <- sum(err_me60_1)/nit
 max1_hoch60_1 <- sum(err_max1_hoch60_1)/nit
 max1_exact60_1 <- sum(na.omit(err_max1_exact60_1))/length(na.omit(err_max1_exact60_1))
 
-os60_2 <- sum(err_oslrt60_2)/nit
-mos60_2 <- sum(err_moslrt60_2)/nit
-rc60_2 <- sum(err_rc60_2)/nit
-de60_2 <- sum(err_de60_2)/nit
-ee60_2 <- sum(err_ee60_2)/nit
-me60_2 <- sum(err_me60_2)/nit
-max1_hoch60_2 <- sum(err_max1_hoch60_2)/nit
-max1_exact60_2 <- sum(na.omit(err_max1_exact60_2))/length(na.omit(err_max1_exact60_2))
-
 os60_3 <- sum(err_oslrt60_3)/nit
 mos60_3 <- sum(err_moslrt60_3)/nit
 rc60_3 <- sum(err_rc60_3)/nit
@@ -4125,17 +3760,32 @@ me60_3 <- sum(err_me60_3)/nit
 max1_hoch60_3 <- sum(err_max1_hoch60_3)/nit
 max1_exact60_3 <- sum(na.omit(err_max1_exact60_3))/length(na.omit(err_max1_exact60_3))
 
-os60_4 <- sum(err_oslrt60_4)/nit
-mos60_4 <- sum(err_moslrt60_4)/nit
-rc60_4 <- sum(err_rc60_4)/nit
-de60_4 <- sum(err_de60_4)/nit
-ee60_4 <- sum(err_ee60_4)/nit
-me60_4 <- sum(err_me60_4)/nit
-max1_hoch60_4 <- sum(err_max1_hoch60_4)/nit
-max1_exact60_4 <- sum(na.omit(err_max1_exact60_4))/length(na.omit(err_max1_exact60_4))
+os60_init <- sum(err_init_oslrt60)/nit
+mos60_init <- sum(err_init_moslrt60)/nit
+rc60_init <- sum(err_init_rc60)/nit
+de60_init <- sum(err_init_de60)/nit
+ee60_init <- sum(err_init_ee60)/nit
+me60_init <- sum(err_init_me60)/nit
+max_hoch60_init <- sum(err_init_max_hoch_60)/nit
+max_exact60_init <- sum(err_init_max_exact_60)/nit
 
-mean(tx_cens60)
-mean(tx_censadm60)
+diff1_os60 <- ((os60_1-os60_init)/os60_init)*100
+diff1_mos60 <- ((mos60_1-mos60_init)/mos60_init)*100
+diff1_ee60 <- ((ee60_1-ee60_init)/ee60_init)*100
+diff1_me60 <- ((me60_1-me60_init)/me60_init)*100
+diff1_de60 <- ((de60_1-de60_init)/de60_init)*100
+diff1_rc60 <- ((rc60_1-rc60_init)/rc60_init)*100
+diff1_hoch60 <- ((max_hoch60_1-max_hoch60_init)/max_hoch60_init)*100
+diff1_exact60 <- ((max_exact60_1-max_exact60_init)/max_exact60_init)*100
+
+diff3_os60 <- ((os60_3-os60_init)/os60_init)*100
+diff3_mos60 <- ((mos60_3-mos60_init)/mos60_init)*100
+diff3_ee60 <- ((ee60_3-ee60_init)/ee60_init)*100
+diff3_me60 <- ((me60_3-me60_init)/me60_init)*100
+diff3_de60 <- ((de60_3-de60_init)/de60_init)*100
+diff3_rc60 <- ((rc60_3-rc60_init)/rc60_init)*100
+diff3_hoch60 <- ((max_hoch60_3-max_hoch60_init)/max_hoch60_init)*100
+diff3_exact60 <- ((max_exact60_3-max_exact60_init)/max_exact60_init)*100
 
 
 os80_1 <- sum(err_oslrt80_1)/nit
@@ -4147,15 +3797,6 @@ me80_1 <- sum(err_me80_1)/nit
 max1_hoch80_1 <- sum(err_max1_hoch80_1)/nit
 max1_exact80_1 <- sum(na.omit(err_max1_exact80_1))/length(na.omit(err_max1_exact80_1))
 
-os80_2 <- sum(err_oslrt80_2)/nit
-mos80_2 <- sum(err_moslrt80_2)/nit
-rc80_2 <- sum(err_rc80_2)/nit
-de80_2 <- sum(err_de80_2)/nit
-ee80_2 <- sum(err_ee80_2)/nit
-me80_2 <- sum(err_me80_2)/nit
-max1_hoch80_2 <- sum(err_max1_hoch80_2)/nit
-max1_exact80_2 <- sum(na.omit(err_max1_exact80_2))/length(na.omit(err_max1_exact80_2))
-
 os80_3 <- sum(err_oslrt80_3)/nit
 mos80_3 <- sum(err_moslrt80_3)/nit
 rc80_3 <- sum(err_rc80_3)/nit
@@ -4165,17 +3806,32 @@ me80_3 <- sum(err_me80_3)/nit
 max1_hoch80_3 <- sum(err_max1_hoch80_3)/nit
 max1_exact80_3 <- sum(na.omit(err_max1_exact80_3))/length(na.omit(err_max1_exact80_3))
 
-os80_4 <- sum(err_oslrt80_4)/nit
-mos80_4 <- sum(err_moslrt80_4)/nit
-rc80_4 <- sum(err_rc80_4)/nit
-de80_4 <- sum(err_de80_4)/nit
-ee80_4 <- sum(err_ee80_4)/nit
-me80_4 <- sum(err_me80_4)/nit
-max1_hoch80_4 <- sum(err_max1_hoch80_4)/nit
-max1_exact80_4 <- sum(na.omit(err_max1_exact80_4))/length(na.omit(err_max1_exact80_4))
+os80_init <- sum(err_init_oslrt80)/nit
+mos80_init <- sum(err_init_moslrt80)/nit
+rc80_init <- sum(err_init_rc80)/nit
+de80_init <- sum(err_init_de80)/nit
+ee80_init <- sum(err_init_ee80)/nit
+me80_init <- sum(err_init_me80)/nit
+max_hoch80_init <- sum(err_init_max_hoch_80)/nit
+max_exact80_init <- sum(err_init_max_exact_80)/nit
 
-mean(tx_cens80)
-mean(tx_censadm80)
+diff1_os80 <- ((os80_1-os80_init)/os80_init)*100
+diff1_mos80 <- ((mos80_1-mos80_init)/mos80_init)*100
+diff1_ee80 <- ((ee80_1-ee80_init)/ee80_init)*100
+diff1_me80 <- ((me80_1-me80_init)/me80_init)*100
+diff1_de80 <- ((de80_1-de80_init)/de80_init)*100
+diff1_rc80 <- ((rc80_1-rc80_init)/rc80_init)*100
+diff1_hoch80 <- ((max_hoch80_1-max_hoch80_init)/max_hoch80_init)*100
+diff1_exact80 <- ((max_exact80_1-max_exact80_init)/max_exact80_init)*100
+
+diff3_os80 <- ((os80_3-os80_init)/os80_init)*100
+diff3_mos80 <- ((mos80_3-mos80_init)/mos80_init)*100
+diff3_ee80 <- ((ee80_3-ee80_init)/ee80_init)*100
+diff3_me80 <- ((me80_3-me80_init)/me80_init)*100
+diff3_de80 <- ((de80_3-de80_init)/de80_init)*100
+diff3_rc80 <- ((rc80_3-rc80_init)/rc80_init)*100
+diff3_hoch80 <- ((max_hoch80_3-max_hoch80_init)/max_hoch80_init)*100
+diff3_exact80 <- ((max_exact80_3-max_exact80_init)/max_exact80_init)*100
 
 
 os100_1 <- sum(err_oslrt100_1)/nit
@@ -4187,15 +3843,6 @@ me100_1 <- sum(err_me100_1)/nit
 max1_hoch100_1 <- sum(err_max1_hoch100_1)/nit
 max1_exact100_1 <- sum(na.omit(err_max1_exact100_1))/length(na.omit(err_max1_exact100_1))
 
-os100_2 <- sum(err_oslrt100_2)/nit
-mos100_2 <- sum(err_moslrt100_2)/nit
-rc100_2 <- sum(err_rc100_2)/nit
-de100_2 <- sum(err_de100_2)/nit
-ee100_2 <- sum(err_ee100_2)/nit
-me100_2 <- sum(err_me100_2)/nit
-max1_hoch100_2 <- sum(err_max1_hoch100_2)/nit
-max1_exact100_2 <- sum(na.omit(err_max1_exact100_2))/length(na.omit(err_max1_exact100_2))
-
 os100_3 <- sum(err_oslrt100_3)/nit
 mos100_3 <- sum(err_moslrt100_3)/nit
 rc100_3 <- sum(err_rc100_3)/nit
@@ -4205,17 +3852,32 @@ me100_3 <- sum(err_me100_3)/nit
 max1_hoch100_3 <- sum(err_max1_hoch100_3)/nit
 max1_exact100_3 <- sum(na.omit(err_max1_exact100_3))/length(na.omit(err_max1_exact100_3))
 
-os100_4 <- sum(err_oslrt100_4)/nit
-mos100_4 <- sum(err_moslrt100_4)/nit
-rc100_4 <- sum(err_rc100_4)/nit
-de100_4 <- sum(err_de100_4)/nit
-ee100_4 <- sum(err_ee100_4)/nit
-me100_4 <- sum(err_me100_4)/nit
-max1_hoch100_4 <- sum(err_max1_hoch100_4)/nit
-max1_exact100_4 <- sum(na.omit(err_max1_exact100_4))/length(na.omit(err_max1_exact100_4))
+os100_init <- sum(err_init_oslrt100)/nit
+mos100_init <- sum(err_init_moslrt100)/nit
+rc100_init <- sum(err_init_rc100)/nit
+de100_init <- sum(err_init_de100)/nit
+ee100_init <- sum(err_init_ee100)/nit
+me100_init <- sum(err_init_me100)/nit
+max_hoch100_init <- sum(err_init_max_hoch_100)/nit
+max_exact100_init <- sum(err_init_max_exact_100)/nit
 
-mean(tx_cens100)
-mean(tx_censadm100)
+diff1_os100 <- ((os100_1-os100_init)/os100_init)*100
+diff1_mos100 <- ((mos100_1-mos100_init)/mos100_init)*100
+diff1_ee100 <- ((ee100_1-ee100_init)/ee100_init)*100
+diff1_me100 <- ((me100_1-me100_init)/me100_init)*100
+diff1_de100 <- ((de100_1-de100_init)/de100_init)*100
+diff1_rc100 <- ((rc100_1-rc100_init)/rc100_init)*100
+diff1_hoch100 <- ((max_hoch100_1-max_hoch100_init)/max_hoch100_init)*100
+diff1_exact100 <- ((max_exact100_1-max_exact100_init)/max_exact100_init)*100
+
+diff3_os100 <- ((os100_3-os100_init)/os100_init)*100
+diff3_mos100 <- ((mos100_3-mos100_init)/mos100_init)*100
+diff3_ee100 <- ((ee100_3-ee100_init)/ee100_init)*100
+diff3_me100 <- ((me100_3-me100_init)/me100_init)*100
+diff3_de100 <- ((de100_3-de100_init)/de100_init)*100
+diff3_rc100 <- ((rc100_3-rc100_init)/rc100_init)*100
+diff3_hoch100 <- ((max_hoch100_3-max_hoch100_init)/max_hoch100_init)*100
+diff3_exact100 <- ((max_exact100_3-max_exact100_init)/max_exact100_init)*100
 
 
 os150_1 <- sum(err_oslrt150_1)/nit
@@ -4227,15 +3889,6 @@ me150_1 <- sum(na.omit(err_me150_1))/length(na.omit(err_me150_1))
 max1_hoch150_1 <- sum(err_max1_hoch150_1)/nit
 max1_exact150_1 <- sum(na.omit(err_max1_exact150_1))/length(na.omit(err_max1_exact150_1))
 
-os150_2 <- sum(err_oslrt150_2)/nit
-mos150_2 <- sum(err_moslrt150_2)/nit
-rc150_2 <- sum(err_rc150_2)/nit
-de150_2 <- sum(err_de150_2)/nit
-ee150_2 <- sum(err_ee150_2)/nit
-me150_2 <- sum(na.omit(err_me150_2))/length(na.omit(err_me150_2))
-max1_hoch150_2 <- sum(err_max1_hoch150_2)/nit
-max1_exact150_2 <- sum(na.omit(err_max1_exact150_2))/length(na.omit(err_max1_exact150_2))
-
 os150_3 <- sum(err_oslrt150_3)/nit
 mos150_3 <- sum(err_moslrt150_3)/nit
 rc150_3 <- sum(err_rc150_3)/nit
@@ -4245,17 +3898,33 @@ me150_3 <- sum(na.omit(err_me150_3))/length(na.omit(err_me150_3))
 max1_hoch150_3 <- sum(err_max1_hoch150_3)/nit
 max1_exact150_3 <- sum(na.omit(err_max1_exact150_3))/length(na.omit(err_max1_exact150_3))
 
-os150_4 <- sum(err_oslrt150_4)/nit
-mos150_4 <- sum(err_moslrt150_4)/nit
-rc150_4 <- sum(err_rc150_4)/nit
-de150_4 <- sum(err_de150_4)/nit
-ee150_4 <- sum(err_ee150_4)/nit
-me150_4 <- sum(na.omit(err_me150_4))/length(na.omit(err_me150_4))
-max1_hoch150_4 <- sum(err_max1_hoch150_4)/nit
-max1_exact150_4 <- sum(na.omit(err_max1_exact150_4))/length(na.omit(err_max1_exact150_4))
+os150_init <- sum(err_init_oslrt150)/nit
+mos150_init <- sum(err_init_moslrt150)/nit
+rc150_init <- sum(err_init_rc150)/nit
+de150_init <- sum(err_init_de150)/nit
+ee150_init <- sum(err_init_ee150)/nit
+me150_init <- sum(err_init_me150)/nit
+max_hoch150_init <- sum(err_init_max_hoch_150)/nit
+max_exact150_init <- sum(err_init_max_exact_150)/nit
 
-mean(tx_cens150)
-mean(tx_censadm150)
+diff1_os150 <- ((os150_1-os150_init)/os150_init)*100
+diff1_mos150 <- ((mos150_1-mos150_init)/mos150_init)*100
+diff1_ee150 <- ((ee150_1-ee150_init)/ee150_init)*100
+diff1_me150 <- ((me150_1-me150_init)/me150_init)*100
+diff1_de150 <- ((de150_1-de150_init)/de150_init)*100
+diff1_rc150 <- ((rc150_1-rc150_init)/rc150_init)*100
+diff1_hoch150 <- ((max_hoch150_1-max_hoch150_init)/max_hoch150_init)*100
+diff1_exact150 <- ((max_exact150_1-max_exact150_init)/max_exact150_init)*100
+
+diff3_os150 <- ((os150_3-os150_init)/os150_init)*100
+diff3_mos150 <- ((mos150_3-mos150_init)/mos150_init)*100
+diff3_ee150 <- ((ee150_3-ee150_init)/ee150_init)*100
+diff3_me150 <- ((me150_3-me150_init)/me150_init)*100
+diff3_de150 <- ((de150_3-de150_init)/de150_init)*100
+diff3_rc150 <- ((rc150_3-rc150_init)/rc150_init)*100
+diff3_hoch150 <- ((max_hoch150_3-max_hoch150_init)/max_hoch150_init)*100
+diff3_exact150 <- ((max_exact150_3-max_exact150_init)/max_exact150_init)*100
+
 
 os200_1 <- sum(err_oslrt200_1)/nit
 mos200_1 <- sum(err_moslrt200_1)/nit
@@ -4266,15 +3935,6 @@ me200_1 <- sum(err_me200_1)/nit
 max1_hoch200_1 <- sum(err_max1_hoch200_1)/nit
 max1_exact200_1 <- sum(na.omit(err_max1_exact200_1))/length(na.omit(err_max1_exact200_1))
 
-os200_2 <- sum(err_oslrt200_2)/nit
-mos200_2 <- sum(err_moslrt200_2)/nit
-rc200_2 <- sum(err_rc200_2)/nit
-de200_2 <- sum(err_de200_2)/nit
-ee200_2 <- sum(err_ee200_2)/nit
-me200_2 <- sum(err_me200_2)/nit
-max1_hoch200_2 <- sum(err_max1_hoch200_2)/nit
-max1_exact200_2 <- sum(na.omit(err_max1_exact200_2))/length(na.omit(err_max1_exact200_2))
-
 os200_3 <- sum(err_oslrt200_3)/nit
 mos200_3 <- sum(err_moslrt200_3)/nit
 rc200_3 <- sum(err_rc200_3)/nit
@@ -4284,17 +3944,33 @@ me200_3 <- sum(err_me200_3)/nit
 max1_hoch200_3 <- sum(err_max1_hoch200_3)/nit
 max1_exact200_3 <- sum(na.omit(err_max1_exact200_3))/length(na.omit(err_max1_exact200_3))
 
-os200_4 <- sum(err_oslrt200_4)/nit
-mos200_4 <- sum(err_moslrt200_4)/nit
-rc200_4 <- sum(err_rc200_4)/nit
-de200_4 <- sum(err_de200_4)/nit
-ee200_4 <- sum(err_ee200_4)/nit
-me200_4 <- sum(err_me200_4)/nit
-max1_hoch200_4 <- sum(err_max1_hoch200_4)/nit
-max1_exact200_4 <- sum(na.omit(err_max1_exact200_4))/length(na.omit(err_max1_exact200_4))
+os200_init <- sum(err_init_oslrt200)/nit
+mos200_init <- sum(err_init_moslrt200)/nit
+rc200_init <- sum(err_init_rc200)/nit
+de200_init <- sum(err_init_de200)/nit
+ee200_init <- sum(err_init_ee200)/nit
+me200_init <- sum(err_init_me200)/nit
+r_200_init <- sum(err_init_rmst_200)/nit
+max_hoch200_init <- sum(err_init_max_hoch_200)/nit
+max_exact200_init <- sum(err_init_max_exact_200)/nit
 
-mean(tx_cens200)
-mean(tx_censadm200)
+diff1_os200 <- ((os200_1-os200_init)/os200_init)*100
+diff1_mos200 <- ((mos200_1-mos200_init)/mos200_init)*100
+diff1_ee200 <- ((ee200_1-ee200_init)/ee200_init)*100
+diff1_me200 <- ((me200_1-me200_init)/me200_init)*100
+diff1_de200 <- ((de200_1-de200_init)/de200_init)*100
+diff1_rc200 <- ((rc200_1-rc200_init)/rc200_init)*100
+diff1_hoch200 <- ((max_hoch200_1-max_hoch200_init)/max_hoch200_init)*100
+diff1_exact200 <- ((max_exact200_1-max_exact200_init)/max_exact200_init)*100
+
+diff3_os200 <- ((os200_3-os200_init)/os200_init)*100
+diff3_mos200 <- ((mos200_3-mos200_init)/mos200_init)*100
+diff3_ee200 <- ((ee200_3-ee200_init)/ee200_init)*100
+diff3_me200 <- ((me200_3-me200_init)/me200_init)*100
+diff3_de200 <- ((de200_3-de200_init)/de200_init)*100
+diff3_rc200 <- ((rc200_3-rc200_init)/rc200_init)*100
+diff3_hoch200 <- ((max_hoch200_3-max_hoch200_init)/max_hoch200_init)*100
+diff3_exact200 <- ((max_exact200_3-max_exact200_init)/max_exact200_init)*100
 
 
 n <- c(20, 30, 50, 60, 80, 100, 150, 200)
@@ -4306,6 +3982,14 @@ ee_1 <- c(ee20_1, ee30_1, ee50_1, ee60_1, ee80_1, ee100_1, ee150_1, ee200_1)
 me_1 <- c(me20_1, me30_1, me50_1, me60_1, me80_1, me100_1, me150_1, me200_1)
 max1_hochberg_1 <- c(max1_hoch20_1, max1_hoch30_1, max1_hoch50_1, max1_hoch60_1, max1_hoch80_1, max1_hoch100_1, max1_hoch150_1, max1_hoch200_1)
 max1_pmult_1 <- c(max1_exact20_1, max1_exact30_1, max1_exact50_1, max1_exact60_1, max1_exact80_1, max1_exact100_1, max1_exact150_1, max1_exact200_1)
+diff1_osl <- c(diff1_os20, diff1_os30, diff1_os50, diff1_os60, diff1_os80, diff1_os100, diff1_os150, diff1_os200)
+diff1_mosl <- c(diff1_mos20, diff1_mos30, diff1_mos50, diff1_mos60, diff1_mos80, diff1_mos100, diff1_mos150, diff1_mos200)
+diff1_rc <- c(diff1_rc20, diff1_rc30, diff1_rc50, diff1_rc60, diff1_rc80, diff1_rc100, diff1_rc150, diff1_rc200)
+diff1_de <- c(diff1_de20, diff1_de30, diff1_de50, diff1_de60, diff1_de80, diff1_de100, diff1_de150, diff1_de200)
+diff1_ee <- c(diff1_ee20, diff1_ee30, diff1_ee50, diff1_ee60, diff1_ee80, diff1_ee100, diff1_ee150, diff1_ee200)
+diff1_me <- c(diff1_me20, diff1_me30, diff1_me50, diff1_me60, diff1_me80, diff1_me100, diff1_me150, diff1_me200)
+diff1_hoch <- c(diff1_hoch20, diff1_hoch30, diff1_hoch50, diff1_hoch60, diff1_hoch80, diff1_hoch100, diff1_hoch150, diff1_hoch200)
+diff1_exact <- c(diff1_exact20, diff1_exact30, diff1_exact50, diff1_exact60, diff1_exact80, diff1_exact100, diff1_exact150, diff1_exact200)
 osl_1
 mosl_1
 ee_1
@@ -4315,23 +3999,6 @@ rc_1
 max1_hochberg_1
 max1_pmult_1
 
-osl_2 <- c(os20_2, os30_2, os50_2, os60_2, os80_2, os100_2, os150_2, os200_2)
-mosl_2 <- c(mos20_2, mos30_2, mos50_2, mos60_2, mos80_2, mos100_2, mos150_2, mos200_2)
-rc_2 <- c(rc20_2, rc30_2, rc50_2, rc60_2, rc80_2, rc100_2, rc150_2, rc200_2)
-de_2 <- c(de20_2, de30_2, de50_2, de60_2, de80_2, de100_2, de150_2, de200_2)
-ee_2 <- c(ee20_2, ee30_2, ee50_2, ee60_2, ee80_2, ee100_2, ee150_2, ee200_2)
-me_2 <- c(me20_2, me30_2, me50_2, me60_2, me80_2, me100_2, me150_2, me200_2)
-max1_hochberg_2 <- c(max1_hoch20_2, max1_hoch30_2, max1_hoch50_2, max1_hoch60_2, max1_hoch80_2, max1_hoch100_2, max1_hoch150_2, max1_hoch200_2)
-max1_pmult_2 <- c(max1_exact20_2, max1_exact30_2, max1_exact50_2, max1_exact60_2, max1_exact80_2, max1_exact100_2, max1_exact150_2, max1_exact200_2)
-osl_2
-mosl_2
-ee_2
-me_2
-de_2
-rc_2
-max1_hochberg_2
-max1_pmult_2
-
 osl_3 <- c(os20_3, os30_3, os50_3, os60_3, os80_3, os100_3, os150_3, os200_3)
 mosl_3 <- c(mos20_3, mos30_3, mos50_3, mos60_3, mos80_3, mos100_3, mos150_3, mos200_3)
 rc_3 <- c(rc20_3, rc30_3, rc50_3, rc60_3, rc80_3, rc100_3, rc150_3, rc200_3)
@@ -4340,6 +4007,14 @@ ee_3 <- c(ee20_3, ee30_3, ee50_3, ee60_3, ee80_3, ee100_3, ee150_3, ee200_3)
 me_3 <- c(me20_3, me30_3, me50_3, me60_3, me80_3, me100_3, me150_3, me200_3)
 max1_hochberg_3 <- c(max1_hoch20_3, max1_hoch30_3, max1_hoch50_3, max1_hoch60_3, max1_hoch80_3, max1_hoch100_3, max1_hoch150_3, max1_hoch200_3)
 max1_pmult_3 <- c(max1_exact20_3, max1_exact30_3, max1_exact50_3, max1_exact60_3, max1_exact80_3, max1_exact100_3, max1_exact150_3, max1_exact200_3)
+diff3_osl <- c(diff3_os20, diff3_os30, diff3_os50, diff3_os60, diff3_os80, diff3_os100, diff3_os150, diff3_os200)
+diff3_mosl <- c(diff3_mos20, diff3_mos30, diff3_mos50, diff3_mos60, diff3_mos80, diff3_mos100, diff3_mos150, diff3_mos200)
+diff3_rc <- c(diff3_rc20, diff3_rc30, diff3_rc50, diff3_rc60, diff3_rc80, diff3_rc100, diff3_rc150, diff3_rc200)
+diff3_de <- c(diff3_de20, diff3_de30, diff3_de50, diff3_de60, diff3_de80, diff3_de100, diff3_de150, diff3_de200)
+diff3_ee <- c(diff3_ee20, diff3_ee30, diff3_ee50, diff3_ee60, diff3_ee80, diff3_ee100, diff3_ee150, diff3_ee200)
+diff3_me <- c(diff3_me20, diff3_me30, diff3_me50, diff3_me60, diff3_me80, diff3_me100, diff3_me150, diff3_me200)
+diff3_hoch <- c(diff3_hoch20, diff3_hoch30, diff3_hoch50, diff3_hoch60, diff3_hoch80, diff3_hoch100, diff3_hoch150, diff3_hoch200)
+diff3_exact <- c(diff3_exact20, diff3_exact30, diff3_exact50, diff3_exact60, diff3_exact80, diff3_exact100, diff3_exact150, diff3_exact200)
 osl_3
 mosl_3
 ee_3
@@ -4348,23 +4023,6 @@ de_3
 rc_3
 max1_hochberg_3
 max1_pmult_3
-
-osl_4 <- c(os20_4, os30_4, os50_4, os60_4, os80_4, os100_4, os150_4, os200_4)
-mosl_4 <- c(mos20_4, mos30_4, mos50_4, mos60_4, mos80_4, mos100_4, mos150_4, mos200_4)
-rc_4 <- c(rc20_4, rc30_4, rc50_4, rc60_4, rc80_4, rc100_4, rc150_4, rc200_4)
-de_4 <- c(de20_4, de30_4, de50_4, de60_4, de80_4, de100_4, de150_4, de200_4)
-ee_4 <- c(ee20_4, ee30_4, ee50_4, ee60_4, ee80_4, ee100_4, ee150_4, ee200_4)
-me_4 <- c(me20_4, me30_4, me50_4, me60_4, me80_4, me100_4, me150_4, me200_4)
-max1_hochberg_4 <- c(max1_hoch20_4, max1_hoch30_4, max1_hoch50_4, max1_hoch60_4, max1_hoch80_4, max1_hoch100_4, max1_hoch150_4, max1_hoch200_4)
-max1_pmult_4 <- c(max1_exact20_4, max1_exact30_4, max1_exact50_4, max1_exact60_4, max1_exact80_4, max1_exact100_4, max1_exact150_4, max1_exact200_4)
-osl_4
-mosl_4
-ee_4
-me_4
-de_4
-rc_4
-max1_hochberg_4
-max1_pmult_4
 
 d1_1 <- data.frame(Sample.size = n, Error = c(osl_1, mosl_1, ee_1, me_1, de_1, rc_1, max1_hochberg_1, max1_pmult_1),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -4375,49 +4033,63 @@ d1_1$Test <- factor(d1_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
+EE_1 <- ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 1',
-       subtitle = '')+
+       title = 'Scenario 3: early effect',
+       subtitle = 'pi = 1')+
   geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  ylim(0, 1)+
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+EE_1
 
+d2_1 <- data.frame(Sample.size = n, Error = c(diff1_osl, diff1_mosl, diff1_ee, diff1_me, diff1_de, diff1_rc, diff1_hoch, diff1_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_1$Test <- as.factor(d2_1$Test)
+d2_1$Test <- factor(d2_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_2 <- data.frame(Sample.size = n, Error = c(osl_2, mosl_2, ee_2, me_2, de_2, rc_2, max1_hochberg_2, max1_pmult_2),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_2$Test <- as.factor(d1_2$Test)
-d1_2$Test <- factor(d1_2$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_2, aes(x = Sample.size, y = Error, group = Test))+
+Diff_EE_1 <- ggplot(d2_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_1$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.8',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 3: early effect',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_EE_1
+
 
 d1_3 <- data.frame(Sample.size = n, Error = c(osl_3, mosl_3, ee_3, me_3, de_3, rc_3, max1_hochberg_3, max1_pmult_3),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -4428,15 +4100,15 @@ d1_3$Test <- factor(d1_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
+EE_3 <- ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 0.6',
-       subtitle = '')+
+       title = 'Scenario 3: early effect',
+       subtitle = 'pi = 0.6')+
   geom_hline(yintercept = 0.8, size = 0.2)+
   ylim(0,1)+
   theme(legend.position = 'right',
@@ -4444,33 +4116,41 @@ ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
         legend.text = element_text(size = 12),
         plot.title = element_text(hjust = 0.5, size = 20),
         plot.subtitle = element_text(hjust = 0.5, size = 15))
+EE_3
 
+d2_3 <- data.frame(Sample.size = n, Error = c(diff3_osl, diff3_mosl, diff3_ee, diff3_me, diff3_de, diff3_rc, diff3_hoch, diff3_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_3$Test <- as.factor(d2_3$Test)
+d2_3$Test <- factor(d2_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_4 <- data.frame(Sample.size = n, Error = c(osl_4, mosl_4, ee_4, me_4, de_4, rc_4, max1_hochberg_4, max1_pmult_4),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_4$Test <- as.factor(d1_4$Test)
-d1_4$Test <- factor(d1_4$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_4, aes(x = Sample.size, y = Error, group = Test))+
+Diff_EE_3 <- ggplot(d2_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_3$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.5',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 3: early effect',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_EE_3
+
 
 
 ##########################
@@ -4510,10 +4190,11 @@ nit <- 10000
 #HR2 = 0.5 (0 0.015 0.05 0.09 0.14)
 #HR2 = 0.7 (0 0.015 0.05 0.1 0.16)
 #HR2 = 0.8 (0 0.015 0.055 0.1 0.165)
+
 lambda_cens <- 0.05   #15% of censoring for HR1 = 0.5
 
-CP_EE <- 1
-CP_DE <- 4
+CP_EE <- 4
+CP_DE <- 1
 CP_ME1 <- 1
 CP_ME2 <- 4
 
@@ -4521,9 +4202,7 @@ ta <- 3   #accrual time - 3 years
 tf <- 4   #follow-up time - 4 years
 
 pi1 <- 1
-pi2 <- 0.8
 pi3 <- 0.6
-pi4 <- 0.5
 
 err_oslrt20_1 <- rep(0, nit)
 err_moslrt20_1 <- rep(0, nit)
@@ -4534,15 +4213,6 @@ err_me20_1 <- rep(0, nit)
 err_max1_hoch20_1 <- rep(0, nit)
 err_max1_exact20_1 <- rep(0, nit)
 
-err_oslrt20_2 <- rep(0, nit)
-err_moslrt20_2 <- rep(0, nit)
-err_rc20_2 <- rep(0, nit)
-err_de20_2 <- rep(0, nit)
-err_ee20_2 <- rep(0, nit)
-err_me20_2 <- rep(0, nit)
-err_max1_hoch20_2 <- rep(0, nit)
-err_max1_exact20_2 <- rep(0, nit)
-
 err_oslrt20_3 <- rep(0, nit)
 err_moslrt20_3 <- rep(0, nit)
 err_rc20_3 <- rep(0, nit)
@@ -4551,18 +4221,6 @@ err_ee20_3 <- rep(0, nit)
 err_me20_3 <- rep(0, nit)
 err_max1_hoch20_3 <- rep(0, nit)
 err_max1_exact20_3 <- rep(0, nit)
-
-err_oslrt20_4 <- rep(0, nit)
-err_moslrt20_4 <- rep(0, nit)
-err_rc20_4 <- rep(0, nit)
-err_de20_4 <- rep(0, nit)
-err_ee20_4 <- rep(0, nit)
-err_me20_4 <- rep(0, nit)
-err_max1_hoch20_4 <- rep(0, nit)
-err_max1_exact20_4 <- rep(0, nit)
-
-tx_cens20 <- rep(0, nit)
-tx_censadm20 <- rep(0, nit)
 
 
 err_oslrt30_1 <- rep(0, nit)
@@ -4574,15 +4232,6 @@ err_me30_1 <- rep(0, nit)
 err_max1_hoch30_1 <- rep(0, nit)
 err_max1_exact30_1 <- rep(0, nit)
 
-err_oslrt30_2 <- rep(0, nit)
-err_moslrt30_2 <- rep(0, nit)
-err_rc30_2 <- rep(0, nit)
-err_de30_2 <- rep(0, nit)
-err_ee30_2 <- rep(0, nit)
-err_me30_2 <- rep(0, nit)
-err_max1_hoch30_2 <- rep(0, nit)
-err_max1_exact30_2 <- rep(0, nit)
-
 err_oslrt30_3 <- rep(0, nit)
 err_moslrt30_3 <- rep(0, nit)
 err_rc30_3 <- rep(0, nit)
@@ -4591,18 +4240,6 @@ err_ee30_3 <- rep(0, nit)
 err_me30_3 <- rep(0, nit)
 err_max1_hoch30_3 <- rep(0, nit)
 err_max1_exact30_3 <- rep(0, nit)
-
-err_oslrt30_4 <- rep(0, nit)
-err_moslrt30_4 <- rep(0, nit)
-err_rc30_4 <- rep(0, nit)
-err_de30_4 <- rep(0, nit)
-err_ee30_4 <- rep(0, nit)
-err_me30_4 <- rep(0, nit)
-err_max1_hoch30_4 <- rep(0, nit)
-err_max1_exact30_4 <- rep(0, nit)
-
-tx_cens30 <- rep(0, nit)
-tx_censadm30 <- rep(0, nit)
 
 
 err_oslrt50_1 <- rep(0, nit)
@@ -4614,15 +4251,6 @@ err_me50_1 <- rep(0, nit)
 err_max1_hoch50_1 <- rep(0, nit)
 err_max1_exact50_1 <- rep(0, nit)
 
-err_oslrt50_2 <- rep(0, nit)
-err_moslrt50_2 <- rep(0, nit)
-err_rc50_2 <- rep(0, nit)
-err_de50_2 <- rep(0, nit)
-err_ee50_2 <- rep(0, nit)
-err_me50_2 <- rep(0, nit)
-err_max1_hoch50_2 <- rep(0, nit)
-err_max1_exact50_2 <- rep(0, nit)
-
 err_oslrt50_3 <- rep(0, nit)
 err_moslrt50_3 <- rep(0, nit)
 err_rc50_3 <- rep(0, nit)
@@ -4631,18 +4259,6 @@ err_ee50_3 <- rep(0, nit)
 err_me50_3 <- rep(0, nit)
 err_max1_hoch50_3 <- rep(0, nit)
 err_max1_exact50_3 <- rep(0, nit)
-
-err_oslrt50_4 <- rep(0, nit)
-err_moslrt50_4 <- rep(0, nit)
-err_rc50_4 <- rep(0, nit)
-err_de50_4 <- rep(0, nit)
-err_ee50_4 <- rep(0, nit)
-err_me50_4 <- rep(0, nit)
-err_max1_hoch50_4 <- rep(0, nit)
-err_max1_exact50_4 <- rep(0, nit)
-
-tx_cens50 <- rep(0, nit)
-tx_censadm50 <- rep(0, nit)
 
 
 err_oslrt60_1 <- rep(0, nit)
@@ -4654,15 +4270,6 @@ err_me60_1 <- rep(0, nit)
 err_max1_hoch60_1 <- rep(0, nit)
 err_max1_exact60_1 <- rep(0, nit)
 
-err_oslrt60_2 <- rep(0, nit)
-err_moslrt60_2 <- rep(0, nit)
-err_rc60_2 <- rep(0, nit)
-err_de60_2 <- rep(0, nit)
-err_ee60_2 <- rep(0, nit)
-err_me60_2 <- rep(0, nit)
-err_max1_hoch60_2 <- rep(0, nit)
-err_max1_exact60_2 <- rep(0, nit)
-
 err_oslrt60_3 <- rep(0, nit)
 err_moslrt60_3 <- rep(0, nit)
 err_rc60_3 <- rep(0, nit)
@@ -4671,18 +4278,6 @@ err_ee60_3 <- rep(0, nit)
 err_me60_3 <- rep(0, nit)
 err_max1_hoch60_3 <- rep(0, nit)
 err_max1_exact60_3 <- rep(0, nit)
-
-err_oslrt60_4 <- rep(0, nit)
-err_moslrt60_4 <- rep(0, nit)
-err_rc60_4 <- rep(0, nit)
-err_de60_4 <- rep(0, nit)
-err_ee60_4 <- rep(0, nit)
-err_me60_4 <- rep(0, nit)
-err_max1_hoch60_4 <- rep(0, nit)
-err_max1_exact60_4 <- rep(0, nit)
-
-tx_cens60 <- rep(0, nit)
-tx_censadm60 <- rep(0, nit)
 
 
 err_oslrt80_1 <- rep(0, nit)
@@ -4694,15 +4289,6 @@ err_me80_1 <- rep(0, nit)
 err_max1_hoch80_1 <- rep(0, nit)
 err_max1_exact80_1 <- rep(0, nit)
 
-err_oslrt80_2 <- rep(0, nit)
-err_moslrt80_2 <- rep(0, nit)
-err_rc80_2 <- rep(0, nit)
-err_de80_2 <- rep(0, nit)
-err_ee80_2 <- rep(0, nit)
-err_me80_2 <- rep(0, nit)
-err_max1_hoch80_2 <- rep(0, nit)
-err_max1_exact80_2 <- rep(0, nit)
-
 err_oslrt80_3 <- rep(0, nit)
 err_moslrt80_3 <- rep(0, nit)
 err_rc80_3 <- rep(0, nit)
@@ -4711,18 +4297,6 @@ err_ee80_3 <- rep(0, nit)
 err_me80_3 <- rep(0, nit)
 err_max1_hoch80_3 <- rep(0, nit)
 err_max1_exact80_3 <- rep(0, nit)
-
-err_oslrt80_4 <- rep(0, nit)
-err_moslrt80_4 <- rep(0, nit)
-err_rc80_4 <- rep(0, nit)
-err_de80_4 <- rep(0, nit)
-err_ee80_4 <- rep(0, nit)
-err_me80_4 <- rep(0, nit)
-err_max1_hoch80_4 <- rep(0, nit)
-err_max1_exact80_4 <- rep(0, nit)
-
-tx_cens80 <- rep(0, nit)
-tx_censadm80 <- rep(0, nit)
 
 
 err_oslrt100_1 <- rep(0, nit)
@@ -4734,15 +4308,6 @@ err_me100_1 <- rep(0, nit)
 err_max1_hoch100_1 <- rep(0, nit)
 err_max1_exact100_1 <- rep(0, nit)
 
-err_oslrt100_2 <- rep(0, nit)
-err_moslrt100_2 <- rep(0, nit)
-err_rc100_2 <- rep(0, nit)
-err_de100_2 <- rep(0, nit)
-err_ee100_2 <- rep(0, nit)
-err_me100_2 <- rep(0, nit)
-err_max1_hoch100_2 <- rep(0, nit)
-err_max1_exact100_2 <- rep(0, nit)
-
 err_oslrt100_3 <- rep(0, nit)
 err_moslrt100_3 <- rep(0, nit)
 err_rc100_3 <- rep(0, nit)
@@ -4751,18 +4316,6 @@ err_ee100_3 <- rep(0, nit)
 err_me100_3 <- rep(0, nit)
 err_max1_hoch100_3 <- rep(0, nit)
 err_max1_exact100_3 <- rep(0, nit)
-
-err_oslrt100_4 <- rep(0, nit)
-err_moslrt100_4 <- rep(0, nit)
-err_rc100_4 <- rep(0, nit)
-err_de100_4 <- rep(0, nit)
-err_ee100_4 <- rep(0, nit)
-err_me100_4 <- rep(0, nit)
-err_max1_hoch100_4 <- rep(0, nit)
-err_max1_exact100_4 <- rep(0, nit)
-
-tx_cens100 <- rep(0, nit)
-tx_censadm100 <- rep(0, nit)
 
 
 err_oslrt150_1 <- rep(0, nit)
@@ -4774,15 +4327,6 @@ err_me150_1 <- rep(0, nit)
 err_max1_hoch150_1 <- rep(0, nit)
 err_max1_exact150_1 <- rep(0, nit)
 
-err_oslrt150_2 <- rep(0, nit)
-err_moslrt150_2 <- rep(0, nit)
-err_rc150_2 <- rep(0, nit)
-err_de150_2 <- rep(0, nit)
-err_ee150_2 <- rep(0, nit)
-err_me150_2 <- rep(0, nit)
-err_max1_hoch150_2 <- rep(0, nit)
-err_max1_exact150_2 <- rep(0, nit)
-
 err_oslrt150_3 <- rep(0, nit)
 err_moslrt150_3 <- rep(0, nit)
 err_rc150_3 <- rep(0, nit)
@@ -4791,18 +4335,6 @@ err_ee150_3 <- rep(0, nit)
 err_me150_3 <- rep(0, nit)
 err_max1_hoch150_3 <- rep(0, nit)
 err_max1_exact150_3 <- rep(0, nit)
-
-err_oslrt150_4 <- rep(0, nit)
-err_moslrt150_4 <- rep(0, nit)
-err_rc150_4 <- rep(0, nit)
-err_de150_4 <- rep(0, nit)
-err_ee150_4 <- rep(0, nit)
-err_me150_4 <- rep(0, nit)
-err_max1_hoch150_4 <- rep(0, nit)
-err_max1_exact150_4 <- rep(0, nit)
-
-tx_cens150 <- rep(0, nit)
-tx_censadm150 <- rep(0, nit)
 
 
 err_oslrt200_1 <- rep(0, nit)
@@ -4814,15 +4346,6 @@ err_me200_1 <- rep(0, nit)
 err_max1_hoch200_1 <- rep(0, nit)
 err_max1_exact200_1 <- rep(0, nit)
 
-err_oslrt200_2 <- rep(0, nit)
-err_moslrt200_2 <- rep(0, nit)
-err_rc200_2 <- rep(0, nit)
-err_de200_2 <- rep(0, nit)
-err_ee200_2 <- rep(0, nit)
-err_me200_2 <- rep(0, nit)
-err_max1_hoch200_2 <- rep(0, nit)
-err_max1_exact200_2 <- rep(0, nit)
-
 err_oslrt200_3 <- rep(0, nit)
 err_moslrt200_3 <- rep(0, nit)
 err_rc200_3 <- rep(0, nit)
@@ -4832,17 +4355,77 @@ err_me200_3 <- rep(0, nit)
 err_max1_hoch200_3 <- rep(0, nit)
 err_max1_exact200_3 <- rep(0, nit)
 
-err_oslrt200_4 <- rep(0, nit)
-err_moslrt200_4 <- rep(0, nit)
-err_rc200_4 <- rep(0, nit)
-err_de200_4 <- rep(0, nit)
-err_ee200_4 <- rep(0, nit)
-err_me200_4 <- rep(0, nit)
-err_max1_hoch200_4 <- rep(0, nit)
-err_max1_exact200_4 <- rep(0, nit)
+err_init_oslrt20 <- rep(0, nit)
+err_init_moslrt20 <- rep(0, nit)
+err_init_rc20 <- rep(0, nit)
+err_init_de20 <- rep(0, nit)
+err_init_ee20 <- rep(0, nit)
+err_init_me20 <- rep(0, nit)
+err_init_max_hoch_20 <- rep(0, nit)
+err_init_max_exact_20 <- rep(0, nit)
 
-tx_cens200 <- rep(0, nit)
-tx_censadm200 <- rep(0, nit)
+err_init_oslrt30 <- rep(0, nit)
+err_init_moslrt30 <- rep(0, nit)
+err_init_rc30 <- rep(0, nit)
+err_init_de30 <- rep(0, nit)
+err_init_ee30 <- rep(0, nit)
+err_init_me30 <- rep(0, nit)
+err_init_max_hoch_30 <- rep(0, nit)
+err_init_max_exact_30 <- rep(0, nit)
+
+err_init_oslrt50 <- rep(0, nit)
+err_init_moslrt50 <- rep(0, nit)
+err_init_rc50 <- rep(0, nit)
+err_init_de50 <- rep(0, nit)
+err_init_ee50 <- rep(0, nit)
+err_init_me50 <- rep(0, nit)
+err_init_max_hoch_50 <- rep(0, nit)
+err_init_max_exact_50 <- rep(0, nit)
+
+err_init_oslrt60 <- rep(0, nit)
+err_init_moslrt60 <- rep(0, nit)
+err_init_rc60 <- rep(0, nit)
+err_init_de60 <- rep(0, nit)
+err_init_ee60 <- rep(0, nit)
+err_init_me60 <- rep(0, nit)
+err_init_max_hoch_60 <- rep(0, nit)
+err_init_max_exact_60 <- rep(0, nit)
+
+err_init_oslrt80 <- rep(0, nit)
+err_init_moslrt80 <- rep(0, nit)
+err_init_rc80 <- rep(0, nit)
+err_init_de80 <- rep(0, nit)
+err_init_ee80 <- rep(0, nit)
+err_init_me80 <- rep(0, nit)
+err_init_max_hoch_80 <- rep(0, nit)
+err_init_max_exact_80 <- rep(0, nit)
+
+err_init_oslrt100 <- rep(0, nit)
+err_init_moslrt100 <- rep(0, nit)
+err_init_rc100 <- rep(0, nit)
+err_init_de100 <- rep(0, nit)
+err_init_ee100 <- rep(0, nit)
+err_init_me100 <- rep(0, nit)
+err_init_max_hoch_100 <- rep(0, nit)
+err_init_max_exact_100 <- rep(0, nit)
+
+err_init_oslrt150 <- rep(0, nit)
+err_init_moslrt150 <- rep(0, nit)
+err_init_rc150 <- rep(0, nit)
+err_init_de150 <- rep(0, nit)
+err_init_ee150 <- rep(0, nit)
+err_init_me150 <- rep(0, nit)
+err_init_max_hoch_150 <- rep(0, nit)
+err_init_max_exact_150 <- rep(0, nit)
+
+err_init_oslrt200 <- rep(0, nit)
+err_init_moslrt200 <- rep(0, nit)
+err_init_rc200 <- rep(0, nit)
+err_init_de200 <- rep(0, nit)
+err_init_ee200 <- rep(0, nit)
+err_init_me200 <- rep(0, nit)
+err_init_max_hoch_200 <- rep(0, nit)
+err_init_max_exact_200 <- rep(0, nit)
 
 for(i in 1:nit){
   time20 <- rpwexp(n = 20, rate = c(1/scale0*1, 1/scale0*0.5, 1/scale0*1), intervals = CP, cumulative = FALSE)
@@ -4967,296 +4550,220 @@ for(i in 1:nit){
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
   data20 <- ten(S20)
-  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)[2]
-  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi1)[2]
-  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi1)[2]
-  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)[2]
+  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a20_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  a202_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)[2]
-  b20_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  c20_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi2)[2]
-  d20_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi2)[2]
-  e20_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f20_2 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)[2]
-  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi3)[2]
-  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi3)[2]
-  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a20_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  a202_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)[2]
-  b20_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  c20_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi4)[2]
-  d20_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi4)[2]
-  e20_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f20_4 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)[2]
+  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a20_init <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a202_init <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b20_init <- Score_RC(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c20_init <- Score_DE(data = data20, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d20_init <- Score_EE(data = data20, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e20_init <- Score_ME(data = data20, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g20_hoch_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g20_exact_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data30 <- ten(S30)
-  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)[2]
-  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi1)[2]
-  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi1)[2]
-  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)[2]
+  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a30_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  a302_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)[2]
-  b30_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  c30_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi2)[2]
-  d30_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi2)[2]
-  e30_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f30_2 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)[2]
-  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi3)[2]
-  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi3)[2]
-  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a30_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  a302_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)[2]
-  b30_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  c30_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi4)[2]
-  d30_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi4)[2]
-  e30_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f30_4 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)[2]
+  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a30_init <- OSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a302_init <- mOSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b30_init <- Score_RC(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c30_init <- Score_DE(data = data30, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d30_init <- Score_EE(data = data30, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e30_init <- Score_ME(data = data30, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g30_hoch_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g30_exact_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data50 <- ten(S50)
-  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)[2]
-  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi1)[2]
-  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi1)[2]
-  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)[2]
+  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a50_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  a502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)[2]
-  b50_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  c50_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi2)[2]
-  d50_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi2)[2]
-  e50_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f50_2 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)[2]
-  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi3)[2]
-  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi3)[2]
-  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a50_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  a502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)[2]
-  b50_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  c50_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi4)[2]
-  d50_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi4)[2]
-  e50_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f50_4 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)[2]
+  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a50_init <- OSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a502_init <- mOSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b50_init <- Score_RC(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c50_init <- Score_DE(data = data50, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d50_init <- Score_EE(data = data50, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e50_init <- Score_ME(data = data50, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g50_hoch_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g50_exact_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data60 <- ten(S60)
-  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)[2]
-  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi1)[2]
-  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi1)[2]
-  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)[2]
+  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a60_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  a602_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)[2]
-  b60_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  c60_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi2)[2]
-  d60_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi2)[2]
-  e60_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f60_2 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)[2]
-  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi3)[2]
-  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi3)[2]
-  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a60_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  a602_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)[2]
-  b60_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  c60_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi4)[2]
-  d60_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi4)[2]
-  e60_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f60_4 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)[2]
+  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a60_init <- OSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a602_init <- mOSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b60_init <- Score_RC(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c60_init <- Score_DE(data = data60, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d60_init <- Score_EE(data = data60, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e60_init <- Score_ME(data = data60, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g60_hoch_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g60_exact_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data80 <- ten(S80)
-  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)[2]
-  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi1)[2]
-  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi1)[2]
-  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)[2]
+  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a80_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  a802_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)[2]
-  b80_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  c80_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi2)[2]
-  d80_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi2)[2]
-  e80_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f80_2 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)[2]
-  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi3)[2]
-  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi3)[2]
-  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a80_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  a802_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)[2]
-  b80_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  c80_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi4)[2]
-  d80_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi4)[2]
-  e80_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f80_4 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)[2]
+  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a80_init <- OSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a802_init <- mOSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b80_init <- Score_RC(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c80_init <- Score_DE(data = data80, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d80_init <- Score_EE(data = data80, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e80_init <- Score_ME(data = data80, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g80_hoch_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g80_exact_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data100 <- ten(S100)
-  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)[2]
-  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi1)[2]
-  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi1)[2]
-  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)[2]
+  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a100_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  a1002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)[2]
-  b100_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  c100_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi2)[2]
-  d100_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi2)[2]
-  e100_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f100_2 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)[2]
-  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi3)[2]
-  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi3)[2]
-  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a100_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  a1002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)[2]
-  b100_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  c100_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi4)[2]
-  d100_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi4)[2]
-  e100_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f100_4 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)[2]
+  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a100_init <- OSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1002_init  <- mOSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b100_init  <- Score_RC(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c100_init  <- Score_DE(data = data100, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d100_init  <- Score_EE(data = data100, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e100_init  <- Score_ME(data = data100, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g100_hoch_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g100_exact_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data150 <- ten(S150)
-  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)[2]
-  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi1)[2]
-  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi1)[2]
-  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)[2]
+  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a150_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  a1502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)[2]
-  b150_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  c150_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi2)[2]
-  d150_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi2)[2]
-  e150_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f150_2 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)[2]
-  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi3)[2]
-  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi3)[2]
-  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a150_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  a1502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)[2]
-  b150_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  c150_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi4)[2]
-  d150_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi4)[2]
-  e150_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f150_4 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)[2]
+  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a150_init <- OSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1502_init <- mOSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b150_init <- Score_RC(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c150_init <- Score_DE(data = data150, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d150_init <- Score_EE(data = data150, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e150_init <- Score_ME(data = data150, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g150_hoch_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g150_exact_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data200 <- ten(S200)
-  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)[2]
-  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi1)[2]
-  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi1)[2]
-  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)[2]
+  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a200_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  a2002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)[2]
-  b200_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  c200_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi2)[2]
-  d200_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi2)[2]
-  e200_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f200_2 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
+  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)[2]
+  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a200_init <- OSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a2002_init <- mOSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b200_init <- Score_RC(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c200_init <- Score_DE(data = data200, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d200_init <- Score_EE(data = data200, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e200_init <- Score_ME(data = data200, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g200_hoch_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g200_exact_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
-  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)[2]
-  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi3)[2]
-  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi3)[2]
-  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a200_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  a2002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)[2]
-  b200_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  c200_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi4)[2]
-  d200_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi4)[2]
-  e200_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f200_4 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
-  
-  
-  #censoring rate with adm censoring
-  tx_censadm20[i] <- 1-sum(delta20)/20
-  tx_censadm30[i] <- 1-sum(delta30)/30
-  tx_censadm50[i] <- 1-sum(delta50)/50
-  tx_censadm60[i] <- 1-sum(delta60)/60
-  tx_censadm80[i] <- 1-sum(delta80)/80
-  tx_censadm100[i] <- 1-sum(delta100)/100
-  tx_censadm150[i] <- 1-sum(delta150)/150
-  tx_censadm200[i] <- 1-sum(delta200)/200
-  
-  #censoring rate without adm censoring
-  tx_cens20[i] <- 1-sum(del20)/20
-  tx_cens30[i] <- 1-sum(del30)/30
-  tx_cens50[i] <- 1-sum(del50)/50
-  tx_cens60[i] <- 1-sum(del60)/60
-  tx_cens80[i] <- 1-sum(del80)/80
-  tx_cens100[i] <- 1-sum(del100)/100
-  tx_cens150[i] <- 1-sum(del150)/150
-  tx_cens200[i] <- 1-sum(del200)/200
   
   err_oslrt20_1[i] <- ifelse((a20_1<0.05), 1, 0)
   err_moslrt20_1[i] <- ifelse((a202_1<0.05), 1, 0)
@@ -5267,15 +4774,6 @@ for(i in 1:nit){
   err_max1_hoch20_1[i] <- ifelse((f20_1[2]<0.05), 1, 0)
   err_max1_exact20_1[i] <- ifelse((f20_1[3]<0.05), 1, 0)
   
-  err_oslrt20_2[i] <- ifelse((a20_2<0.05), 1, 0)
-  err_moslrt20_2[i] <- ifelse((a202_2<0.05), 1, 0)
-  err_rc20_2[i] <- ifelse((b20_2<0.05), 1, 0)
-  err_de20_2[i] <- ifelse((c20_2<0.05), 1, 0)
-  err_ee20_2[i] <- ifelse((d20_2<0.05), 1, 0)
-  err_me20_2[i] <- ifelse((e20_2<0.05), 1, 0)
-  err_max1_hoch20_2[i] <- ifelse((f20_2[2]<0.05), 1, 0)
-  err_max1_exact20_2[i] <- ifelse((f20_2[3]<0.05), 1, 0)
-  
   err_oslrt20_3[i] <- ifelse((a20_3<0.05), 1, 0)
   err_moslrt20_3[i] <- ifelse((a202_3<0.05), 1, 0)
   err_rc20_3[i] <- ifelse((b20_3<0.05), 1, 0)
@@ -5284,15 +4782,6 @@ for(i in 1:nit){
   err_me20_3[i] <- ifelse((e20_3<0.05), 1, 0)
   err_max1_hoch20_3[i] <- ifelse((f20_3[2]<0.05), 1, 0)
   err_max1_exact20_3[i] <- ifelse((f20_3[3]<0.05), 1, 0)
-  
-  err_oslrt20_4[i] <- ifelse((a20_4<0.05), 1, 0)
-  err_moslrt20_4[i] <- ifelse((a202_4<0.05), 1, 0)
-  err_rc20_4[i] <- ifelse((b20_4<0.05), 1, 0)
-  err_de20_4[i] <- ifelse((c20_4<0.05), 1, 0)
-  err_ee20_4[i] <- ifelse((d20_4<0.05), 1, 0)
-  err_me20_4[i] <- ifelse((e20_4<0.05), 1, 0)
-  err_max1_hoch20_4[i] <- ifelse((f20_4[2]<0.05), 1, 0)
-  err_max1_exact20_4[i] <- ifelse((f20_4[3]<0.05), 1, 0)
   
   
   err_oslrt30_1[i] <- ifelse((a30_1<0.05), 1, 0)
@@ -5304,15 +4793,6 @@ for(i in 1:nit){
   err_max1_hoch30_1[i] <- ifelse((f30_1[2]<0.05), 1, 0)
   err_max1_exact30_1[i] <- ifelse((f30_1[3]<0.05), 1, 0)
   
-  err_oslrt30_2[i] <- ifelse((a30_2<0.05), 1, 0)
-  err_moslrt30_2[i] <- ifelse((a302_2<0.05), 1, 0)
-  err_rc30_2[i] <- ifelse((b30_2<0.05), 1, 0)
-  err_de30_2[i] <- ifelse((c30_2<0.05), 1, 0)
-  err_ee30_2[i] <- ifelse((d30_2<0.05), 1, 0)
-  err_me30_2[i] <- ifelse((e30_2<0.05), 1, 0)
-  err_max1_hoch30_2[i] <- ifelse((f30_2[2]<0.05), 1, 0)
-  err_max1_exact30_2[i] <- ifelse((f30_2[3]<0.05), 1, 0)
-  
   err_oslrt30_3[i] <- ifelse((a30_3<0.05), 1, 0)
   err_moslrt30_3[i] <- ifelse((a302_3<0.05), 1, 0)
   err_rc30_3[i] <- ifelse((b30_3<0.05), 1, 0)
@@ -5321,15 +4801,6 @@ for(i in 1:nit){
   err_me30_3[i] <- ifelse((e30_3<0.05), 1, 0)
   err_max1_hoch30_3[i] <- ifelse((f30_3[2]<0.05), 1, 0)
   err_max1_exact30_3[i] <- ifelse((f30_3[3]<0.05), 1, 0)
-  
-  err_oslrt30_4[i] <- ifelse((a30_4<0.05), 1, 0)
-  err_moslrt30_4[i] <- ifelse((a302_4<0.05), 1, 0)
-  err_rc30_4[i] <- ifelse((b30_4<0.05), 1, 0)
-  err_de30_4[i] <- ifelse((c30_4<0.05), 1, 0)
-  err_ee30_4[i] <- ifelse((d30_4<0.05), 1, 0)
-  err_me30_4[i] <- ifelse((e30_4<0.05), 1, 0)
-  err_max1_hoch30_4[i] <- ifelse((f30_4[2]<0.05), 1, 0)
-  err_max1_exact30_4[i] <- ifelse((f30_4[3]<0.05), 1, 0)
   
   
   err_oslrt50_1[i] <- ifelse((a50_1<0.05), 1, 0)
@@ -5341,15 +4812,6 @@ for(i in 1:nit){
   err_max1_hoch50_1[i] <- ifelse((f50_1[2]<0.05), 1, 0)
   err_max1_exact50_1[i] <- ifelse((f50_1[3]<0.05), 1, 0)
   
-  err_oslrt50_2[i] <- ifelse((a50_2<0.05), 1, 0)
-  err_moslrt50_2[i] <- ifelse((a502_2<0.05), 1, 0)
-  err_rc50_2[i] <- ifelse((b50_2<0.05), 1, 0)
-  err_de50_2[i] <- ifelse((c50_2<0.05), 1, 0)
-  err_ee50_2[i] <- ifelse((d50_2<0.05), 1, 0)
-  err_me50_2[i] <- ifelse((e50_2<0.05), 1, 0)
-  err_max1_hoch50_2[i] <- ifelse((f50_2[2]<0.05), 1, 0)
-  err_max1_exact50_2[i] <- ifelse((f50_2[3]<0.05), 1, 0)
-  
   err_oslrt50_3[i] <- ifelse((a50_3<0.05), 1, 0)
   err_moslrt50_3[i] <- ifelse((a502_3<0.05), 1, 0)
   err_rc50_3[i] <- ifelse((b50_3<0.05), 1, 0)
@@ -5358,15 +4820,6 @@ for(i in 1:nit){
   err_me50_3[i] <- ifelse((e50_3<0.05), 1, 0)
   err_max1_hoch50_3[i] <- ifelse((f50_3[2]<0.05), 1, 0)
   err_max1_exact50_3[i] <- ifelse((f50_3[3]<0.05), 1, 0)
-  
-  err_oslrt50_4[i] <- ifelse((a50_4<0.05), 1, 0)
-  err_moslrt50_4[i] <- ifelse((a502_4<0.05), 1, 0)
-  err_rc50_4[i] <- ifelse((b50_4<0.05), 1, 0)
-  err_de50_4[i] <- ifelse((c50_4<0.05), 1, 0)
-  err_ee50_4[i] <- ifelse((d50_4<0.05), 1, 0)
-  err_me50_4[i] <- ifelse((e50_4<0.05), 1, 0)
-  err_max1_hoch50_4[i] <- ifelse((f50_4[2]<0.05), 1, 0)
-  err_max1_exact50_4[i] <- ifelse((f50_4[3]<0.05), 1, 0)
   
   
   err_oslrt60_1[i] <- ifelse((a60_1<0.05), 1, 0)
@@ -5378,15 +4831,6 @@ for(i in 1:nit){
   err_max1_hoch60_1[i] <- ifelse((f60_1[2]<0.05), 1, 0)
   err_max1_exact60_1[i] <- ifelse((f60_1[3]<0.05), 1, 0)
   
-  err_oslrt60_2[i] <- ifelse((a60_2<0.05), 1, 0)
-  err_moslrt60_2[i] <- ifelse((a602_2<0.05), 1, 0)
-  err_rc60_2[i] <- ifelse((b60_2<0.05), 1, 0)
-  err_de60_2[i] <- ifelse((c60_2<0.05), 1, 0)
-  err_ee60_2[i] <- ifelse((d60_2<0.05), 1, 0)
-  err_me60_2[i] <- ifelse((e60_2<0.05), 1, 0)
-  err_max1_hoch60_2[i] <- ifelse((f60_2[2]<0.05), 1, 0)
-  err_max1_exact60_2[i] <- ifelse((f60_2[3]<0.05), 1, 0)
-  
   err_oslrt60_3[i] <- ifelse((a60_3<0.05), 1, 0)
   err_moslrt60_3[i] <- ifelse((a602_3<0.05), 1, 0)
   err_rc60_3[i] <- ifelse((b60_3<0.05), 1, 0)
@@ -5395,15 +4839,6 @@ for(i in 1:nit){
   err_me60_3[i] <- ifelse((e60_3<0.05), 1, 0)
   err_max1_hoch60_3[i] <- ifelse((f60_3[2]<0.05), 1, 0)
   err_max1_exact60_3[i] <- ifelse((f60_3[3]<0.05), 1, 0)
-  
-  err_oslrt60_4[i] <- ifelse((a60_4<0.05), 1, 0)
-  err_moslrt60_4[i] <- ifelse((a602_4<0.05), 1, 0)
-  err_rc60_4[i] <- ifelse((b60_4<0.05), 1, 0)
-  err_de60_4[i] <- ifelse((c60_4<0.05), 1, 0)
-  err_ee60_4[i] <- ifelse((d60_4<0.05), 1, 0)
-  err_me60_4[i] <- ifelse((e60_4<0.05), 1, 0)
-  err_max1_hoch60_4[i] <- ifelse((f60_4[2]<0.05), 1, 0)
-  err_max1_exact60_4[i] <- ifelse((f60_4[3]<0.05), 1, 0)
   
   
   err_oslrt80_1[i] <- ifelse((a80_1<0.05), 1, 0)
@@ -5415,15 +4850,6 @@ for(i in 1:nit){
   err_max1_hoch80_1[i] <- ifelse((f80_1[2]<0.05), 1, 0)
   err_max1_exact80_1[i] <- ifelse((f80_1[3]<0.05), 1, 0)
   
-  err_oslrt80_2[i] <- ifelse((a80_2<0.05), 1, 0)
-  err_moslrt80_2[i] <- ifelse((a802_2<0.05), 1, 0)
-  err_rc80_2[i] <- ifelse((b80_2<0.05), 1, 0)
-  err_de80_2[i] <- ifelse((c80_2<0.05), 1, 0)
-  err_ee80_2[i] <- ifelse((d80_2<0.05), 1, 0)
-  err_me80_2[i] <- ifelse((e80_2<0.05), 1, 0)
-  err_max1_hoch80_2[i] <- ifelse((f80_2[2]<0.05), 1, 0)
-  err_max1_exact80_2[i] <- ifelse((f80_2[3]<0.05), 1, 0)
-  
   err_oslrt80_3[i] <- ifelse((a80_3<0.05), 1, 0)
   err_moslrt80_3[i] <- ifelse((a802_3<0.05), 1, 0)
   err_rc80_3[i] <- ifelse((b80_3<0.05), 1, 0)
@@ -5432,15 +4858,6 @@ for(i in 1:nit){
   err_me80_3[i] <- ifelse((e80_3<0.05), 1, 0)
   err_max1_hoch80_3[i] <- ifelse((f80_3[2]<0.05), 1, 0)
   err_max1_exact80_3[i] <- ifelse((f80_3[3]<0.05), 1, 0)
-  
-  err_oslrt80_4[i] <- ifelse((a80_4<0.05), 1, 0)
-  err_moslrt80_4[i] <- ifelse((a802_4<0.05), 1, 0)
-  err_rc80_4[i] <- ifelse((b80_4<0.05), 1, 0)
-  err_de80_4[i] <- ifelse((c80_4<0.05), 1, 0)
-  err_ee80_4[i] <- ifelse((d80_4<0.05), 1, 0)
-  err_me80_4[i] <- ifelse((e80_4<0.05), 1, 0)
-  err_max1_hoch80_4[i] <- ifelse((f80_4[2]<0.05), 1, 0)
-  err_max1_exact80_4[i] <- ifelse((f80_4[3]<0.05), 1, 0)
   
   
   err_oslrt100_1[i] <- ifelse((a100_1<0.05), 1, 0)
@@ -5452,15 +4869,6 @@ for(i in 1:nit){
   err_max1_hoch100_1[i] <- ifelse((f100_1[2]<0.05), 1, 0)
   err_max1_exact100_1[i] <- ifelse((f100_1[3]<0.05), 1, 0)
   
-  err_oslrt100_2[i] <- ifelse((a100_2<0.05), 1, 0)
-  err_moslrt100_2[i] <- ifelse((a1002_2<0.05), 1, 0)
-  err_rc100_2[i] <- ifelse((b100_2<0.05), 1, 0)
-  err_de100_2[i] <- ifelse((c100_2<0.05), 1, 0)
-  err_ee100_2[i] <- ifelse((d100_2<0.05), 1, 0)
-  err_me100_2[i] <- ifelse((e100_2<0.05), 1, 0)
-  err_max1_hoch100_2[i] <- ifelse((f100_2[2]<0.05), 1, 0)
-  err_max1_exact100_2[i] <- ifelse((f100_2[3]<0.05), 1, 0)
-  
   err_oslrt100_3[i] <- ifelse((a100_3<0.05), 1, 0)
   err_moslrt100_3[i] <- ifelse((a1002_3<0.05), 1, 0)
   err_rc100_3[i] <- ifelse((b100_3<0.05), 1, 0)
@@ -5469,15 +4877,6 @@ for(i in 1:nit){
   err_me100_3[i] <- ifelse((e100_3<0.05), 1, 0)
   err_max1_hoch100_3[i] <- ifelse((f100_3[2]<0.05), 1, 0)
   err_max1_exact100_3[i] <- ifelse((f100_3[3]<0.05), 1, 0)
-  
-  err_oslrt100_4[i] <- ifelse((a100_4<0.05), 1, 0)
-  err_moslrt100_4[i] <- ifelse((a1002_4<0.05), 1, 0)
-  err_rc100_4[i] <- ifelse((b100_4<0.05), 1, 0)
-  err_de100_4[i] <- ifelse((c100_4<0.05), 1, 0)
-  err_ee100_4[i] <- ifelse((d100_4<0.05), 1, 0)
-  err_me100_4[i] <- ifelse((e100_4<0.05), 1, 0)
-  err_max1_hoch100_4[i] <- ifelse((f100_4[2]<0.05), 1, 0)
-  err_max1_exact100_4[i] <- ifelse((f100_4[3]<0.05), 1, 0)
   
   
   err_oslrt150_1[i] <- ifelse((a150_1<0.05), 1, 0)
@@ -5489,15 +4888,6 @@ for(i in 1:nit){
   err_max1_hoch150_1[i] <- ifelse((f150_1[2]<0.05), 1, 0)
   err_max1_exact150_1[i] <- ifelse((f150_1[3]<0.05), 1, 0)
   
-  err_oslrt150_2[i] <- ifelse((a150_2<0.05), 1, 0)
-  err_moslrt150_2[i] <- ifelse((a1502_2<0.05), 1, 0)
-  err_rc150_2[i] <- ifelse((b150_2<0.05), 1, 0)
-  err_de150_2[i] <- ifelse((c150_2<0.05), 1, 0)
-  err_ee150_2[i] <- ifelse((d150_2<0.05), 1, 0)
-  err_me150_2[i] <- ifelse((e150_2<0.05), 1, 0)
-  err_max1_hoch150_2[i] <- ifelse((f150_2[2]<0.05), 1, 0)
-  err_max1_exact150_2[i] <- ifelse((f150_2[3]<0.05), 1, 0)
-  
   err_oslrt150_3[i] <- ifelse((a150_3<0.05), 1, 0)
   err_moslrt150_3[i] <- ifelse((a1502_3<0.05), 1, 0)
   err_rc150_3[i] <- ifelse((b150_3<0.05), 1, 0)
@@ -5506,15 +4896,6 @@ for(i in 1:nit){
   err_me150_3[i] <- ifelse((e150_3<0.05), 1, 0)
   err_max1_hoch150_3[i] <- ifelse((f150_3[2]<0.05), 1, 0)
   err_max1_exact150_3[i] <- ifelse((f150_3[3]<0.05), 1, 0)
-  
-  err_oslrt150_4[i] <- ifelse((a150_4<0.05), 1, 0)
-  err_moslrt150_4[i] <- ifelse((a1502_4<0.05), 1, 0)
-  err_rc150_4[i] <- ifelse((b150_4<0.05), 1, 0)
-  err_de150_4[i] <- ifelse((c150_4<0.05), 1, 0)
-  err_ee150_4[i] <- ifelse((d150_4<0.05), 1, 0)
-  err_me150_4[i] <- ifelse((e150_4<0.05), 1, 0)
-  err_max1_hoch150_4[i] <- ifelse((f150_4[2]<0.05), 1, 0)
-  err_max1_exact150_4[i] <- ifelse((f150_4[3]<0.05), 1, 0)
   
   
   err_oslrt200_1[i] <- ifelse((a200_1<0.05), 1, 0)
@@ -5526,15 +4907,6 @@ for(i in 1:nit){
   err_max1_hoch200_1[i] <- ifelse((f200_1[2]<0.05), 1, 0)
   err_max1_exact200_1[i] <- ifelse((f200_1[3]<0.05), 1, 0)
   
-  err_oslrt200_2[i] <- ifelse((a200_2<0.05), 1, 0)
-  err_moslrt200_2[i] <- ifelse((a2002_2<0.05), 1, 0)
-  err_rc200_2[i] <- ifelse((b200_2<0.05), 1, 0)
-  err_de200_2[i] <- ifelse((c200_2<0.05), 1, 0)
-  err_ee200_2[i] <- ifelse((d200_2<0.05), 1, 0)
-  err_me200_2[i] <- ifelse((e200_2<0.05), 1, 0)
-  err_max1_hoch200_2[i] <- ifelse((f200_2[2]<0.05), 1, 0)
-  err_max1_exact200_2[i] <- ifelse((f200_2[3]<0.05), 1, 0)
-  
   err_oslrt200_3[i] <- ifelse((a200_3<0.05), 1, 0)
   err_moslrt200_3[i] <- ifelse((a2002_3<0.05), 1, 0)
   err_rc200_3[i] <- ifelse((b200_3<0.05), 1, 0)
@@ -5543,15 +4915,79 @@ for(i in 1:nit){
   err_me200_3[i] <- ifelse((e200_3<0.05), 1, 0)
   err_max1_hoch200_3[i] <- ifelse((f200_3[2]<0.05), 1, 0)
   err_max1_exact200_3[i] <- ifelse((f200_3[3]<0.05), 1, 0)
-  
-  err_oslrt200_4[i] <- ifelse((a200_4<0.05), 1, 0)
-  err_moslrt200_4[i] <- ifelse((a2002_4<0.05), 1, 0)
-  err_rc200_4[i] <- ifelse((b200_4<0.05), 1, 0)
-  err_de200_4[i] <- ifelse((c200_4<0.05), 1, 0)
-  err_ee200_4[i] <- ifelse((d200_4<0.05), 1, 0)
-  err_me200_4[i] <- ifelse((e200_4<0.05), 1, 0)
-  err_max1_hoch200_4[i] <- ifelse((f200_4[2]<0.05), 1, 0)
-  err_max1_exact200_4[i] <- ifelse((f200_4[3]<0.05), 1, 0)
+
+  err_init_oslrt20[i] <- ifelse((a20_init<0.05), 1, 0)
+  err_init_moslrt20[i] <- ifelse((a202_init<0.05), 1, 0)
+  err_init_rc20[i] <- ifelse((b20_init<0.05), 1, 0)
+  err_init_de20[i] <- ifelse((c20_init<0.05), 1, 0)
+  err_init_ee20[i] <- ifelse((d20_init<0.05), 1, 0)
+  err_init_me20[i] <- ifelse((e20_init<0.05), 1, 0)
+  err_init_max_hoch_20[i] <- ifelse(g20_hoch_init<0.05, 1, 0)
+  err_init_max_exact_20[i] <- ifelse(g20_exact_init<0.05, 1, 0)
+
+  err_init_oslrt30[i] <- ifelse((a30_init<0.05), 1, 0)
+  err_init_moslrt30[i] <- ifelse((a302_init<0.05), 1, 0)
+  err_init_rc30[i] <- ifelse((b30_init<0.05), 1, 0)
+  err_init_de30[i] <- ifelse((c30_init<0.05), 1, 0)
+  err_init_ee30[i] <- ifelse((d30_init<0.05), 1, 0)
+  err_init_me30[i] <- ifelse((e30_init<0.05), 1, 0)
+  err_init_max_hoch_30[i] <- ifelse(g30_hoch_init<0.05, 1, 0)
+  err_init_max_exact_30[i] <- ifelse(g30_exact_init<0.05, 1, 0)
+
+  err_init_oslrt50[i] <- ifelse((a50_init<0.05), 1, 0)
+  err_init_moslrt50[i] <- ifelse((a502_init<0.05), 1, 0)
+  err_init_rc50[i] <- ifelse((b50_init<0.05), 1, 0)
+  err_init_de50[i] <- ifelse((c50_init<0.05), 1, 0)
+  err_init_ee50[i] <- ifelse((d50_init<0.05), 1, 0)
+  err_init_me50[i] <- ifelse((e50_init<0.05), 1, 0)
+  err_init_max_hoch_50[i] <- ifelse(g50_hoch_init<0.05, 1, 0)
+  err_init_max_exact_50[i] <- ifelse(g50_exact_init<0.05, 1, 0)
+
+  err_init_oslrt60[i] <- ifelse((a60_init<0.05), 1, 0)
+  err_init_moslrt60[i] <- ifelse((a602_init<0.05), 1, 0)
+  err_init_rc60[i] <- ifelse((b60_init<0.05), 1, 0)
+  err_init_de60[i] <- ifelse((c60_init<0.05), 1, 0)
+  err_init_ee60[i] <- ifelse((d60_init<0.05), 1, 0)
+  err_init_me60[i] <- ifelse((e60_init<0.05), 1, 0)
+  err_init_max_hoch_60[i] <- ifelse(g60_hoch_init<0.05, 1, 0)
+  err_init_max_exact_60[i] <- ifelse(g60_exact_init<0.05, 1, 0)  
+
+  err_init_oslrt80[i] <- ifelse((a80_init<0.05), 1, 0)
+  err_init_moslrt80[i] <- ifelse((a802_init<0.05), 1, 0)
+  err_init_rc80[i] <- ifelse((b80_init<0.05), 1, 0)
+  err_init_de80[i] <- ifelse((c80_init<0.05), 1, 0)
+  err_init_ee80[i] <- ifelse((d80_init<0.05), 1, 0)
+  err_init_me80[i] <- ifelse((e80_init<0.05), 1, 0)
+  err_init_rmst_80[i] <- ifelse((e_init<0.05), 1, 0)
+  err_init_max_hoch_80[i] <- ifelse(g80_hoch_init<0.05, 1, 0)
+  err_init_max_exact_80[i] <- ifelse(g80_exact_init<0.05, 1, 0)
+
+  err_init_oslrt100[i] <- ifelse((a100_init<0.05), 1, 0)
+  err_init_moslrt100[i] <- ifelse((a1002_init<0.05), 1, 0)
+  err_init_rc100[i] <- ifelse((b100_init<0.05), 1, 0)
+  err_init_de100[i] <- ifelse((c100_init<0.05), 1, 0)
+  err_init_ee100[i] <- ifelse((d100_init<0.05), 1, 0)
+  err_init_me100[i] <- ifelse((e100_init<0.05), 1, 0)
+  err_init_max_hoch_100[i] <- ifelse(g100_hoch_init<0.05, 1, 0)
+  err_init_max_exact_100[i] <- ifelse(g100_exact_init<0.05, 1, 0)
+
+  err_init_oslrt150[i] <- ifelse((a150_init<0.05), 1, 0)
+  err_init_moslrt150[i] <- ifelse((a1502_init<0.05), 1, 0)
+  err_init_rc150[i] <- ifelse((b150_init<0.05), 1, 0)
+  err_init_de150[i] <- ifelse((c150_init<0.05), 1, 0)
+  err_init_ee150[i] <- ifelse((d150_init<0.05), 1, 0)
+  err_init_me150[i] <- ifelse((e150_init<0.05), 1, 0)
+  err_init_max_hoch_150[i] <- ifelse(g150_hoch_init<0.05, 1, 0)
+  err_init_max_exact_150[i] <- ifelse(g150_exact_init<0.05, 1, 0)
+
+  err_init_oslrt200[i] <- ifelse((a200_init<0.05), 1, 0)
+  err_init_moslrt200[i] <- ifelse((a2002_init<0.05), 1, 0)
+  err_init_rc200[i] <- ifelse((b200_init<0.05), 1, 0)
+  err_init_de200[i] <- ifelse((c200_init<0.05), 1, 0)              
+  err_init_ee200[i] <- ifelse((d200_init<0.05), 1, 0)
+  err_init_me200[i] <- ifelse((e200_init<0.05), 1, 0)
+  err_init_max_hoch_200[i] <- ifelse(g200_hoch_init<0.05, 1, 0)
+  err_init_max_exact_200[i] <- ifelse(g200_exact_init<0.05, 1, 0)
 }
 
 os20_1 <- sum(err_oslrt20_1)/nit
@@ -5563,15 +4999,6 @@ me20_1 <- sum(err_me20_1)/nit
 max1_hoch20_1 <- sum(err_max1_hoch20_1)/nit
 max1_exact20_1 <- sum(na.omit(err_max1_exact20_1))/length(na.omit(err_max1_exact20_1))
 
-os20_2 <- sum(err_oslrt20_2)/nit
-mos20_2 <- sum(err_moslrt20_2)/nit
-rc20_2 <- sum(err_rc20_2)/nit
-de20_2 <- sum(na.omit(err_de20_2))/length(na.omit(err_de20_2))
-ee20_2 <- sum(err_ee20_2)/nit
-me20_2 <- sum(err_me20_2)/nit
-max1_hoch20_2 <- sum(err_max1_hoch20_2)/nit
-max1_exact20_2 <- sum(na.omit(err_max1_exact20_2))/length(na.omit(err_max1_exact20_2))
-
 os20_3 <- sum(err_oslrt20_3)/nit
 mos20_3 <- sum(err_moslrt20_3)/nit
 rc20_3 <- sum(err_rc20_3)/nit
@@ -5581,18 +5008,32 @@ me20_3 <- sum(err_me20_3)/nit
 max1_hoch20_3 <- sum(err_max1_hoch20_3)/nit
 max1_exact20_3 <- sum(na.omit(err_max1_exact20_3))/length(na.omit(err_max1_exact20_3))
 
-os20_4 <- sum(err_oslrt20_4)/nit
-mos20_4 <- sum(err_moslrt20_4)/nit
-rc20_4 <- sum(err_rc20_4)/nit
-de20_4 <- sum(na.omit(err_de20_4))/length(na.omit(err_de20_4))
-ee20_4 <- sum(err_ee20_4)/nit
-me20_4 <- sum(err_me20_4)/nit
-max1_hoch20_4 <- sum(err_max1_hoch20_4)/nit
-max1_exact20_4 <- sum(na.omit(err_max1_exact20_4))/length(na.omit(err_max1_exact20_4))
+os20_init <- sum(err_init_oslrt20)/nit
+mos20_init <- sum(err_init_moslrt20)/nit
+rc20_init <- sum(err_init_rc20)/nit
+de20_init <- sum(err_init_de20)/nit
+ee20_init <- sum(err_init_ee20)/nit
+me20_init <- sum(err_init_me20)/nit
+max_hoch20_init <- sum(err_init_max_hoch_20)/nit
+max_exact20_init <- sum(err_init_max_exact_20)/nit
 
-mean(tx_cens20)
-mean(tx_censadm20)
+diff1_os20 <- ((os20_1-os20_init)/os20_init)*100
+diff1_mos20 <- ((mos20_1-mos20_init)/mos20_init)*100
+diff1_ee20 <- ((ee20_1-ee20_init)/ee20_init)*100
+diff1_me20 <- ((me20_1-me20_init)/me20_init)*100
+diff1_de20 <- ((de20_1-de20_init)/de20_init)*100
+diff1_rc20 <- ((rc20_1-rc20_init)/rc20_init)*100
+diff1_hoch20 <- ((max_hoch20_1-max_hoch20_init)/max_hoch20_init)*100
+diff1_exact20 <- ((max_exact20_1-max_exact20_init)/max_exact20_init)*100
 
+diff3_os20 <- ((os20_3-os20_init)/os20_init)*100
+diff3_mos20 <- ((mos20_3-mos20_init)/mos20_init)*100
+diff3_ee20 <- ((ee20_3-ee20_init)/ee20_init)*100
+diff3_me20 <- ((me20_3-me20_init)/me20_init)*100
+diff3_de20 <- ((de20_3-de20_init)/de20_init)*100
+diff3_rc20 <- ((rc20_3-rc20_init)/rc20_init)*100
+diff3_hoch20 <- ((max_hoch20_3-max_hoch20_init)/max_hoch20_init)*100
+diff3_exact20 <- ((max_exact20_3-max_exact20_init)/max_exact20_init)*100
 
 os30_1 <- sum(err_oslrt30_1)/nit
 mos30_1 <- sum(err_moslrt30_1)/nit
@@ -5603,15 +5044,6 @@ me30_1 <- sum(err_me30_1)/nit
 max1_hoch30_1 <- sum(err_max1_hoch30_1)/nit
 max1_exact30_1 <- sum(na.omit(err_max1_exact30_1))/length(na.omit(err_max1_exact30_1))
 
-os30_2 <- sum(err_oslrt30_2)/nit
-mos30_2 <- sum(err_moslrt30_2)/nit
-rc30_2 <- sum(err_rc30_2)/nit
-de30_2 <- sum(na.omit(err_de30_2))/length(na.omit(err_de30_2))
-ee30_2 <- sum(err_ee30_2)/nit
-me30_2 <- sum(err_me30_2)/nit
-max1_hoch30_2 <- sum(err_max1_hoch30_2)/nit
-max1_exact30_2 <- sum(na.omit(err_max1_exact30_2))/length(na.omit(err_max1_exact30_2))
-
 os30_3 <- sum(err_oslrt30_3)/nit
 mos30_3 <- sum(err_moslrt30_3)/nit
 rc30_3 <- sum(err_rc30_3)/nit
@@ -5621,17 +5053,32 @@ me30_3 <- sum(err_me30_3)/nit
 max1_hoch30_3 <- sum(err_max1_hoch30_3)/nit
 max1_exact30_3 <- sum(na.omit(err_max1_exact30_3))/length(na.omit(err_max1_exact30_3))
 
-os30_4 <- sum(err_oslrt30_4)/nit
-mos30_4 <- sum(err_moslrt30_4)/nit
-rc30_4 <- sum(err_rc30_4)/nit
-de30_4 <- sum(na.omit(err_de30_4))/length(na.omit(err_de30_4))
-ee30_4 <- sum(err_ee30_4)/nit
-me30_4 <- sum(err_me30_4)/nit
-max1_hoch30_4 <- sum(err_max1_hoch30_4)/nit
-max1_exact30_4 <- sum(na.omit(err_max1_exact30_4))/length(na.omit(err_max1_exact30_4))
+os30_init <- sum(err_init_oslrt30)/nit
+mos30_init <- sum(err_init_moslrt30)/nit
+rc30_init <- sum(err_init_rc30)/nit
+de30_init <- sum(err_init_de30)/nit
+ee30_init <- sum(err_init_ee30)/nit
+me30_init <- sum(err_init_me30)/nit
+max_hoch30_init <- sum(err_init_max_hoch_30)/nit
+max_exact30_init <- sum(err_init_max_exact_30)/nit
 
-mean(tx_cens30)
-mean(tx_censadm30)
+diff1_os30 <- ((os30_1-os30_init)/os30_init)*100
+diff1_mos30 <- ((mos30_1-mos30_init)/mos30_init)*100
+diff1_ee30 <- ((ee30_1-ee30_init)/ee30_init)*100
+diff1_me30 <- ((me30_1-me30_init)/me30_init)*100
+diff1_de30 <- ((de30_1-de30_init)/de30_init)*100
+diff1_rc30 <- ((rc30_1-rc30_init)/rc30_init)*100
+diff1_hoch30 <- ((max_hoch30_1-max_hoch30_init)/max_hoch30_init)*100
+diff1_exact30 <- ((max_exact30_1-max_exact30_init)/max_exact30_init)*100
+
+diff3_os30 <- ((os30_3-os30_init)/os30_init)*100
+diff3_mos30 <- ((mos30_3-mos30_init)/mos30_init)*100
+diff3_ee30 <- ((ee30_3-ee30_init)/ee30_init)*100
+diff3_me30 <- ((me30_3-me30_init)/me30_init)*100
+diff3_de30 <- ((de30_3-de30_init)/de30_init)*100
+diff3_rc30 <- ((rc30_3-rc30_init)/rc30_init)*100
+diff3_hoch30 <- ((max_hoch30_3-max_hoch30_init)/max_hoch30_init)*100
+diff3_exact30 <- ((max_exact30_3-max_exact30_init)/max_exact30_init)*100
 
 
 os50_1 <- sum(err_oslrt50_1)/nit
@@ -5643,15 +5090,6 @@ me50_1 <- sum(err_me50_1)/nit
 max1_hoch50_1 <- sum(err_max1_hoch50_1)/nit
 max1_exact50_1 <- sum(na.omit(err_max1_exact50_1))/length(na.omit(err_max1_exact50_1))
 
-os50_2 <- sum(err_oslrt50_2)/nit
-mos50_2 <- sum(err_moslrt50_2)/nit
-rc50_2 <- sum(err_rc50_2)/nit
-de50_2 <- sum(err_de50_2)/nit
-ee50_2 <- sum(err_ee50_2)/nit
-me50_2 <- sum(err_me50_2)/nit
-max1_hoch50_2 <- sum(err_max1_hoch50_2)/nit
-max1_exact50_2 <- sum(na.omit(err_max1_exact50_2))/length(na.omit(err_max1_exact50_2))
-
 os50_3 <- sum(err_oslrt50_3)/nit
 mos50_3 <- sum(err_moslrt50_3)/nit
 rc50_3 <- sum(err_rc50_3)/nit
@@ -5661,17 +5099,32 @@ me50_3 <- sum(err_me50_3)/nit
 max1_hoch50_3 <- sum(err_max1_hoch50_3)/nit
 max1_exact50_3 <- sum(na.omit(err_max1_exact50_3))/length(na.omit(err_max1_exact50_3))
 
-os50_4 <- sum(err_oslrt50_4)/nit
-mos50_4 <- sum(err_moslrt50_4)/nit
-rc50_4 <- sum(err_rc50_4)/nit
-de50_4 <- sum(err_de50_4)/nit
-ee50_4 <- sum(err_ee50_4)/nit
-me50_4 <- sum(err_me50_4)/nit
-max1_hoch50_4 <- sum(err_max1_hoch50_4)/nit
-max1_exact50_4 <- sum(na.omit(err_max1_exact50_4))/length(na.omit(err_max1_exact50_4))
+os50_init <- sum(err_init_oslrt50)/nit
+mos50_init <- sum(err_init_moslrt50)/nit
+rc50_init <- sum(err_init_rc50)/nit
+de50_init <- sum(err_init_de50)/nit
+ee50_init <- sum(err_init_ee50)/nit
+me50_init <- sum(err_init_me50)/nit
+max_hoch50_init <- sum(err_init_max_hoch_50)/nit
+max_exact50_init <- sum(err_init_max_exact_50)/nit
 
-mean(tx_cens50)
-mean(tx_censadm50)
+diff1_os50 <- ((os50_1-os50_init)/os50_init)*100
+diff1_mos50 <- ((mos50_1-mos50_init)/mos50_init)*100
+diff1_ee50 <- ((ee50_1-ee50_init)/ee50_init)*100
+diff1_me50 <- ((me50_1-me50_init)/me50_init)*100
+diff1_de50 <- ((de50_1-de50_init)/de50_init)*100
+diff1_rc50 <- ((rc50_1-rc50_init)/rc50_init)*100
+diff1_hoch50 <- ((max_hoch50_1-max_hoch50_init)/max_hoch50_init)*100
+diff1_exact50 <- ((max_exact50_1-max_exact50_init)/max_exact50_init)*100
+
+diff3_os50 <- ((os50_3-os50_init)/os50_init)*100
+diff3_mos50 <- ((mos50_3-mos50_init)/mos50_init)*100
+diff3_ee50 <- ((ee50_3-ee50_init)/ee50_init)*100
+diff3_me50 <- ((me50_3-me50_init)/me50_init)*100
+diff3_de50 <- ((de50_3-de50_init)/de50_init)*100
+diff3_rc50 <- ((rc50_3-rc50_init)/rc50_init)*100
+diff3_hoch50 <- ((max_hoch50_3-max_hoch50_init)/max_hoch50_init)*100
+diff3_exact50 <- ((max_exact50_3-max_exact50_init)/max_exact50_init)*100
 
 
 os60_1 <- sum(err_oslrt60_1)/nit
@@ -5683,15 +5136,6 @@ me60_1 <- sum(err_me60_1)/nit
 max1_hoch60_1 <- sum(err_max1_hoch60_1)/nit
 max1_exact60_1 <- sum(na.omit(err_max1_exact60_1))/length(na.omit(err_max1_exact60_1))
 
-os60_2 <- sum(err_oslrt60_2)/nit
-mos60_2 <- sum(err_moslrt60_2)/nit
-rc60_2 <- sum(err_rc60_2)/nit
-de60_2 <- sum(err_de60_2)/nit
-ee60_2 <- sum(err_ee60_2)/nit
-me60_2 <- sum(err_me60_2)/nit
-max1_hoch60_2 <- sum(err_max1_hoch60_2)/nit
-max1_exact60_2 <- sum(na.omit(err_max1_exact60_2))/length(na.omit(err_max1_exact60_2))
-
 os60_3 <- sum(err_oslrt60_3)/nit
 mos60_3 <- sum(err_moslrt60_3)/nit
 rc60_3 <- sum(err_rc60_3)/nit
@@ -5701,17 +5145,32 @@ me60_3 <- sum(err_me60_3)/nit
 max1_hoch60_3 <- sum(err_max1_hoch60_3)/nit
 max1_exact60_3 <- sum(na.omit(err_max1_exact60_3))/length(na.omit(err_max1_exact60_3))
 
-os60_4 <- sum(err_oslrt60_4)/nit
-mos60_4 <- sum(err_moslrt60_4)/nit
-rc60_4 <- sum(err_rc60_4)/nit
-de60_4 <- sum(err_de60_4)/nit
-ee60_4 <- sum(err_ee60_4)/nit
-me60_4 <- sum(err_me60_4)/nit
-max1_hoch60_4 <- sum(err_max1_hoch60_4)/nit
-max1_exact60_4 <- sum(na.omit(err_max1_exact60_4))/length(na.omit(err_max1_exact60_4))
+os60_init <- sum(err_init_oslrt60)/nit
+mos60_init <- sum(err_init_moslrt60)/nit
+rc60_init <- sum(err_init_rc60)/nit
+de60_init <- sum(err_init_de60)/nit
+ee60_init <- sum(err_init_ee60)/nit
+me60_init <- sum(err_init_me60)/nit
+max_hoch60_init <- sum(err_init_max_hoch_60)/nit
+max_exact60_init <- sum(err_init_max_exact_60)/nit
 
-mean(tx_cens60)
-mean(tx_censadm60)
+diff1_os60 <- ((os60_1-os60_init)/os60_init)*100
+diff1_mos60 <- ((mos60_1-mos60_init)/mos60_init)*100
+diff1_ee60 <- ((ee60_1-ee60_init)/ee60_init)*100
+diff1_me60 <- ((me60_1-me60_init)/me60_init)*100
+diff1_de60 <- ((de60_1-de60_init)/de60_init)*100
+diff1_rc60 <- ((rc60_1-rc60_init)/rc60_init)*100
+diff1_hoch60 <- ((max_hoch60_1-max_hoch60_init)/max_hoch60_init)*100
+diff1_exact60 <- ((max_exact60_1-max_exact60_init)/max_exact60_init)*100
+
+diff3_os60 <- ((os60_3-os60_init)/os60_init)*100
+diff3_mos60 <- ((mos60_3-mos60_init)/mos60_init)*100
+diff3_ee60 <- ((ee60_3-ee60_init)/ee60_init)*100
+diff3_me60 <- ((me60_3-me60_init)/me60_init)*100
+diff3_de60 <- ((de60_3-de60_init)/de60_init)*100
+diff3_rc60 <- ((rc60_3-rc60_init)/rc60_init)*100
+diff3_hoch60 <- ((max_hoch60_3-max_hoch60_init)/max_hoch60_init)*100
+diff3_exact60 <- ((max_exact60_3-max_exact60_init)/max_exact60_init)*100
 
 
 os80_1 <- sum(err_oslrt80_1)/nit
@@ -5723,15 +5182,6 @@ me80_1 <- sum(err_me80_1)/nit
 max1_hoch80_1 <- sum(err_max1_hoch80_1)/nit
 max1_exact80_1 <- sum(na.omit(err_max1_exact80_1))/length(na.omit(err_max1_exact80_1))
 
-os80_2 <- sum(err_oslrt80_2)/nit
-mos80_2 <- sum(err_moslrt80_2)/nit
-rc80_2 <- sum(err_rc80_2)/nit
-de80_2 <- sum(err_de80_2)/nit
-ee80_2 <- sum(err_ee80_2)/nit
-me80_2 <- sum(err_me80_2)/nit
-max1_hoch80_2 <- sum(err_max1_hoch80_2)/nit
-max1_exact80_2 <- sum(na.omit(err_max1_exact80_2))/length(na.omit(err_max1_exact80_2))
-
 os80_3 <- sum(err_oslrt80_3)/nit
 mos80_3 <- sum(err_moslrt80_3)/nit
 rc80_3 <- sum(err_rc80_3)/nit
@@ -5741,17 +5191,32 @@ me80_3 <- sum(err_me80_3)/nit
 max1_hoch80_3 <- sum(err_max1_hoch80_3)/nit
 max1_exact80_3 <- sum(na.omit(err_max1_exact80_3))/length(na.omit(err_max1_exact80_3))
 
-os80_4 <- sum(err_oslrt80_4)/nit
-mos80_4 <- sum(err_moslrt80_4)/nit
-rc80_4 <- sum(err_rc80_4)/nit
-de80_4 <- sum(err_de80_4)/nit
-ee80_4 <- sum(err_ee80_4)/nit
-me80_4 <- sum(err_me80_4)/nit
-max1_hoch80_4 <- sum(err_max1_hoch80_4)/nit
-max1_exact80_4 <- sum(na.omit(err_max1_exact80_4))/length(na.omit(err_max1_exact80_4))
+os80_init <- sum(err_init_oslrt80)/nit
+mos80_init <- sum(err_init_moslrt80)/nit
+rc80_init <- sum(err_init_rc80)/nit
+de80_init <- sum(err_init_de80)/nit
+ee80_init <- sum(err_init_ee80)/nit
+me80_init <- sum(err_init_me80)/nit
+max_hoch80_init <- sum(err_init_max_hoch_80)/nit
+max_exact80_init <- sum(err_init_max_exact_80)/nit
 
-mean(tx_cens80)
-mean(tx_censadm80)
+diff1_os80 <- ((os80_1-os80_init)/os80_init)*100
+diff1_mos80 <- ((mos80_1-mos80_init)/mos80_init)*100
+diff1_ee80 <- ((ee80_1-ee80_init)/ee80_init)*100
+diff1_me80 <- ((me80_1-me80_init)/me80_init)*100
+diff1_de80 <- ((de80_1-de80_init)/de80_init)*100
+diff1_rc80 <- ((rc80_1-rc80_init)/rc80_init)*100
+diff1_hoch80 <- ((max_hoch80_1-max_hoch80_init)/max_hoch80_init)*100
+diff1_exact80 <- ((max_exact80_1-max_exact80_init)/max_exact80_init)*100
+
+diff3_os80 <- ((os80_3-os80_init)/os80_init)*100
+diff3_mos80 <- ((mos80_3-mos80_init)/mos80_init)*100
+diff3_ee80 <- ((ee80_3-ee80_init)/ee80_init)*100
+diff3_me80 <- ((me80_3-me80_init)/me80_init)*100
+diff3_de80 <- ((de80_3-de80_init)/de80_init)*100
+diff3_rc80 <- ((rc80_3-rc80_init)/rc80_init)*100
+diff3_hoch80 <- ((max_hoch80_3-max_hoch80_init)/max_hoch80_init)*100
+diff3_exact80 <- ((max_exact80_3-max_exact80_init)/max_exact80_init)*100
 
 
 os100_1 <- sum(err_oslrt100_1)/nit
@@ -5763,15 +5228,6 @@ me100_1 <- sum(err_me100_1)/nit
 max1_hoch100_1 <- sum(err_max1_hoch100_1)/nit
 max1_exact100_1 <- sum(na.omit(err_max1_exact100_1))/length(na.omit(err_max1_exact100_1))
 
-os100_2 <- sum(err_oslrt100_2)/nit
-mos100_2 <- sum(err_moslrt100_2)/nit
-rc100_2 <- sum(err_rc100_2)/nit
-de100_2 <- sum(err_de100_2)/nit
-ee100_2 <- sum(err_ee100_2)/nit
-me100_2 <- sum(err_me100_2)/nit
-max1_hoch100_2 <- sum(err_max1_hoch100_2)/nit
-max1_exact100_2 <- sum(na.omit(err_max1_exact100_2))/length(na.omit(err_max1_exact100_2))
-
 os100_3 <- sum(err_oslrt100_3)/nit
 mos100_3 <- sum(err_moslrt100_3)/nit
 rc100_3 <- sum(err_rc100_3)/nit
@@ -5781,17 +5237,32 @@ me100_3 <- sum(err_me100_3)/nit
 max1_hoch100_3 <- sum(err_max1_hoch100_3)/nit
 max1_exact100_3 <- sum(na.omit(err_max1_exact100_3))/length(na.omit(err_max1_exact100_3))
 
-os100_4 <- sum(err_oslrt100_4)/nit
-mos100_4 <- sum(err_moslrt100_4)/nit
-rc100_4 <- sum(err_rc100_4)/nit
-de100_4 <- sum(err_de100_4)/nit
-ee100_4 <- sum(err_ee100_4)/nit
-me100_4 <- sum(err_me100_4)/nit
-max1_hoch100_4 <- sum(err_max1_hoch100_4)/nit
-max1_exact100_4 <- sum(na.omit(err_max1_exact100_4))/length(na.omit(err_max1_exact100_4))
+os100_init <- sum(err_init_oslrt100)/nit
+mos100_init <- sum(err_init_moslrt100)/nit
+rc100_init <- sum(err_init_rc100)/nit
+de100_init <- sum(err_init_de100)/nit
+ee100_init <- sum(err_init_ee100)/nit
+me100_init <- sum(err_init_me100)/nit
+max_hoch100_init <- sum(err_init_max_hoch_100)/nit
+max_exact100_init <- sum(err_init_max_exact_100)/nit
 
-mean(tx_cens100)
-mean(tx_censadm100)
+diff1_os100 <- ((os100_1-os100_init)/os100_init)*100
+diff1_mos100 <- ((mos100_1-mos100_init)/mos100_init)*100
+diff1_ee100 <- ((ee100_1-ee100_init)/ee100_init)*100
+diff1_me100 <- ((me100_1-me100_init)/me100_init)*100
+diff1_de100 <- ((de100_1-de100_init)/de100_init)*100
+diff1_rc100 <- ((rc100_1-rc100_init)/rc100_init)*100
+diff1_hoch100 <- ((max_hoch100_1-max_hoch100_init)/max_hoch100_init)*100
+diff1_exact100 <- ((max_exact100_1-max_exact100_init)/max_exact100_init)*100
+
+diff3_os100 <- ((os100_3-os100_init)/os100_init)*100
+diff3_mos100 <- ((mos100_3-mos100_init)/mos100_init)*100
+diff3_ee100 <- ((ee100_3-ee100_init)/ee100_init)*100
+diff3_me100 <- ((me100_3-me100_init)/me100_init)*100
+diff3_de100 <- ((de100_3-de100_init)/de100_init)*100
+diff3_rc100 <- ((rc100_3-rc100_init)/rc100_init)*100
+diff3_hoch100 <- ((max_hoch100_3-max_hoch100_init)/max_hoch100_init)*100
+diff3_exact100 <- ((max_exact100_3-max_exact100_init)/max_exact100_init)*100
 
 
 os150_1 <- sum(err_oslrt150_1)/nit
@@ -5803,15 +5274,6 @@ me150_1 <- sum(na.omit(err_me150_1))/length(na.omit(err_me150_1))
 max1_hoch150_1 <- sum(err_max1_hoch150_1)/nit
 max1_exact150_1 <- sum(na.omit(err_max1_exact150_1))/length(na.omit(err_max1_exact150_1))
 
-os150_2 <- sum(err_oslrt150_2)/nit
-mos150_2 <- sum(err_moslrt150_2)/nit
-rc150_2 <- sum(err_rc150_2)/nit
-de150_2 <- sum(err_de150_2)/nit
-ee150_2 <- sum(err_ee150_2)/nit
-me150_2 <- sum(na.omit(err_me150_2))/length(na.omit(err_me150_2))
-max1_hoch150_2 <- sum(err_max1_hoch150_2)/nit
-max1_exact150_2 <- sum(na.omit(err_max1_exact150_2))/length(na.omit(err_max1_exact150_2))
-
 os150_3 <- sum(err_oslrt150_3)/nit
 mos150_3 <- sum(err_moslrt150_3)/nit
 rc150_3 <- sum(err_rc150_3)/nit
@@ -5821,17 +5283,33 @@ me150_3 <- sum(na.omit(err_me150_3))/length(na.omit(err_me150_3))
 max1_hoch150_3 <- sum(err_max1_hoch150_3)/nit
 max1_exact150_3 <- sum(na.omit(err_max1_exact150_3))/length(na.omit(err_max1_exact150_3))
 
-os150_4 <- sum(err_oslrt150_4)/nit
-mos150_4 <- sum(err_moslrt150_4)/nit
-rc150_4 <- sum(err_rc150_4)/nit
-de150_4 <- sum(err_de150_4)/nit
-ee150_4 <- sum(err_ee150_4)/nit
-me150_4 <- sum(na.omit(err_me150_4))/length(na.omit(err_me150_4))
-max1_hoch150_4 <- sum(err_max1_hoch150_4)/nit
-max1_exact150_4 <- sum(na.omit(err_max1_exact150_4))/length(na.omit(err_max1_exact150_4))
+os150_init <- sum(err_init_oslrt150)/nit
+mos150_init <- sum(err_init_moslrt150)/nit
+rc150_init <- sum(err_init_rc150)/nit
+de150_init <- sum(err_init_de150)/nit
+ee150_init <- sum(err_init_ee150)/nit
+me150_init <- sum(err_init_me150)/nit
+max_hoch150_init <- sum(err_init_max_hoch_150)/nit
+max_exact150_init <- sum(err_init_max_exact_150)/nit
 
-mean(tx_cens150)
-mean(tx_censadm150)
+diff1_os150 <- ((os150_1-os150_init)/os150_init)*100
+diff1_mos150 <- ((mos150_1-mos150_init)/mos150_init)*100
+diff1_ee150 <- ((ee150_1-ee150_init)/ee150_init)*100
+diff1_me150 <- ((me150_1-me150_init)/me150_init)*100
+diff1_de150 <- ((de150_1-de150_init)/de150_init)*100
+diff1_rc150 <- ((rc150_1-rc150_init)/rc150_init)*100
+diff1_hoch150 <- ((max_hoch150_1-max_hoch150_init)/max_hoch150_init)*100
+diff1_exact150 <- ((max_exact150_1-max_exact150_init)/max_exact150_init)*100
+
+diff3_os150 <- ((os150_3-os150_init)/os150_init)*100
+diff3_mos150 <- ((mos150_3-mos150_init)/mos150_init)*100
+diff3_ee150 <- ((ee150_3-ee150_init)/ee150_init)*100
+diff3_me150 <- ((me150_3-me150_init)/me150_init)*100
+diff3_de150 <- ((de150_3-de150_init)/de150_init)*100
+diff3_rc150 <- ((rc150_3-rc150_init)/rc150_init)*100
+diff3_hoch150 <- ((max_hoch150_3-max_hoch150_init)/max_hoch150_init)*100
+diff3_exact150 <- ((max_exact150_3-max_exact150_init)/max_exact150_init)*100
+
 
 os200_1 <- sum(err_oslrt200_1)/nit
 mos200_1 <- sum(err_moslrt200_1)/nit
@@ -5842,15 +5320,6 @@ me200_1 <- sum(err_me200_1)/nit
 max1_hoch200_1 <- sum(err_max1_hoch200_1)/nit
 max1_exact200_1 <- sum(na.omit(err_max1_exact200_1))/length(na.omit(err_max1_exact200_1))
 
-os200_2 <- sum(err_oslrt200_2)/nit
-mos200_2 <- sum(err_moslrt200_2)/nit
-rc200_2 <- sum(err_rc200_2)/nit
-de200_2 <- sum(err_de200_2)/nit
-ee200_2 <- sum(err_ee200_2)/nit
-me200_2 <- sum(err_me200_2)/nit
-max1_hoch200_2 <- sum(err_max1_hoch200_2)/nit
-max1_exact200_2 <- sum(na.omit(err_max1_exact200_2))/length(na.omit(err_max1_exact200_2))
-
 os200_3 <- sum(err_oslrt200_3)/nit
 mos200_3 <- sum(err_moslrt200_3)/nit
 rc200_3 <- sum(err_rc200_3)/nit
@@ -5860,17 +5329,33 @@ me200_3 <- sum(err_me200_3)/nit
 max1_hoch200_3 <- sum(err_max1_hoch200_3)/nit
 max1_exact200_3 <- sum(na.omit(err_max1_exact200_3))/length(na.omit(err_max1_exact200_3))
 
-os200_4 <- sum(err_oslrt200_4)/nit
-mos200_4 <- sum(err_moslrt200_4)/nit
-rc200_4 <- sum(err_rc200_4)/nit
-de200_4 <- sum(err_de200_4)/nit
-ee200_4 <- sum(err_ee200_4)/nit
-me200_4 <- sum(err_me200_4)/nit
-max1_hoch200_4 <- sum(err_max1_hoch200_4)/nit
-max1_exact200_4 <- sum(na.omit(err_max1_exact200_4))/length(na.omit(err_max1_exact200_4))
+os200_init <- sum(err_init_oslrt200)/nit
+mos200_init <- sum(err_init_moslrt200)/nit
+rc200_init <- sum(err_init_rc200)/nit
+de200_init <- sum(err_init_de200)/nit
+ee200_init <- sum(err_init_ee200)/nit
+me200_init <- sum(err_init_me200)/nit
+r_200_init <- sum(err_init_rmst_200)/nit
+max_hoch200_init <- sum(err_init_max_hoch_200)/nit
+max_exact200_init <- sum(err_init_max_exact_200)/nit
 
-mean(tx_cens200)
-mean(tx_censadm200)
+diff1_os200 <- ((os200_1-os200_init)/os200_init)*100
+diff1_mos200 <- ((mos200_1-mos200_init)/mos200_init)*100
+diff1_ee200 <- ((ee200_1-ee200_init)/ee200_init)*100
+diff1_me200 <- ((me200_1-me200_init)/me200_init)*100
+diff1_de200 <- ((de200_1-de200_init)/de200_init)*100
+diff1_rc200 <- ((rc200_1-rc200_init)/rc200_init)*100
+diff1_hoch200 <- ((max_hoch200_1-max_hoch200_init)/max_hoch200_init)*100
+diff1_exact200 <- ((max_exact200_1-max_exact200_init)/max_exact200_init)*100
+
+diff3_os200 <- ((os200_3-os200_init)/os200_init)*100
+diff3_mos200 <- ((mos200_3-mos200_init)/mos200_init)*100
+diff3_ee200 <- ((ee200_3-ee200_init)/ee200_init)*100
+diff3_me200 <- ((me200_3-me200_init)/me200_init)*100
+diff3_de200 <- ((de200_3-de200_init)/de200_init)*100
+diff3_rc200 <- ((rc200_3-rc200_init)/rc200_init)*100
+diff3_hoch200 <- ((max_hoch200_3-max_hoch200_init)/max_hoch200_init)*100
+diff3_exact200 <- ((max_exact200_3-max_exact200_init)/max_exact200_init)*100
 
 
 n <- c(20, 30, 50, 60, 80, 100, 150, 200)
@@ -5882,6 +5367,14 @@ ee_1 <- c(ee20_1, ee30_1, ee50_1, ee60_1, ee80_1, ee100_1, ee150_1, ee200_1)
 me_1 <- c(me20_1, me30_1, me50_1, me60_1, me80_1, me100_1, me150_1, me200_1)
 max1_hochberg_1 <- c(max1_hoch20_1, max1_hoch30_1, max1_hoch50_1, max1_hoch60_1, max1_hoch80_1, max1_hoch100_1, max1_hoch150_1, max1_hoch200_1)
 max1_pmult_1 <- c(max1_exact20_1, max1_exact30_1, max1_exact50_1, max1_exact60_1, max1_exact80_1, max1_exact100_1, max1_exact150_1, max1_exact200_1)
+diff1_osl <- c(diff1_os20, diff1_os30, diff1_os50, diff1_os60, diff1_os80, diff1_os100, diff1_os150, diff1_os200)
+diff1_mosl <- c(diff1_mos20, diff1_mos30, diff1_mos50, diff1_mos60, diff1_mos80, diff1_mos100, diff1_mos150, diff1_mos200)
+diff1_rc <- c(diff1_rc20, diff1_rc30, diff1_rc50, diff1_rc60, diff1_rc80, diff1_rc100, diff1_rc150, diff1_rc200)
+diff1_de <- c(diff1_de20, diff1_de30, diff1_de50, diff1_de60, diff1_de80, diff1_de100, diff1_de150, diff1_de200)
+diff1_ee <- c(diff1_ee20, diff1_ee30, diff1_ee50, diff1_ee60, diff1_ee80, diff1_ee100, diff1_ee150, diff1_ee200)
+diff1_me <- c(diff1_me20, diff1_me30, diff1_me50, diff1_me60, diff1_me80, diff1_me100, diff1_me150, diff1_me200)
+diff1_hoch <- c(diff1_hoch20, diff1_hoch30, diff1_hoch50, diff1_hoch60, diff1_hoch80, diff1_hoch100, diff1_hoch150, diff1_hoch200)
+diff1_exact <- c(diff1_exact20, diff1_exact30, diff1_exact50, diff1_exact60, diff1_exact80, diff1_exact100, diff1_exact150, diff1_exact200)
 osl_1
 mosl_1
 ee_1
@@ -5891,23 +5384,6 @@ rc_1
 max1_hochberg_1
 max1_pmult_1
 
-osl_2 <- c(os20_2, os30_2, os50_2, os60_2, os80_2, os100_2, os150_2, os200_2)
-mosl_2 <- c(mos20_2, mos30_2, mos50_2, mos60_2, mos80_2, mos100_2, mos150_2, mos200_2)
-rc_2 <- c(rc20_2, rc30_2, rc50_2, rc60_2, rc80_2, rc100_2, rc150_2, rc200_2)
-de_2 <- c(de20_2, de30_2, de50_2, de60_2, de80_2, de100_2, de150_2, de200_2)
-ee_2 <- c(ee20_2, ee30_2, ee50_2, ee60_2, ee80_2, ee100_2, ee150_2, ee200_2)
-me_2 <- c(me20_2, me30_2, me50_2, me60_2, me80_2, me100_2, me150_2, me200_2)
-max1_hochberg_2 <- c(max1_hoch20_2, max1_hoch30_2, max1_hoch50_2, max1_hoch60_2, max1_hoch80_2, max1_hoch100_2, max1_hoch150_2, max1_hoch200_2)
-max1_pmult_2 <- c(max1_exact20_2, max1_exact30_2, max1_exact50_2, max1_exact60_2, max1_exact80_2, max1_exact100_2, max1_exact150_2, max1_exact200_2)
-osl_2
-mosl_2
-ee_2
-me_2
-de_2
-rc_2
-max1_hochberg_2
-max1_pmult_2
-
 osl_3 <- c(os20_3, os30_3, os50_3, os60_3, os80_3, os100_3, os150_3, os200_3)
 mosl_3 <- c(mos20_3, mos30_3, mos50_3, mos60_3, mos80_3, mos100_3, mos150_3, mos200_3)
 rc_3 <- c(rc20_3, rc30_3, rc50_3, rc60_3, rc80_3, rc100_3, rc150_3, rc200_3)
@@ -5916,6 +5392,14 @@ ee_3 <- c(ee20_3, ee30_3, ee50_3, ee60_3, ee80_3, ee100_3, ee150_3, ee200_3)
 me_3 <- c(me20_3, me30_3, me50_3, me60_3, me80_3, me100_3, me150_3, me200_3)
 max1_hochberg_3 <- c(max1_hoch20_3, max1_hoch30_3, max1_hoch50_3, max1_hoch60_3, max1_hoch80_3, max1_hoch100_3, max1_hoch150_3, max1_hoch200_3)
 max1_pmult_3 <- c(max1_exact20_3, max1_exact30_3, max1_exact50_3, max1_exact60_3, max1_exact80_3, max1_exact100_3, max1_exact150_3, max1_exact200_3)
+diff3_osl <- c(diff3_os20, diff3_os30, diff3_os50, diff3_os60, diff3_os80, diff3_os100, diff3_os150, diff3_os200)
+diff3_mosl <- c(diff3_mos20, diff3_mos30, diff3_mos50, diff3_mos60, diff3_mos80, diff3_mos100, diff3_mos150, diff3_mos200)
+diff3_rc <- c(diff3_rc20, diff3_rc30, diff3_rc50, diff3_rc60, diff3_rc80, diff3_rc100, diff3_rc150, diff3_rc200)
+diff3_de <- c(diff3_de20, diff3_de30, diff3_de50, diff3_de60, diff3_de80, diff3_de100, diff3_de150, diff3_de200)
+diff3_ee <- c(diff3_ee20, diff3_ee30, diff3_ee50, diff3_ee60, diff3_ee80, diff3_ee100, diff3_ee150, diff3_ee200)
+diff3_me <- c(diff3_me20, diff3_me30, diff3_me50, diff3_me60, diff3_me80, diff3_me100, diff3_me150, diff3_me200)
+diff3_hoch <- c(diff3_hoch20, diff3_hoch30, diff3_hoch50, diff3_hoch60, diff3_hoch80, diff3_hoch100, diff3_hoch150, diff3_hoch200)
+diff3_exact <- c(diff3_exact20, diff3_exact30, diff3_exact50, diff3_exact60, diff3_exact80, diff3_exact100, diff3_exact150, diff3_exact200)
 osl_3
 mosl_3
 ee_3
@@ -5924,23 +5408,6 @@ de_3
 rc_3
 max1_hochberg_3
 max1_pmult_3
-
-osl_4 <- c(os20_4, os30_4, os50_4, os60_4, os80_4, os100_4, os150_4, os200_4)
-mosl_4 <- c(mos20_4, mos30_4, mos50_4, mos60_4, mos80_4, mos100_4, mos150_4, mos200_4)
-rc_4 <- c(rc20_4, rc30_4, rc50_4, rc60_4, rc80_4, rc100_4, rc150_4, rc200_4)
-de_4 <- c(de20_4, de30_4, de50_4, de60_4, de80_4, de100_4, de150_4, de200_4)
-ee_4 <- c(ee20_4, ee30_4, ee50_4, ee60_4, ee80_4, ee100_4, ee150_4, ee200_4)
-me_4 <- c(me20_4, me30_4, me50_4, me60_4, me80_4, me100_4, me150_4, me200_4)
-max1_hochberg_4 <- c(max1_hoch20_4, max1_hoch30_4, max1_hoch50_4, max1_hoch60_4, max1_hoch80_4, max1_hoch100_4, max1_hoch150_4, max1_hoch200_4)
-max1_pmult_4 <- c(max1_exact20_4, max1_exact30_4, max1_exact50_4, max1_exact60_4, max1_exact80_4, max1_exact100_4, max1_exact150_4, max1_exact200_4)
-osl_4
-mosl_4
-ee_4
-me_4
-de_4
-rc_4
-max1_hochberg_4
-max1_pmult_4
 
 d1_1 <- data.frame(Sample.size = n, Error = c(osl_1, mosl_1, ee_1, me_1, de_1, rc_1, max1_hochberg_1, max1_pmult_1),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -5951,49 +5418,63 @@ d1_1$Test <- factor(d1_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
+ME_1 <- ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 1',
-       subtitle = '')+
+       title = 'Scenario 4: middle effect',
+       subtitle = 'pi = 1')+
   geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  ylim(0, 1)+
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+ME_1
 
+d2_1 <- data.frame(Sample.size = n, Error = c(diff1_osl, diff1_mosl, diff1_ee, diff1_me, diff1_de, diff1_rc, diff1_hoch, diff1_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_1$Test <- as.factor(d2_1$Test)
+d2_1$Test <- factor(d2_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_2 <- data.frame(Sample.size = n, Error = c(osl_2, mosl_2, ee_2, me_2, de_2, rc_2, max1_hochberg_2, max1_pmult_2),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_2$Test <- as.factor(d1_2$Test)
-d1_2$Test <- factor(d1_2$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_2, aes(x = Sample.size, y = Error, group = Test))+
+Diff_ME_1 <- ggplot(d2_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_1$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.8',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 4: middle effect',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_ME_1
+
 
 d1_3 <- data.frame(Sample.size = n, Error = c(osl_3, mosl_3, ee_3, me_3, de_3, rc_3, max1_hochberg_3, max1_pmult_3),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -6004,15 +5485,15 @@ d1_3$Test <- factor(d1_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
+ME_3 <- ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 0.6',
-       subtitle = '')+
+       title = 'Scenario 4: middle effect',
+       subtitle = 'pi = 0.6')+
   geom_hline(yintercept = 0.8, size = 0.2)+
   ylim(0,1)+
   theme(legend.position = 'right',
@@ -6020,33 +5501,41 @@ ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
         legend.text = element_text(size = 12),
         plot.title = element_text(hjust = 0.5, size = 20),
         plot.subtitle = element_text(hjust = 0.5, size = 15))
+ME_3
 
+d2_3 <- data.frame(Sample.size = n, Error = c(diff3_osl, diff3_mosl, diff3_ee, diff3_me, diff3_de, diff3_rc, diff3_hoch, diff3_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_3$Test <- as.factor(d2_3$Test)
+d2_3$Test <- factor(d2_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_4 <- data.frame(Sample.size = n, Error = c(osl_4, mosl_4, ee_4, me_4, de_4, rc_4, max1_hochberg_4, max1_pmult_4),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_4$Test <- as.factor(d1_4$Test)
-d1_4$Test <- factor(d1_4$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_4, aes(x = Sample.size, y = Error, group = Test))+
+Diff_ME_3 <- ggplot(d2_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_3$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.5',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 4: middle effect',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_ME_3
+
 
 
 ##########################
@@ -6084,6 +5573,7 @@ nit <- 10000
 #HR1 = 0.5 (0 0.015 0.05 0.09 0.17)
 #HR1 = 0.7 (0 0.015 0.06 0.1 0.17)
 #HR1 = 0.8 (0 0.015 0.06 0.11 0.19)
+
 lambda_cens <- 0.05   #15% of censoring for HR1 = 0.5
 
 CP_EE <- 3
@@ -6095,9 +5585,7 @@ ta <- 3   #accrual time - 3 years
 tf <- 4   #follow-up time - 4 years
 
 pi1 <- 1
-pi2 <- 0.8
 pi3 <- 0.6
-pi4 <- 0.5
 
 err_oslrt20_1 <- rep(0, nit)
 err_moslrt20_1 <- rep(0, nit)
@@ -6108,15 +5596,6 @@ err_me20_1 <- rep(0, nit)
 err_max1_hoch20_1 <- rep(0, nit)
 err_max1_exact20_1 <- rep(0, nit)
 
-err_oslrt20_2 <- rep(0, nit)
-err_moslrt20_2 <- rep(0, nit)
-err_rc20_2 <- rep(0, nit)
-err_de20_2 <- rep(0, nit)
-err_ee20_2 <- rep(0, nit)
-err_me20_2 <- rep(0, nit)
-err_max1_hoch20_2 <- rep(0, nit)
-err_max1_exact20_2 <- rep(0, nit)
-
 err_oslrt20_3 <- rep(0, nit)
 err_moslrt20_3 <- rep(0, nit)
 err_rc20_3 <- rep(0, nit)
@@ -6125,18 +5604,6 @@ err_ee20_3 <- rep(0, nit)
 err_me20_3 <- rep(0, nit)
 err_max1_hoch20_3 <- rep(0, nit)
 err_max1_exact20_3 <- rep(0, nit)
-
-err_oslrt20_4 <- rep(0, nit)
-err_moslrt20_4 <- rep(0, nit)
-err_rc20_4 <- rep(0, nit)
-err_de20_4 <- rep(0, nit)
-err_ee20_4 <- rep(0, nit)
-err_me20_4 <- rep(0, nit)
-err_max1_hoch20_4 <- rep(0, nit)
-err_max1_exact20_4 <- rep(0, nit)
-
-tx_cens20 <- rep(0, nit)
-tx_censadm20 <- rep(0, nit)
 
 
 err_oslrt30_1 <- rep(0, nit)
@@ -6148,15 +5615,6 @@ err_me30_1 <- rep(0, nit)
 err_max1_hoch30_1 <- rep(0, nit)
 err_max1_exact30_1 <- rep(0, nit)
 
-err_oslrt30_2 <- rep(0, nit)
-err_moslrt30_2 <- rep(0, nit)
-err_rc30_2 <- rep(0, nit)
-err_de30_2 <- rep(0, nit)
-err_ee30_2 <- rep(0, nit)
-err_me30_2 <- rep(0, nit)
-err_max1_hoch30_2 <- rep(0, nit)
-err_max1_exact30_2 <- rep(0, nit)
-
 err_oslrt30_3 <- rep(0, nit)
 err_moslrt30_3 <- rep(0, nit)
 err_rc30_3 <- rep(0, nit)
@@ -6165,18 +5623,6 @@ err_ee30_3 <- rep(0, nit)
 err_me30_3 <- rep(0, nit)
 err_max1_hoch30_3 <- rep(0, nit)
 err_max1_exact30_3 <- rep(0, nit)
-
-err_oslrt30_4 <- rep(0, nit)
-err_moslrt30_4 <- rep(0, nit)
-err_rc30_4 <- rep(0, nit)
-err_de30_4 <- rep(0, nit)
-err_ee30_4 <- rep(0, nit)
-err_me30_4 <- rep(0, nit)
-err_max1_hoch30_4 <- rep(0, nit)
-err_max1_exact30_4 <- rep(0, nit)
-
-tx_cens30 <- rep(0, nit)
-tx_censadm30 <- rep(0, nit)
 
 
 err_oslrt50_1 <- rep(0, nit)
@@ -6188,15 +5634,6 @@ err_me50_1 <- rep(0, nit)
 err_max1_hoch50_1 <- rep(0, nit)
 err_max1_exact50_1 <- rep(0, nit)
 
-err_oslrt50_2 <- rep(0, nit)
-err_moslrt50_2 <- rep(0, nit)
-err_rc50_2 <- rep(0, nit)
-err_de50_2 <- rep(0, nit)
-err_ee50_2 <- rep(0, nit)
-err_me50_2 <- rep(0, nit)
-err_max1_hoch50_2 <- rep(0, nit)
-err_max1_exact50_2 <- rep(0, nit)
-
 err_oslrt50_3 <- rep(0, nit)
 err_moslrt50_3 <- rep(0, nit)
 err_rc50_3 <- rep(0, nit)
@@ -6205,18 +5642,6 @@ err_ee50_3 <- rep(0, nit)
 err_me50_3 <- rep(0, nit)
 err_max1_hoch50_3 <- rep(0, nit)
 err_max1_exact50_3 <- rep(0, nit)
-
-err_oslrt50_4 <- rep(0, nit)
-err_moslrt50_4 <- rep(0, nit)
-err_rc50_4 <- rep(0, nit)
-err_de50_4 <- rep(0, nit)
-err_ee50_4 <- rep(0, nit)
-err_me50_4 <- rep(0, nit)
-err_max1_hoch50_4 <- rep(0, nit)
-err_max1_exact50_4 <- rep(0, nit)
-
-tx_cens50 <- rep(0, nit)
-tx_censadm50 <- rep(0, nit)
 
 
 err_oslrt60_1 <- rep(0, nit)
@@ -6228,15 +5653,6 @@ err_me60_1 <- rep(0, nit)
 err_max1_hoch60_1 <- rep(0, nit)
 err_max1_exact60_1 <- rep(0, nit)
 
-err_oslrt60_2 <- rep(0, nit)
-err_moslrt60_2 <- rep(0, nit)
-err_rc60_2 <- rep(0, nit)
-err_de60_2 <- rep(0, nit)
-err_ee60_2 <- rep(0, nit)
-err_me60_2 <- rep(0, nit)
-err_max1_hoch60_2 <- rep(0, nit)
-err_max1_exact60_2 <- rep(0, nit)
-
 err_oslrt60_3 <- rep(0, nit)
 err_moslrt60_3 <- rep(0, nit)
 err_rc60_3 <- rep(0, nit)
@@ -6245,18 +5661,6 @@ err_ee60_3 <- rep(0, nit)
 err_me60_3 <- rep(0, nit)
 err_max1_hoch60_3 <- rep(0, nit)
 err_max1_exact60_3 <- rep(0, nit)
-
-err_oslrt60_4 <- rep(0, nit)
-err_moslrt60_4 <- rep(0, nit)
-err_rc60_4 <- rep(0, nit)
-err_de60_4 <- rep(0, nit)
-err_ee60_4 <- rep(0, nit)
-err_me60_4 <- rep(0, nit)
-err_max1_hoch60_4 <- rep(0, nit)
-err_max1_exact60_4 <- rep(0, nit)
-
-tx_cens60 <- rep(0, nit)
-tx_censadm60 <- rep(0, nit)
 
 
 err_oslrt80_1 <- rep(0, nit)
@@ -6268,15 +5672,6 @@ err_me80_1 <- rep(0, nit)
 err_max1_hoch80_1 <- rep(0, nit)
 err_max1_exact80_1 <- rep(0, nit)
 
-err_oslrt80_2 <- rep(0, nit)
-err_moslrt80_2 <- rep(0, nit)
-err_rc80_2 <- rep(0, nit)
-err_de80_2 <- rep(0, nit)
-err_ee80_2 <- rep(0, nit)
-err_me80_2 <- rep(0, nit)
-err_max1_hoch80_2 <- rep(0, nit)
-err_max1_exact80_2 <- rep(0, nit)
-
 err_oslrt80_3 <- rep(0, nit)
 err_moslrt80_3 <- rep(0, nit)
 err_rc80_3 <- rep(0, nit)
@@ -6285,18 +5680,6 @@ err_ee80_3 <- rep(0, nit)
 err_me80_3 <- rep(0, nit)
 err_max1_hoch80_3 <- rep(0, nit)
 err_max1_exact80_3 <- rep(0, nit)
-
-err_oslrt80_4 <- rep(0, nit)
-err_moslrt80_4 <- rep(0, nit)
-err_rc80_4 <- rep(0, nit)
-err_de80_4 <- rep(0, nit)
-err_ee80_4 <- rep(0, nit)
-err_me80_4 <- rep(0, nit)
-err_max1_hoch80_4 <- rep(0, nit)
-err_max1_exact80_4 <- rep(0, nit)
-
-tx_cens80 <- rep(0, nit)
-tx_censadm80 <- rep(0, nit)
 
 
 err_oslrt100_1 <- rep(0, nit)
@@ -6308,15 +5691,6 @@ err_me100_1 <- rep(0, nit)
 err_max1_hoch100_1 <- rep(0, nit)
 err_max1_exact100_1 <- rep(0, nit)
 
-err_oslrt100_2 <- rep(0, nit)
-err_moslrt100_2 <- rep(0, nit)
-err_rc100_2 <- rep(0, nit)
-err_de100_2 <- rep(0, nit)
-err_ee100_2 <- rep(0, nit)
-err_me100_2 <- rep(0, nit)
-err_max1_hoch100_2 <- rep(0, nit)
-err_max1_exact100_2 <- rep(0, nit)
-
 err_oslrt100_3 <- rep(0, nit)
 err_moslrt100_3 <- rep(0, nit)
 err_rc100_3 <- rep(0, nit)
@@ -6325,18 +5699,6 @@ err_ee100_3 <- rep(0, nit)
 err_me100_3 <- rep(0, nit)
 err_max1_hoch100_3 <- rep(0, nit)
 err_max1_exact100_3 <- rep(0, nit)
-
-err_oslrt100_4 <- rep(0, nit)
-err_moslrt100_4 <- rep(0, nit)
-err_rc100_4 <- rep(0, nit)
-err_de100_4 <- rep(0, nit)
-err_ee100_4 <- rep(0, nit)
-err_me100_4 <- rep(0, nit)
-err_max1_hoch100_4 <- rep(0, nit)
-err_max1_exact100_4 <- rep(0, nit)
-
-tx_cens100 <- rep(0, nit)
-tx_censadm100 <- rep(0, nit)
 
 
 err_oslrt150_1 <- rep(0, nit)
@@ -6348,15 +5710,6 @@ err_me150_1 <- rep(0, nit)
 err_max1_hoch150_1 <- rep(0, nit)
 err_max1_exact150_1 <- rep(0, nit)
 
-err_oslrt150_2 <- rep(0, nit)
-err_moslrt150_2 <- rep(0, nit)
-err_rc150_2 <- rep(0, nit)
-err_de150_2 <- rep(0, nit)
-err_ee150_2 <- rep(0, nit)
-err_me150_2 <- rep(0, nit)
-err_max1_hoch150_2 <- rep(0, nit)
-err_max1_exact150_2 <- rep(0, nit)
-
 err_oslrt150_3 <- rep(0, nit)
 err_moslrt150_3 <- rep(0, nit)
 err_rc150_3 <- rep(0, nit)
@@ -6365,18 +5718,6 @@ err_ee150_3 <- rep(0, nit)
 err_me150_3 <- rep(0, nit)
 err_max1_hoch150_3 <- rep(0, nit)
 err_max1_exact150_3 <- rep(0, nit)
-
-err_oslrt150_4 <- rep(0, nit)
-err_moslrt150_4 <- rep(0, nit)
-err_rc150_4 <- rep(0, nit)
-err_de150_4 <- rep(0, nit)
-err_ee150_4 <- rep(0, nit)
-err_me150_4 <- rep(0, nit)
-err_max1_hoch150_4 <- rep(0, nit)
-err_max1_exact150_4 <- rep(0, nit)
-
-tx_cens150 <- rep(0, nit)
-tx_censadm150 <- rep(0, nit)
 
 
 err_oslrt200_1 <- rep(0, nit)
@@ -6388,15 +5729,6 @@ err_me200_1 <- rep(0, nit)
 err_max1_hoch200_1 <- rep(0, nit)
 err_max1_exact200_1 <- rep(0, nit)
 
-err_oslrt200_2 <- rep(0, nit)
-err_moslrt200_2 <- rep(0, nit)
-err_rc200_2 <- rep(0, nit)
-err_de200_2 <- rep(0, nit)
-err_ee200_2 <- rep(0, nit)
-err_me200_2 <- rep(0, nit)
-err_max1_hoch200_2 <- rep(0, nit)
-err_max1_exact200_2 <- rep(0, nit)
-
 err_oslrt200_3 <- rep(0, nit)
 err_moslrt200_3 <- rep(0, nit)
 err_rc200_3 <- rep(0, nit)
@@ -6406,17 +5738,77 @@ err_me200_3 <- rep(0, nit)
 err_max1_hoch200_3 <- rep(0, nit)
 err_max1_exact200_3 <- rep(0, nit)
 
-err_oslrt200_4 <- rep(0, nit)
-err_moslrt200_4 <- rep(0, nit)
-err_rc200_4 <- rep(0, nit)
-err_de200_4 <- rep(0, nit)
-err_ee200_4 <- rep(0, nit)
-err_me200_4 <- rep(0, nit)
-err_max1_hoch200_4 <- rep(0, nit)
-err_max1_exact200_4 <- rep(0, nit)
+err_init_oslrt20 <- rep(0, nit)
+err_init_moslrt20 <- rep(0, nit)
+err_init_rc20 <- rep(0, nit)
+err_init_de20 <- rep(0, nit)
+err_init_ee20 <- rep(0, nit)
+err_init_me20 <- rep(0, nit)
+err_init_max_hoch_20 <- rep(0, nit)
+err_init_max_exact_20 <- rep(0, nit)
 
-tx_cens200 <- rep(0, nit)
-tx_censadm200 <- rep(0, nit)
+err_init_oslrt30 <- rep(0, nit)
+err_init_moslrt30 <- rep(0, nit)
+err_init_rc30 <- rep(0, nit)
+err_init_de30 <- rep(0, nit)
+err_init_ee30 <- rep(0, nit)
+err_init_me30 <- rep(0, nit)
+err_init_max_hoch_30 <- rep(0, nit)
+err_init_max_exact_30 <- rep(0, nit)
+
+err_init_oslrt50 <- rep(0, nit)
+err_init_moslrt50 <- rep(0, nit)
+err_init_rc50 <- rep(0, nit)
+err_init_de50 <- rep(0, nit)
+err_init_ee50 <- rep(0, nit)
+err_init_me50 <- rep(0, nit)
+err_init_max_hoch_50 <- rep(0, nit)
+err_init_max_exact_50 <- rep(0, nit)
+
+err_init_oslrt60 <- rep(0, nit)
+err_init_moslrt60 <- rep(0, nit)
+err_init_rc60 <- rep(0, nit)
+err_init_de60 <- rep(0, nit)
+err_init_ee60 <- rep(0, nit)
+err_init_me60 <- rep(0, nit)
+err_init_max_hoch_60 <- rep(0, nit)
+err_init_max_exact_60 <- rep(0, nit)
+
+err_init_oslrt80 <- rep(0, nit)
+err_init_moslrt80 <- rep(0, nit)
+err_init_rc80 <- rep(0, nit)
+err_init_de80 <- rep(0, nit)
+err_init_ee80 <- rep(0, nit)
+err_init_me80 <- rep(0, nit)
+err_init_max_hoch_80 <- rep(0, nit)
+err_init_max_exact_80 <- rep(0, nit)
+
+err_init_oslrt100 <- rep(0, nit)
+err_init_moslrt100 <- rep(0, nit)
+err_init_rc100 <- rep(0, nit)
+err_init_de100 <- rep(0, nit)
+err_init_ee100 <- rep(0, nit)
+err_init_me100 <- rep(0, nit)
+err_init_max_hoch_100 <- rep(0, nit)
+err_init_max_exact_100 <- rep(0, nit)
+
+err_init_oslrt150 <- rep(0, nit)
+err_init_moslrt150 <- rep(0, nit)
+err_init_rc150 <- rep(0, nit)
+err_init_de150 <- rep(0, nit)
+err_init_ee150 <- rep(0, nit)
+err_init_me150 <- rep(0, nit)
+err_init_max_hoch_150 <- rep(0, nit)
+err_init_max_exact_150 <- rep(0, nit)
+
+err_init_oslrt200 <- rep(0, nit)
+err_init_moslrt200 <- rep(0, nit)
+err_init_rc200 <- rep(0, nit)
+err_init_de200 <- rep(0, nit)
+err_init_ee200 <- rep(0, nit)
+err_init_me200 <- rep(0, nit)
+err_init_max_hoch_200 <- rep(0, nit)
+err_init_max_exact_200 <- rep(0, nit)
 
 for(i in 1:nit){
   time20 <- rpwexp(n = 20, rate = c(1/scale0*1, 1/scale0*0.5), intervals = CP, cumulative = FALSE)
@@ -6541,296 +5933,220 @@ for(i in 1:nit){
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
   data20 <- ten(S20)
-  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)[2]
-  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi1)[2]
-  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi1)[2]
-  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)[2]
+  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a20_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  a202_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)[2]
-  b20_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  c20_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi2)[2]
-  d20_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi2)[2]
-  e20_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f20_2 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)[2]
-  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi3)[2]
-  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi3)[2]
-  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a20_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  a202_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)[2]
-  b20_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  c20_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi4)[2]
-  d20_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi4)[2]
-  e20_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f20_4 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)[2]
+  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a20_init <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a202_init <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b20_init <- Score_RC(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c20_init <- Score_DE(data = data20, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d20_init <- Score_EE(data = data20, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e20_init <- Score_ME(data = data20, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g20_hoch_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g20_exact_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data30 <- ten(S30)
-  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)[2]
-  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi1)[2]
-  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi1)[2]
-  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)[2]
+  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a30_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  a302_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)[2]
-  b30_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  c30_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi2)[2]
-  d30_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi2)[2]
-  e30_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f30_2 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)[2]
-  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi3)[2]
-  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi3)[2]
-  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a30_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  a302_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)[2]
-  b30_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  c30_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi4)[2]
-  d30_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi4)[2]
-  e30_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f30_4 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)[2]
+  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a30_init <- OSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a302_init <- mOSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b30_init <- Score_RC(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c30_init <- Score_DE(data = data30, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d30_init <- Score_EE(data = data30, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e30_init <- Score_ME(data = data30, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g30_hoch_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g30_exact_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data50 <- ten(S50)
-  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)[2]
-  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi1)[2]
-  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi1)[2]
-  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)[2]
+  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a50_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  a502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)[2]
-  b50_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  c50_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi2)[2]
-  d50_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi2)[2]
-  e50_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f50_2 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)[2]
-  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi3)[2]
-  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi3)[2]
-  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a50_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  a502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)[2]
-  b50_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  c50_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi4)[2]
-  d50_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi4)[2]
-  e50_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f50_4 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)[2]
+  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a50_init <- OSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a502_init <- mOSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b50_init <- Score_RC(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c50_init <- Score_DE(data = data50, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d50_init <- Score_EE(data = data50, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e50_init <- Score_ME(data = data50, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g50_hoch_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g50_exact_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data60 <- ten(S60)
-  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)[2]
-  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi1)[2]
-  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi1)[2]
-  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)[2]
+  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a60_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  a602_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)[2]
-  b60_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  c60_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi2)[2]
-  d60_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi2)[2]
-  e60_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f60_2 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)[2]
-  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi3)[2]
-  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi3)[2]
-  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a60_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  a602_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)[2]
-  b60_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  c60_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi4)[2]
-  d60_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi4)[2]
-  e60_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f60_4 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)[2]
+  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a60_init <- OSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a602_init <- mOSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b60_init <- Score_RC(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c60_init <- Score_DE(data = data60, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d60_init <- Score_EE(data = data60, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e60_init <- Score_ME(data = data60, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g60_hoch_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g60_exact_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data80 <- ten(S80)
-  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)[2]
-  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi1)[2]
-  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi1)[2]
-  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)[2]
+  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a80_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  a802_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)[2]
-  b80_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  c80_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi2)[2]
-  d80_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi2)[2]
-  e80_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f80_2 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)[2]
-  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi3)[2]
-  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi3)[2]
-  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a80_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  a802_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)[2]
-  b80_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  c80_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi4)[2]
-  d80_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi4)[2]
-  e80_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f80_4 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)[2]
+  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a80_init <- OSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a802_init <- mOSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b80_init <- Score_RC(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c80_init <- Score_DE(data = data80, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d80_init <- Score_EE(data = data80, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e80_init <- Score_ME(data = data80, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g80_hoch_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g80_exact_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data100 <- ten(S100)
-  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)[2]
-  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi1)[2]
-  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi1)[2]
-  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)[2]
+  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a100_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  a1002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)[2]
-  b100_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  c100_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi2)[2]
-  d100_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi2)[2]
-  e100_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f100_2 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)[2]
-  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi3)[2]
-  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi3)[2]
-  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a100_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  a1002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)[2]
-  b100_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  c100_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi4)[2]
-  d100_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi4)[2]
-  e100_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f100_4 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)[2]
+  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a100_init <- OSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1002_init  <- mOSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b100_init  <- Score_RC(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c100_init  <- Score_DE(data = data100, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d100_init  <- Score_EE(data = data100, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e100_init  <- Score_ME(data = data100, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g100_hoch_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g100_exact_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data150 <- ten(S150)
-  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)[2]
-  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi1)[2]
-  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi1)[2]
-  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)[2]
+  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a150_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  a1502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)[2]
-  b150_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  c150_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi2)[2]
-  d150_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi2)[2]
-  e150_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f150_2 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)[2]
-  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi3)[2]
-  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi3)[2]
-  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a150_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  a1502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)[2]
-  b150_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  c150_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi4)[2]
-  d150_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi4)[2]
-  e150_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f150_4 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)[2]
+  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a150_init <- OSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1502_init <- mOSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b150_init <- Score_RC(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c150_init <- Score_DE(data = data150, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d150_init <- Score_EE(data = data150, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e150_init <- Score_ME(data = data150, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g150_hoch_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g150_exact_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data200 <- ten(S200)
-  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)[2]
-  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi1)[2]
-  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi1)[2]
-  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)[2]
+  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a200_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  a2002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)[2]
-  b200_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  c200_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi2)[2]
-  d200_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi2)[2]
-  e200_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f200_2 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
+  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)[2]
+  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a200_init <- OSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a2002_init <- mOSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b200_init <- Score_RC(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c200_init <- Score_DE(data = data200, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d200_init <- Score_EE(data = data200, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e200_init <- Score_ME(data = data200, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g200_hoch_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g200_exact_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
-  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)[2]
-  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi3)[2]
-  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi3)[2]
-  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a200_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  a2002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)[2]
-  b200_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  c200_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi4)[2]
-  d200_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi4)[2]
-  e200_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f200_4 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
-  
-  
-  #censoring rate with adm censoring
-  tx_censadm20[i] <- 1-sum(delta20)/20
-  tx_censadm30[i] <- 1-sum(delta30)/30
-  tx_censadm50[i] <- 1-sum(delta50)/50
-  tx_censadm60[i] <- 1-sum(delta60)/60
-  tx_censadm80[i] <- 1-sum(delta80)/80
-  tx_censadm100[i] <- 1-sum(delta100)/100
-  tx_censadm150[i] <- 1-sum(delta150)/150
-  tx_censadm200[i] <- 1-sum(delta200)/200
-  
-  #censoring rate without adm censoring
-  tx_cens20[i] <- 1-sum(del20)/20
-  tx_cens30[i] <- 1-sum(del30)/30
-  tx_cens50[i] <- 1-sum(del50)/50
-  tx_cens60[i] <- 1-sum(del60)/60
-  tx_cens80[i] <- 1-sum(del80)/80
-  tx_cens100[i] <- 1-sum(del100)/100
-  tx_cens150[i] <- 1-sum(del150)/150
-  tx_cens200[i] <- 1-sum(del200)/200
   
   err_oslrt20_1[i] <- ifelse((a20_1<0.05), 1, 0)
   err_moslrt20_1[i] <- ifelse((a202_1<0.05), 1, 0)
@@ -6841,15 +6157,6 @@ for(i in 1:nit){
   err_max1_hoch20_1[i] <- ifelse((f20_1[2]<0.05), 1, 0)
   err_max1_exact20_1[i] <- ifelse((f20_1[3]<0.05), 1, 0)
   
-  err_oslrt20_2[i] <- ifelse((a20_2<0.05), 1, 0)
-  err_moslrt20_2[i] <- ifelse((a202_2<0.05), 1, 0)
-  err_rc20_2[i] <- ifelse((b20_2<0.05), 1, 0)
-  err_de20_2[i] <- ifelse((c20_2<0.05), 1, 0)
-  err_ee20_2[i] <- ifelse((d20_2<0.05), 1, 0)
-  err_me20_2[i] <- ifelse((e20_2<0.05), 1, 0)
-  err_max1_hoch20_2[i] <- ifelse((f20_2[2]<0.05), 1, 0)
-  err_max1_exact20_2[i] <- ifelse((f20_2[3]<0.05), 1, 0)
-  
   err_oslrt20_3[i] <- ifelse((a20_3<0.05), 1, 0)
   err_moslrt20_3[i] <- ifelse((a202_3<0.05), 1, 0)
   err_rc20_3[i] <- ifelse((b20_3<0.05), 1, 0)
@@ -6858,15 +6165,6 @@ for(i in 1:nit){
   err_me20_3[i] <- ifelse((e20_3<0.05), 1, 0)
   err_max1_hoch20_3[i] <- ifelse((f20_3[2]<0.05), 1, 0)
   err_max1_exact20_3[i] <- ifelse((f20_3[3]<0.05), 1, 0)
-  
-  err_oslrt20_4[i] <- ifelse((a20_4<0.05), 1, 0)
-  err_moslrt20_4[i] <- ifelse((a202_4<0.05), 1, 0)
-  err_rc20_4[i] <- ifelse((b20_4<0.05), 1, 0)
-  err_de20_4[i] <- ifelse((c20_4<0.05), 1, 0)
-  err_ee20_4[i] <- ifelse((d20_4<0.05), 1, 0)
-  err_me20_4[i] <- ifelse((e20_4<0.05), 1, 0)
-  err_max1_hoch20_4[i] <- ifelse((f20_4[2]<0.05), 1, 0)
-  err_max1_exact20_4[i] <- ifelse((f20_4[3]<0.05), 1, 0)
   
   
   err_oslrt30_1[i] <- ifelse((a30_1<0.05), 1, 0)
@@ -6878,15 +6176,6 @@ for(i in 1:nit){
   err_max1_hoch30_1[i] <- ifelse((f30_1[2]<0.05), 1, 0)
   err_max1_exact30_1[i] <- ifelse((f30_1[3]<0.05), 1, 0)
   
-  err_oslrt30_2[i] <- ifelse((a30_2<0.05), 1, 0)
-  err_moslrt30_2[i] <- ifelse((a302_2<0.05), 1, 0)
-  err_rc30_2[i] <- ifelse((b30_2<0.05), 1, 0)
-  err_de30_2[i] <- ifelse((c30_2<0.05), 1, 0)
-  err_ee30_2[i] <- ifelse((d30_2<0.05), 1, 0)
-  err_me30_2[i] <- ifelse((e30_2<0.05), 1, 0)
-  err_max1_hoch30_2[i] <- ifelse((f30_2[2]<0.05), 1, 0)
-  err_max1_exact30_2[i] <- ifelse((f30_2[3]<0.05), 1, 0)
-  
   err_oslrt30_3[i] <- ifelse((a30_3<0.05), 1, 0)
   err_moslrt30_3[i] <- ifelse((a302_3<0.05), 1, 0)
   err_rc30_3[i] <- ifelse((b30_3<0.05), 1, 0)
@@ -6895,15 +6184,6 @@ for(i in 1:nit){
   err_me30_3[i] <- ifelse((e30_3<0.05), 1, 0)
   err_max1_hoch30_3[i] <- ifelse((f30_3[2]<0.05), 1, 0)
   err_max1_exact30_3[i] <- ifelse((f30_3[3]<0.05), 1, 0)
-  
-  err_oslrt30_4[i] <- ifelse((a30_4<0.05), 1, 0)
-  err_moslrt30_4[i] <- ifelse((a302_4<0.05), 1, 0)
-  err_rc30_4[i] <- ifelse((b30_4<0.05), 1, 0)
-  err_de30_4[i] <- ifelse((c30_4<0.05), 1, 0)
-  err_ee30_4[i] <- ifelse((d30_4<0.05), 1, 0)
-  err_me30_4[i] <- ifelse((e30_4<0.05), 1, 0)
-  err_max1_hoch30_4[i] <- ifelse((f30_4[2]<0.05), 1, 0)
-  err_max1_exact30_4[i] <- ifelse((f30_4[3]<0.05), 1, 0)
   
   
   err_oslrt50_1[i] <- ifelse((a50_1<0.05), 1, 0)
@@ -6915,15 +6195,6 @@ for(i in 1:nit){
   err_max1_hoch50_1[i] <- ifelse((f50_1[2]<0.05), 1, 0)
   err_max1_exact50_1[i] <- ifelse((f50_1[3]<0.05), 1, 0)
   
-  err_oslrt50_2[i] <- ifelse((a50_2<0.05), 1, 0)
-  err_moslrt50_2[i] <- ifelse((a502_2<0.05), 1, 0)
-  err_rc50_2[i] <- ifelse((b50_2<0.05), 1, 0)
-  err_de50_2[i] <- ifelse((c50_2<0.05), 1, 0)
-  err_ee50_2[i] <- ifelse((d50_2<0.05), 1, 0)
-  err_me50_2[i] <- ifelse((e50_2<0.05), 1, 0)
-  err_max1_hoch50_2[i] <- ifelse((f50_2[2]<0.05), 1, 0)
-  err_max1_exact50_2[i] <- ifelse((f50_2[3]<0.05), 1, 0)
-  
   err_oslrt50_3[i] <- ifelse((a50_3<0.05), 1, 0)
   err_moslrt50_3[i] <- ifelse((a502_3<0.05), 1, 0)
   err_rc50_3[i] <- ifelse((b50_3<0.05), 1, 0)
@@ -6932,15 +6203,6 @@ for(i in 1:nit){
   err_me50_3[i] <- ifelse((e50_3<0.05), 1, 0)
   err_max1_hoch50_3[i] <- ifelse((f50_3[2]<0.05), 1, 0)
   err_max1_exact50_3[i] <- ifelse((f50_3[3]<0.05), 1, 0)
-  
-  err_oslrt50_4[i] <- ifelse((a50_4<0.05), 1, 0)
-  err_moslrt50_4[i] <- ifelse((a502_4<0.05), 1, 0)
-  err_rc50_4[i] <- ifelse((b50_4<0.05), 1, 0)
-  err_de50_4[i] <- ifelse((c50_4<0.05), 1, 0)
-  err_ee50_4[i] <- ifelse((d50_4<0.05), 1, 0)
-  err_me50_4[i] <- ifelse((e50_4<0.05), 1, 0)
-  err_max1_hoch50_4[i] <- ifelse((f50_4[2]<0.05), 1, 0)
-  err_max1_exact50_4[i] <- ifelse((f50_4[3]<0.05), 1, 0)
   
   
   err_oslrt60_1[i] <- ifelse((a60_1<0.05), 1, 0)
@@ -6952,15 +6214,6 @@ for(i in 1:nit){
   err_max1_hoch60_1[i] <- ifelse((f60_1[2]<0.05), 1, 0)
   err_max1_exact60_1[i] <- ifelse((f60_1[3]<0.05), 1, 0)
   
-  err_oslrt60_2[i] <- ifelse((a60_2<0.05), 1, 0)
-  err_moslrt60_2[i] <- ifelse((a602_2<0.05), 1, 0)
-  err_rc60_2[i] <- ifelse((b60_2<0.05), 1, 0)
-  err_de60_2[i] <- ifelse((c60_2<0.05), 1, 0)
-  err_ee60_2[i] <- ifelse((d60_2<0.05), 1, 0)
-  err_me60_2[i] <- ifelse((e60_2<0.05), 1, 0)
-  err_max1_hoch60_2[i] <- ifelse((f60_2[2]<0.05), 1, 0)
-  err_max1_exact60_2[i] <- ifelse((f60_2[3]<0.05), 1, 0)
-  
   err_oslrt60_3[i] <- ifelse((a60_3<0.05), 1, 0)
   err_moslrt60_3[i] <- ifelse((a602_3<0.05), 1, 0)
   err_rc60_3[i] <- ifelse((b60_3<0.05), 1, 0)
@@ -6969,15 +6222,6 @@ for(i in 1:nit){
   err_me60_3[i] <- ifelse((e60_3<0.05), 1, 0)
   err_max1_hoch60_3[i] <- ifelse((f60_3[2]<0.05), 1, 0)
   err_max1_exact60_3[i] <- ifelse((f60_3[3]<0.05), 1, 0)
-  
-  err_oslrt60_4[i] <- ifelse((a60_4<0.05), 1, 0)
-  err_moslrt60_4[i] <- ifelse((a602_4<0.05), 1, 0)
-  err_rc60_4[i] <- ifelse((b60_4<0.05), 1, 0)
-  err_de60_4[i] <- ifelse((c60_4<0.05), 1, 0)
-  err_ee60_4[i] <- ifelse((d60_4<0.05), 1, 0)
-  err_me60_4[i] <- ifelse((e60_4<0.05), 1, 0)
-  err_max1_hoch60_4[i] <- ifelse((f60_4[2]<0.05), 1, 0)
-  err_max1_exact60_4[i] <- ifelse((f60_4[3]<0.05), 1, 0)
   
   
   err_oslrt80_1[i] <- ifelse((a80_1<0.05), 1, 0)
@@ -6989,15 +6233,6 @@ for(i in 1:nit){
   err_max1_hoch80_1[i] <- ifelse((f80_1[2]<0.05), 1, 0)
   err_max1_exact80_1[i] <- ifelse((f80_1[3]<0.05), 1, 0)
   
-  err_oslrt80_2[i] <- ifelse((a80_2<0.05), 1, 0)
-  err_moslrt80_2[i] <- ifelse((a802_2<0.05), 1, 0)
-  err_rc80_2[i] <- ifelse((b80_2<0.05), 1, 0)
-  err_de80_2[i] <- ifelse((c80_2<0.05), 1, 0)
-  err_ee80_2[i] <- ifelse((d80_2<0.05), 1, 0)
-  err_me80_2[i] <- ifelse((e80_2<0.05), 1, 0)
-  err_max1_hoch80_2[i] <- ifelse((f80_2[2]<0.05), 1, 0)
-  err_max1_exact80_2[i] <- ifelse((f80_2[3]<0.05), 1, 0)
-  
   err_oslrt80_3[i] <- ifelse((a80_3<0.05), 1, 0)
   err_moslrt80_3[i] <- ifelse((a802_3<0.05), 1, 0)
   err_rc80_3[i] <- ifelse((b80_3<0.05), 1, 0)
@@ -7006,15 +6241,6 @@ for(i in 1:nit){
   err_me80_3[i] <- ifelse((e80_3<0.05), 1, 0)
   err_max1_hoch80_3[i] <- ifelse((f80_3[2]<0.05), 1, 0)
   err_max1_exact80_3[i] <- ifelse((f80_3[3]<0.05), 1, 0)
-  
-  err_oslrt80_4[i] <- ifelse((a80_4<0.05), 1, 0)
-  err_moslrt80_4[i] <- ifelse((a802_4<0.05), 1, 0)
-  err_rc80_4[i] <- ifelse((b80_4<0.05), 1, 0)
-  err_de80_4[i] <- ifelse((c80_4<0.05), 1, 0)
-  err_ee80_4[i] <- ifelse((d80_4<0.05), 1, 0)
-  err_me80_4[i] <- ifelse((e80_4<0.05), 1, 0)
-  err_max1_hoch80_4[i] <- ifelse((f80_4[2]<0.05), 1, 0)
-  err_max1_exact80_4[i] <- ifelse((f80_4[3]<0.05), 1, 0)
   
   
   err_oslrt100_1[i] <- ifelse((a100_1<0.05), 1, 0)
@@ -7026,15 +6252,6 @@ for(i in 1:nit){
   err_max1_hoch100_1[i] <- ifelse((f100_1[2]<0.05), 1, 0)
   err_max1_exact100_1[i] <- ifelse((f100_1[3]<0.05), 1, 0)
   
-  err_oslrt100_2[i] <- ifelse((a100_2<0.05), 1, 0)
-  err_moslrt100_2[i] <- ifelse((a1002_2<0.05), 1, 0)
-  err_rc100_2[i] <- ifelse((b100_2<0.05), 1, 0)
-  err_de100_2[i] <- ifelse((c100_2<0.05), 1, 0)
-  err_ee100_2[i] <- ifelse((d100_2<0.05), 1, 0)
-  err_me100_2[i] <- ifelse((e100_2<0.05), 1, 0)
-  err_max1_hoch100_2[i] <- ifelse((f100_2[2]<0.05), 1, 0)
-  err_max1_exact100_2[i] <- ifelse((f100_2[3]<0.05), 1, 0)
-  
   err_oslrt100_3[i] <- ifelse((a100_3<0.05), 1, 0)
   err_moslrt100_3[i] <- ifelse((a1002_3<0.05), 1, 0)
   err_rc100_3[i] <- ifelse((b100_3<0.05), 1, 0)
@@ -7043,15 +6260,6 @@ for(i in 1:nit){
   err_me100_3[i] <- ifelse((e100_3<0.05), 1, 0)
   err_max1_hoch100_3[i] <- ifelse((f100_3[2]<0.05), 1, 0)
   err_max1_exact100_3[i] <- ifelse((f100_3[3]<0.05), 1, 0)
-  
-  err_oslrt100_4[i] <- ifelse((a100_4<0.05), 1, 0)
-  err_moslrt100_4[i] <- ifelse((a1002_4<0.05), 1, 0)
-  err_rc100_4[i] <- ifelse((b100_4<0.05), 1, 0)
-  err_de100_4[i] <- ifelse((c100_4<0.05), 1, 0)
-  err_ee100_4[i] <- ifelse((d100_4<0.05), 1, 0)
-  err_me100_4[i] <- ifelse((e100_4<0.05), 1, 0)
-  err_max1_hoch100_4[i] <- ifelse((f100_4[2]<0.05), 1, 0)
-  err_max1_exact100_4[i] <- ifelse((f100_4[3]<0.05), 1, 0)
   
   
   err_oslrt150_1[i] <- ifelse((a150_1<0.05), 1, 0)
@@ -7063,15 +6271,6 @@ for(i in 1:nit){
   err_max1_hoch150_1[i] <- ifelse((f150_1[2]<0.05), 1, 0)
   err_max1_exact150_1[i] <- ifelse((f150_1[3]<0.05), 1, 0)
   
-  err_oslrt150_2[i] <- ifelse((a150_2<0.05), 1, 0)
-  err_moslrt150_2[i] <- ifelse((a1502_2<0.05), 1, 0)
-  err_rc150_2[i] <- ifelse((b150_2<0.05), 1, 0)
-  err_de150_2[i] <- ifelse((c150_2<0.05), 1, 0)
-  err_ee150_2[i] <- ifelse((d150_2<0.05), 1, 0)
-  err_me150_2[i] <- ifelse((e150_2<0.05), 1, 0)
-  err_max1_hoch150_2[i] <- ifelse((f150_2[2]<0.05), 1, 0)
-  err_max1_exact150_2[i] <- ifelse((f150_2[3]<0.05), 1, 0)
-  
   err_oslrt150_3[i] <- ifelse((a150_3<0.05), 1, 0)
   err_moslrt150_3[i] <- ifelse((a1502_3<0.05), 1, 0)
   err_rc150_3[i] <- ifelse((b150_3<0.05), 1, 0)
@@ -7080,15 +6279,6 @@ for(i in 1:nit){
   err_me150_3[i] <- ifelse((e150_3<0.05), 1, 0)
   err_max1_hoch150_3[i] <- ifelse((f150_3[2]<0.05), 1, 0)
   err_max1_exact150_3[i] <- ifelse((f150_3[3]<0.05), 1, 0)
-  
-  err_oslrt150_4[i] <- ifelse((a150_4<0.05), 1, 0)
-  err_moslrt150_4[i] <- ifelse((a1502_4<0.05), 1, 0)
-  err_rc150_4[i] <- ifelse((b150_4<0.05), 1, 0)
-  err_de150_4[i] <- ifelse((c150_4<0.05), 1, 0)
-  err_ee150_4[i] <- ifelse((d150_4<0.05), 1, 0)
-  err_me150_4[i] <- ifelse((e150_4<0.05), 1, 0)
-  err_max1_hoch150_4[i] <- ifelse((f150_4[2]<0.05), 1, 0)
-  err_max1_exact150_4[i] <- ifelse((f150_4[3]<0.05), 1, 0)
   
   
   err_oslrt200_1[i] <- ifelse((a200_1<0.05), 1, 0)
@@ -7100,15 +6290,6 @@ for(i in 1:nit){
   err_max1_hoch200_1[i] <- ifelse((f200_1[2]<0.05), 1, 0)
   err_max1_exact200_1[i] <- ifelse((f200_1[3]<0.05), 1, 0)
   
-  err_oslrt200_2[i] <- ifelse((a200_2<0.05), 1, 0)
-  err_moslrt200_2[i] <- ifelse((a2002_2<0.05), 1, 0)
-  err_rc200_2[i] <- ifelse((b200_2<0.05), 1, 0)
-  err_de200_2[i] <- ifelse((c200_2<0.05), 1, 0)
-  err_ee200_2[i] <- ifelse((d200_2<0.05), 1, 0)
-  err_me200_2[i] <- ifelse((e200_2<0.05), 1, 0)
-  err_max1_hoch200_2[i] <- ifelse((f200_2[2]<0.05), 1, 0)
-  err_max1_exact200_2[i] <- ifelse((f200_2[3]<0.05), 1, 0)
-  
   err_oslrt200_3[i] <- ifelse((a200_3<0.05), 1, 0)
   err_moslrt200_3[i] <- ifelse((a2002_3<0.05), 1, 0)
   err_rc200_3[i] <- ifelse((b200_3<0.05), 1, 0)
@@ -7117,15 +6298,79 @@ for(i in 1:nit){
   err_me200_3[i] <- ifelse((e200_3<0.05), 1, 0)
   err_max1_hoch200_3[i] <- ifelse((f200_3[2]<0.05), 1, 0)
   err_max1_exact200_3[i] <- ifelse((f200_3[3]<0.05), 1, 0)
-  
-  err_oslrt200_4[i] <- ifelse((a200_4<0.05), 1, 0)
-  err_moslrt200_4[i] <- ifelse((a2002_4<0.05), 1, 0)
-  err_rc200_4[i] <- ifelse((b200_4<0.05), 1, 0)
-  err_de200_4[i] <- ifelse((c200_4<0.05), 1, 0)
-  err_ee200_4[i] <- ifelse((d200_4<0.05), 1, 0)
-  err_me200_4[i] <- ifelse((e200_4<0.05), 1, 0)
-  err_max1_hoch200_4[i] <- ifelse((f200_4[2]<0.05), 1, 0)
-  err_max1_exact200_4[i] <- ifelse((f200_4[3]<0.05), 1, 0)
+
+  err_init_oslrt20[i] <- ifelse((a20_init<0.05), 1, 0)
+  err_init_moslrt20[i] <- ifelse((a202_init<0.05), 1, 0)
+  err_init_rc20[i] <- ifelse((b20_init<0.05), 1, 0)
+  err_init_de20[i] <- ifelse((c20_init<0.05), 1, 0)
+  err_init_ee20[i] <- ifelse((d20_init<0.05), 1, 0)
+  err_init_me20[i] <- ifelse((e20_init<0.05), 1, 0)
+  err_init_max_hoch_20[i] <- ifelse(g20_hoch_init<0.05, 1, 0)
+  err_init_max_exact_20[i] <- ifelse(g20_exact_init<0.05, 1, 0)
+
+  err_init_oslrt30[i] <- ifelse((a30_init<0.05), 1, 0)
+  err_init_moslrt30[i] <- ifelse((a302_init<0.05), 1, 0)
+  err_init_rc30[i] <- ifelse((b30_init<0.05), 1, 0)
+  err_init_de30[i] <- ifelse((c30_init<0.05), 1, 0)
+  err_init_ee30[i] <- ifelse((d30_init<0.05), 1, 0)
+  err_init_me30[i] <- ifelse((e30_init<0.05), 1, 0)
+  err_init_max_hoch_30[i] <- ifelse(g30_hoch_init<0.05, 1, 0)
+  err_init_max_exact_30[i] <- ifelse(g30_exact_init<0.05, 1, 0)
+
+  err_init_oslrt50[i] <- ifelse((a50_init<0.05), 1, 0)
+  err_init_moslrt50[i] <- ifelse((a502_init<0.05), 1, 0)
+  err_init_rc50[i] <- ifelse((b50_init<0.05), 1, 0)
+  err_init_de50[i] <- ifelse((c50_init<0.05), 1, 0)
+  err_init_ee50[i] <- ifelse((d50_init<0.05), 1, 0)
+  err_init_me50[i] <- ifelse((e50_init<0.05), 1, 0)
+  err_init_max_hoch_50[i] <- ifelse(g50_hoch_init<0.05, 1, 0)
+  err_init_max_exact_50[i] <- ifelse(g50_exact_init<0.05, 1, 0)
+
+  err_init_oslrt60[i] <- ifelse((a60_init<0.05), 1, 0)
+  err_init_moslrt60[i] <- ifelse((a602_init<0.05), 1, 0)
+  err_init_rc60[i] <- ifelse((b60_init<0.05), 1, 0)
+  err_init_de60[i] <- ifelse((c60_init<0.05), 1, 0)
+  err_init_ee60[i] <- ifelse((d60_init<0.05), 1, 0)
+  err_init_me60[i] <- ifelse((e60_init<0.05), 1, 0)
+  err_init_max_hoch_60[i] <- ifelse(g60_hoch_init<0.05, 1, 0)
+  err_init_max_exact_60[i] <- ifelse(g60_exact_init<0.05, 1, 0)  
+
+  err_init_oslrt80[i] <- ifelse((a80_init<0.05), 1, 0)
+  err_init_moslrt80[i] <- ifelse((a802_init<0.05), 1, 0)
+  err_init_rc80[i] <- ifelse((b80_init<0.05), 1, 0)
+  err_init_de80[i] <- ifelse((c80_init<0.05), 1, 0)
+  err_init_ee80[i] <- ifelse((d80_init<0.05), 1, 0)
+  err_init_me80[i] <- ifelse((e80_init<0.05), 1, 0)
+  err_init_rmst_80[i] <- ifelse((e_init<0.05), 1, 0)
+  err_init_max_hoch_80[i] <- ifelse(g80_hoch_init<0.05, 1, 0)
+  err_init_max_exact_80[i] <- ifelse(g80_exact_init<0.05, 1, 0)
+
+  err_init_oslrt100[i] <- ifelse((a100_init<0.05), 1, 0)
+  err_init_moslrt100[i] <- ifelse((a1002_init<0.05), 1, 0)
+  err_init_rc100[i] <- ifelse((b100_init<0.05), 1, 0)
+  err_init_de100[i] <- ifelse((c100_init<0.05), 1, 0)
+  err_init_ee100[i] <- ifelse((d100_init<0.05), 1, 0)
+  err_init_me100[i] <- ifelse((e100_init<0.05), 1, 0)
+  err_init_max_hoch_100[i] <- ifelse(g100_hoch_init<0.05, 1, 0)
+  err_init_max_exact_100[i] <- ifelse(g100_exact_init<0.05, 1, 0)
+
+  err_init_oslrt150[i] <- ifelse((a150_init<0.05), 1, 0)
+  err_init_moslrt150[i] <- ifelse((a1502_init<0.05), 1, 0)
+  err_init_rc150[i] <- ifelse((b150_init<0.05), 1, 0)
+  err_init_de150[i] <- ifelse((c150_init<0.05), 1, 0)
+  err_init_ee150[i] <- ifelse((d150_init<0.05), 1, 0)
+  err_init_me150[i] <- ifelse((e150_init<0.05), 1, 0)
+  err_init_max_hoch_150[i] <- ifelse(g150_hoch_init<0.05, 1, 0)
+  err_init_max_exact_150[i] <- ifelse(g150_exact_init<0.05, 1, 0)
+
+  err_init_oslrt200[i] <- ifelse((a200_init<0.05), 1, 0)
+  err_init_moslrt200[i] <- ifelse((a2002_init<0.05), 1, 0)
+  err_init_rc200[i] <- ifelse((b200_init<0.05), 1, 0)
+  err_init_de200[i] <- ifelse((c200_init<0.05), 1, 0)              
+  err_init_ee200[i] <- ifelse((d200_init<0.05), 1, 0)
+  err_init_me200[i] <- ifelse((e200_init<0.05), 1, 0)
+  err_init_max_hoch_200[i] <- ifelse(g200_hoch_init<0.05, 1, 0)
+  err_init_max_exact_200[i] <- ifelse(g200_exact_init<0.05, 1, 0)
 }
 
 os20_1 <- sum(err_oslrt20_1)/nit
@@ -7137,15 +6382,6 @@ me20_1 <- sum(err_me20_1)/nit
 max1_hoch20_1 <- sum(err_max1_hoch20_1)/nit
 max1_exact20_1 <- sum(na.omit(err_max1_exact20_1))/length(na.omit(err_max1_exact20_1))
 
-os20_2 <- sum(err_oslrt20_2)/nit
-mos20_2 <- sum(err_moslrt20_2)/nit
-rc20_2 <- sum(err_rc20_2)/nit
-de20_2 <- sum(na.omit(err_de20_2))/length(na.omit(err_de20_2))
-ee20_2 <- sum(err_ee20_2)/nit
-me20_2 <- sum(err_me20_2)/nit
-max1_hoch20_2 <- sum(err_max1_hoch20_2)/nit
-max1_exact20_2 <- sum(na.omit(err_max1_exact20_2))/length(na.omit(err_max1_exact20_2))
-
 os20_3 <- sum(err_oslrt20_3)/nit
 mos20_3 <- sum(err_moslrt20_3)/nit
 rc20_3 <- sum(err_rc20_3)/nit
@@ -7155,18 +6391,32 @@ me20_3 <- sum(err_me20_3)/nit
 max1_hoch20_3 <- sum(err_max1_hoch20_3)/nit
 max1_exact20_3 <- sum(na.omit(err_max1_exact20_3))/length(na.omit(err_max1_exact20_3))
 
-os20_4 <- sum(err_oslrt20_4)/nit
-mos20_4 <- sum(err_moslrt20_4)/nit
-rc20_4 <- sum(err_rc20_4)/nit
-de20_4 <- sum(na.omit(err_de20_4))/length(na.omit(err_de20_4))
-ee20_4 <- sum(err_ee20_4)/nit
-me20_4 <- sum(err_me20_4)/nit
-max1_hoch20_4 <- sum(err_max1_hoch20_4)/nit
-max1_exact20_4 <- sum(na.omit(err_max1_exact20_4))/length(na.omit(err_max1_exact20_4))
+os20_init <- sum(err_init_oslrt20)/nit
+mos20_init <- sum(err_init_moslrt20)/nit
+rc20_init <- sum(err_init_rc20)/nit
+de20_init <- sum(err_init_de20)/nit
+ee20_init <- sum(err_init_ee20)/nit
+me20_init <- sum(err_init_me20)/nit
+max_hoch20_init <- sum(err_init_max_hoch_20)/nit
+max_exact20_init <- sum(err_init_max_exact_20)/nit
 
-mean(tx_cens20)
-mean(tx_censadm20)
+diff1_os20 <- ((os20_1-os20_init)/os20_init)*100
+diff1_mos20 <- ((mos20_1-mos20_init)/mos20_init)*100
+diff1_ee20 <- ((ee20_1-ee20_init)/ee20_init)*100
+diff1_me20 <- ((me20_1-me20_init)/me20_init)*100
+diff1_de20 <- ((de20_1-de20_init)/de20_init)*100
+diff1_rc20 <- ((rc20_1-rc20_init)/rc20_init)*100
+diff1_hoch20 <- ((max_hoch20_1-max_hoch20_init)/max_hoch20_init)*100
+diff1_exact20 <- ((max_exact20_1-max_exact20_init)/max_exact20_init)*100
 
+diff3_os20 <- ((os20_3-os20_init)/os20_init)*100
+diff3_mos20 <- ((mos20_3-mos20_init)/mos20_init)*100
+diff3_ee20 <- ((ee20_3-ee20_init)/ee20_init)*100
+diff3_me20 <- ((me20_3-me20_init)/me20_init)*100
+diff3_de20 <- ((de20_3-de20_init)/de20_init)*100
+diff3_rc20 <- ((rc20_3-rc20_init)/rc20_init)*100
+diff3_hoch20 <- ((max_hoch20_3-max_hoch20_init)/max_hoch20_init)*100
+diff3_exact20 <- ((max_exact20_3-max_exact20_init)/max_exact20_init)*100
 
 os30_1 <- sum(err_oslrt30_1)/nit
 mos30_1 <- sum(err_moslrt30_1)/nit
@@ -7177,15 +6427,6 @@ me30_1 <- sum(err_me30_1)/nit
 max1_hoch30_1 <- sum(err_max1_hoch30_1)/nit
 max1_exact30_1 <- sum(na.omit(err_max1_exact30_1))/length(na.omit(err_max1_exact30_1))
 
-os30_2 <- sum(err_oslrt30_2)/nit
-mos30_2 <- sum(err_moslrt30_2)/nit
-rc30_2 <- sum(err_rc30_2)/nit
-de30_2 <- sum(na.omit(err_de30_2))/length(na.omit(err_de30_2))
-ee30_2 <- sum(err_ee30_2)/nit
-me30_2 <- sum(err_me30_2)/nit
-max1_hoch30_2 <- sum(err_max1_hoch30_2)/nit
-max1_exact30_2 <- sum(na.omit(err_max1_exact30_2))/length(na.omit(err_max1_exact30_2))
-
 os30_3 <- sum(err_oslrt30_3)/nit
 mos30_3 <- sum(err_moslrt30_3)/nit
 rc30_3 <- sum(err_rc30_3)/nit
@@ -7195,17 +6436,32 @@ me30_3 <- sum(err_me30_3)/nit
 max1_hoch30_3 <- sum(err_max1_hoch30_3)/nit
 max1_exact30_3 <- sum(na.omit(err_max1_exact30_3))/length(na.omit(err_max1_exact30_3))
 
-os30_4 <- sum(err_oslrt30_4)/nit
-mos30_4 <- sum(err_moslrt30_4)/nit
-rc30_4 <- sum(err_rc30_4)/nit
-de30_4 <- sum(na.omit(err_de30_4))/length(na.omit(err_de30_4))
-ee30_4 <- sum(err_ee30_4)/nit
-me30_4 <- sum(err_me30_4)/nit
-max1_hoch30_4 <- sum(err_max1_hoch30_4)/nit
-max1_exact30_4 <- sum(na.omit(err_max1_exact30_4))/length(na.omit(err_max1_exact30_4))
+os30_init <- sum(err_init_oslrt30)/nit
+mos30_init <- sum(err_init_moslrt30)/nit
+rc30_init <- sum(err_init_rc30)/nit
+de30_init <- sum(err_init_de30)/nit
+ee30_init <- sum(err_init_ee30)/nit
+me30_init <- sum(err_init_me30)/nit
+max_hoch30_init <- sum(err_init_max_hoch_30)/nit
+max_exact30_init <- sum(err_init_max_exact_30)/nit
 
-mean(tx_cens30)
-mean(tx_censadm30)
+diff1_os30 <- ((os30_1-os30_init)/os30_init)*100
+diff1_mos30 <- ((mos30_1-mos30_init)/mos30_init)*100
+diff1_ee30 <- ((ee30_1-ee30_init)/ee30_init)*100
+diff1_me30 <- ((me30_1-me30_init)/me30_init)*100
+diff1_de30 <- ((de30_1-de30_init)/de30_init)*100
+diff1_rc30 <- ((rc30_1-rc30_init)/rc30_init)*100
+diff1_hoch30 <- ((max_hoch30_1-max_hoch30_init)/max_hoch30_init)*100
+diff1_exact30 <- ((max_exact30_1-max_exact30_init)/max_exact30_init)*100
+
+diff3_os30 <- ((os30_3-os30_init)/os30_init)*100
+diff3_mos30 <- ((mos30_3-mos30_init)/mos30_init)*100
+diff3_ee30 <- ((ee30_3-ee30_init)/ee30_init)*100
+diff3_me30 <- ((me30_3-me30_init)/me30_init)*100
+diff3_de30 <- ((de30_3-de30_init)/de30_init)*100
+diff3_rc30 <- ((rc30_3-rc30_init)/rc30_init)*100
+diff3_hoch30 <- ((max_hoch30_3-max_hoch30_init)/max_hoch30_init)*100
+diff3_exact30 <- ((max_exact30_3-max_exact30_init)/max_exact30_init)*100
 
 
 os50_1 <- sum(err_oslrt50_1)/nit
@@ -7217,15 +6473,6 @@ me50_1 <- sum(err_me50_1)/nit
 max1_hoch50_1 <- sum(err_max1_hoch50_1)/nit
 max1_exact50_1 <- sum(na.omit(err_max1_exact50_1))/length(na.omit(err_max1_exact50_1))
 
-os50_2 <- sum(err_oslrt50_2)/nit
-mos50_2 <- sum(err_moslrt50_2)/nit
-rc50_2 <- sum(err_rc50_2)/nit
-de50_2 <- sum(err_de50_2)/nit
-ee50_2 <- sum(err_ee50_2)/nit
-me50_2 <- sum(err_me50_2)/nit
-max1_hoch50_2 <- sum(err_max1_hoch50_2)/nit
-max1_exact50_2 <- sum(na.omit(err_max1_exact50_2))/length(na.omit(err_max1_exact50_2))
-
 os50_3 <- sum(err_oslrt50_3)/nit
 mos50_3 <- sum(err_moslrt50_3)/nit
 rc50_3 <- sum(err_rc50_3)/nit
@@ -7235,17 +6482,32 @@ me50_3 <- sum(err_me50_3)/nit
 max1_hoch50_3 <- sum(err_max1_hoch50_3)/nit
 max1_exact50_3 <- sum(na.omit(err_max1_exact50_3))/length(na.omit(err_max1_exact50_3))
 
-os50_4 <- sum(err_oslrt50_4)/nit
-mos50_4 <- sum(err_moslrt50_4)/nit
-rc50_4 <- sum(err_rc50_4)/nit
-de50_4 <- sum(err_de50_4)/nit
-ee50_4 <- sum(err_ee50_4)/nit
-me50_4 <- sum(err_me50_4)/nit
-max1_hoch50_4 <- sum(err_max1_hoch50_4)/nit
-max1_exact50_4 <- sum(na.omit(err_max1_exact50_4))/length(na.omit(err_max1_exact50_4))
+os50_init <- sum(err_init_oslrt50)/nit
+mos50_init <- sum(err_init_moslrt50)/nit
+rc50_init <- sum(err_init_rc50)/nit
+de50_init <- sum(err_init_de50)/nit
+ee50_init <- sum(err_init_ee50)/nit
+me50_init <- sum(err_init_me50)/nit
+max_hoch50_init <- sum(err_init_max_hoch_50)/nit
+max_exact50_init <- sum(err_init_max_exact_50)/nit
 
-mean(tx_cens50)
-mean(tx_censadm50)
+diff1_os50 <- ((os50_1-os50_init)/os50_init)*100
+diff1_mos50 <- ((mos50_1-mos50_init)/mos50_init)*100
+diff1_ee50 <- ((ee50_1-ee50_init)/ee50_init)*100
+diff1_me50 <- ((me50_1-me50_init)/me50_init)*100
+diff1_de50 <- ((de50_1-de50_init)/de50_init)*100
+diff1_rc50 <- ((rc50_1-rc50_init)/rc50_init)*100
+diff1_hoch50 <- ((max_hoch50_1-max_hoch50_init)/max_hoch50_init)*100
+diff1_exact50 <- ((max_exact50_1-max_exact50_init)/max_exact50_init)*100
+
+diff3_os50 <- ((os50_3-os50_init)/os50_init)*100
+diff3_mos50 <- ((mos50_3-mos50_init)/mos50_init)*100
+diff3_ee50 <- ((ee50_3-ee50_init)/ee50_init)*100
+diff3_me50 <- ((me50_3-me50_init)/me50_init)*100
+diff3_de50 <- ((de50_3-de50_init)/de50_init)*100
+diff3_rc50 <- ((rc50_3-rc50_init)/rc50_init)*100
+diff3_hoch50 <- ((max_hoch50_3-max_hoch50_init)/max_hoch50_init)*100
+diff3_exact50 <- ((max_exact50_3-max_exact50_init)/max_exact50_init)*100
 
 
 os60_1 <- sum(err_oslrt60_1)/nit
@@ -7257,15 +6519,6 @@ me60_1 <- sum(err_me60_1)/nit
 max1_hoch60_1 <- sum(err_max1_hoch60_1)/nit
 max1_exact60_1 <- sum(na.omit(err_max1_exact60_1))/length(na.omit(err_max1_exact60_1))
 
-os60_2 <- sum(err_oslrt60_2)/nit
-mos60_2 <- sum(err_moslrt60_2)/nit
-rc60_2 <- sum(err_rc60_2)/nit
-de60_2 <- sum(err_de60_2)/nit
-ee60_2 <- sum(err_ee60_2)/nit
-me60_2 <- sum(err_me60_2)/nit
-max1_hoch60_2 <- sum(err_max1_hoch60_2)/nit
-max1_exact60_2 <- sum(na.omit(err_max1_exact60_2))/length(na.omit(err_max1_exact60_2))
-
 os60_3 <- sum(err_oslrt60_3)/nit
 mos60_3 <- sum(err_moslrt60_3)/nit
 rc60_3 <- sum(err_rc60_3)/nit
@@ -7275,17 +6528,32 @@ me60_3 <- sum(err_me60_3)/nit
 max1_hoch60_3 <- sum(err_max1_hoch60_3)/nit
 max1_exact60_3 <- sum(na.omit(err_max1_exact60_3))/length(na.omit(err_max1_exact60_3))
 
-os60_4 <- sum(err_oslrt60_4)/nit
-mos60_4 <- sum(err_moslrt60_4)/nit
-rc60_4 <- sum(err_rc60_4)/nit
-de60_4 <- sum(err_de60_4)/nit
-ee60_4 <- sum(err_ee60_4)/nit
-me60_4 <- sum(err_me60_4)/nit
-max1_hoch60_4 <- sum(err_max1_hoch60_4)/nit
-max1_exact60_4 <- sum(na.omit(err_max1_exact60_4))/length(na.omit(err_max1_exact60_4))
+os60_init <- sum(err_init_oslrt60)/nit
+mos60_init <- sum(err_init_moslrt60)/nit
+rc60_init <- sum(err_init_rc60)/nit
+de60_init <- sum(err_init_de60)/nit
+ee60_init <- sum(err_init_ee60)/nit
+me60_init <- sum(err_init_me60)/nit
+max_hoch60_init <- sum(err_init_max_hoch_60)/nit
+max_exact60_init <- sum(err_init_max_exact_60)/nit
 
-mean(tx_cens60)
-mean(tx_censadm60)
+diff1_os60 <- ((os60_1-os60_init)/os60_init)*100
+diff1_mos60 <- ((mos60_1-mos60_init)/mos60_init)*100
+diff1_ee60 <- ((ee60_1-ee60_init)/ee60_init)*100
+diff1_me60 <- ((me60_1-me60_init)/me60_init)*100
+diff1_de60 <- ((de60_1-de60_init)/de60_init)*100
+diff1_rc60 <- ((rc60_1-rc60_init)/rc60_init)*100
+diff1_hoch60 <- ((max_hoch60_1-max_hoch60_init)/max_hoch60_init)*100
+diff1_exact60 <- ((max_exact60_1-max_exact60_init)/max_exact60_init)*100
+
+diff3_os60 <- ((os60_3-os60_init)/os60_init)*100
+diff3_mos60 <- ((mos60_3-mos60_init)/mos60_init)*100
+diff3_ee60 <- ((ee60_3-ee60_init)/ee60_init)*100
+diff3_me60 <- ((me60_3-me60_init)/me60_init)*100
+diff3_de60 <- ((de60_3-de60_init)/de60_init)*100
+diff3_rc60 <- ((rc60_3-rc60_init)/rc60_init)*100
+diff3_hoch60 <- ((max_hoch60_3-max_hoch60_init)/max_hoch60_init)*100
+diff3_exact60 <- ((max_exact60_3-max_exact60_init)/max_exact60_init)*100
 
 
 os80_1 <- sum(err_oslrt80_1)/nit
@@ -7297,15 +6565,6 @@ me80_1 <- sum(err_me80_1)/nit
 max1_hoch80_1 <- sum(err_max1_hoch80_1)/nit
 max1_exact80_1 <- sum(na.omit(err_max1_exact80_1))/length(na.omit(err_max1_exact80_1))
 
-os80_2 <- sum(err_oslrt80_2)/nit
-mos80_2 <- sum(err_moslrt80_2)/nit
-rc80_2 <- sum(err_rc80_2)/nit
-de80_2 <- sum(err_de80_2)/nit
-ee80_2 <- sum(err_ee80_2)/nit
-me80_2 <- sum(err_me80_2)/nit
-max1_hoch80_2 <- sum(err_max1_hoch80_2)/nit
-max1_exact80_2 <- sum(na.omit(err_max1_exact80_2))/length(na.omit(err_max1_exact80_2))
-
 os80_3 <- sum(err_oslrt80_3)/nit
 mos80_3 <- sum(err_moslrt80_3)/nit
 rc80_3 <- sum(err_rc80_3)/nit
@@ -7315,17 +6574,32 @@ me80_3 <- sum(err_me80_3)/nit
 max1_hoch80_3 <- sum(err_max1_hoch80_3)/nit
 max1_exact80_3 <- sum(na.omit(err_max1_exact80_3))/length(na.omit(err_max1_exact80_3))
 
-os80_4 <- sum(err_oslrt80_4)/nit
-mos80_4 <- sum(err_moslrt80_4)/nit
-rc80_4 <- sum(err_rc80_4)/nit
-de80_4 <- sum(err_de80_4)/nit
-ee80_4 <- sum(err_ee80_4)/nit
-me80_4 <- sum(err_me80_4)/nit
-max1_hoch80_4 <- sum(err_max1_hoch80_4)/nit
-max1_exact80_4 <- sum(na.omit(err_max1_exact80_4))/length(na.omit(err_max1_exact80_4))
+os80_init <- sum(err_init_oslrt80)/nit
+mos80_init <- sum(err_init_moslrt80)/nit
+rc80_init <- sum(err_init_rc80)/nit
+de80_init <- sum(err_init_de80)/nit
+ee80_init <- sum(err_init_ee80)/nit
+me80_init <- sum(err_init_me80)/nit
+max_hoch80_init <- sum(err_init_max_hoch_80)/nit
+max_exact80_init <- sum(err_init_max_exact_80)/nit
 
-mean(tx_cens80)
-mean(tx_censadm80)
+diff1_os80 <- ((os80_1-os80_init)/os80_init)*100
+diff1_mos80 <- ((mos80_1-mos80_init)/mos80_init)*100
+diff1_ee80 <- ((ee80_1-ee80_init)/ee80_init)*100
+diff1_me80 <- ((me80_1-me80_init)/me80_init)*100
+diff1_de80 <- ((de80_1-de80_init)/de80_init)*100
+diff1_rc80 <- ((rc80_1-rc80_init)/rc80_init)*100
+diff1_hoch80 <- ((max_hoch80_1-max_hoch80_init)/max_hoch80_init)*100
+diff1_exact80 <- ((max_exact80_1-max_exact80_init)/max_exact80_init)*100
+
+diff3_os80 <- ((os80_3-os80_init)/os80_init)*100
+diff3_mos80 <- ((mos80_3-mos80_init)/mos80_init)*100
+diff3_ee80 <- ((ee80_3-ee80_init)/ee80_init)*100
+diff3_me80 <- ((me80_3-me80_init)/me80_init)*100
+diff3_de80 <- ((de80_3-de80_init)/de80_init)*100
+diff3_rc80 <- ((rc80_3-rc80_init)/rc80_init)*100
+diff3_hoch80 <- ((max_hoch80_3-max_hoch80_init)/max_hoch80_init)*100
+diff3_exact80 <- ((max_exact80_3-max_exact80_init)/max_exact80_init)*100
 
 
 os100_1 <- sum(err_oslrt100_1)/nit
@@ -7337,15 +6611,6 @@ me100_1 <- sum(err_me100_1)/nit
 max1_hoch100_1 <- sum(err_max1_hoch100_1)/nit
 max1_exact100_1 <- sum(na.omit(err_max1_exact100_1))/length(na.omit(err_max1_exact100_1))
 
-os100_2 <- sum(err_oslrt100_2)/nit
-mos100_2 <- sum(err_moslrt100_2)/nit
-rc100_2 <- sum(err_rc100_2)/nit
-de100_2 <- sum(err_de100_2)/nit
-ee100_2 <- sum(err_ee100_2)/nit
-me100_2 <- sum(err_me100_2)/nit
-max1_hoch100_2 <- sum(err_max1_hoch100_2)/nit
-max1_exact100_2 <- sum(na.omit(err_max1_exact100_2))/length(na.omit(err_max1_exact100_2))
-
 os100_3 <- sum(err_oslrt100_3)/nit
 mos100_3 <- sum(err_moslrt100_3)/nit
 rc100_3 <- sum(err_rc100_3)/nit
@@ -7355,17 +6620,32 @@ me100_3 <- sum(err_me100_3)/nit
 max1_hoch100_3 <- sum(err_max1_hoch100_3)/nit
 max1_exact100_3 <- sum(na.omit(err_max1_exact100_3))/length(na.omit(err_max1_exact100_3))
 
-os100_4 <- sum(err_oslrt100_4)/nit
-mos100_4 <- sum(err_moslrt100_4)/nit
-rc100_4 <- sum(err_rc100_4)/nit
-de100_4 <- sum(err_de100_4)/nit
-ee100_4 <- sum(err_ee100_4)/nit
-me100_4 <- sum(err_me100_4)/nit
-max1_hoch100_4 <- sum(err_max1_hoch100_4)/nit
-max1_exact100_4 <- sum(na.omit(err_max1_exact100_4))/length(na.omit(err_max1_exact100_4))
+os100_init <- sum(err_init_oslrt100)/nit
+mos100_init <- sum(err_init_moslrt100)/nit
+rc100_init <- sum(err_init_rc100)/nit
+de100_init <- sum(err_init_de100)/nit
+ee100_init <- sum(err_init_ee100)/nit
+me100_init <- sum(err_init_me100)/nit
+max_hoch100_init <- sum(err_init_max_hoch_100)/nit
+max_exact100_init <- sum(err_init_max_exact_100)/nit
 
-mean(tx_cens100)
-mean(tx_censadm100)
+diff1_os100 <- ((os100_1-os100_init)/os100_init)*100
+diff1_mos100 <- ((mos100_1-mos100_init)/mos100_init)*100
+diff1_ee100 <- ((ee100_1-ee100_init)/ee100_init)*100
+diff1_me100 <- ((me100_1-me100_init)/me100_init)*100
+diff1_de100 <- ((de100_1-de100_init)/de100_init)*100
+diff1_rc100 <- ((rc100_1-rc100_init)/rc100_init)*100
+diff1_hoch100 <- ((max_hoch100_1-max_hoch100_init)/max_hoch100_init)*100
+diff1_exact100 <- ((max_exact100_1-max_exact100_init)/max_exact100_init)*100
+
+diff3_os100 <- ((os100_3-os100_init)/os100_init)*100
+diff3_mos100 <- ((mos100_3-mos100_init)/mos100_init)*100
+diff3_ee100 <- ((ee100_3-ee100_init)/ee100_init)*100
+diff3_me100 <- ((me100_3-me100_init)/me100_init)*100
+diff3_de100 <- ((de100_3-de100_init)/de100_init)*100
+diff3_rc100 <- ((rc100_3-rc100_init)/rc100_init)*100
+diff3_hoch100 <- ((max_hoch100_3-max_hoch100_init)/max_hoch100_init)*100
+diff3_exact100 <- ((max_exact100_3-max_exact100_init)/max_exact100_init)*100
 
 
 os150_1 <- sum(err_oslrt150_1)/nit
@@ -7377,15 +6657,6 @@ me150_1 <- sum(na.omit(err_me150_1))/length(na.omit(err_me150_1))
 max1_hoch150_1 <- sum(err_max1_hoch150_1)/nit
 max1_exact150_1 <- sum(na.omit(err_max1_exact150_1))/length(na.omit(err_max1_exact150_1))
 
-os150_2 <- sum(err_oslrt150_2)/nit
-mos150_2 <- sum(err_moslrt150_2)/nit
-rc150_2 <- sum(err_rc150_2)/nit
-de150_2 <- sum(err_de150_2)/nit
-ee150_2 <- sum(err_ee150_2)/nit
-me150_2 <- sum(na.omit(err_me150_2))/length(na.omit(err_me150_2))
-max1_hoch150_2 <- sum(err_max1_hoch150_2)/nit
-max1_exact150_2 <- sum(na.omit(err_max1_exact150_2))/length(na.omit(err_max1_exact150_2))
-
 os150_3 <- sum(err_oslrt150_3)/nit
 mos150_3 <- sum(err_moslrt150_3)/nit
 rc150_3 <- sum(err_rc150_3)/nit
@@ -7395,17 +6666,33 @@ me150_3 <- sum(na.omit(err_me150_3))/length(na.omit(err_me150_3))
 max1_hoch150_3 <- sum(err_max1_hoch150_3)/nit
 max1_exact150_3 <- sum(na.omit(err_max1_exact150_3))/length(na.omit(err_max1_exact150_3))
 
-os150_4 <- sum(err_oslrt150_4)/nit
-mos150_4 <- sum(err_moslrt150_4)/nit
-rc150_4 <- sum(err_rc150_4)/nit
-de150_4 <- sum(err_de150_4)/nit
-ee150_4 <- sum(err_ee150_4)/nit
-me150_4 <- sum(na.omit(err_me150_4))/length(na.omit(err_me150_4))
-max1_hoch150_4 <- sum(err_max1_hoch150_4)/nit
-max1_exact150_4 <- sum(na.omit(err_max1_exact150_4))/length(na.omit(err_max1_exact150_4))
+os150_init <- sum(err_init_oslrt150)/nit
+mos150_init <- sum(err_init_moslrt150)/nit
+rc150_init <- sum(err_init_rc150)/nit
+de150_init <- sum(err_init_de150)/nit
+ee150_init <- sum(err_init_ee150)/nit
+me150_init <- sum(err_init_me150)/nit
+max_hoch150_init <- sum(err_init_max_hoch_150)/nit
+max_exact150_init <- sum(err_init_max_exact_150)/nit
 
-mean(tx_cens150)
-mean(tx_censadm150)
+diff1_os150 <- ((os150_1-os150_init)/os150_init)*100
+diff1_mos150 <- ((mos150_1-mos150_init)/mos150_init)*100
+diff1_ee150 <- ((ee150_1-ee150_init)/ee150_init)*100
+diff1_me150 <- ((me150_1-me150_init)/me150_init)*100
+diff1_de150 <- ((de150_1-de150_init)/de150_init)*100
+diff1_rc150 <- ((rc150_1-rc150_init)/rc150_init)*100
+diff1_hoch150 <- ((max_hoch150_1-max_hoch150_init)/max_hoch150_init)*100
+diff1_exact150 <- ((max_exact150_1-max_exact150_init)/max_exact150_init)*100
+
+diff3_os150 <- ((os150_3-os150_init)/os150_init)*100
+diff3_mos150 <- ((mos150_3-mos150_init)/mos150_init)*100
+diff3_ee150 <- ((ee150_3-ee150_init)/ee150_init)*100
+diff3_me150 <- ((me150_3-me150_init)/me150_init)*100
+diff3_de150 <- ((de150_3-de150_init)/de150_init)*100
+diff3_rc150 <- ((rc150_3-rc150_init)/rc150_init)*100
+diff3_hoch150 <- ((max_hoch150_3-max_hoch150_init)/max_hoch150_init)*100
+diff3_exact150 <- ((max_exact150_3-max_exact150_init)/max_exact150_init)*100
+
 
 os200_1 <- sum(err_oslrt200_1)/nit
 mos200_1 <- sum(err_moslrt200_1)/nit
@@ -7416,15 +6703,6 @@ me200_1 <- sum(err_me200_1)/nit
 max1_hoch200_1 <- sum(err_max1_hoch200_1)/nit
 max1_exact200_1 <- sum(na.omit(err_max1_exact200_1))/length(na.omit(err_max1_exact200_1))
 
-os200_2 <- sum(err_oslrt200_2)/nit
-mos200_2 <- sum(err_moslrt200_2)/nit
-rc200_2 <- sum(err_rc200_2)/nit
-de200_2 <- sum(err_de200_2)/nit
-ee200_2 <- sum(err_ee200_2)/nit
-me200_2 <- sum(err_me200_2)/nit
-max1_hoch200_2 <- sum(err_max1_hoch200_2)/nit
-max1_exact200_2 <- sum(na.omit(err_max1_exact200_2))/length(na.omit(err_max1_exact200_2))
-
 os200_3 <- sum(err_oslrt200_3)/nit
 mos200_3 <- sum(err_moslrt200_3)/nit
 rc200_3 <- sum(err_rc200_3)/nit
@@ -7434,17 +6712,33 @@ me200_3 <- sum(err_me200_3)/nit
 max1_hoch200_3 <- sum(err_max1_hoch200_3)/nit
 max1_exact200_3 <- sum(na.omit(err_max1_exact200_3))/length(na.omit(err_max1_exact200_3))
 
-os200_4 <- sum(err_oslrt200_4)/nit
-mos200_4 <- sum(err_moslrt200_4)/nit
-rc200_4 <- sum(err_rc200_4)/nit
-de200_4 <- sum(err_de200_4)/nit
-ee200_4 <- sum(err_ee200_4)/nit
-me200_4 <- sum(err_me200_4)/nit
-max1_hoch200_4 <- sum(err_max1_hoch200_4)/nit
-max1_exact200_4 <- sum(na.omit(err_max1_exact200_4))/length(na.omit(err_max1_exact200_4))
+os200_init <- sum(err_init_oslrt200)/nit
+mos200_init <- sum(err_init_moslrt200)/nit
+rc200_init <- sum(err_init_rc200)/nit
+de200_init <- sum(err_init_de200)/nit
+ee200_init <- sum(err_init_ee200)/nit
+me200_init <- sum(err_init_me200)/nit
+r_200_init <- sum(err_init_rmst_200)/nit
+max_hoch200_init <- sum(err_init_max_hoch_200)/nit
+max_exact200_init <- sum(err_init_max_exact_200)/nit
 
-mean(tx_cens200)
-mean(tx_censadm200)
+diff1_os200 <- ((os200_1-os200_init)/os200_init)*100
+diff1_mos200 <- ((mos200_1-mos200_init)/mos200_init)*100
+diff1_ee200 <- ((ee200_1-ee200_init)/ee200_init)*100
+diff1_me200 <- ((me200_1-me200_init)/me200_init)*100
+diff1_de200 <- ((de200_1-de200_init)/de200_init)*100
+diff1_rc200 <- ((rc200_1-rc200_init)/rc200_init)*100
+diff1_hoch200 <- ((max_hoch200_1-max_hoch200_init)/max_hoch200_init)*100
+diff1_exact200 <- ((max_exact200_1-max_exact200_init)/max_exact200_init)*100
+
+diff3_os200 <- ((os200_3-os200_init)/os200_init)*100
+diff3_mos200 <- ((mos200_3-mos200_init)/mos200_init)*100
+diff3_ee200 <- ((ee200_3-ee200_init)/ee200_init)*100
+diff3_me200 <- ((me200_3-me200_init)/me200_init)*100
+diff3_de200 <- ((de200_3-de200_init)/de200_init)*100
+diff3_rc200 <- ((rc200_3-rc200_init)/rc200_init)*100
+diff3_hoch200 <- ((max_hoch200_3-max_hoch200_init)/max_hoch200_init)*100
+diff3_exact200 <- ((max_exact200_3-max_exact200_init)/max_exact200_init)*100
 
 
 n <- c(20, 30, 50, 60, 80, 100, 150, 200)
@@ -7456,6 +6750,14 @@ ee_1 <- c(ee20_1, ee30_1, ee50_1, ee60_1, ee80_1, ee100_1, ee150_1, ee200_1)
 me_1 <- c(me20_1, me30_1, me50_1, me60_1, me80_1, me100_1, me150_1, me200_1)
 max1_hochberg_1 <- c(max1_hoch20_1, max1_hoch30_1, max1_hoch50_1, max1_hoch60_1, max1_hoch80_1, max1_hoch100_1, max1_hoch150_1, max1_hoch200_1)
 max1_pmult_1 <- c(max1_exact20_1, max1_exact30_1, max1_exact50_1, max1_exact60_1, max1_exact80_1, max1_exact100_1, max1_exact150_1, max1_exact200_1)
+diff1_osl <- c(diff1_os20, diff1_os30, diff1_os50, diff1_os60, diff1_os80, diff1_os100, diff1_os150, diff1_os200)
+diff1_mosl <- c(diff1_mos20, diff1_mos30, diff1_mos50, diff1_mos60, diff1_mos80, diff1_mos100, diff1_mos150, diff1_mos200)
+diff1_rc <- c(diff1_rc20, diff1_rc30, diff1_rc50, diff1_rc60, diff1_rc80, diff1_rc100, diff1_rc150, diff1_rc200)
+diff1_de <- c(diff1_de20, diff1_de30, diff1_de50, diff1_de60, diff1_de80, diff1_de100, diff1_de150, diff1_de200)
+diff1_ee <- c(diff1_ee20, diff1_ee30, diff1_ee50, diff1_ee60, diff1_ee80, diff1_ee100, diff1_ee150, diff1_ee200)
+diff1_me <- c(diff1_me20, diff1_me30, diff1_me50, diff1_me60, diff1_me80, diff1_me100, diff1_me150, diff1_me200)
+diff1_hoch <- c(diff1_hoch20, diff1_hoch30, diff1_hoch50, diff1_hoch60, diff1_hoch80, diff1_hoch100, diff1_hoch150, diff1_hoch200)
+diff1_exact <- c(diff1_exact20, diff1_exact30, diff1_exact50, diff1_exact60, diff1_exact80, diff1_exact100, diff1_exact150, diff1_exact200)
 osl_1
 mosl_1
 ee_1
@@ -7465,23 +6767,6 @@ rc_1
 max1_hochberg_1
 max1_pmult_1
 
-osl_2 <- c(os20_2, os30_2, os50_2, os60_2, os80_2, os100_2, os150_2, os200_2)
-mosl_2 <- c(mos20_2, mos30_2, mos50_2, mos60_2, mos80_2, mos100_2, mos150_2, mos200_2)
-rc_2 <- c(rc20_2, rc30_2, rc50_2, rc60_2, rc80_2, rc100_2, rc150_2, rc200_2)
-de_2 <- c(de20_2, de30_2, de50_2, de60_2, de80_2, de100_2, de150_2, de200_2)
-ee_2 <- c(ee20_2, ee30_2, ee50_2, ee60_2, ee80_2, ee100_2, ee150_2, ee200_2)
-me_2 <- c(me20_2, me30_2, me50_2, me60_2, me80_2, me100_2, me150_2, me200_2)
-max1_hochberg_2 <- c(max1_hoch20_2, max1_hoch30_2, max1_hoch50_2, max1_hoch60_2, max1_hoch80_2, max1_hoch100_2, max1_hoch150_2, max1_hoch200_2)
-max1_pmult_2 <- c(max1_exact20_2, max1_exact30_2, max1_exact50_2, max1_exact60_2, max1_exact80_2, max1_exact100_2, max1_exact150_2, max1_exact200_2)
-osl_2
-mosl_2
-ee_2
-me_2
-de_2
-rc_2
-max1_hochberg_2
-max1_pmult_2
-
 osl_3 <- c(os20_3, os30_3, os50_3, os60_3, os80_3, os100_3, os150_3, os200_3)
 mosl_3 <- c(mos20_3, mos30_3, mos50_3, mos60_3, mos80_3, mos100_3, mos150_3, mos200_3)
 rc_3 <- c(rc20_3, rc30_3, rc50_3, rc60_3, rc80_3, rc100_3, rc150_3, rc200_3)
@@ -7490,6 +6775,14 @@ ee_3 <- c(ee20_3, ee30_3, ee50_3, ee60_3, ee80_3, ee100_3, ee150_3, ee200_3)
 me_3 <- c(me20_3, me30_3, me50_3, me60_3, me80_3, me100_3, me150_3, me200_3)
 max1_hochberg_3 <- c(max1_hoch20_3, max1_hoch30_3, max1_hoch50_3, max1_hoch60_3, max1_hoch80_3, max1_hoch100_3, max1_hoch150_3, max1_hoch200_3)
 max1_pmult_3 <- c(max1_exact20_3, max1_exact30_3, max1_exact50_3, max1_exact60_3, max1_exact80_3, max1_exact100_3, max1_exact150_3, max1_exact200_3)
+diff3_osl <- c(diff3_os20, diff3_os30, diff3_os50, diff3_os60, diff3_os80, diff3_os100, diff3_os150, diff3_os200)
+diff3_mosl <- c(diff3_mos20, diff3_mos30, diff3_mos50, diff3_mos60, diff3_mos80, diff3_mos100, diff3_mos150, diff3_mos200)
+diff3_rc <- c(diff3_rc20, diff3_rc30, diff3_rc50, diff3_rc60, diff3_rc80, diff3_rc100, diff3_rc150, diff3_rc200)
+diff3_de <- c(diff3_de20, diff3_de30, diff3_de50, diff3_de60, diff3_de80, diff3_de100, diff3_de150, diff3_de200)
+diff3_ee <- c(diff3_ee20, diff3_ee30, diff3_ee50, diff3_ee60, diff3_ee80, diff3_ee100, diff3_ee150, diff3_ee200)
+diff3_me <- c(diff3_me20, diff3_me30, diff3_me50, diff3_me60, diff3_me80, diff3_me100, diff3_me150, diff3_me200)
+diff3_hoch <- c(diff3_hoch20, diff3_hoch30, diff3_hoch50, diff3_hoch60, diff3_hoch80, diff3_hoch100, diff3_hoch150, diff3_hoch200)
+diff3_exact <- c(diff3_exact20, diff3_exact30, diff3_exact50, diff3_exact60, diff3_exact80, diff3_exact100, diff3_exact150, diff3_exact200)
 osl_3
 mosl_3
 ee_3
@@ -7498,23 +6791,6 @@ de_3
 rc_3
 max1_hochberg_3
 max1_pmult_3
-
-osl_4 <- c(os20_4, os30_4, os50_4, os60_4, os80_4, os100_4, os150_4, os200_4)
-mosl_4 <- c(mos20_4, mos30_4, mos50_4, mos60_4, mos80_4, mos100_4, mos150_4, mos200_4)
-rc_4 <- c(rc20_4, rc30_4, rc50_4, rc60_4, rc80_4, rc100_4, rc150_4, rc200_4)
-de_4 <- c(de20_4, de30_4, de50_4, de60_4, de80_4, de100_4, de150_4, de200_4)
-ee_4 <- c(ee20_4, ee30_4, ee50_4, ee60_4, ee80_4, ee100_4, ee150_4, ee200_4)
-me_4 <- c(me20_4, me30_4, me50_4, me60_4, me80_4, me100_4, me150_4, me200_4)
-max1_hochberg_4 <- c(max1_hoch20_4, max1_hoch30_4, max1_hoch50_4, max1_hoch60_4, max1_hoch80_4, max1_hoch100_4, max1_hoch150_4, max1_hoch200_4)
-max1_pmult_4 <- c(max1_exact20_4, max1_exact30_4, max1_exact50_4, max1_exact60_4, max1_exact80_4, max1_exact100_4, max1_exact150_4, max1_exact200_4)
-osl_4
-mosl_4
-ee_4
-me_4
-de_4
-rc_4
-max1_hochberg_4
-max1_pmult_4
 
 d1_1 <- data.frame(Sample.size = n, Error = c(osl_1, mosl_1, ee_1, me_1, de_1, rc_1, max1_hochberg_1, max1_pmult_1),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -7525,49 +6801,63 @@ d1_1$Test <- factor(d1_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
+DE_1 <- ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 1',
-       subtitle = '')+
+       title = 'Scenario 5: delayed effect',
+       subtitle = 'pi = 1')+
   geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  ylim(0, 1)+
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+DE_1
 
+d2_1 <- data.frame(Sample.size = n, Error = c(diff1_osl, diff1_mosl, diff1_ee, diff1_me, diff1_de, diff1_rc, diff1_hoch, diff1_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_1$Test <- as.factor(d2_1$Test)
+d2_1$Test <- factor(d2_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_2 <- data.frame(Sample.size = n, Error = c(osl_2, mosl_2, ee_2, me_2, de_2, rc_2, max1_hochberg_2, max1_pmult_2),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_2$Test <- as.factor(d1_2$Test)
-d1_2$Test <- factor(d1_2$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_2, aes(x = Sample.size, y = Error, group = Test))+
+Diff_DE_1 <- ggplot(d2_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_1$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.8',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 5: delayed effect',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_DE_1
+
 
 d1_3 <- data.frame(Sample.size = n, Error = c(osl_3, mosl_3, ee_3, me_3, de_3, rc_3, max1_hochberg_3, max1_pmult_3),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -7578,15 +6868,15 @@ d1_3$Test <- factor(d1_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
+DE_3 <- ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 0.6',
-       subtitle = '')+
+       title = 'Scenario 5: delayed effect',
+       subtitle = 'pi = 0.6')+
   geom_hline(yintercept = 0.8, size = 0.2)+
   ylim(0,1)+
   theme(legend.position = 'right',
@@ -7594,33 +6884,41 @@ ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
         legend.text = element_text(size = 12),
         plot.title = element_text(hjust = 0.5, size = 20),
         plot.subtitle = element_text(hjust = 0.5, size = 15))
+DE_3
 
+d2_3 <- data.frame(Sample.size = n, Error = c(diff3_osl, diff3_mosl, diff3_ee, diff3_me, diff3_de, diff3_rc, diff3_hoch, diff3_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_3$Test <- as.factor(d2_3$Test)
+d2_3$Test <- factor(d2_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_4 <- data.frame(Sample.size = n, Error = c(osl_4, mosl_4, ee_4, me_4, de_4, rc_4, max1_hochberg_4, max1_pmult_4),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_4$Test <- as.factor(d1_4$Test)
-d1_4$Test <- factor(d1_4$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_4, aes(x = Sample.size, y = Error, group = Test))+
+Diff_DE_3 <- ggplot(d2_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_3$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.5',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 5: delayed effect',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_DE_3
+
 
 
 ##########################
@@ -7634,7 +6932,6 @@ distr0 <- 'Weibull'
 #Parameters for the experimental group#
 CP <- 1
 t <- rpwexp(n = 3000, rate = c(1/scale0*2, 1/scale0*0.5), intervals = CP, cumulative = FALSE)
-#t <- rpwexp(n = 3000, rate = c(1/scale0*1.3, 1/scale0*0.7), intervals = CP, cumulative = FALSE)
 delta <- ifelse(t<(2555/365), 1, 0)
 t <- ifelse(t>(2555/365), (2555/365), t)
 
@@ -7655,7 +6952,7 @@ nit <- 10000
 
 #Censoring rate lambda_cens (0% 5% 15% 25% 35%)#
 #HR1 = 2 & HR2 = 0.5 (0 0.018 0.06 0.11 0.19)
-#HR1 = 1.3 & HR2 = 0.7 (0 0.015 0.06 0.11 0.18)
+
 lambda_cens <- 0.06   #15% of censoring for HR1 = 2 & HR2 = 0.5
 
 CP_EE <- 1
@@ -7667,9 +6964,7 @@ ta <- 3   #accrual time - 3 years
 tf <- 4   #follow-up time - 4 years
 
 pi1 <- 1
-pi2 <- 0.8
 pi3 <- 0.6
-pi4 <- 0.5
 
 err_oslrt20_1 <- rep(0, nit)
 err_moslrt20_1 <- rep(0, nit)
@@ -7680,15 +6975,6 @@ err_me20_1 <- rep(0, nit)
 err_max1_hoch20_1 <- rep(0, nit)
 err_max1_exact20_1 <- rep(0, nit)
 
-err_oslrt20_2 <- rep(0, nit)
-err_moslrt20_2 <- rep(0, nit)
-err_rc20_2 <- rep(0, nit)
-err_de20_2 <- rep(0, nit)
-err_ee20_2 <- rep(0, nit)
-err_me20_2 <- rep(0, nit)
-err_max1_hoch20_2 <- rep(0, nit)
-err_max1_exact20_2 <- rep(0, nit)
-
 err_oslrt20_3 <- rep(0, nit)
 err_moslrt20_3 <- rep(0, nit)
 err_rc20_3 <- rep(0, nit)
@@ -7697,18 +6983,6 @@ err_ee20_3 <- rep(0, nit)
 err_me20_3 <- rep(0, nit)
 err_max1_hoch20_3 <- rep(0, nit)
 err_max1_exact20_3 <- rep(0, nit)
-
-err_oslrt20_4 <- rep(0, nit)
-err_moslrt20_4 <- rep(0, nit)
-err_rc20_4 <- rep(0, nit)
-err_de20_4 <- rep(0, nit)
-err_ee20_4 <- rep(0, nit)
-err_me20_4 <- rep(0, nit)
-err_max1_hoch20_4 <- rep(0, nit)
-err_max1_exact20_4 <- rep(0, nit)
-
-tx_cens20 <- rep(0, nit)
-tx_censadm20 <- rep(0, nit)
 
 
 err_oslrt30_1 <- rep(0, nit)
@@ -7720,15 +6994,6 @@ err_me30_1 <- rep(0, nit)
 err_max1_hoch30_1 <- rep(0, nit)
 err_max1_exact30_1 <- rep(0, nit)
 
-err_oslrt30_2 <- rep(0, nit)
-err_moslrt30_2 <- rep(0, nit)
-err_rc30_2 <- rep(0, nit)
-err_de30_2 <- rep(0, nit)
-err_ee30_2 <- rep(0, nit)
-err_me30_2 <- rep(0, nit)
-err_max1_hoch30_2 <- rep(0, nit)
-err_max1_exact30_2 <- rep(0, nit)
-
 err_oslrt30_3 <- rep(0, nit)
 err_moslrt30_3 <- rep(0, nit)
 err_rc30_3 <- rep(0, nit)
@@ -7737,18 +7002,6 @@ err_ee30_3 <- rep(0, nit)
 err_me30_3 <- rep(0, nit)
 err_max1_hoch30_3 <- rep(0, nit)
 err_max1_exact30_3 <- rep(0, nit)
-
-err_oslrt30_4 <- rep(0, nit)
-err_moslrt30_4 <- rep(0, nit)
-err_rc30_4 <- rep(0, nit)
-err_de30_4 <- rep(0, nit)
-err_ee30_4 <- rep(0, nit)
-err_me30_4 <- rep(0, nit)
-err_max1_hoch30_4 <- rep(0, nit)
-err_max1_exact30_4 <- rep(0, nit)
-
-tx_cens30 <- rep(0, nit)
-tx_censadm30 <- rep(0, nit)
 
 
 err_oslrt50_1 <- rep(0, nit)
@@ -7760,15 +7013,6 @@ err_me50_1 <- rep(0, nit)
 err_max1_hoch50_1 <- rep(0, nit)
 err_max1_exact50_1 <- rep(0, nit)
 
-err_oslrt50_2 <- rep(0, nit)
-err_moslrt50_2 <- rep(0, nit)
-err_rc50_2 <- rep(0, nit)
-err_de50_2 <- rep(0, nit)
-err_ee50_2 <- rep(0, nit)
-err_me50_2 <- rep(0, nit)
-err_max1_hoch50_2 <- rep(0, nit)
-err_max1_exact50_2 <- rep(0, nit)
-
 err_oslrt50_3 <- rep(0, nit)
 err_moslrt50_3 <- rep(0, nit)
 err_rc50_3 <- rep(0, nit)
@@ -7777,18 +7021,6 @@ err_ee50_3 <- rep(0, nit)
 err_me50_3 <- rep(0, nit)
 err_max1_hoch50_3 <- rep(0, nit)
 err_max1_exact50_3 <- rep(0, nit)
-
-err_oslrt50_4 <- rep(0, nit)
-err_moslrt50_4 <- rep(0, nit)
-err_rc50_4 <- rep(0, nit)
-err_de50_4 <- rep(0, nit)
-err_ee50_4 <- rep(0, nit)
-err_me50_4 <- rep(0, nit)
-err_max1_hoch50_4 <- rep(0, nit)
-err_max1_exact50_4 <- rep(0, nit)
-
-tx_cens50 <- rep(0, nit)
-tx_censadm50 <- rep(0, nit)
 
 
 err_oslrt60_1 <- rep(0, nit)
@@ -7800,15 +7032,6 @@ err_me60_1 <- rep(0, nit)
 err_max1_hoch60_1 <- rep(0, nit)
 err_max1_exact60_1 <- rep(0, nit)
 
-err_oslrt60_2 <- rep(0, nit)
-err_moslrt60_2 <- rep(0, nit)
-err_rc60_2 <- rep(0, nit)
-err_de60_2 <- rep(0, nit)
-err_ee60_2 <- rep(0, nit)
-err_me60_2 <- rep(0, nit)
-err_max1_hoch60_2 <- rep(0, nit)
-err_max1_exact60_2 <- rep(0, nit)
-
 err_oslrt60_3 <- rep(0, nit)
 err_moslrt60_3 <- rep(0, nit)
 err_rc60_3 <- rep(0, nit)
@@ -7817,18 +7040,6 @@ err_ee60_3 <- rep(0, nit)
 err_me60_3 <- rep(0, nit)
 err_max1_hoch60_3 <- rep(0, nit)
 err_max1_exact60_3 <- rep(0, nit)
-
-err_oslrt60_4 <- rep(0, nit)
-err_moslrt60_4 <- rep(0, nit)
-err_rc60_4 <- rep(0, nit)
-err_de60_4 <- rep(0, nit)
-err_ee60_4 <- rep(0, nit)
-err_me60_4 <- rep(0, nit)
-err_max1_hoch60_4 <- rep(0, nit)
-err_max1_exact60_4 <- rep(0, nit)
-
-tx_cens60 <- rep(0, nit)
-tx_censadm60 <- rep(0, nit)
 
 
 err_oslrt80_1 <- rep(0, nit)
@@ -7840,15 +7051,6 @@ err_me80_1 <- rep(0, nit)
 err_max1_hoch80_1 <- rep(0, nit)
 err_max1_exact80_1 <- rep(0, nit)
 
-err_oslrt80_2 <- rep(0, nit)
-err_moslrt80_2 <- rep(0, nit)
-err_rc80_2 <- rep(0, nit)
-err_de80_2 <- rep(0, nit)
-err_ee80_2 <- rep(0, nit)
-err_me80_2 <- rep(0, nit)
-err_max1_hoch80_2 <- rep(0, nit)
-err_max1_exact80_2 <- rep(0, nit)
-
 err_oslrt80_3 <- rep(0, nit)
 err_moslrt80_3 <- rep(0, nit)
 err_rc80_3 <- rep(0, nit)
@@ -7857,18 +7059,6 @@ err_ee80_3 <- rep(0, nit)
 err_me80_3 <- rep(0, nit)
 err_max1_hoch80_3 <- rep(0, nit)
 err_max1_exact80_3 <- rep(0, nit)
-
-err_oslrt80_4 <- rep(0, nit)
-err_moslrt80_4 <- rep(0, nit)
-err_rc80_4 <- rep(0, nit)
-err_de80_4 <- rep(0, nit)
-err_ee80_4 <- rep(0, nit)
-err_me80_4 <- rep(0, nit)
-err_max1_hoch80_4 <- rep(0, nit)
-err_max1_exact80_4 <- rep(0, nit)
-
-tx_cens80 <- rep(0, nit)
-tx_censadm80 <- rep(0, nit)
 
 
 err_oslrt100_1 <- rep(0, nit)
@@ -7880,15 +7070,6 @@ err_me100_1 <- rep(0, nit)
 err_max1_hoch100_1 <- rep(0, nit)
 err_max1_exact100_1 <- rep(0, nit)
 
-err_oslrt100_2 <- rep(0, nit)
-err_moslrt100_2 <- rep(0, nit)
-err_rc100_2 <- rep(0, nit)
-err_de100_2 <- rep(0, nit)
-err_ee100_2 <- rep(0, nit)
-err_me100_2 <- rep(0, nit)
-err_max1_hoch100_2 <- rep(0, nit)
-err_max1_exact100_2 <- rep(0, nit)
-
 err_oslrt100_3 <- rep(0, nit)
 err_moslrt100_3 <- rep(0, nit)
 err_rc100_3 <- rep(0, nit)
@@ -7897,18 +7078,6 @@ err_ee100_3 <- rep(0, nit)
 err_me100_3 <- rep(0, nit)
 err_max1_hoch100_3 <- rep(0, nit)
 err_max1_exact100_3 <- rep(0, nit)
-
-err_oslrt100_4 <- rep(0, nit)
-err_moslrt100_4 <- rep(0, nit)
-err_rc100_4 <- rep(0, nit)
-err_de100_4 <- rep(0, nit)
-err_ee100_4 <- rep(0, nit)
-err_me100_4 <- rep(0, nit)
-err_max1_hoch100_4 <- rep(0, nit)
-err_max1_exact100_4 <- rep(0, nit)
-
-tx_cens100 <- rep(0, nit)
-tx_censadm100 <- rep(0, nit)
 
 
 err_oslrt150_1 <- rep(0, nit)
@@ -7920,15 +7089,6 @@ err_me150_1 <- rep(0, nit)
 err_max1_hoch150_1 <- rep(0, nit)
 err_max1_exact150_1 <- rep(0, nit)
 
-err_oslrt150_2 <- rep(0, nit)
-err_moslrt150_2 <- rep(0, nit)
-err_rc150_2 <- rep(0, nit)
-err_de150_2 <- rep(0, nit)
-err_ee150_2 <- rep(0, nit)
-err_me150_2 <- rep(0, nit)
-err_max1_hoch150_2 <- rep(0, nit)
-err_max1_exact150_2 <- rep(0, nit)
-
 err_oslrt150_3 <- rep(0, nit)
 err_moslrt150_3 <- rep(0, nit)
 err_rc150_3 <- rep(0, nit)
@@ -7937,18 +7097,6 @@ err_ee150_3 <- rep(0, nit)
 err_me150_3 <- rep(0, nit)
 err_max1_hoch150_3 <- rep(0, nit)
 err_max1_exact150_3 <- rep(0, nit)
-
-err_oslrt150_4 <- rep(0, nit)
-err_moslrt150_4 <- rep(0, nit)
-err_rc150_4 <- rep(0, nit)
-err_de150_4 <- rep(0, nit)
-err_ee150_4 <- rep(0, nit)
-err_me150_4 <- rep(0, nit)
-err_max1_hoch150_4 <- rep(0, nit)
-err_max1_exact150_4 <- rep(0, nit)
-
-tx_cens150 <- rep(0, nit)
-tx_censadm150 <- rep(0, nit)
 
 
 err_oslrt200_1 <- rep(0, nit)
@@ -7960,15 +7108,6 @@ err_me200_1 <- rep(0, nit)
 err_max1_hoch200_1 <- rep(0, nit)
 err_max1_exact200_1 <- rep(0, nit)
 
-err_oslrt200_2 <- rep(0, nit)
-err_moslrt200_2 <- rep(0, nit)
-err_rc200_2 <- rep(0, nit)
-err_de200_2 <- rep(0, nit)
-err_ee200_2 <- rep(0, nit)
-err_me200_2 <- rep(0, nit)
-err_max1_hoch200_2 <- rep(0, nit)
-err_max1_exact200_2 <- rep(0, nit)
-
 err_oslrt200_3 <- rep(0, nit)
 err_moslrt200_3 <- rep(0, nit)
 err_rc200_3 <- rep(0, nit)
@@ -7978,17 +7117,77 @@ err_me200_3 <- rep(0, nit)
 err_max1_hoch200_3 <- rep(0, nit)
 err_max1_exact200_3 <- rep(0, nit)
 
-err_oslrt200_4 <- rep(0, nit)
-err_moslrt200_4 <- rep(0, nit)
-err_rc200_4 <- rep(0, nit)
-err_de200_4 <- rep(0, nit)
-err_ee200_4 <- rep(0, nit)
-err_me200_4 <- rep(0, nit)
-err_max1_hoch200_4 <- rep(0, nit)
-err_max1_exact200_4 <- rep(0, nit)
+err_init_oslrt20 <- rep(0, nit)
+err_init_moslrt20 <- rep(0, nit)
+err_init_rc20 <- rep(0, nit)
+err_init_de20 <- rep(0, nit)
+err_init_ee20 <- rep(0, nit)
+err_init_me20 <- rep(0, nit)
+err_init_max_hoch_20 <- rep(0, nit)
+err_init_max_exact_20 <- rep(0, nit)
 
-tx_cens200 <- rep(0, nit)
-tx_censadm200 <- rep(0, nit)
+err_init_oslrt30 <- rep(0, nit)
+err_init_moslrt30 <- rep(0, nit)
+err_init_rc30 <- rep(0, nit)
+err_init_de30 <- rep(0, nit)
+err_init_ee30 <- rep(0, nit)
+err_init_me30 <- rep(0, nit)
+err_init_max_hoch_30 <- rep(0, nit)
+err_init_max_exact_30 <- rep(0, nit)
+
+err_init_oslrt50 <- rep(0, nit)
+err_init_moslrt50 <- rep(0, nit)
+err_init_rc50 <- rep(0, nit)
+err_init_de50 <- rep(0, nit)
+err_init_ee50 <- rep(0, nit)
+err_init_me50 <- rep(0, nit)
+err_init_max_hoch_50 <- rep(0, nit)
+err_init_max_exact_50 <- rep(0, nit)
+
+err_init_oslrt60 <- rep(0, nit)
+err_init_moslrt60 <- rep(0, nit)
+err_init_rc60 <- rep(0, nit)
+err_init_de60 <- rep(0, nit)
+err_init_ee60 <- rep(0, nit)
+err_init_me60 <- rep(0, nit)
+err_init_max_hoch_60 <- rep(0, nit)
+err_init_max_exact_60 <- rep(0, nit)
+
+err_init_oslrt80 <- rep(0, nit)
+err_init_moslrt80 <- rep(0, nit)
+err_init_rc80 <- rep(0, nit)
+err_init_de80 <- rep(0, nit)
+err_init_ee80 <- rep(0, nit)
+err_init_me80 <- rep(0, nit)
+err_init_max_hoch_80 <- rep(0, nit)
+err_init_max_exact_80 <- rep(0, nit)
+
+err_init_oslrt100 <- rep(0, nit)
+err_init_moslrt100 <- rep(0, nit)
+err_init_rc100 <- rep(0, nit)
+err_init_de100 <- rep(0, nit)
+err_init_ee100 <- rep(0, nit)
+err_init_me100 <- rep(0, nit)
+err_init_max_hoch_100 <- rep(0, nit)
+err_init_max_exact_100 <- rep(0, nit)
+
+err_init_oslrt150 <- rep(0, nit)
+err_init_moslrt150 <- rep(0, nit)
+err_init_rc150 <- rep(0, nit)
+err_init_de150 <- rep(0, nit)
+err_init_ee150 <- rep(0, nit)
+err_init_me150 <- rep(0, nit)
+err_init_max_hoch_150 <- rep(0, nit)
+err_init_max_exact_150 <- rep(0, nit)
+
+err_init_oslrt200 <- rep(0, nit)
+err_init_moslrt200 <- rep(0, nit)
+err_init_rc200 <- rep(0, nit)
+err_init_de200 <- rep(0, nit)
+err_init_ee200 <- rep(0, nit)
+err_init_me200 <- rep(0, nit)
+err_init_max_hoch_200 <- rep(0, nit)
+err_init_max_exact_200 <- rep(0, nit)
 
 for(i in 1:nit){
   time20 <- rpwexp(n = 20, rate = c(1/scale0*2, 1/scale0*0.5), intervals = CP, cumulative = FALSE)
@@ -8113,296 +7312,220 @@ for(i in 1:nit){
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
   data20 <- ten(S20)
-  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)[2]
-  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi1)
-  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi1)[2]
-  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi1)[2]
-  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a20_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  a202_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)[2]
+  b20_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi1)
+  c20_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d20_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e20_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f20_1 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a20_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  a202_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)[2]
-  b20_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi2)
-  c20_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi2)[2]
-  d20_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi2)[2]
-  e20_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f20_2 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)[2]
-  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi3)
-  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi3)[2]
-  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi3)[2]
-  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a20_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  a202_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)[2]
-  b20_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, pi = pi4)
-  c20_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_DE, pi = pi4)[2]
-  d20_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, CP = CP_EE, pi = pi4)[2]
-  e20_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f20_4 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a20_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  a202_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)[2]
+  b20_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, pi = pi3)
+  c20_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d20_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e20_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data20, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f20_3 <- maxcombo1(data_exp = data20, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a20_init <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a202_init <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b20_init <- Score_RC(data = data20, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c20_init <- Score_DE(data = data20, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d20_init <- Score_EE(data = data20, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e20_init <- Score_ME(data = data20, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g20_hoch_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g20_exact_init <- maxcombo1(data = data20, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data30 <- ten(S30)
-  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)[2]
-  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi1)
-  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi1)[2]
-  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi1)[2]
-  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a30_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  a302_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)[2]
+  b30_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi1)
+  c30_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d30_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e30_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f30_1 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a30_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  a302_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)[2]
-  b30_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi2)
-  c30_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi2)[2]
-  d30_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi2)[2]
-  e30_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f30_2 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)[2]
-  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi3)
-  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi3)[2]
-  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi3)[2]
-  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a30_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  a302_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)[2]
-  b30_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, pi = pi4)
-  c30_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_DE, pi = pi4)[2]
-  d30_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, CP = CP_EE, pi = pi4)[2]
-  e30_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f30_4 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a30_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  a302_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)[2]
+  b30_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, pi = pi3)
+  c30_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d30_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e30_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data30, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f30_3 <- maxcombo1(data_exp = data30, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a30_init <- OSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a302_init <- mOSLRT(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b30_init <- Score_RC(data = data30, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c30_init <- Score_DE(data = data30, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d30_init <- Score_EE(data = data30, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e30_init <- Score_ME(data = data30, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g30_hoch_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g30_exact_init <- maxcombo1(data = data30, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data50 <- ten(S50)
-  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)[2]
-  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi1)
-  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi1)[2]
-  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi1)[2]
-  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a50_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  a502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)[2]
+  b50_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi1)
+  c50_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d50_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e50_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f50_1 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a50_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  a502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)[2]
-  b50_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi2)
-  c50_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi2)[2]
-  d50_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi2)[2]
-  e50_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f50_2 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)[2]
-  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi3)
-  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi3)[2]
-  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi3)[2]
-  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a50_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  a502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)[2]
-  b50_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, pi = pi4)
-  c50_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_DE, pi = pi4)[2]
-  d50_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, CP = CP_EE, pi = pi4)[2]
-  e50_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f50_4 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a50_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  a502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)[2]
+  b50_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, pi = pi3)
+  c50_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d50_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e50_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data50, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f50_3 <- maxcombo1(data_exp = data50, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a50_init <- OSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a502_init <- mOSLRT(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b50_init <- Score_RC(data = data50, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c50_init <- Score_DE(data = data50, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d50_init <- Score_EE(data = data50, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e50_init <- Score_ME(data = data50, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g50_hoch_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g50_exact_init <- maxcombo1(data = data50, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data60 <- ten(S60)
-  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)[2]
-  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi1)
-  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi1)[2]
-  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi1)[2]
-  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a60_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  a602_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)[2]
+  b60_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi1)
+  c60_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d60_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e60_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f60_1 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a60_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  a602_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)[2]
-  b60_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi2)
-  c60_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi2)[2]
-  d60_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi2)[2]
-  e60_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f60_2 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)[2]
-  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi3)
-  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi3)[2]
-  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi3)[2]
-  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a60_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  a602_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)[2]
-  b60_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, pi = pi4)
-  c60_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_DE, pi = pi4)[2]
-  d60_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, CP = CP_EE, pi = pi4)[2]
-  e60_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f60_4 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a60_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  a602_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)[2]
+  b60_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, pi = pi3)
+  c60_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d60_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e60_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data60, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f60_3 <- maxcombo1(data_exp = data60, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a60_init <- OSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a602_init <- mOSLRT(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b60_init <- Score_RC(data = data60, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c60_init <- Score_DE(data = data60, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d60_init <- Score_EE(data = data60, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e60_init <- Score_ME(data = data60, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g60_hoch_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g60_exact_init <- maxcombo1(data = data60, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data80 <- ten(S80)
-  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)[2]
-  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi1)
-  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi1)[2]
-  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi1)[2]
-  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a80_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  a802_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)[2]
+  b80_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi1)
+  c80_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d80_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e80_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f80_1 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a80_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  a802_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)[2]
-  b80_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi2)
-  c80_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi2)[2]
-  d80_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi2)[2]
-  e80_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f80_2 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)[2]
-  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi3)
-  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi3)[2]
-  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi3)[2]
-  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a80_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  a802_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)[2]
-  b80_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, pi = pi4)
-  c80_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_DE, pi = pi4)[2]
-  d80_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, CP = CP_EE, pi = pi4)[2]
-  e80_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f80_4 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a80_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  a802_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)[2]
+  b80_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, pi = pi3)
+  c80_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d80_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e80_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data80, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f80_3 <- maxcombo1(data_exp = data80, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a80_init <- OSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a802_init <- mOSLRT(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b80_init <- Score_RC(data = data80, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c80_init <- Score_DE(data = data80, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d80_init <- Score_EE(data = data80, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e80_init <- Score_ME(data = data80, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g80_hoch_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g80_exact_init <- maxcombo1(data = data80, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data100 <- ten(S100)
-  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)[2]
-  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi1)
-  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi1)[2]
-  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi1)[2]
-  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a100_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  a1002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)[2]
+  b100_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi1)
+  c100_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d100_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e100_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f100_1 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a100_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  a1002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)[2]
-  b100_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi2)
-  c100_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi2)[2]
-  d100_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi2)[2]
-  e100_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f100_2 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)[2]
-  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi3)
-  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi3)[2]
-  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi3)[2]
-  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a100_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  a1002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)[2]
-  b100_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, pi = pi4)
-  c100_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_DE, pi = pi4)[2]
-  d100_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, CP = CP_EE, pi = pi4)[2]
-  e100_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f100_4 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a100_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  a1002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)[2]
+  b100_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, pi = pi3)
+  c100_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d100_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e100_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data100, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f100_3 <- maxcombo1(data_exp = data100, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a100_init <- OSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1002_init  <- mOSLRT(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b100_init  <- Score_RC(data = data100, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c100_init  <- Score_DE(data = data100, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d100_init  <- Score_EE(data = data100, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e100_init  <- Score_ME(data = data100, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g100_hoch_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g100_exact_init  <- maxcombo1(data = data100, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data150 <- ten(S150)
-  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)[2]
-  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi1)
-  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi1)[2]
-  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi1)[2]
-  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a150_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  a1502_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)[2]
+  b150_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi1)
+  c150_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d150_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e150_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f150_1 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a150_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  a1502_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)[2]
-  b150_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi2)
-  c150_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi2)[2]
-  d150_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi2)[2]
-  e150_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f150_2 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
-  
-  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)[2]
-  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi3)
-  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi3)[2]
-  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi3)[2]
-  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a150_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  a1502_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)[2]
-  b150_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, pi = pi4)
-  c150_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_DE, pi = pi4)[2]
-  d150_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, CP = CP_EE, pi = pi4)[2]
-  e150_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f150_4 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
+  a150_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  a1502_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)[2]
+  b150_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, pi = pi3)
+  c150_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d150_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e150_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data150, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f150_3 <- maxcombo1(data_exp = data150, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a150_init <- OSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a1502_init <- mOSLRT(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b150_init <- Score_RC(data = data150, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c150_init <- Score_DE(data = data150, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d150_init <- Score_EE(data = data150, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e150_init <- Score_ME(data = data150, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g150_hoch_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g150_exact_init <- maxcombo1(data = data150, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
   
   data200 <- ten(S200)
-  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)[2]
-  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi1)
-  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi1)[2]
-  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi1)[2]
-  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
-  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
+  a200_1 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  a2002_1 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)[2]
+  b200_1 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi1)
+  c200_1 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi1)[2]
+  d200_1 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi1)[2]
+  e200_1 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi1)
+  f200_1 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi1)
   
-  a200_2 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  a2002_2 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)[2]
-  b200_2 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi2)
-  c200_2 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi2)[2]
-  d200_2 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi2)[2]
-  e200_2 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi2)
-  f200_2 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi2)
+  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)[2]
+  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, pi = pi3)
+  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_DE, pi = pi3)[2]
+  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP = CP_EE, pi = pi3)[2]
+  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, distr = distr0, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
+  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, distr = distr0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
+
+  a200_init <- OSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  a2002_init <- mOSLRT(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  b200_init <- Score_RC(data = data200, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  c200_init <- Score_DE(data = data200, CP = CP_DE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  d200_init <- Score_EE(data = data200, CP = CP_EE, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
+  e200_init <- Score_ME(data = data200, CP1 = CP_ME1, CP2 = CP_ME2, shape_weib = shape0, scale_weib = scale0, distr = distr0)
+  g200_hoch_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[1]
+  g200_exact_init <- maxcombo1(data = data200, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, shape_weib = shape0, scale_weib = scale0, distr = distr0)[2]
   
-  a200_3 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  a2002_3 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)[2]
-  b200_3 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi3)
-  c200_3 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi3)[2]
-  d200_3 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi3)[2]
-  e200_3 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi3)
-  f200_3 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi3)
-  
-  a200_4 <- OSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  a2002_4 <- mOSLRT(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)[2]
-  b200_4 <- Score_RC(shape_control = shape0, scale_control = scale0, data = data200, pi = pi4)
-  c200_4 <- Score_DE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_DE, pi = pi4)[2]
-  d200_4 <- Score_EE(shape_control = shape0, scale_control = scale0, data = data200, CP = CP_EE, pi = pi4)[2]
-  e200_4 <- Score_ME(shape_control = shape0, scale_control = scale0, data = data200, CP1 = CP_ME1, CP2 = CP_ME2, pi = pi4)
-  f200_4 <- maxcombo1(data_exp = data200, shape_control = shape0, scale_control = scale0, CP1 = 1, CP2 = 3, CP3 = 3, CP4 = 5, pi = pi4)
-  
-  
-  #censoring rate with adm censoring
-  tx_censadm20[i] <- 1-sum(delta20)/20
-  tx_censadm30[i] <- 1-sum(delta30)/30
-  tx_censadm50[i] <- 1-sum(delta50)/50
-  tx_censadm60[i] <- 1-sum(delta60)/60
-  tx_censadm80[i] <- 1-sum(delta80)/80
-  tx_censadm100[i] <- 1-sum(delta100)/100
-  tx_censadm150[i] <- 1-sum(delta150)/150
-  tx_censadm200[i] <- 1-sum(delta200)/200
-  
-  #censoring rate without adm censoring
-  tx_cens20[i] <- 1-sum(del20)/20
-  tx_cens30[i] <- 1-sum(del30)/30
-  tx_cens50[i] <- 1-sum(del50)/50
-  tx_cens60[i] <- 1-sum(del60)/60
-  tx_cens80[i] <- 1-sum(del80)/80
-  tx_cens100[i] <- 1-sum(del100)/100
-  tx_cens150[i] <- 1-sum(del150)/150
-  tx_cens200[i] <- 1-sum(del200)/200
   
   err_oslrt20_1[i] <- ifelse((a20_1<0.05), 1, 0)
   err_moslrt20_1[i] <- ifelse((a202_1<0.05), 1, 0)
@@ -8413,15 +7536,6 @@ for(i in 1:nit){
   err_max1_hoch20_1[i] <- ifelse((f20_1[2]<0.05), 1, 0)
   err_max1_exact20_1[i] <- ifelse((f20_1[3]<0.05), 1, 0)
   
-  err_oslrt20_2[i] <- ifelse((a20_2<0.05), 1, 0)
-  err_moslrt20_2[i] <- ifelse((a202_2<0.05), 1, 0)
-  err_rc20_2[i] <- ifelse((b20_2<0.05), 1, 0)
-  err_de20_2[i] <- ifelse((c20_2<0.05), 1, 0)
-  err_ee20_2[i] <- ifelse((d20_2<0.05), 1, 0)
-  err_me20_2[i] <- ifelse((e20_2<0.05), 1, 0)
-  err_max1_hoch20_2[i] <- ifelse((f20_2[2]<0.05), 1, 0)
-  err_max1_exact20_2[i] <- ifelse((f20_2[3]<0.05), 1, 0)
-  
   err_oslrt20_3[i] <- ifelse((a20_3<0.05), 1, 0)
   err_moslrt20_3[i] <- ifelse((a202_3<0.05), 1, 0)
   err_rc20_3[i] <- ifelse((b20_3<0.05), 1, 0)
@@ -8430,15 +7544,6 @@ for(i in 1:nit){
   err_me20_3[i] <- ifelse((e20_3<0.05), 1, 0)
   err_max1_hoch20_3[i] <- ifelse((f20_3[2]<0.05), 1, 0)
   err_max1_exact20_3[i] <- ifelse((f20_3[3]<0.05), 1, 0)
-  
-  err_oslrt20_4[i] <- ifelse((a20_4<0.05), 1, 0)
-  err_moslrt20_4[i] <- ifelse((a202_4<0.05), 1, 0)
-  err_rc20_4[i] <- ifelse((b20_4<0.05), 1, 0)
-  err_de20_4[i] <- ifelse((c20_4<0.05), 1, 0)
-  err_ee20_4[i] <- ifelse((d20_4<0.05), 1, 0)
-  err_me20_4[i] <- ifelse((e20_4<0.05), 1, 0)
-  err_max1_hoch20_4[i] <- ifelse((f20_4[2]<0.05), 1, 0)
-  err_max1_exact20_4[i] <- ifelse((f20_4[3]<0.05), 1, 0)
   
   
   err_oslrt30_1[i] <- ifelse((a30_1<0.05), 1, 0)
@@ -8450,15 +7555,6 @@ for(i in 1:nit){
   err_max1_hoch30_1[i] <- ifelse((f30_1[2]<0.05), 1, 0)
   err_max1_exact30_1[i] <- ifelse((f30_1[3]<0.05), 1, 0)
   
-  err_oslrt30_2[i] <- ifelse((a30_2<0.05), 1, 0)
-  err_moslrt30_2[i] <- ifelse((a302_2<0.05), 1, 0)
-  err_rc30_2[i] <- ifelse((b30_2<0.05), 1, 0)
-  err_de30_2[i] <- ifelse((c30_2<0.05), 1, 0)
-  err_ee30_2[i] <- ifelse((d30_2<0.05), 1, 0)
-  err_me30_2[i] <- ifelse((e30_2<0.05), 1, 0)
-  err_max1_hoch30_2[i] <- ifelse((f30_2[2]<0.05), 1, 0)
-  err_max1_exact30_2[i] <- ifelse((f30_2[3]<0.05), 1, 0)
-  
   err_oslrt30_3[i] <- ifelse((a30_3<0.05), 1, 0)
   err_moslrt30_3[i] <- ifelse((a302_3<0.05), 1, 0)
   err_rc30_3[i] <- ifelse((b30_3<0.05), 1, 0)
@@ -8467,15 +7563,6 @@ for(i in 1:nit){
   err_me30_3[i] <- ifelse((e30_3<0.05), 1, 0)
   err_max1_hoch30_3[i] <- ifelse((f30_3[2]<0.05), 1, 0)
   err_max1_exact30_3[i] <- ifelse((f30_3[3]<0.05), 1, 0)
-  
-  err_oslrt30_4[i] <- ifelse((a30_4<0.05), 1, 0)
-  err_moslrt30_4[i] <- ifelse((a302_4<0.05), 1, 0)
-  err_rc30_4[i] <- ifelse((b30_4<0.05), 1, 0)
-  err_de30_4[i] <- ifelse((c30_4<0.05), 1, 0)
-  err_ee30_4[i] <- ifelse((d30_4<0.05), 1, 0)
-  err_me30_4[i] <- ifelse((e30_4<0.05), 1, 0)
-  err_max1_hoch30_4[i] <- ifelse((f30_4[2]<0.05), 1, 0)
-  err_max1_exact30_4[i] <- ifelse((f30_4[3]<0.05), 1, 0)
   
   
   err_oslrt50_1[i] <- ifelse((a50_1<0.05), 1, 0)
@@ -8487,15 +7574,6 @@ for(i in 1:nit){
   err_max1_hoch50_1[i] <- ifelse((f50_1[2]<0.05), 1, 0)
   err_max1_exact50_1[i] <- ifelse((f50_1[3]<0.05), 1, 0)
   
-  err_oslrt50_2[i] <- ifelse((a50_2<0.05), 1, 0)
-  err_moslrt50_2[i] <- ifelse((a502_2<0.05), 1, 0)
-  err_rc50_2[i] <- ifelse((b50_2<0.05), 1, 0)
-  err_de50_2[i] <- ifelse((c50_2<0.05), 1, 0)
-  err_ee50_2[i] <- ifelse((d50_2<0.05), 1, 0)
-  err_me50_2[i] <- ifelse((e50_2<0.05), 1, 0)
-  err_max1_hoch50_2[i] <- ifelse((f50_2[2]<0.05), 1, 0)
-  err_max1_exact50_2[i] <- ifelse((f50_2[3]<0.05), 1, 0)
-  
   err_oslrt50_3[i] <- ifelse((a50_3<0.05), 1, 0)
   err_moslrt50_3[i] <- ifelse((a502_3<0.05), 1, 0)
   err_rc50_3[i] <- ifelse((b50_3<0.05), 1, 0)
@@ -8504,15 +7582,6 @@ for(i in 1:nit){
   err_me50_3[i] <- ifelse((e50_3<0.05), 1, 0)
   err_max1_hoch50_3[i] <- ifelse((f50_3[2]<0.05), 1, 0)
   err_max1_exact50_3[i] <- ifelse((f50_3[3]<0.05), 1, 0)
-  
-  err_oslrt50_4[i] <- ifelse((a50_4<0.05), 1, 0)
-  err_moslrt50_4[i] <- ifelse((a502_4<0.05), 1, 0)
-  err_rc50_4[i] <- ifelse((b50_4<0.05), 1, 0)
-  err_de50_4[i] <- ifelse((c50_4<0.05), 1, 0)
-  err_ee50_4[i] <- ifelse((d50_4<0.05), 1, 0)
-  err_me50_4[i] <- ifelse((e50_4<0.05), 1, 0)
-  err_max1_hoch50_4[i] <- ifelse((f50_4[2]<0.05), 1, 0)
-  err_max1_exact50_4[i] <- ifelse((f50_4[3]<0.05), 1, 0)
   
   
   err_oslrt60_1[i] <- ifelse((a60_1<0.05), 1, 0)
@@ -8524,15 +7593,6 @@ for(i in 1:nit){
   err_max1_hoch60_1[i] <- ifelse((f60_1[2]<0.05), 1, 0)
   err_max1_exact60_1[i] <- ifelse((f60_1[3]<0.05), 1, 0)
   
-  err_oslrt60_2[i] <- ifelse((a60_2<0.05), 1, 0)
-  err_moslrt60_2[i] <- ifelse((a602_2<0.05), 1, 0)
-  err_rc60_2[i] <- ifelse((b60_2<0.05), 1, 0)
-  err_de60_2[i] <- ifelse((c60_2<0.05), 1, 0)
-  err_ee60_2[i] <- ifelse((d60_2<0.05), 1, 0)
-  err_me60_2[i] <- ifelse((e60_2<0.05), 1, 0)
-  err_max1_hoch60_2[i] <- ifelse((f60_2[2]<0.05), 1, 0)
-  err_max1_exact60_2[i] <- ifelse((f60_2[3]<0.05), 1, 0)
-  
   err_oslrt60_3[i] <- ifelse((a60_3<0.05), 1, 0)
   err_moslrt60_3[i] <- ifelse((a602_3<0.05), 1, 0)
   err_rc60_3[i] <- ifelse((b60_3<0.05), 1, 0)
@@ -8541,15 +7601,6 @@ for(i in 1:nit){
   err_me60_3[i] <- ifelse((e60_3<0.05), 1, 0)
   err_max1_hoch60_3[i] <- ifelse((f60_3[2]<0.05), 1, 0)
   err_max1_exact60_3[i] <- ifelse((f60_3[3]<0.05), 1, 0)
-  
-  err_oslrt60_4[i] <- ifelse((a60_4<0.05), 1, 0)
-  err_moslrt60_4[i] <- ifelse((a602_4<0.05), 1, 0)
-  err_rc60_4[i] <- ifelse((b60_4<0.05), 1, 0)
-  err_de60_4[i] <- ifelse((c60_4<0.05), 1, 0)
-  err_ee60_4[i] <- ifelse((d60_4<0.05), 1, 0)
-  err_me60_4[i] <- ifelse((e60_4<0.05), 1, 0)
-  err_max1_hoch60_4[i] <- ifelse((f60_4[2]<0.05), 1, 0)
-  err_max1_exact60_4[i] <- ifelse((f60_4[3]<0.05), 1, 0)
   
   
   err_oslrt80_1[i] <- ifelse((a80_1<0.05), 1, 0)
@@ -8561,15 +7612,6 @@ for(i in 1:nit){
   err_max1_hoch80_1[i] <- ifelse((f80_1[2]<0.05), 1, 0)
   err_max1_exact80_1[i] <- ifelse((f80_1[3]<0.05), 1, 0)
   
-  err_oslrt80_2[i] <- ifelse((a80_2<0.05), 1, 0)
-  err_moslrt80_2[i] <- ifelse((a802_2<0.05), 1, 0)
-  err_rc80_2[i] <- ifelse((b80_2<0.05), 1, 0)
-  err_de80_2[i] <- ifelse((c80_2<0.05), 1, 0)
-  err_ee80_2[i] <- ifelse((d80_2<0.05), 1, 0)
-  err_me80_2[i] <- ifelse((e80_2<0.05), 1, 0)
-  err_max1_hoch80_2[i] <- ifelse((f80_2[2]<0.05), 1, 0)
-  err_max1_exact80_2[i] <- ifelse((f80_2[3]<0.05), 1, 0)
-  
   err_oslrt80_3[i] <- ifelse((a80_3<0.05), 1, 0)
   err_moslrt80_3[i] <- ifelse((a802_3<0.05), 1, 0)
   err_rc80_3[i] <- ifelse((b80_3<0.05), 1, 0)
@@ -8578,15 +7620,6 @@ for(i in 1:nit){
   err_me80_3[i] <- ifelse((e80_3<0.05), 1, 0)
   err_max1_hoch80_3[i] <- ifelse((f80_3[2]<0.05), 1, 0)
   err_max1_exact80_3[i] <- ifelse((f80_3[3]<0.05), 1, 0)
-  
-  err_oslrt80_4[i] <- ifelse((a80_4<0.05), 1, 0)
-  err_moslrt80_4[i] <- ifelse((a802_4<0.05), 1, 0)
-  err_rc80_4[i] <- ifelse((b80_4<0.05), 1, 0)
-  err_de80_4[i] <- ifelse((c80_4<0.05), 1, 0)
-  err_ee80_4[i] <- ifelse((d80_4<0.05), 1, 0)
-  err_me80_4[i] <- ifelse((e80_4<0.05), 1, 0)
-  err_max1_hoch80_4[i] <- ifelse((f80_4[2]<0.05), 1, 0)
-  err_max1_exact80_4[i] <- ifelse((f80_4[3]<0.05), 1, 0)
   
   
   err_oslrt100_1[i] <- ifelse((a100_1<0.05), 1, 0)
@@ -8598,15 +7631,6 @@ for(i in 1:nit){
   err_max1_hoch100_1[i] <- ifelse((f100_1[2]<0.05), 1, 0)
   err_max1_exact100_1[i] <- ifelse((f100_1[3]<0.05), 1, 0)
   
-  err_oslrt100_2[i] <- ifelse((a100_2<0.05), 1, 0)
-  err_moslrt100_2[i] <- ifelse((a1002_2<0.05), 1, 0)
-  err_rc100_2[i] <- ifelse((b100_2<0.05), 1, 0)
-  err_de100_2[i] <- ifelse((c100_2<0.05), 1, 0)
-  err_ee100_2[i] <- ifelse((d100_2<0.05), 1, 0)
-  err_me100_2[i] <- ifelse((e100_2<0.05), 1, 0)
-  err_max1_hoch100_2[i] <- ifelse((f100_2[2]<0.05), 1, 0)
-  err_max1_exact100_2[i] <- ifelse((f100_2[3]<0.05), 1, 0)
-  
   err_oslrt100_3[i] <- ifelse((a100_3<0.05), 1, 0)
   err_moslrt100_3[i] <- ifelse((a1002_3<0.05), 1, 0)
   err_rc100_3[i] <- ifelse((b100_3<0.05), 1, 0)
@@ -8615,15 +7639,6 @@ for(i in 1:nit){
   err_me100_3[i] <- ifelse((e100_3<0.05), 1, 0)
   err_max1_hoch100_3[i] <- ifelse((f100_3[2]<0.05), 1, 0)
   err_max1_exact100_3[i] <- ifelse((f100_3[3]<0.05), 1, 0)
-  
-  err_oslrt100_4[i] <- ifelse((a100_4<0.05), 1, 0)
-  err_moslrt100_4[i] <- ifelse((a1002_4<0.05), 1, 0)
-  err_rc100_4[i] <- ifelse((b100_4<0.05), 1, 0)
-  err_de100_4[i] <- ifelse((c100_4<0.05), 1, 0)
-  err_ee100_4[i] <- ifelse((d100_4<0.05), 1, 0)
-  err_me100_4[i] <- ifelse((e100_4<0.05), 1, 0)
-  err_max1_hoch100_4[i] <- ifelse((f100_4[2]<0.05), 1, 0)
-  err_max1_exact100_4[i] <- ifelse((f100_4[3]<0.05), 1, 0)
   
   
   err_oslrt150_1[i] <- ifelse((a150_1<0.05), 1, 0)
@@ -8635,15 +7650,6 @@ for(i in 1:nit){
   err_max1_hoch150_1[i] <- ifelse((f150_1[2]<0.05), 1, 0)
   err_max1_exact150_1[i] <- ifelse((f150_1[3]<0.05), 1, 0)
   
-  err_oslrt150_2[i] <- ifelse((a150_2<0.05), 1, 0)
-  err_moslrt150_2[i] <- ifelse((a1502_2<0.05), 1, 0)
-  err_rc150_2[i] <- ifelse((b150_2<0.05), 1, 0)
-  err_de150_2[i] <- ifelse((c150_2<0.05), 1, 0)
-  err_ee150_2[i] <- ifelse((d150_2<0.05), 1, 0)
-  err_me150_2[i] <- ifelse((e150_2<0.05), 1, 0)
-  err_max1_hoch150_2[i] <- ifelse((f150_2[2]<0.05), 1, 0)
-  err_max1_exact150_2[i] <- ifelse((f150_2[3]<0.05), 1, 0)
-  
   err_oslrt150_3[i] <- ifelse((a150_3<0.05), 1, 0)
   err_moslrt150_3[i] <- ifelse((a1502_3<0.05), 1, 0)
   err_rc150_3[i] <- ifelse((b150_3<0.05), 1, 0)
@@ -8652,15 +7658,6 @@ for(i in 1:nit){
   err_me150_3[i] <- ifelse((e150_3<0.05), 1, 0)
   err_max1_hoch150_3[i] <- ifelse((f150_3[2]<0.05), 1, 0)
   err_max1_exact150_3[i] <- ifelse((f150_3[3]<0.05), 1, 0)
-  
-  err_oslrt150_4[i] <- ifelse((a150_4<0.05), 1, 0)
-  err_moslrt150_4[i] <- ifelse((a1502_4<0.05), 1, 0)
-  err_rc150_4[i] <- ifelse((b150_4<0.05), 1, 0)
-  err_de150_4[i] <- ifelse((c150_4<0.05), 1, 0)
-  err_ee150_4[i] <- ifelse((d150_4<0.05), 1, 0)
-  err_me150_4[i] <- ifelse((e150_4<0.05), 1, 0)
-  err_max1_hoch150_4[i] <- ifelse((f150_4[2]<0.05), 1, 0)
-  err_max1_exact150_4[i] <- ifelse((f150_4[3]<0.05), 1, 0)
   
   
   err_oslrt200_1[i] <- ifelse((a200_1<0.05), 1, 0)
@@ -8672,15 +7669,6 @@ for(i in 1:nit){
   err_max1_hoch200_1[i] <- ifelse((f200_1[2]<0.05), 1, 0)
   err_max1_exact200_1[i] <- ifelse((f200_1[3]<0.05), 1, 0)
   
-  err_oslrt200_2[i] <- ifelse((a200_2<0.05), 1, 0)
-  err_moslrt200_2[i] <- ifelse((a2002_2<0.05), 1, 0)
-  err_rc200_2[i] <- ifelse((b200_2<0.05), 1, 0)
-  err_de200_2[i] <- ifelse((c200_2<0.05), 1, 0)
-  err_ee200_2[i] <- ifelse((d200_2<0.05), 1, 0)
-  err_me200_2[i] <- ifelse((e200_2<0.05), 1, 0)
-  err_max1_hoch200_2[i] <- ifelse((f200_2[2]<0.05), 1, 0)
-  err_max1_exact200_2[i] <- ifelse((f200_2[3]<0.05), 1, 0)
-  
   err_oslrt200_3[i] <- ifelse((a200_3<0.05), 1, 0)
   err_moslrt200_3[i] <- ifelse((a2002_3<0.05), 1, 0)
   err_rc200_3[i] <- ifelse((b200_3<0.05), 1, 0)
@@ -8689,15 +7677,79 @@ for(i in 1:nit){
   err_me200_3[i] <- ifelse((e200_3<0.05), 1, 0)
   err_max1_hoch200_3[i] <- ifelse((f200_3[2]<0.05), 1, 0)
   err_max1_exact200_3[i] <- ifelse((f200_3[3]<0.05), 1, 0)
-  
-  err_oslrt200_4[i] <- ifelse((a200_4<0.05), 1, 0)
-  err_moslrt200_4[i] <- ifelse((a2002_4<0.05), 1, 0)
-  err_rc200_4[i] <- ifelse((b200_4<0.05), 1, 0)
-  err_de200_4[i] <- ifelse((c200_4<0.05), 1, 0)
-  err_ee200_4[i] <- ifelse((d200_4<0.05), 1, 0)
-  err_me200_4[i] <- ifelse((e200_4<0.05), 1, 0)
-  err_max1_hoch200_4[i] <- ifelse((f200_4[2]<0.05), 1, 0)
-  err_max1_exact200_4[i] <- ifelse((f200_4[3]<0.05), 1, 0)
+
+  err_init_oslrt20[i] <- ifelse((a20_init<0.05), 1, 0)
+  err_init_moslrt20[i] <- ifelse((a202_init<0.05), 1, 0)
+  err_init_rc20[i] <- ifelse((b20_init<0.05), 1, 0)
+  err_init_de20[i] <- ifelse((c20_init<0.05), 1, 0)
+  err_init_ee20[i] <- ifelse((d20_init<0.05), 1, 0)
+  err_init_me20[i] <- ifelse((e20_init<0.05), 1, 0)
+  err_init_max_hoch_20[i] <- ifelse(g20_hoch_init<0.05, 1, 0)
+  err_init_max_exact_20[i] <- ifelse(g20_exact_init<0.05, 1, 0)
+
+  err_init_oslrt30[i] <- ifelse((a30_init<0.05), 1, 0)
+  err_init_moslrt30[i] <- ifelse((a302_init<0.05), 1, 0)
+  err_init_rc30[i] <- ifelse((b30_init<0.05), 1, 0)
+  err_init_de30[i] <- ifelse((c30_init<0.05), 1, 0)
+  err_init_ee30[i] <- ifelse((d30_init<0.05), 1, 0)
+  err_init_me30[i] <- ifelse((e30_init<0.05), 1, 0)
+  err_init_max_hoch_30[i] <- ifelse(g30_hoch_init<0.05, 1, 0)
+  err_init_max_exact_30[i] <- ifelse(g30_exact_init<0.05, 1, 0)
+
+  err_init_oslrt50[i] <- ifelse((a50_init<0.05), 1, 0)
+  err_init_moslrt50[i] <- ifelse((a502_init<0.05), 1, 0)
+  err_init_rc50[i] <- ifelse((b50_init<0.05), 1, 0)
+  err_init_de50[i] <- ifelse((c50_init<0.05), 1, 0)
+  err_init_ee50[i] <- ifelse((d50_init<0.05), 1, 0)
+  err_init_me50[i] <- ifelse((e50_init<0.05), 1, 0)
+  err_init_max_hoch_50[i] <- ifelse(g50_hoch_init<0.05, 1, 0)
+  err_init_max_exact_50[i] <- ifelse(g50_exact_init<0.05, 1, 0)
+
+  err_init_oslrt60[i] <- ifelse((a60_init<0.05), 1, 0)
+  err_init_moslrt60[i] <- ifelse((a602_init<0.05), 1, 0)
+  err_init_rc60[i] <- ifelse((b60_init<0.05), 1, 0)
+  err_init_de60[i] <- ifelse((c60_init<0.05), 1, 0)
+  err_init_ee60[i] <- ifelse((d60_init<0.05), 1, 0)
+  err_init_me60[i] <- ifelse((e60_init<0.05), 1, 0)
+  err_init_max_hoch_60[i] <- ifelse(g60_hoch_init<0.05, 1, 0)
+  err_init_max_exact_60[i] <- ifelse(g60_exact_init<0.05, 1, 0)  
+
+  err_init_oslrt80[i] <- ifelse((a80_init<0.05), 1, 0)
+  err_init_moslrt80[i] <- ifelse((a802_init<0.05), 1, 0)
+  err_init_rc80[i] <- ifelse((b80_init<0.05), 1, 0)
+  err_init_de80[i] <- ifelse((c80_init<0.05), 1, 0)
+  err_init_ee80[i] <- ifelse((d80_init<0.05), 1, 0)
+  err_init_me80[i] <- ifelse((e80_init<0.05), 1, 0)
+  err_init_rmst_80[i] <- ifelse((e_init<0.05), 1, 0)
+  err_init_max_hoch_80[i] <- ifelse(g80_hoch_init<0.05, 1, 0)
+  err_init_max_exact_80[i] <- ifelse(g80_exact_init<0.05, 1, 0)
+
+  err_init_oslrt100[i] <- ifelse((a100_init<0.05), 1, 0)
+  err_init_moslrt100[i] <- ifelse((a1002_init<0.05), 1, 0)
+  err_init_rc100[i] <- ifelse((b100_init<0.05), 1, 0)
+  err_init_de100[i] <- ifelse((c100_init<0.05), 1, 0)
+  err_init_ee100[i] <- ifelse((d100_init<0.05), 1, 0)
+  err_init_me100[i] <- ifelse((e100_init<0.05), 1, 0)
+  err_init_max_hoch_100[i] <- ifelse(g100_hoch_init<0.05, 1, 0)
+  err_init_max_exact_100[i] <- ifelse(g100_exact_init<0.05, 1, 0)
+
+  err_init_oslrt150[i] <- ifelse((a150_init<0.05), 1, 0)
+  err_init_moslrt150[i] <- ifelse((a1502_init<0.05), 1, 0)
+  err_init_rc150[i] <- ifelse((b150_init<0.05), 1, 0)
+  err_init_de150[i] <- ifelse((c150_init<0.05), 1, 0)
+  err_init_ee150[i] <- ifelse((d150_init<0.05), 1, 0)
+  err_init_me150[i] <- ifelse((e150_init<0.05), 1, 0)
+  err_init_max_hoch_150[i] <- ifelse(g150_hoch_init<0.05, 1, 0)
+  err_init_max_exact_150[i] <- ifelse(g150_exact_init<0.05, 1, 0)
+
+  err_init_oslrt200[i] <- ifelse((a200_init<0.05), 1, 0)
+  err_init_moslrt200[i] <- ifelse((a2002_init<0.05), 1, 0)
+  err_init_rc200[i] <- ifelse((b200_init<0.05), 1, 0)
+  err_init_de200[i] <- ifelse((c200_init<0.05), 1, 0)              
+  err_init_ee200[i] <- ifelse((d200_init<0.05), 1, 0)
+  err_init_me200[i] <- ifelse((e200_init<0.05), 1, 0)
+  err_init_max_hoch_200[i] <- ifelse(g200_hoch_init<0.05, 1, 0)
+  err_init_max_exact_200[i] <- ifelse(g200_exact_init<0.05, 1, 0)
 }
 
 os20_1 <- sum(err_oslrt20_1)/nit
@@ -8709,15 +7761,6 @@ me20_1 <- sum(err_me20_1)/nit
 max1_hoch20_1 <- sum(err_max1_hoch20_1)/nit
 max1_exact20_1 <- sum(na.omit(err_max1_exact20_1))/length(na.omit(err_max1_exact20_1))
 
-os20_2 <- sum(err_oslrt20_2)/nit
-mos20_2 <- sum(err_moslrt20_2)/nit
-rc20_2 <- sum(err_rc20_2)/nit
-de20_2 <- sum(na.omit(err_de20_2))/length(na.omit(err_de20_2))
-ee20_2 <- sum(err_ee20_2)/nit
-me20_2 <- sum(err_me20_2)/nit
-max1_hoch20_2 <- sum(err_max1_hoch20_2)/nit
-max1_exact20_2 <- sum(na.omit(err_max1_exact20_2))/length(na.omit(err_max1_exact20_2))
-
 os20_3 <- sum(err_oslrt20_3)/nit
 mos20_3 <- sum(err_moslrt20_3)/nit
 rc20_3 <- sum(err_rc20_3)/nit
@@ -8727,18 +7770,32 @@ me20_3 <- sum(err_me20_3)/nit
 max1_hoch20_3 <- sum(err_max1_hoch20_3)/nit
 max1_exact20_3 <- sum(na.omit(err_max1_exact20_3))/length(na.omit(err_max1_exact20_3))
 
-os20_4 <- sum(err_oslrt20_4)/nit
-mos20_4 <- sum(err_moslrt20_4)/nit
-rc20_4 <- sum(err_rc20_4)/nit
-de20_4 <- sum(na.omit(err_de20_4))/length(na.omit(err_de20_4))
-ee20_4 <- sum(err_ee20_4)/nit
-me20_4 <- sum(err_me20_4)/nit
-max1_hoch20_4 <- sum(err_max1_hoch20_4)/nit
-max1_exact20_4 <- sum(na.omit(err_max1_exact20_4))/length(na.omit(err_max1_exact20_4))
+os20_init <- sum(err_init_oslrt20)/nit
+mos20_init <- sum(err_init_moslrt20)/nit
+rc20_init <- sum(err_init_rc20)/nit
+de20_init <- sum(err_init_de20)/nit
+ee20_init <- sum(err_init_ee20)/nit
+me20_init <- sum(err_init_me20)/nit
+max_hoch20_init <- sum(err_init_max_hoch_20)/nit
+max_exact20_init <- sum(err_init_max_exact_20)/nit
 
-mean(tx_cens20)
-mean(tx_censadm20)
+diff1_os20 <- ((os20_1-os20_init)/os20_init)*100
+diff1_mos20 <- ((mos20_1-mos20_init)/mos20_init)*100
+diff1_ee20 <- ((ee20_1-ee20_init)/ee20_init)*100
+diff1_me20 <- ((me20_1-me20_init)/me20_init)*100
+diff1_de20 <- ((de20_1-de20_init)/de20_init)*100
+diff1_rc20 <- ((rc20_1-rc20_init)/rc20_init)*100
+diff1_hoch20 <- ((max_hoch20_1-max_hoch20_init)/max_hoch20_init)*100
+diff1_exact20 <- ((max_exact20_1-max_exact20_init)/max_exact20_init)*100
 
+diff3_os20 <- ((os20_3-os20_init)/os20_init)*100
+diff3_mos20 <- ((mos20_3-mos20_init)/mos20_init)*100
+diff3_ee20 <- ((ee20_3-ee20_init)/ee20_init)*100
+diff3_me20 <- ((me20_3-me20_init)/me20_init)*100
+diff3_de20 <- ((de20_3-de20_init)/de20_init)*100
+diff3_rc20 <- ((rc20_3-rc20_init)/rc20_init)*100
+diff3_hoch20 <- ((max_hoch20_3-max_hoch20_init)/max_hoch20_init)*100
+diff3_exact20 <- ((max_exact20_3-max_exact20_init)/max_exact20_init)*100
 
 os30_1 <- sum(err_oslrt30_1)/nit
 mos30_1 <- sum(err_moslrt30_1)/nit
@@ -8749,15 +7806,6 @@ me30_1 <- sum(err_me30_1)/nit
 max1_hoch30_1 <- sum(err_max1_hoch30_1)/nit
 max1_exact30_1 <- sum(na.omit(err_max1_exact30_1))/length(na.omit(err_max1_exact30_1))
 
-os30_2 <- sum(err_oslrt30_2)/nit
-mos30_2 <- sum(err_moslrt30_2)/nit
-rc30_2 <- sum(err_rc30_2)/nit
-de30_2 <- sum(na.omit(err_de30_2))/length(na.omit(err_de30_2))
-ee30_2 <- sum(err_ee30_2)/nit
-me30_2 <- sum(err_me30_2)/nit
-max1_hoch30_2 <- sum(err_max1_hoch30_2)/nit
-max1_exact30_2 <- sum(na.omit(err_max1_exact30_2))/length(na.omit(err_max1_exact30_2))
-
 os30_3 <- sum(err_oslrt30_3)/nit
 mos30_3 <- sum(err_moslrt30_3)/nit
 rc30_3 <- sum(err_rc30_3)/nit
@@ -8767,17 +7815,32 @@ me30_3 <- sum(err_me30_3)/nit
 max1_hoch30_3 <- sum(err_max1_hoch30_3)/nit
 max1_exact30_3 <- sum(na.omit(err_max1_exact30_3))/length(na.omit(err_max1_exact30_3))
 
-os30_4 <- sum(err_oslrt30_4)/nit
-mos30_4 <- sum(err_moslrt30_4)/nit
-rc30_4 <- sum(err_rc30_4)/nit
-de30_4 <- sum(na.omit(err_de30_4))/length(na.omit(err_de30_4))
-ee30_4 <- sum(err_ee30_4)/nit
-me30_4 <- sum(err_me30_4)/nit
-max1_hoch30_4 <- sum(err_max1_hoch30_4)/nit
-max1_exact30_4 <- sum(na.omit(err_max1_exact30_4))/length(na.omit(err_max1_exact30_4))
+os30_init <- sum(err_init_oslrt30)/nit
+mos30_init <- sum(err_init_moslrt30)/nit
+rc30_init <- sum(err_init_rc30)/nit
+de30_init <- sum(err_init_de30)/nit
+ee30_init <- sum(err_init_ee30)/nit
+me30_init <- sum(err_init_me30)/nit
+max_hoch30_init <- sum(err_init_max_hoch_30)/nit
+max_exact30_init <- sum(err_init_max_exact_30)/nit
 
-mean(tx_cens30)
-mean(tx_censadm30)
+diff1_os30 <- ((os30_1-os30_init)/os30_init)*100
+diff1_mos30 <- ((mos30_1-mos30_init)/mos30_init)*100
+diff1_ee30 <- ((ee30_1-ee30_init)/ee30_init)*100
+diff1_me30 <- ((me30_1-me30_init)/me30_init)*100
+diff1_de30 <- ((de30_1-de30_init)/de30_init)*100
+diff1_rc30 <- ((rc30_1-rc30_init)/rc30_init)*100
+diff1_hoch30 <- ((max_hoch30_1-max_hoch30_init)/max_hoch30_init)*100
+diff1_exact30 <- ((max_exact30_1-max_exact30_init)/max_exact30_init)*100
+
+diff3_os30 <- ((os30_3-os30_init)/os30_init)*100
+diff3_mos30 <- ((mos30_3-mos30_init)/mos30_init)*100
+diff3_ee30 <- ((ee30_3-ee30_init)/ee30_init)*100
+diff3_me30 <- ((me30_3-me30_init)/me30_init)*100
+diff3_de30 <- ((de30_3-de30_init)/de30_init)*100
+diff3_rc30 <- ((rc30_3-rc30_init)/rc30_init)*100
+diff3_hoch30 <- ((max_hoch30_3-max_hoch30_init)/max_hoch30_init)*100
+diff3_exact30 <- ((max_exact30_3-max_exact30_init)/max_exact30_init)*100
 
 
 os50_1 <- sum(err_oslrt50_1)/nit
@@ -8789,15 +7852,6 @@ me50_1 <- sum(err_me50_1)/nit
 max1_hoch50_1 <- sum(err_max1_hoch50_1)/nit
 max1_exact50_1 <- sum(na.omit(err_max1_exact50_1))/length(na.omit(err_max1_exact50_1))
 
-os50_2 <- sum(err_oslrt50_2)/nit
-mos50_2 <- sum(err_moslrt50_2)/nit
-rc50_2 <- sum(err_rc50_2)/nit
-de50_2 <- sum(err_de50_2)/nit
-ee50_2 <- sum(err_ee50_2)/nit
-me50_2 <- sum(err_me50_2)/nit
-max1_hoch50_2 <- sum(err_max1_hoch50_2)/nit
-max1_exact50_2 <- sum(na.omit(err_max1_exact50_2))/length(na.omit(err_max1_exact50_2))
-
 os50_3 <- sum(err_oslrt50_3)/nit
 mos50_3 <- sum(err_moslrt50_3)/nit
 rc50_3 <- sum(err_rc50_3)/nit
@@ -8807,17 +7861,32 @@ me50_3 <- sum(err_me50_3)/nit
 max1_hoch50_3 <- sum(err_max1_hoch50_3)/nit
 max1_exact50_3 <- sum(na.omit(err_max1_exact50_3))/length(na.omit(err_max1_exact50_3))
 
-os50_4 <- sum(err_oslrt50_4)/nit
-mos50_4 <- sum(err_moslrt50_4)/nit
-rc50_4 <- sum(err_rc50_4)/nit
-de50_4 <- sum(err_de50_4)/nit
-ee50_4 <- sum(err_ee50_4)/nit
-me50_4 <- sum(err_me50_4)/nit
-max1_hoch50_4 <- sum(err_max1_hoch50_4)/nit
-max1_exact50_4 <- sum(na.omit(err_max1_exact50_4))/length(na.omit(err_max1_exact50_4))
+os50_init <- sum(err_init_oslrt50)/nit
+mos50_init <- sum(err_init_moslrt50)/nit
+rc50_init <- sum(err_init_rc50)/nit
+de50_init <- sum(err_init_de50)/nit
+ee50_init <- sum(err_init_ee50)/nit
+me50_init <- sum(err_init_me50)/nit
+max_hoch50_init <- sum(err_init_max_hoch_50)/nit
+max_exact50_init <- sum(err_init_max_exact_50)/nit
 
-mean(tx_cens50)
-mean(tx_censadm50)
+diff1_os50 <- ((os50_1-os50_init)/os50_init)*100
+diff1_mos50 <- ((mos50_1-mos50_init)/mos50_init)*100
+diff1_ee50 <- ((ee50_1-ee50_init)/ee50_init)*100
+diff1_me50 <- ((me50_1-me50_init)/me50_init)*100
+diff1_de50 <- ((de50_1-de50_init)/de50_init)*100
+diff1_rc50 <- ((rc50_1-rc50_init)/rc50_init)*100
+diff1_hoch50 <- ((max_hoch50_1-max_hoch50_init)/max_hoch50_init)*100
+diff1_exact50 <- ((max_exact50_1-max_exact50_init)/max_exact50_init)*100
+
+diff3_os50 <- ((os50_3-os50_init)/os50_init)*100
+diff3_mos50 <- ((mos50_3-mos50_init)/mos50_init)*100
+diff3_ee50 <- ((ee50_3-ee50_init)/ee50_init)*100
+diff3_me50 <- ((me50_3-me50_init)/me50_init)*100
+diff3_de50 <- ((de50_3-de50_init)/de50_init)*100
+diff3_rc50 <- ((rc50_3-rc50_init)/rc50_init)*100
+diff3_hoch50 <- ((max_hoch50_3-max_hoch50_init)/max_hoch50_init)*100
+diff3_exact50 <- ((max_exact50_3-max_exact50_init)/max_exact50_init)*100
 
 
 os60_1 <- sum(err_oslrt60_1)/nit
@@ -8829,15 +7898,6 @@ me60_1 <- sum(err_me60_1)/nit
 max1_hoch60_1 <- sum(err_max1_hoch60_1)/nit
 max1_exact60_1 <- sum(na.omit(err_max1_exact60_1))/length(na.omit(err_max1_exact60_1))
 
-os60_2 <- sum(err_oslrt60_2)/nit
-mos60_2 <- sum(err_moslrt60_2)/nit
-rc60_2 <- sum(err_rc60_2)/nit
-de60_2 <- sum(err_de60_2)/nit
-ee60_2 <- sum(err_ee60_2)/nit
-me60_2 <- sum(err_me60_2)/nit
-max1_hoch60_2 <- sum(err_max1_hoch60_2)/nit
-max1_exact60_2 <- sum(na.omit(err_max1_exact60_2))/length(na.omit(err_max1_exact60_2))
-
 os60_3 <- sum(err_oslrt60_3)/nit
 mos60_3 <- sum(err_moslrt60_3)/nit
 rc60_3 <- sum(err_rc60_3)/nit
@@ -8847,17 +7907,32 @@ me60_3 <- sum(err_me60_3)/nit
 max1_hoch60_3 <- sum(err_max1_hoch60_3)/nit
 max1_exact60_3 <- sum(na.omit(err_max1_exact60_3))/length(na.omit(err_max1_exact60_3))
 
-os60_4 <- sum(err_oslrt60_4)/nit
-mos60_4 <- sum(err_moslrt60_4)/nit
-rc60_4 <- sum(err_rc60_4)/nit
-de60_4 <- sum(err_de60_4)/nit
-ee60_4 <- sum(err_ee60_4)/nit
-me60_4 <- sum(err_me60_4)/nit
-max1_hoch60_4 <- sum(err_max1_hoch60_4)/nit
-max1_exact60_4 <- sum(na.omit(err_max1_exact60_4))/length(na.omit(err_max1_exact60_4))
+os60_init <- sum(err_init_oslrt60)/nit
+mos60_init <- sum(err_init_moslrt60)/nit
+rc60_init <- sum(err_init_rc60)/nit
+de60_init <- sum(err_init_de60)/nit
+ee60_init <- sum(err_init_ee60)/nit
+me60_init <- sum(err_init_me60)/nit
+max_hoch60_init <- sum(err_init_max_hoch_60)/nit
+max_exact60_init <- sum(err_init_max_exact_60)/nit
 
-mean(tx_cens60)
-mean(tx_censadm60)
+diff1_os60 <- ((os60_1-os60_init)/os60_init)*100
+diff1_mos60 <- ((mos60_1-mos60_init)/mos60_init)*100
+diff1_ee60 <- ((ee60_1-ee60_init)/ee60_init)*100
+diff1_me60 <- ((me60_1-me60_init)/me60_init)*100
+diff1_de60 <- ((de60_1-de60_init)/de60_init)*100
+diff1_rc60 <- ((rc60_1-rc60_init)/rc60_init)*100
+diff1_hoch60 <- ((max_hoch60_1-max_hoch60_init)/max_hoch60_init)*100
+diff1_exact60 <- ((max_exact60_1-max_exact60_init)/max_exact60_init)*100
+
+diff3_os60 <- ((os60_3-os60_init)/os60_init)*100
+diff3_mos60 <- ((mos60_3-mos60_init)/mos60_init)*100
+diff3_ee60 <- ((ee60_3-ee60_init)/ee60_init)*100
+diff3_me60 <- ((me60_3-me60_init)/me60_init)*100
+diff3_de60 <- ((de60_3-de60_init)/de60_init)*100
+diff3_rc60 <- ((rc60_3-rc60_init)/rc60_init)*100
+diff3_hoch60 <- ((max_hoch60_3-max_hoch60_init)/max_hoch60_init)*100
+diff3_exact60 <- ((max_exact60_3-max_exact60_init)/max_exact60_init)*100
 
 
 os80_1 <- sum(err_oslrt80_1)/nit
@@ -8869,15 +7944,6 @@ me80_1 <- sum(err_me80_1)/nit
 max1_hoch80_1 <- sum(err_max1_hoch80_1)/nit
 max1_exact80_1 <- sum(na.omit(err_max1_exact80_1))/length(na.omit(err_max1_exact80_1))
 
-os80_2 <- sum(err_oslrt80_2)/nit
-mos80_2 <- sum(err_moslrt80_2)/nit
-rc80_2 <- sum(err_rc80_2)/nit
-de80_2 <- sum(err_de80_2)/nit
-ee80_2 <- sum(err_ee80_2)/nit
-me80_2 <- sum(err_me80_2)/nit
-max1_hoch80_2 <- sum(err_max1_hoch80_2)/nit
-max1_exact80_2 <- sum(na.omit(err_max1_exact80_2))/length(na.omit(err_max1_exact80_2))
-
 os80_3 <- sum(err_oslrt80_3)/nit
 mos80_3 <- sum(err_moslrt80_3)/nit
 rc80_3 <- sum(err_rc80_3)/nit
@@ -8887,17 +7953,32 @@ me80_3 <- sum(err_me80_3)/nit
 max1_hoch80_3 <- sum(err_max1_hoch80_3)/nit
 max1_exact80_3 <- sum(na.omit(err_max1_exact80_3))/length(na.omit(err_max1_exact80_3))
 
-os80_4 <- sum(err_oslrt80_4)/nit
-mos80_4 <- sum(err_moslrt80_4)/nit
-rc80_4 <- sum(err_rc80_4)/nit
-de80_4 <- sum(err_de80_4)/nit
-ee80_4 <- sum(err_ee80_4)/nit
-me80_4 <- sum(err_me80_4)/nit
-max1_hoch80_4 <- sum(err_max1_hoch80_4)/nit
-max1_exact80_4 <- sum(na.omit(err_max1_exact80_4))/length(na.omit(err_max1_exact80_4))
+os80_init <- sum(err_init_oslrt80)/nit
+mos80_init <- sum(err_init_moslrt80)/nit
+rc80_init <- sum(err_init_rc80)/nit
+de80_init <- sum(err_init_de80)/nit
+ee80_init <- sum(err_init_ee80)/nit
+me80_init <- sum(err_init_me80)/nit
+max_hoch80_init <- sum(err_init_max_hoch_80)/nit
+max_exact80_init <- sum(err_init_max_exact_80)/nit
 
-mean(tx_cens80)
-mean(tx_censadm80)
+diff1_os80 <- ((os80_1-os80_init)/os80_init)*100
+diff1_mos80 <- ((mos80_1-mos80_init)/mos80_init)*100
+diff1_ee80 <- ((ee80_1-ee80_init)/ee80_init)*100
+diff1_me80 <- ((me80_1-me80_init)/me80_init)*100
+diff1_de80 <- ((de80_1-de80_init)/de80_init)*100
+diff1_rc80 <- ((rc80_1-rc80_init)/rc80_init)*100
+diff1_hoch80 <- ((max_hoch80_1-max_hoch80_init)/max_hoch80_init)*100
+diff1_exact80 <- ((max_exact80_1-max_exact80_init)/max_exact80_init)*100
+
+diff3_os80 <- ((os80_3-os80_init)/os80_init)*100
+diff3_mos80 <- ((mos80_3-mos80_init)/mos80_init)*100
+diff3_ee80 <- ((ee80_3-ee80_init)/ee80_init)*100
+diff3_me80 <- ((me80_3-me80_init)/me80_init)*100
+diff3_de80 <- ((de80_3-de80_init)/de80_init)*100
+diff3_rc80 <- ((rc80_3-rc80_init)/rc80_init)*100
+diff3_hoch80 <- ((max_hoch80_3-max_hoch80_init)/max_hoch80_init)*100
+diff3_exact80 <- ((max_exact80_3-max_exact80_init)/max_exact80_init)*100
 
 
 os100_1 <- sum(err_oslrt100_1)/nit
@@ -8909,15 +7990,6 @@ me100_1 <- sum(err_me100_1)/nit
 max1_hoch100_1 <- sum(err_max1_hoch100_1)/nit
 max1_exact100_1 <- sum(na.omit(err_max1_exact100_1))/length(na.omit(err_max1_exact100_1))
 
-os100_2 <- sum(err_oslrt100_2)/nit
-mos100_2 <- sum(err_moslrt100_2)/nit
-rc100_2 <- sum(err_rc100_2)/nit
-de100_2 <- sum(err_de100_2)/nit
-ee100_2 <- sum(err_ee100_2)/nit
-me100_2 <- sum(err_me100_2)/nit
-max1_hoch100_2 <- sum(err_max1_hoch100_2)/nit
-max1_exact100_2 <- sum(na.omit(err_max1_exact100_2))/length(na.omit(err_max1_exact100_2))
-
 os100_3 <- sum(err_oslrt100_3)/nit
 mos100_3 <- sum(err_moslrt100_3)/nit
 rc100_3 <- sum(err_rc100_3)/nit
@@ -8927,17 +7999,32 @@ me100_3 <- sum(err_me100_3)/nit
 max1_hoch100_3 <- sum(err_max1_hoch100_3)/nit
 max1_exact100_3 <- sum(na.omit(err_max1_exact100_3))/length(na.omit(err_max1_exact100_3))
 
-os100_4 <- sum(err_oslrt100_4)/nit
-mos100_4 <- sum(err_moslrt100_4)/nit
-rc100_4 <- sum(err_rc100_4)/nit
-de100_4 <- sum(err_de100_4)/nit
-ee100_4 <- sum(err_ee100_4)/nit
-me100_4 <- sum(err_me100_4)/nit
-max1_hoch100_4 <- sum(err_max1_hoch100_4)/nit
-max1_exact100_4 <- sum(na.omit(err_max1_exact100_4))/length(na.omit(err_max1_exact100_4))
+os100_init <- sum(err_init_oslrt100)/nit
+mos100_init <- sum(err_init_moslrt100)/nit
+rc100_init <- sum(err_init_rc100)/nit
+de100_init <- sum(err_init_de100)/nit
+ee100_init <- sum(err_init_ee100)/nit
+me100_init <- sum(err_init_me100)/nit
+max_hoch100_init <- sum(err_init_max_hoch_100)/nit
+max_exact100_init <- sum(err_init_max_exact_100)/nit
 
-mean(tx_cens100)
-mean(tx_censadm100)
+diff1_os100 <- ((os100_1-os100_init)/os100_init)*100
+diff1_mos100 <- ((mos100_1-mos100_init)/mos100_init)*100
+diff1_ee100 <- ((ee100_1-ee100_init)/ee100_init)*100
+diff1_me100 <- ((me100_1-me100_init)/me100_init)*100
+diff1_de100 <- ((de100_1-de100_init)/de100_init)*100
+diff1_rc100 <- ((rc100_1-rc100_init)/rc100_init)*100
+diff1_hoch100 <- ((max_hoch100_1-max_hoch100_init)/max_hoch100_init)*100
+diff1_exact100 <- ((max_exact100_1-max_exact100_init)/max_exact100_init)*100
+
+diff3_os100 <- ((os100_3-os100_init)/os100_init)*100
+diff3_mos100 <- ((mos100_3-mos100_init)/mos100_init)*100
+diff3_ee100 <- ((ee100_3-ee100_init)/ee100_init)*100
+diff3_me100 <- ((me100_3-me100_init)/me100_init)*100
+diff3_de100 <- ((de100_3-de100_init)/de100_init)*100
+diff3_rc100 <- ((rc100_3-rc100_init)/rc100_init)*100
+diff3_hoch100 <- ((max_hoch100_3-max_hoch100_init)/max_hoch100_init)*100
+diff3_exact100 <- ((max_exact100_3-max_exact100_init)/max_exact100_init)*100
 
 
 os150_1 <- sum(err_oslrt150_1)/nit
@@ -8949,15 +8036,6 @@ me150_1 <- sum(na.omit(err_me150_1))/length(na.omit(err_me150_1))
 max1_hoch150_1 <- sum(err_max1_hoch150_1)/nit
 max1_exact150_1 <- sum(na.omit(err_max1_exact150_1))/length(na.omit(err_max1_exact150_1))
 
-os150_2 <- sum(err_oslrt150_2)/nit
-mos150_2 <- sum(err_moslrt150_2)/nit
-rc150_2 <- sum(err_rc150_2)/nit
-de150_2 <- sum(err_de150_2)/nit
-ee150_2 <- sum(err_ee150_2)/nit
-me150_2 <- sum(na.omit(err_me150_2))/length(na.omit(err_me150_2))
-max1_hoch150_2 <- sum(err_max1_hoch150_2)/nit
-max1_exact150_2 <- sum(na.omit(err_max1_exact150_2))/length(na.omit(err_max1_exact150_2))
-
 os150_3 <- sum(err_oslrt150_3)/nit
 mos150_3 <- sum(err_moslrt150_3)/nit
 rc150_3 <- sum(err_rc150_3)/nit
@@ -8967,17 +8045,33 @@ me150_3 <- sum(na.omit(err_me150_3))/length(na.omit(err_me150_3))
 max1_hoch150_3 <- sum(err_max1_hoch150_3)/nit
 max1_exact150_3 <- sum(na.omit(err_max1_exact150_3))/length(na.omit(err_max1_exact150_3))
 
-os150_4 <- sum(err_oslrt150_4)/nit
-mos150_4 <- sum(err_moslrt150_4)/nit
-rc150_4 <- sum(err_rc150_4)/nit
-de150_4 <- sum(err_de150_4)/nit
-ee150_4 <- sum(err_ee150_4)/nit
-me150_4 <- sum(na.omit(err_me150_4))/length(na.omit(err_me150_4))
-max1_hoch150_4 <- sum(err_max1_hoch150_4)/nit
-max1_exact150_4 <- sum(na.omit(err_max1_exact150_4))/length(na.omit(err_max1_exact150_4))
+os150_init <- sum(err_init_oslrt150)/nit
+mos150_init <- sum(err_init_moslrt150)/nit
+rc150_init <- sum(err_init_rc150)/nit
+de150_init <- sum(err_init_de150)/nit
+ee150_init <- sum(err_init_ee150)/nit
+me150_init <- sum(err_init_me150)/nit
+max_hoch150_init <- sum(err_init_max_hoch_150)/nit
+max_exact150_init <- sum(err_init_max_exact_150)/nit
 
-mean(tx_cens150)
-mean(tx_censadm150)
+diff1_os150 <- ((os150_1-os150_init)/os150_init)*100
+diff1_mos150 <- ((mos150_1-mos150_init)/mos150_init)*100
+diff1_ee150 <- ((ee150_1-ee150_init)/ee150_init)*100
+diff1_me150 <- ((me150_1-me150_init)/me150_init)*100
+diff1_de150 <- ((de150_1-de150_init)/de150_init)*100
+diff1_rc150 <- ((rc150_1-rc150_init)/rc150_init)*100
+diff1_hoch150 <- ((max_hoch150_1-max_hoch150_init)/max_hoch150_init)*100
+diff1_exact150 <- ((max_exact150_1-max_exact150_init)/max_exact150_init)*100
+
+diff3_os150 <- ((os150_3-os150_init)/os150_init)*100
+diff3_mos150 <- ((mos150_3-mos150_init)/mos150_init)*100
+diff3_ee150 <- ((ee150_3-ee150_init)/ee150_init)*100
+diff3_me150 <- ((me150_3-me150_init)/me150_init)*100
+diff3_de150 <- ((de150_3-de150_init)/de150_init)*100
+diff3_rc150 <- ((rc150_3-rc150_init)/rc150_init)*100
+diff3_hoch150 <- ((max_hoch150_3-max_hoch150_init)/max_hoch150_init)*100
+diff3_exact150 <- ((max_exact150_3-max_exact150_init)/max_exact150_init)*100
+
 
 os200_1 <- sum(err_oslrt200_1)/nit
 mos200_1 <- sum(err_moslrt200_1)/nit
@@ -8988,15 +8082,6 @@ me200_1 <- sum(err_me200_1)/nit
 max1_hoch200_1 <- sum(err_max1_hoch200_1)/nit
 max1_exact200_1 <- sum(na.omit(err_max1_exact200_1))/length(na.omit(err_max1_exact200_1))
 
-os200_2 <- sum(err_oslrt200_2)/nit
-mos200_2 <- sum(err_moslrt200_2)/nit
-rc200_2 <- sum(err_rc200_2)/nit
-de200_2 <- sum(err_de200_2)/nit
-ee200_2 <- sum(err_ee200_2)/nit
-me200_2 <- sum(err_me200_2)/nit
-max1_hoch200_2 <- sum(err_max1_hoch200_2)/nit
-max1_exact200_2 <- sum(na.omit(err_max1_exact200_2))/length(na.omit(err_max1_exact200_2))
-
 os200_3 <- sum(err_oslrt200_3)/nit
 mos200_3 <- sum(err_moslrt200_3)/nit
 rc200_3 <- sum(err_rc200_3)/nit
@@ -9006,17 +8091,33 @@ me200_3 <- sum(err_me200_3)/nit
 max1_hoch200_3 <- sum(err_max1_hoch200_3)/nit
 max1_exact200_3 <- sum(na.omit(err_max1_exact200_3))/length(na.omit(err_max1_exact200_3))
 
-os200_4 <- sum(err_oslrt200_4)/nit
-mos200_4 <- sum(err_moslrt200_4)/nit
-rc200_4 <- sum(err_rc200_4)/nit
-de200_4 <- sum(err_de200_4)/nit
-ee200_4 <- sum(err_ee200_4)/nit
-me200_4 <- sum(err_me200_4)/nit
-max1_hoch200_4 <- sum(err_max1_hoch200_4)/nit
-max1_exact200_4 <- sum(na.omit(err_max1_exact200_4))/length(na.omit(err_max1_exact200_4))
+os200_init <- sum(err_init_oslrt200)/nit
+mos200_init <- sum(err_init_moslrt200)/nit
+rc200_init <- sum(err_init_rc200)/nit
+de200_init <- sum(err_init_de200)/nit
+ee200_init <- sum(err_init_ee200)/nit
+me200_init <- sum(err_init_me200)/nit
+r_200_init <- sum(err_init_rmst_200)/nit
+max_hoch200_init <- sum(err_init_max_hoch_200)/nit
+max_exact200_init <- sum(err_init_max_exact_200)/nit
 
-mean(tx_cens200)
-mean(tx_censadm200)
+diff1_os200 <- ((os200_1-os200_init)/os200_init)*100
+diff1_mos200 <- ((mos200_1-mos200_init)/mos200_init)*100
+diff1_ee200 <- ((ee200_1-ee200_init)/ee200_init)*100
+diff1_me200 <- ((me200_1-me200_init)/me200_init)*100
+diff1_de200 <- ((de200_1-de200_init)/de200_init)*100
+diff1_rc200 <- ((rc200_1-rc200_init)/rc200_init)*100
+diff1_hoch200 <- ((max_hoch200_1-max_hoch200_init)/max_hoch200_init)*100
+diff1_exact200 <- ((max_exact200_1-max_exact200_init)/max_exact200_init)*100
+
+diff3_os200 <- ((os200_3-os200_init)/os200_init)*100
+diff3_mos200 <- ((mos200_3-mos200_init)/mos200_init)*100
+diff3_ee200 <- ((ee200_3-ee200_init)/ee200_init)*100
+diff3_me200 <- ((me200_3-me200_init)/me200_init)*100
+diff3_de200 <- ((de200_3-de200_init)/de200_init)*100
+diff3_rc200 <- ((rc200_3-rc200_init)/rc200_init)*100
+diff3_hoch200 <- ((max_hoch200_3-max_hoch200_init)/max_hoch200_init)*100
+diff3_exact200 <- ((max_exact200_3-max_exact200_init)/max_exact200_init)*100
 
 
 n <- c(20, 30, 50, 60, 80, 100, 150, 200)
@@ -9028,6 +8129,14 @@ ee_1 <- c(ee20_1, ee30_1, ee50_1, ee60_1, ee80_1, ee100_1, ee150_1, ee200_1)
 me_1 <- c(me20_1, me30_1, me50_1, me60_1, me80_1, me100_1, me150_1, me200_1)
 max1_hochberg_1 <- c(max1_hoch20_1, max1_hoch30_1, max1_hoch50_1, max1_hoch60_1, max1_hoch80_1, max1_hoch100_1, max1_hoch150_1, max1_hoch200_1)
 max1_pmult_1 <- c(max1_exact20_1, max1_exact30_1, max1_exact50_1, max1_exact60_1, max1_exact80_1, max1_exact100_1, max1_exact150_1, max1_exact200_1)
+diff1_osl <- c(diff1_os20, diff1_os30, diff1_os50, diff1_os60, diff1_os80, diff1_os100, diff1_os150, diff1_os200)
+diff1_mosl <- c(diff1_mos20, diff1_mos30, diff1_mos50, diff1_mos60, diff1_mos80, diff1_mos100, diff1_mos150, diff1_mos200)
+diff1_rc <- c(diff1_rc20, diff1_rc30, diff1_rc50, diff1_rc60, diff1_rc80, diff1_rc100, diff1_rc150, diff1_rc200)
+diff1_de <- c(diff1_de20, diff1_de30, diff1_de50, diff1_de60, diff1_de80, diff1_de100, diff1_de150, diff1_de200)
+diff1_ee <- c(diff1_ee20, diff1_ee30, diff1_ee50, diff1_ee60, diff1_ee80, diff1_ee100, diff1_ee150, diff1_ee200)
+diff1_me <- c(diff1_me20, diff1_me30, diff1_me50, diff1_me60, diff1_me80, diff1_me100, diff1_me150, diff1_me200)
+diff1_hoch <- c(diff1_hoch20, diff1_hoch30, diff1_hoch50, diff1_hoch60, diff1_hoch80, diff1_hoch100, diff1_hoch150, diff1_hoch200)
+diff1_exact <- c(diff1_exact20, diff1_exact30, diff1_exact50, diff1_exact60, diff1_exact80, diff1_exact100, diff1_exact150, diff1_exact200)
 osl_1
 mosl_1
 ee_1
@@ -9037,23 +8146,6 @@ rc_1
 max1_hochberg_1
 max1_pmult_1
 
-osl_2 <- c(os20_2, os30_2, os50_2, os60_2, os80_2, os100_2, os150_2, os200_2)
-mosl_2 <- c(mos20_2, mos30_2, mos50_2, mos60_2, mos80_2, mos100_2, mos150_2, mos200_2)
-rc_2 <- c(rc20_2, rc30_2, rc50_2, rc60_2, rc80_2, rc100_2, rc150_2, rc200_2)
-de_2 <- c(de20_2, de30_2, de50_2, de60_2, de80_2, de100_2, de150_2, de200_2)
-ee_2 <- c(ee20_2, ee30_2, ee50_2, ee60_2, ee80_2, ee100_2, ee150_2, ee200_2)
-me_2 <- c(me20_2, me30_2, me50_2, me60_2, me80_2, me100_2, me150_2, me200_2)
-max1_hochberg_2 <- c(max1_hoch20_2, max1_hoch30_2, max1_hoch50_2, max1_hoch60_2, max1_hoch80_2, max1_hoch100_2, max1_hoch150_2, max1_hoch200_2)
-max1_pmult_2 <- c(max1_exact20_2, max1_exact30_2, max1_exact50_2, max1_exact60_2, max1_exact80_2, max1_exact100_2, max1_exact150_2, max1_exact200_2)
-osl_2
-mosl_2
-ee_2
-me_2
-de_2
-rc_2
-max1_hochberg_2
-max1_pmult_2
-
 osl_3 <- c(os20_3, os30_3, os50_3, os60_3, os80_3, os100_3, os150_3, os200_3)
 mosl_3 <- c(mos20_3, mos30_3, mos50_3, mos60_3, mos80_3, mos100_3, mos150_3, mos200_3)
 rc_3 <- c(rc20_3, rc30_3, rc50_3, rc60_3, rc80_3, rc100_3, rc150_3, rc200_3)
@@ -9062,6 +8154,14 @@ ee_3 <- c(ee20_3, ee30_3, ee50_3, ee60_3, ee80_3, ee100_3, ee150_3, ee200_3)
 me_3 <- c(me20_3, me30_3, me50_3, me60_3, me80_3, me100_3, me150_3, me200_3)
 max1_hochberg_3 <- c(max1_hoch20_3, max1_hoch30_3, max1_hoch50_3, max1_hoch60_3, max1_hoch80_3, max1_hoch100_3, max1_hoch150_3, max1_hoch200_3)
 max1_pmult_3 <- c(max1_exact20_3, max1_exact30_3, max1_exact50_3, max1_exact60_3, max1_exact80_3, max1_exact100_3, max1_exact150_3, max1_exact200_3)
+diff3_osl <- c(diff3_os20, diff3_os30, diff3_os50, diff3_os60, diff3_os80, diff3_os100, diff3_os150, diff3_os200)
+diff3_mosl <- c(diff3_mos20, diff3_mos30, diff3_mos50, diff3_mos60, diff3_mos80, diff3_mos100, diff3_mos150, diff3_mos200)
+diff3_rc <- c(diff3_rc20, diff3_rc30, diff3_rc50, diff3_rc60, diff3_rc80, diff3_rc100, diff3_rc150, diff3_rc200)
+diff3_de <- c(diff3_de20, diff3_de30, diff3_de50, diff3_de60, diff3_de80, diff3_de100, diff3_de150, diff3_de200)
+diff3_ee <- c(diff3_ee20, diff3_ee30, diff3_ee50, diff3_ee60, diff3_ee80, diff3_ee100, diff3_ee150, diff3_ee200)
+diff3_me <- c(diff3_me20, diff3_me30, diff3_me50, diff3_me60, diff3_me80, diff3_me100, diff3_me150, diff3_me200)
+diff3_hoch <- c(diff3_hoch20, diff3_hoch30, diff3_hoch50, diff3_hoch60, diff3_hoch80, diff3_hoch100, diff3_hoch150, diff3_hoch200)
+diff3_exact <- c(diff3_exact20, diff3_exact30, diff3_exact50, diff3_exact60, diff3_exact80, diff3_exact100, diff3_exact150, diff3_exact200)
 osl_3
 mosl_3
 ee_3
@@ -9070,23 +8170,6 @@ de_3
 rc_3
 max1_hochberg_3
 max1_pmult_3
-
-osl_4 <- c(os20_4, os30_4, os50_4, os60_4, os80_4, os100_4, os150_4, os200_4)
-mosl_4 <- c(mos20_4, mos30_4, mos50_4, mos60_4, mos80_4, mos100_4, mos150_4, mos200_4)
-rc_4 <- c(rc20_4, rc30_4, rc50_4, rc60_4, rc80_4, rc100_4, rc150_4, rc200_4)
-de_4 <- c(de20_4, de30_4, de50_4, de60_4, de80_4, de100_4, de150_4, de200_4)
-ee_4 <- c(ee20_4, ee30_4, ee50_4, ee60_4, ee80_4, ee100_4, ee150_4, ee200_4)
-me_4 <- c(me20_4, me30_4, me50_4, me60_4, me80_4, me100_4, me150_4, me200_4)
-max1_hochberg_4 <- c(max1_hoch20_4, max1_hoch30_4, max1_hoch50_4, max1_hoch60_4, max1_hoch80_4, max1_hoch100_4, max1_hoch150_4, max1_hoch200_4)
-max1_pmult_4 <- c(max1_exact20_4, max1_exact30_4, max1_exact50_4, max1_exact60_4, max1_exact80_4, max1_exact100_4, max1_exact150_4, max1_exact200_4)
-osl_4
-mosl_4
-ee_4
-me_4
-de_4
-rc_4
-max1_hochberg_4
-max1_pmult_4
 
 d1_1 <- data.frame(Sample.size = n, Error = c(osl_1, mosl_1, ee_1, me_1, de_1, rc_1, max1_hochberg_1, max1_pmult_1),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -9097,49 +8180,63 @@ d1_1$Test <- factor(d1_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
+CH_1 <- ggplot(d1_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 1',
-       subtitle = '')+
+       title = 'Scenario 6: crossing hazards',
+       subtitle = 'pi = 1')+
   geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  ylim(0, 1)+
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+CH_1
 
+d2_1 <- data.frame(Sample.size = n, Error = c(diff1_osl, diff1_mosl, diff1_ee, diff1_me, diff1_de, diff1_rc, diff1_hoch, diff1_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_1$Test <- as.factor(d2_1$Test)
+d2_1$Test <- factor(d2_1$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_2 <- data.frame(Sample.size = n, Error = c(osl_2, mosl_2, ee_2, me_2, de_2, rc_2, max1_hochberg_2, max1_pmult_2),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_2$Test <- as.factor(d1_2$Test)
-d1_2$Test <- factor(d1_2$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_2, aes(x = Sample.size, y = Error, group = Test))+
+Diff_CH_1 <- ggplot(d2_1, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_1$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.8',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 6: crossing hazards',
+       subtitle = 'pi = 1')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_CH_1
+
 
 d1_3 <- data.frame(Sample.size = n, Error = c(osl_3, mosl_3, ee_3, me_3, de_3, rc_3, max1_hochberg_3, max1_pmult_3),
                    Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
@@ -9150,15 +8247,15 @@ d1_3$Test <- factor(d1_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effe
                                           'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
                                           'max-Combo (multivariate normal integration)'))
 
-ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
+CH_3 <- ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
+  labs(x = 'Sample size',
        y = 'Power',
-       title = 'pi = 0.6',
-       subtitle = '')+
+       title = 'Scenario 6: crossing hazards',
+       subtitle = 'pi = 0.6')+
   geom_hline(yintercept = 0.8, size = 0.2)+
   ylim(0,1)+
   theme(legend.position = 'right',
@@ -9166,31 +8263,44 @@ ggplot(d1_3, aes(x = Sample.size, y = Error, group = Test))+
         legend.text = element_text(size = 12),
         plot.title = element_text(hjust = 0.5, size = 20),
         plot.subtitle = element_text(hjust = 0.5, size = 15))
+CH_3
 
+d2_3 <- data.frame(Sample.size = n, Error = c(diff3_osl, diff3_mosl, diff3_ee, diff3_me, diff3_de, diff3_rc, diff3_hoch, diff3_exact), 
+                 Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
+                          rep('Delayed effect', 8), rep('Crossing hazards', 8), 
+                          rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
+d2_3$Test <- as.factor(d2_3$Test)
+d2_3$Test <- factor(d2_3$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect', 
+                                      'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
+                                      'max-Combo (multivariate normal integration)'))
 
-d1_4 <- data.frame(Sample.size = n, Error = c(osl_4, mosl_4, ee_4, me_4, de_4, rc_4, max1_hochberg_4, max1_pmult_4),
-                   Test = c(rep('OSLRT', 8), rep('Modified OSLRT', 8), rep('Early effect', 8), rep('Middle effect', 8),
-                            rep('Delayed effect', 8), rep('Crossing hazards', 8),
-                            rep('max-Combo (Hochberg correction)', 8), rep('max-Combo (multivariate normal integration)', 8)))
-d1_4$Test <- as.factor(d1_4$Test)
-d1_4$Test <- factor(d1_4$Test, levels = c('OSLRT', 'Modified OSLRT', 'Early effect', 'Middle effect',
-                                          'Delayed effect', 'Crossing hazards', 'max-Combo (Hochberg correction)',
-                                          'max-Combo (multivariate normal integration)'))
-
-ggplot(d1_4, aes(x = Sample.size, y = Error, group = Test))+
+Diff_CH_3 <- ggplot(d2_3, aes(x = Sample.size, y = Error, group = Test))+
   geom_line(aes(color = Test), size = 1)+
   geom_point(aes(color = Test, shape = Test), size = 2)+
+  scale_x_continuous(breaks = n, labels = d2_3$Sample.size[1:8], name = 'Sample size')+
   scale_shape_manual(values = c(18, 18, 8, 16, 4, 18, 18, 18))+
   scale_color_manual(values = c('red', 'gold3', 'blue', 'orange', 'green3', 'magenta', 'brown', 'mediumturquoise'))+
-  labs(x = 'Sample size of the experimental group',
-       y = 'Power',
-       title = 'pi = 0.5',
-       subtitle = '')+
-  geom_hline(yintercept = 0.8, size = 0.2)+
-  ylim(0,1)+
-  theme(legend.position = 'right',
-        legend.title = element_text(size = 14),
-        legend.text = element_text(size = 12),
-        plot.title = element_text(hjust = 0.5, size = 20),
-        plot.subtitle = element_text(hjust = 0.5, size = 15))
+  labs(x = 'Sample size', 
+       y = 'Relative difference (%)',
+       title = 'Scenario 6: crossing hazards',
+       subtitle = 'pi = 0.6')+
+  geom_hline(yintercept = 0, size = 0.2)+ 
+  theme(axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14),
+        axis.text.x.top = element_text(size = 12, angle = 90),
+        axis.text.x.bottom = element_text(size = 12, angle = 90),
+        axis.title.x.top = element_text(size = 14),
+        axis.title.x.bottom = element_text(size = 14),
+        legend.title = element_text(size = 18),
+        legend.text = element_text(size = 18),
+        plot.title = element_text(hjust = 0.5, size = 20))
+Diff_CH_3
 
+
+
+
+####Figure 5####
+fig5 <-  Diff_Eff_3 + Diff_PH_3 + Diff_EE_3 + Diff_ME_3 + Diff_DE_3 + Diff_CH_3 + plot_layout(guides = 'collect', ncol = 3) & theme(legend.position = 'bottom')
+fig5
