@@ -324,24 +324,6 @@ for(i in 1:nit){
     S150 <- survfit(Surv(t150, delta150) ~ 1)
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
-  obs20[i] <- sum(del20)
-  obs30[i] <- sum(del30)
-  obs50[i] <- sum(del50)
-  obs60[i] <- sum(del60)
-  obs80[i] <- sum(del80)
-  obs100[i] <- sum(del100)
-  obs150[i] <- sum(del150)
-  obs200[i] <- sum(del200)
-  
-  obs20_adm[i] <- sum(delta20)
-  obs30_adm[i] <- sum(delta30)
-  obs50_adm[i] <- sum(delta50)
-  obs60_adm[i] <- sum(delta60)
-  obs80_adm[i] <- sum(delta80)
-  obs100_adm[i] <- sum(delta100)
-  obs150_adm[i] <- sum(delta150)
-  obs200_adm[i] <- sum(delta200)
-  
   data20 <- ten(S20)
   a20 <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)
   a202 <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)[2]
@@ -1318,24 +1300,6 @@ for(i in 1:nit){
     S150 <- survfit(Surv(t150, delta150) ~ 1)
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
-  obs20[i] <- sum(del20)
-  obs30[i] <- sum(del30)
-  obs50[i] <- sum(del50)
-  obs60[i] <- sum(del60)
-  obs80[i] <- sum(del80)
-  obs100[i] <- sum(del100)
-  obs150[i] <- sum(del150)
-  obs200[i] <- sum(del200)
-  
-  obs20_adm[i] <- sum(delta20)
-  obs30_adm[i] <- sum(delta30)
-  obs50_adm[i] <- sum(delta50)
-  obs60_adm[i] <- sum(delta60)
-  obs80_adm[i] <- sum(delta80)
-  obs100_adm[i] <- sum(delta100)
-  obs150_adm[i] <- sum(delta150)
-  obs200_adm[i] <- sum(delta200)
-  
   data20 <- ten(S20)
   a20 <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)
   a202 <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)[2]
@@ -2020,6 +1984,7 @@ scale0_miss <- m0_miss/(-log(0.5))^(1/shape0)
 #HR1 = 0.5 (0 0.018 0.05 0.095 0.15)
 #HR1 = 0.7 (0 0.018 0.055 0.105 0.17)
 #HR1 = 0.8 (0 0.018 0.058 0.11 0.175)
+
 lambda_cens <- 0.05   #15% of censoring for HR1 = 0.5
 
 CP_EE <- 1
@@ -2304,24 +2269,6 @@ for(i in 1:nit){
     S150 <- survfit(Surv(t150, delta150) ~ 1)
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
-  obs20[i] <- sum(del20)
-  obs30[i] <- sum(del30)
-  obs50[i] <- sum(del50)
-  obs60[i] <- sum(del60)
-  obs80[i] <- sum(del80)
-  obs100[i] <- sum(del100)
-  obs150[i] <- sum(del150)
-  obs200[i] <- sum(del200)
-  
-  obs20_adm[i] <- sum(delta20)
-  obs30_adm[i] <- sum(delta30)
-  obs50_adm[i] <- sum(delta50)
-  obs60_adm[i] <- sum(delta60)
-  obs80_adm[i] <- sum(delta80)
-  obs100_adm[i] <- sum(delta100)
-  obs150_adm[i] <- sum(delta150)
-  obs200_adm[i] <- sum(delta200)
-  
   data20 <- ten(S20)
   a20 <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)
   a202 <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)[2]
@@ -3008,10 +2955,11 @@ scale0_miss <- m0_miss/(-log(0.5))^(1/shape0)
 #HR2 = 0.5 (0 0.015 0.05 0.09 0.14)
 #HR2 = 0.7 (0 0.015 0.05 0.1 0.16)
 #HR2 = 0.8 (0 0.015 0.055 0.1 0.165)
+
 lambda_cens <- 0.05   #15% of censoring for HR1 = 0.5
 
-CP_EE <- 1
-CP_DE <- 4
+CP_EE <- 4
+CP_DE <- 1
 CP_ME1 <- 1
 CP_ME2 <- 4
 
@@ -3292,24 +3240,6 @@ for(i in 1:nit){
     S150 <- survfit(Surv(t150, delta150) ~ 1)
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
-  obs20[i] <- sum(del20)
-  obs30[i] <- sum(del30)
-  obs50[i] <- sum(del50)
-  obs60[i] <- sum(del60)
-  obs80[i] <- sum(del80)
-  obs100[i] <- sum(del100)
-  obs150[i] <- sum(del150)
-  obs200[i] <- sum(del200)
-  
-  obs20_adm[i] <- sum(delta20)
-  obs30_adm[i] <- sum(delta30)
-  obs50_adm[i] <- sum(delta50)
-  obs60_adm[i] <- sum(delta60)
-  obs80_adm[i] <- sum(delta80)
-  obs100_adm[i] <- sum(delta100)
-  obs150_adm[i] <- sum(delta150)
-  obs200_adm[i] <- sum(delta200)
-  
   data20 <- ten(S20)
   a20 <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)
   a202 <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)[2]
@@ -3993,6 +3923,7 @@ scale0_miss <- m0_miss/(-log(0.5))^(1/shape0)
 #HR1 = 0.5 (0 0.015 0.05 0.09 0.17)
 #HR1 = 0.7 (0 0.015 0.06 0.1 0.17)
 #HR1 = 0.8 (0 0.015 0.06 0.11 0.19)
+
 lambda_cens <- 0.05   #15% of censoring for HR1 = 0.5
 
 CP_EE <- 3
@@ -4277,24 +4208,6 @@ for(i in 1:nit){
     S150 <- survfit(Surv(t150, delta150) ~ 1)
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
-  obs20[i] <- sum(del20)
-  obs30[i] <- sum(del30)
-  obs50[i] <- sum(del50)
-  obs60[i] <- sum(del60)
-  obs80[i] <- sum(del80)
-  obs100[i] <- sum(del100)
-  obs150[i] <- sum(del150)
-  obs200[i] <- sum(del200)
-  
-  obs20_adm[i] <- sum(delta20)
-  obs30_adm[i] <- sum(delta30)
-  obs50_adm[i] <- sum(delta50)
-  obs60_adm[i] <- sum(delta60)
-  obs80_adm[i] <- sum(delta80)
-  obs100_adm[i] <- sum(delta100)
-  obs150_adm[i] <- sum(delta150)
-  obs200_adm[i] <- sum(delta200)
-  
   data20 <- ten(S20)
   a20 <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)
   a202 <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)[2]
@@ -4979,6 +4892,7 @@ scale0_miss <- m0_miss/(-log(0.5))^(1/shape0)
 #Censoring rate lambda_cens (0% 5% 15% 25% 35%)#
 #HR1 = 2 & HR2 = 0.5 (0 0.018 0.06 0.11 0.19)
 #HR1 = 1.3 & HR2 = 0.7 (0 0.015 0.06 0.11 0.18)
+
 lambda_cens <- 0.06   #15% of censoring for HR1 = 2 & HR2 = 0.5
 
 CP_EE <- 1
@@ -5263,24 +5177,6 @@ for(i in 1:nit){
     S150 <- survfit(Surv(t150, delta150) ~ 1)
     S200 <- survfit(Surv(t200, delta200) ~ 1)
   }
-  obs20[i] <- sum(del20)
-  obs30[i] <- sum(del30)
-  obs50[i] <- sum(del50)
-  obs60[i] <- sum(del60)
-  obs80[i] <- sum(del80)
-  obs100[i] <- sum(del100)
-  obs150[i] <- sum(del150)
-  obs200[i] <- sum(del200)
-  
-  obs20_adm[i] <- sum(delta20)
-  obs30_adm[i] <- sum(delta30)
-  obs50_adm[i] <- sum(delta50)
-  obs60_adm[i] <- sum(delta60)
-  obs80_adm[i] <- sum(delta80)
-  obs100_adm[i] <- sum(delta100)
-  obs150_adm[i] <- sum(delta150)
-  obs200_adm[i] <- sum(delta200)
-  
   data20 <- ten(S20)
   a20 <- OSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)
   a202 <- mOSLRT(data = data20, shape_weib = shape0, scale_weib = scale0_miss[i], distr = distr0)[2]
