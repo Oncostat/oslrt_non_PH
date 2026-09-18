@@ -214,7 +214,7 @@ Score_RC <- function(data, rate_exp, shape_weib, scale_weib, shape_llogis,
 #return a list with the statistic Z, the p-value and the 'expected' number of events for early effect of treatment
 Score_EE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
                      scale_llogis, mean_lnorm, sd_lnorm, mu_gengamma,
-                     sigma_gengamma, Q_gengamma, distr){
+                     sigma_gengamma, Q_gengamma, distr, pi = 0){
   data2 <- arrange(data, t)
   t_CP <- data2$t[which(data2$t<=CP)]
   O_CP <- data2$e[which(data2$t<=CP)]
@@ -254,7 +254,8 @@ Score_EE <- function(data, CP, rate_exp, shape_weib, scale_weib, shape_llogis,
   Num <- sum(Obs)-H_tau
   Var <- sum(H0)+H_tau
   Z  <- Num/sqrt(Var)
-  pval <- 1-pnorm(-Z)
+  R <- sqrt(1/(1+pi))
+  pval <- 1-pnorm(-Z*R)
   return(c(Z*R, pval, sum(H0)+H_tau))
 }
 
